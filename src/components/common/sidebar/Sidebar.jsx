@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileSidebar from "./ProfileSidebar";
-import DropDownSidebar from "./DropDownSidebar";
+import DropDownSidebar from "./Secondary";
 
 const Sidebar = () => {
   return (
