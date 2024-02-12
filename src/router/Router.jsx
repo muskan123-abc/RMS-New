@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Category from "../components/category/Category";
 import Header from "../components/common/Header";
-import Sidebar from "../components/common/sidebar/Sidebar";
+import CommonBigCard from "../components/common/card/CommonBigCard";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
 
@@ -11,13 +11,13 @@ const Router = () => {
     <div className="h-screen">
       {/* <Sidebar /> */}
       <div>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route path="/category" element={<Category />} />
         </Routes>
-        {/* <CommonBigCard /> */}
+        <CommonBigCard />
       </div>
     </div>
   );

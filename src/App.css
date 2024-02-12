@@ -35,5 +35,5 @@ body {
   @apply font-poppins font-normal text-sm leading-150 text-white opacity-70;
 }
 .tertiary_heading {
-  @apply font-poppins font-semibold text-2xl leading-150 text-white;
+  @apply font-poppins font-semibold text-xl md:text-2xl leading-150 text-white;
 }
