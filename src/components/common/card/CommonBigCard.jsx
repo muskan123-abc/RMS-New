@@ -28,19 +28,15 @@ const CommonBigCard = () => {
             />
           </div>
 
-          <div className="flex gap-x-7 mt-3  items-center">
+          <div className="flex gap-x-4 sm:gap-x-5 md:gap-x-7 mt-3  items-center">
             <p className="common_sub_pera">189K Reviews</p>
             <p className="common_sub_pera">29M+ Dpwnload</p>
             <p className="common_sub_pera">4+ Rated out of 5</p>
           </div>
-          <div className="flex gap-1 items-center my-5">
-            <YellowStar />
-            <YellowStar />
-            <YellowStar />
-            <YellowStar />
-            <StarGrey />
+          <div className="flex gap-1 items-center my-4 sm:my-5">
+            <span className="flex gap-1">{ratingStars(3)}</span>
           </div>
-          <p className="common_pera">
+          <p className="common_pera mb-4">
             Odio elit nulla tellus elementum. Odio proin dignissim venenatis
             ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu
             egestas ac tortor non. Aliquet sem varius in eget sodales nisl
