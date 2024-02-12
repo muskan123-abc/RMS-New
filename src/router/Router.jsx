@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../../home/Home";
-import Sidebar from "../commonSidebar/Sidebar";
-import Header from "../Header";
-import ProductDetails from "../../product-details/ProductDetails";
+import Home from "../components/home/Home";
+import Sidebar from "../components/common/sidebar/Sidebar";
+import Header from "../components/common/Header";
+import ProductDetails from "../components/product-details/ProductDetails";
 
 const Router = () => {
   return (
@@ -13,7 +13,7 @@ const Router = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="product-details/:id" element={<ProductDetails />} />
+          <Route path="product-details/:slug" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>
