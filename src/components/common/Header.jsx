@@ -1,7 +1,7 @@
 import React from "react";
 import CustomButton from "./fields/button/CustomButton";
 import CustomInput from "./fields/CustomInput";
-import { SearchIcon } from "./Icons";
+import { DownloadIcon, SearchIcon } from "./Icons";
 
 const Header = () => {
   return (
@@ -10,32 +10,33 @@ const Header = () => {
       <div className="flex gap-3 flex-wrap">
         {" "}
         <CustomButton
-          title="Lorem"
-          isGradient={true}
-          varient="button"
-          url="//##/"
-          isVisible={true}
-          customStyles=""
+          title="DownLoad" //set button title
+          isGradient={true} // is grident is  visible // controle  btn types
+          varient="button" // set button type like  Link and  Button
+          url="" // set url when button type  is link
+          isVisible={true} // handle  button visibility
+          customStyles="" // add custom styles  \\ use custom styles with importent
+          icon={<DownloadIcon />} // add icon //
         />
         <CustomButton
-          title="Ipsum doller sit ammit"
-          isGradient={false}
-          varient="link"
-          url="//##/"
-          isVisible={true}
-          customStyles=""
+          title="Lorem" //set button title
+          isGradient={true} // is grident is  visible // controle  btn types
+          varient="button" // set button type like  Link and  Button
+          url="" // set url when button type  is link
+          isVisible={true} // handle  button visibility
+          customStyles="" // add custom styles  \\ use custom styles with importent
         />
       </div>
       <CustomInput
         id=""
         type="password" // set input type like  password/email/text by default it is  text
-        placeholder="passsword *****" // set  input placeholder by  default it is  search
+        placeholder="passsword*****" // set  input placeholder by  default it is  search
         buttonIcon={<SearchIcon />} // add custom icon for  button and default have search icon
-        customStyles="!w-full " //style input parent
-        customStylesInput=" " //style input
-        customStylesButton=" " // style  input button
-        isButtonVisible={true} // handle  button visibility
-        onChange="" // add  onchange event
+        customStyles=" " //style input parent \\use custom styles with importent
+        customStylesInput="" //style input \\use custom styles with importent
+        customStylesButton="" // style  input button \\use custom styles with importent
+        isButtonVisible={true} // handle button visibility
+        onChange={""} // add  onchange event
       />
     </div>
   );
