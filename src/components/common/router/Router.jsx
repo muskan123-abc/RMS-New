@@ -1,12 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../../home/Home";
+import Sidebar from "../commonSidebar/Sidebar";
+import Header from "../Header";
+import ProductDetails from "../../product-details/ProductDetails";
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <div className="flex h-screen">
+      <Sidebar />
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:id" element={<ProductDetails />} />
+        </Routes>
+      </div>
+    </div>
   );
 };
 
