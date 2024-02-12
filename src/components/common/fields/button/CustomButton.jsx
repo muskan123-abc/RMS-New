@@ -7,6 +7,7 @@ const CustomButton = ({
   url,
   customStyles,
   isVisible,
+  icon,
 }) => {
   return (
     <div className="inline-flex items-center">
@@ -15,13 +16,15 @@ const CustomButton = ({
           {varient === "button" ? (
             <button
               className={`font-inter font-semibold text-base w-full py-[10px] px-6 rounded overflow-hidden border border-solid border-light-yellow
-relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0 leading-140 inline-block z-10
+relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0 leading-140 z-10 flex items-center ${
+                icon && "gap-x-1"
+              }
         ${
           isGradient
-            ? " bg-gradient text-white hover:border border-transparent after:bg-black   "
-            : " text-white opacity-90  bg-black hover:border-transparent after:bg-gradient"
+            ? "bg-gradient text-white hover:border border-transparent after:bg-black   "
+            : "text-white opacity-90  bg-black hover:border-transparent after:bg-gradient"
         } ${customStyles && customStyles}`}>
-              {title}
+              {icon && icon} {title}
             </button>
           ) : (
             <a
