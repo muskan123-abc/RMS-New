@@ -33,6 +33,8 @@ module.exports = {
       },
       backgroundImage: {
         gradient: "linear-gradient(146.59deg, #F2CD75 -0.66%, #A97424 98.99%)",
+         "homepage-hero-bg":
+        "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height

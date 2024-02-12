@@ -16,7 +16,7 @@ const CustomInput = ({
     <div>
       <lable
         htmlfor={id ? id : "defaultId"}
-        className={`border border-solid border-white border-opacity-50 rounded-[127px] md:flex items-center justify-between w-full md:w-[80%]  ps-3 relative inline-block py-[2px] ${
+        className={`border border-solid border-white border-opacity-50 rounded-[127px] md:flex items-center justify-between ps-3 relative inline-block py-[2px] ${
           customStyles && customStyles
         }`}>
         <input

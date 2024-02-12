@@ -5,8 +5,8 @@ import { DownloadIcon, SearchIcon } from "./Icons";
 
 const Header = () => {
   return (
-    <div>
-      Header
+    <div className="h-[80px] bg-red-700 fixed z-10 top-0 left-0 w-full">
+      {/* Header
       <div className="flex gap-3 flex-wrap">
         {" "}
         <CustomButton
@@ -37,7 +37,7 @@ const Header = () => {
         customStylesButton="" // style  input button \\use custom styles with importent
         isButtonVisible={true} // handle button visibility
         onChange={""} // add  onchange event
-      />
+      /> */}
     </div>
   );
 };
