@@ -29,12 +29,12 @@ const Hero = () => {
                 suspendisse.
               </p>
               <div className="hidden md:flex">
-                <CustomInput placeholder="Search" width="w-full md:w-[80%]" />
+                <CustomInput placeholder="Search" customStyles="w-full md:w-[80%]" />
               </div>
             </div>
             <div className=" w-full sm:w-[70%] md:w-[45%] ">
               <div className="md:hidden my-10">
-                <CustomInput placeholder="Search" width="w-full md:w-[80%]" />
+                <CustomInput placeholder="Search" customStyles="w-full md:w-[80%]" />
               </div>
               <div className="border-2 border-solid border-[#FFFFFF4D] rounded-lg z-50 relative overflow-hidden">
                 <img

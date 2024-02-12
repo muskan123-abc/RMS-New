@@ -1,7 +1,145 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Typed from "typed.js";
+import { homeHeroLeftSlider, homeHeroRightSlider } from "../../utils/Helper";
+import CustomInput from "../common/fields/CustomInput";
+import { CommonXmildIcon, SearchIcon } from "../common/Icons";
 
-const Hero = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+const Hero = ({ showSidebar }) => {
+  // useEffect hook to handle side effects, runs once after the initial render
+  useEffect(() => {
+    // Typed.js initialization for text animation
+    const typing = new Typed(".text", {
+      strings: [
+        "ustomer <span style='background: var(--Liner, linear-gradient(135deg, #F2CD75 0%, #A97424 100%)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>Review</span> sites movies",
+      ],
+      backDelay: 2000,
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true,
+      showCursor: false,
+    });
+    // Cleanup function to destroy Typed instance when the component unmounts
+    return () => {
+      typing.destroy();
+    };
+  }, []); // Empty dependency array ensures useEffect runs only once
+  return (
+    <>
+      {/* Hero section with background image */}
+      <section className="overflow-hidden min-h-screen ps-6  grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 ">
+        {/* Bottom blur effect */}
+        <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
+        {/* Movie icon at the top-left corner */}
+        <span className=" absolute left-0 top-0 min-[1440px]:hidden ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
+          <CommonXmildIcon />
+        </span>
+        <div
+          className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 ps-0 ${
+            showSidebar ? "ms-0" : "ms-auto"
+          }`}
+        >
+          <div className="md:hidden mb-10">
+            <CustomInput
+              placeholder="Search"
+              customStyles="w-full sm:w-[75%]"
+              customStylesInput="w-full"
+              isButtonVisible={true}
+            />
+          </div>
+          <div className="flex flex-col-reverse md:flex-row flex-wrap justify-between md:items-center lg:min-h-screen">
+            <div className=" md:w-6/12 min-[1440px]:w-[55%] min-[1920px]:w-6/12  mt-[50px] md:mt-0 pe-3 lg:pe-0">
+              <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] ff_poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-[40px] xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
+                C<span className="text"></span>
+              </h1>
+              <p className=" ff_poppins text-[16px] font-semibold text-[#E5E2DE] pt-2 mb-0">
+                Csras lectus nunc venenatis incidunt id quis malesuada
+              </p>
+              <p className=" ff_poppins text-[16px] font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
+                Amet suscipit risus nulla libero porta purus id rhoncus emper
+                faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa
+                cursus tortor.
+              </p>
+              <div className="hidden md:block">
+                <CustomInput
+                  placeholder="Search"
+                  customStyles="w-full max-w-[343px]"
+                  isButtonVisible={true}
+                  customStylesInput="w-full"
+                />
+              </div>
+            </div>
+
+            <div className="relative   md:w-6/12 min-[1440px]:w-[45%] min-[1920px]:w-6/12 min-h-[370px]  md:min-h-[86vh] min-[1440px]:mr-[-150px] min-[1920px]:mr-0 ">
+              <div className="md:w-6/12">
+                <div className="flex md:flex-col gap-5 key_frame_try md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                  {homeHeroLeftSlider.map((data, index) => {
+                    return (
+                      <img
+                        key={index}
+                        loading="lazy"
+                        width={208}
+                        height={161}
+                        className=" w-full border-2 border-[#645E56] rounded-[8px]"
+                        src={data.image}
+                        alt="hero_img_slider"
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex md:flex-col gap-5 key_frame_try2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                  {homeHeroLeftSlider.map((data, index) => {
+                    return (
+                      <img
+                        key={index}
+                        width={208}
+                        height={161}
+                        className=" w-full border-2 border-[#645E56] rounded-[8px]"
+                        src={data.image}
+                        alt="hero_img_slider"
+                        loading="lazy"
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="md:w-6/12 mt-[200px] md:mt-0">
+                <div className="flex md:flex-col gap-5 key_frame_try3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                  {homeHeroRightSlider.map((data, index) => {
+                    return (
+                      <img
+                        key={index}
+                        width={208}
+                        height={161}
+                        className=" w-full border-2 border-[#645E56] rounded-[8px]"
+                        src={data.image}
+                        alt="hero_img_slider"
+                        loading="lazy"
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex md:flex-col gap-5 key_frame_try4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                  {homeHeroRightSlider.map((data, index) => {
+                    return (
+                      <img
+                        key={index}
+                        width={208}
+                        height={161}
+                        className=" w-full border-2 border-[#645E56] rounded-[8px]"
+                        src={data.image}
+                        loading="lazy"
+                        alt="hero_img_slider"
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Hero;
