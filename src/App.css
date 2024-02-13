@@ -41,16 +41,24 @@ body {
   @apply font-poppins font-semibold text-xl md:text-2xl leading-150 text-white;
 }
 
-.common-text-gradient {
-  background: linear-gradient(135deg, #f2cd75 0%, #a97424 100%);
-  background-clip: text;
+.secondry_heading {
+  @apply font-poppins font-semibold text-white text-[30px] md:text-3xl text-center;
+}
+.secondry_heading span {
+  @apply bg-[linear-gradient(135deg,#f2cd75_0%,#a97424_100%)] bg-clip-text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .card_backdrop_filter {
   -webkit-backdrop-filter: blur(136.5px) !important;
   backdrop-filter: blur(136.5px);
   -moz-backdrop-filter: blur(136.5px) !important;
   -o-backdrop-filter: blur(136.5px) !important;
+}
+
+.custom_dark_card_bg {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(136px);
+  backdrop-filter: blur(136.5px);
 }

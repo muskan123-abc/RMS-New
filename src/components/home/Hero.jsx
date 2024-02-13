@@ -36,8 +36,7 @@ const Hero = ({ showSidebar }) => {
         <div
           className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 px-3 ${
             showSidebar ? "ms-0" : "ms-auto"
-          }`}
-        >
+          }`}>
           <div className="md:hidden mb-10">
             <CustomInput
               placeholder="Search"
@@ -48,7 +47,7 @@ const Hero = ({ showSidebar }) => {
           </div>
           <div className="flex flex-col-reverse md:flex-row flex-wrap justify-between md:items-center lg:min-h-screen">
             <div className=" md:w-6/12 min-[1440px]:w-[55%] min-[1920px]:w-6/12  mt-[50px] md:mt-0 pe-3 lg:pe-0">
-              <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] ff_poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-[40px] xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
+              <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] font-poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-3xl xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
                 C<span className="text"></span>
               </h1>
               <p className=" ff_poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
