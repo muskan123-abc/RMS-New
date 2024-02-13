@@ -27,13 +27,30 @@ body {
 .common-shaddow {
   box-shadow: 0px 0px 10px 0px rgba(242, 205, 117, 1);
 }
+body {
+  @apply bg-black;
+}
 
 .common_pera {
-  @apply font-poppins font-normal text-base leading-140 text-white opacity-70;
+  @apply font-poppins font-normal text-sm md:text-base leading-140 text-white opacity-70;
 }
 .common_sub_pera {
-  @apply font-poppins font-normal text-sm leading-150 text-white opacity-70;
+  @apply font-poppins font-normal text-sm sm:text-sm leading-150 text-white opacity-70;
 }
 .tertiary_heading {
   @apply font-poppins font-semibold text-xl md:text-2xl leading-150 text-white;
+}
+
+.common-text-gradient {
+  background: linear-gradient(135deg, #f2cd75 0%, #a97424 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_backdrop_filter {
+  -webkit-backdrop-filter: blur(136.5px) !important;
+  backdrop-filter: blur(136.5px);
+  -moz-backdrop-filter: blur(136.5px) !important;
+  -o-backdrop-filter: blur(136.5px) !important;
 }

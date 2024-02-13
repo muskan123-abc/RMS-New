@@ -18,6 +18,7 @@ module.exports = {
         "light-yellow": "#F2CD75",
         "dark-yellow": "#A97424",
         gray: "#6C757D",
+        "light-gray": "#BBBAB9",
       },
       fontSize: {
         // we  can use  default fonts for 12px{xs},14px{sm},16px{base},20px{xl},24px{2xl} font size
@@ -33,8 +34,8 @@ module.exports = {
       },
       backgroundImage: {
         gradient: "linear-gradient(146.59deg, #F2CD75 -0.66%, #A97424 98.99%)",
-         "homepage-hero-bg":
-        "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
+        "homepage-hero-bg":
+          "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height

@@ -21,7 +21,7 @@ const CustomInput = ({
         }`}>
         <input
           id={id ? id : "defaultId"}
-          className={`relative z-10 placeholder:text-white placeholder:text-[14px] placeholder:font-normal font-poppins text-sm font-normal text-white bg-transparent p-2 px-3 lg:p-3 outline-none ${
+          className={`relative z-10 placeholder:text-white placeholder:text-sm placeholder:font-normal font-poppins text-sm font-normal text-white bg-transparent p-2 px-3 lg:p-3 outline-none ${
             customStylesInput && customStylesInput
           }`}
           type={type ? type : "text"}

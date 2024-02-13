@@ -5,6 +5,8 @@ import Header from "../components/common/Header";
 import CommonBigCard from "../components/common/card/CommonBigCard";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
+import CommonSmallCard from "../components/common/card/CommonSmallCard";
+import Card from "../components/common/card/Card";
 
 const Router = () => {
   return (
@@ -17,7 +19,9 @@ const Router = () => {
           <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route path="/category" element={<Category />} />
         </Routes>
-        <CommonBigCard />
+        {/* <CommonBigCard /> */}
+        <CommonSmallCard />
+        {/* <Card /> */}
       </div>
     </div>
   );
