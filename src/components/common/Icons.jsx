@@ -247,10 +247,10 @@ export const ShareIcon = () => {
   );
 };
 
-export const DownArrow = ({ dropdownOne }) => {
+export const DownArrow = ({ moviesDropdown }) => {
   return (
     <svg
-      className={`duration-300 ${dropdownOne ? "rotate-180" : ""}`}
+      className={`duration-300 ${moviesDropdown ? "rotate-180" : ""}`}
       width="20"
       height="21"
       viewBox="0 0 20 21"

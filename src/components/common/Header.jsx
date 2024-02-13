@@ -5,18 +5,18 @@ import { CrossIcon, DownArrow, MenuIcon, NavNotificationIcon } from "./Icons";
 import CustomButton from "./fields/button/CustomButton";
 import { navDropdown } from "../../utils/Helper";
 const Header = () => {
-  const [dropdownOne, setDropdownOne] = useState(false);
-  const [dropdownTwo, setDropdownTwo] = useState(false);
+  const [moviesDropdown, setMoviesDropdown] = useState(false);
+  const [showsDropdown, setShowsDropdown] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   return (
     <div className="bg-black fixed top-0 left-0 right-0 z-20">
-      {dropdownOne || dropdownTwo ? (
+      {moviesDropdown || showsDropdown ? (
         <div
           onClick={() => {
-            setDropdownOne(false);
-            setDropdownTwo(false);
+            setMoviesDropdown(false);
+            setShowsDropdown(false);
           }}
-          className="h-screen w-full fixed bg-black/30 z-20"
+          className="h-screen w-full fixed bg-black/30 sm:z-30"
         ></div>
       ) : (
         ""
@@ -41,10 +41,10 @@ const Header = () => {
               <CrossIcon />
             </span>
             <div
-              onClick={() => setDropdownTwo(!dropdownTwo)}
+              onClick={() => setShowsDropdown(!showsDropdown)}
               className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative"
             >
-              {dropdownTwo ? (
+              {showsDropdown ? (
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
                   {navDropdown.map((obj, index) => {
                     return (
@@ -61,13 +61,13 @@ const Header = () => {
               ) : (
                 ""
               )}
-              MOVIES <DownArrow dropdownOne={dropdownTwo} />
+              MOVIES <DownArrow moviesDropdown={showsDropdown} />
             </div>
             <div
               className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative"
-              onClick={() => setDropdownOne(!dropdownOne)}
+              onClick={() => setMoviesDropdown(!moviesDropdown)}
             >
-              {dropdownOne ? (
+              {moviesDropdown ? (
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
                   {navDropdown.map((obj, index) => {
                     return (
@@ -84,7 +84,7 @@ const Header = () => {
               ) : (
                 ""
               )}
-              SHOWS <DownArrow dropdownOne={dropdownOne} />
+              SHOWS <DownArrow moviesDropdown={moviesDropdown} />
             </div>
             <CustomButton
               title="Sign In" //set button title
