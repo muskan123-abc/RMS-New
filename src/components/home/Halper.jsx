@@ -106,3 +106,155 @@ export const mostRatedSliderHome = [
     rating: "4",
   },
 ];
+
+//
+// REVIEWS RATING DATA
+export const reviewList = [
+  {
+    title: "Sed felis nisl et ultrices",
+    date: "22/05/2023",
+    rating: "5",
+    description:
+      "Odio eget vestibulum pulvinar interdum nisl pellentesque imperdiet ut mattis. Duis vel lacus nulla dapibus auctor arcu viverra eget sed. Laoreet in elit bibendum quisque dictum tellus ipsum. Lacus sem mus non vel suspendisse posuere elit.",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    date: "22/05/2023",
+    rating: "5",
+    description:
+      "Odio eget vestibulum pulvinar interdum nisl pellentesque imperdiet ut mattis. Duis vel lacus nulla dapibus auctor arcu viverra eget sed. Laoreet in elit bibendum quisque dictum tellus ipsum. Lacus sem mus non vel suspendisse posuere elit.",
+  },
+];
+// FOOTER LINKS
+export const footerList = [
+  {
+    title: "Home",
+    footerLinks: [
+      {
+        link: "Watch videos",
+        url: "/#watchvideo",
+      },
+      {
+        link: "Fan favorites",
+        url: "/#fanfavorites",
+      },
+      {
+        link: "Most rated movies",
+        url: "/#mostrated",
+      },
+      {
+        link: "Featured",
+        url: "/#featured",
+      },
+      {
+        link: "Reviews & Rating",
+        url: "/#reviews",
+      },
+      {
+        link: "Recently Viewed",
+        url: "/#recentlyviewed",
+      },
+      {
+        link: "Faqs",
+        url: "#faqs-list",
+      },
+    ],
+  },
+  {
+    title: "Category",
+    footerLinks: [
+      {
+        link: "Links",
+        url: "/category",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "Item",
+    footerLinks: [
+      {
+        link: "Links",
+        url: "/my-product",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "My account",
+    footerLinks: [
+      {
+        link: "Links",
+        url: "/account-detail",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+      {
+        link: "Links",
+        url: "/",
+      },
+    ],
+  },
+];
+
+// FAQ DATA
+export const faqList = [
+  {
+    title: "Q1. Fermentum in hac mattis viverra orem commodo?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+  {
+    title: "Q2. Viverra ipsum gravida etiam sem iaculis?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+  {
+    title: "Q3. Morbi curabitur suscipit id posuere?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+  {
+    title: "Q4. Cursus sit sit velsem accumsan varius sed auris?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+  {
+    title: "Q5. Dui tincidunt sed eu convallis quis ultrices?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+  {
+    title: "Q6. Arcu lorem faucibus eu integer orci pretium faucibus?",
+    description:
+      "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+];
