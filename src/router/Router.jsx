@@ -11,35 +11,14 @@ import CommonBigCardSlider from "../components/common/slider/CommonBigCardSlider
 import RatingAndReview from "../components/home/RatingAndReview";
 import Footer from "../components/common/Footer";
 import Faqs from "../components/common/Faqs";
+import Header from "../components/common/Header";
 
 const Router = () => {
-  const myarr = [
-    {
-      title: "lorem",
-      content: "",
-    },
-    {
-      title: "ipsum",
-      content: "",
-    },
-    {
-      title: "doller",
-      content: "",
-    },
-    {
-      title: "sit",
-      content: "",
-    },
-    {
-      title: "ammet",
-      content: "",
-    },
-  ];
   return (
     <div className="h-screen">
       {/* <Sidebar /> */}
       <div>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />

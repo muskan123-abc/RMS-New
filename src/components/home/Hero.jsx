@@ -26,7 +26,7 @@ const Hero = ({ showSidebar }) => {
   return (
     <>
       {/* Hero section with background image */}
-      <section className="overflow-hidden min-h-screen ps-6  grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 ">
+      <section className="overflow-hidden min-h-screen grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 flex items-center">
         {/* Bottom blur effect */}
         <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
         {/* Movie icon at the top-left corner */}
@@ -34,13 +34,13 @@ const Hero = ({ showSidebar }) => {
           <CommonXmildIcon />
         </span>
         <div
-          className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 ps-0 ${
+          className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 px-3 ${
             showSidebar ? "ms-0" : "ms-auto"
           }`}>
           <div className="md:hidden mb-10">
             <CustomInput
               placeholder="Search"
-              customStyles="w-full sm:w-[75%]"
+              customStyles="w-full sm:w-[75%] flex mx-auto"
               customStylesInput="w-full"
               isButtonVisible={true}
             />
@@ -50,10 +50,10 @@ const Hero = ({ showSidebar }) => {
               <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] font-poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-3xl xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
                 C<span className="text"></span>
               </h1>
-              <p className=" font-poppins text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
+              <p className=" ff_poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
                 Csras lectus nunc venenatis incidunt id quis malesuada
               </p>
-              <p className=" font-poppins text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
+              <p className=" ff_poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
                 Amet suscipit risus nulla libero porta purus id rhoncus emper
                 faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa
                 cursus tortor.
@@ -70,7 +70,7 @@ const Hero = ({ showSidebar }) => {
 
             <div className="relative   md:w-6/12 min-[1440px]:w-[45%] min-[1920px]:w-6/12 min-h-[370px]  md:min-h-[86vh] min-[1440px]:mr-[-150px] min-[1920px]:mr-0 ">
               <div className="md:w-6/12">
-                <div className="flex md:flex-col gap-5 key_frame_try md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                <div className="flex md:flex-col gap-5 hero_slider md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
                   {homeHeroLeftSlider.map((data, index) => {
                     return (
                       <img
@@ -85,7 +85,7 @@ const Hero = ({ showSidebar }) => {
                     );
                   })}
                 </div>
-                <div className="flex md:flex-col gap-5 key_frame_try2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                <div className="flex md:flex-col gap-5 hero_slider2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
                   {homeHeroLeftSlider.map((data, index) => {
                     return (
                       <img
@@ -102,7 +102,7 @@ const Hero = ({ showSidebar }) => {
                 </div>
               </div>
               <div className="md:w-6/12 mt-[200px] md:mt-0">
-                <div className="flex md:flex-col gap-5 key_frame_try3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                <div className="flex md:flex-col gap-5 hero_slider3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
                   {homeHeroRightSlider.map((data, index) => {
                     return (
                       <img
@@ -117,7 +117,7 @@ const Hero = ({ showSidebar }) => {
                     );
                   })}
                 </div>
-                <div className="flex md:flex-col gap-5 key_frame_try4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                <div className="flex md:flex-col gap-5 hero_slider4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
                   {homeHeroRightSlider.map((data, index) => {
                     return (
                       <img

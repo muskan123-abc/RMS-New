@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.key_frame_try {
+::-webkit-scrollbar{
+    display: none;
+}
+.hero_slider {
     animation-name: textSCroll;
     animation-duration: 40s;
     animation-timing-function: linear;
@@ -11,7 +13,7 @@
     animation-delay: -40s;
 }
 
-.key_frame_try2 {
+.hero_slider2 {
     animation-name: textSCroll;
     animation-delay: -20s;
     animation-duration: 40s;
@@ -48,7 +50,7 @@
     }
 }
 
-.key_frame_try3 {
+.hero_slider3 {
     animation-name: textSCroll2;
     animation-duration: 40s;
     animation-timing-function: linear;
@@ -57,7 +59,7 @@
     animation-delay: -40s;
 }
 
-.key_frame_try4 {
+.hero_slider4 {
     animation-name: textSCroll2;
     animation-delay: -20s;
     animation-duration: 40s;
@@ -81,8 +83,7 @@
 }
 @media (max-width: 767.98px) {
     /* try */
-
-    .key_frame_try {
+    .hero_slider {
         animation-name: textSCroll;
         animation-duration: 40s;
         animation-timing-function: linear;
@@ -91,7 +92,7 @@
         animation-delay: -40s;
     }
 
-    .key_frame_try2 {
+    .hero_slider2 {
         animation-name: textSCroll;
         animation-delay: -20s;
         animation-duration: 40s;
@@ -128,7 +129,7 @@
         }
     }
 
-    .key_frame_try3 {
+    .hero_slider3 {
         animation-name: textSCroll2;
         animation-duration: 40s;
         animation-timing-function: linear;
@@ -137,7 +138,7 @@
         animation-delay: -40s;
     }
 
-    .key_frame_try4 {
+    .hero_slider4 {
         animation-name: textSCroll2;
         animation-delay: -20s;
         animation-duration: 40s;
@@ -159,4 +160,25 @@
             transform: translateX(-800px);
         }
     }
+}
+.notification_hover_animation:hover {
+    animation: notification_hover_animation 0.5s ease-in-out alternate;
+}
+
+@keyframes notification_hover_animation {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.bell_icon:hover .notification_hover_animation {
+    animation: notification_hover_animation 0.5s ease-in-out 1 alternate;
 }
