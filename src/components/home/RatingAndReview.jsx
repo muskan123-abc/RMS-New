@@ -51,7 +51,7 @@ const RatingAndReview = () => {
           <CommonXmildIcon />
         </span>
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:mt-[52px] ">
-          <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-[40px] text-white mb-0 leading-[142%]">
+          <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
             Reviews & <span className="common-text-gradient">Rating</span>
           </h2>
           <div className=" flex flex-wrap justify-between items-center mt-12 lg:mt-[60px]">
@@ -130,7 +130,7 @@ const RatingAndReview = () => {
                 aria-label="See reviews"
                 to="/my-reviews"
                 className="
-                 ff_inter font-semibold  w-fit text-[16px] text-white bg-gradient border py-[10px] px-4  mt-10 lg:mt-[59px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex items-center justify-between relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+                 ff_inter font-semibold  w-fit text-base text-white bg-gradient border py-[10px] px-4  mt-10 lg:mt-[59px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex items-center justify-between relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
                 See All Reviews
               </Link> */}
               <CustomButton

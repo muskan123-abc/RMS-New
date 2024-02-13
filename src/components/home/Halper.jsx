@@ -7,6 +7,11 @@ import fan_favorites_card_img4 from "../../assets/images/fanFavorites/webp/fan_f
 import movieImage1 from "../../assets/images/watch_videos/guardiansofglaxy.webp";
 import movieImage2 from "../../assets/images/watch_videos/ps-1.webp";
 //
+// FEATURED-TODAY
+import featuredSliderImg1 from "../../assets/images/featuredToday/featured_slider_img1.webp";
+import featuredSliderImg2 from "../../assets/images/featuredToday/featured_slider_img2.webp";
+import featuredSliderImg3 from "../../assets/images/featuredToday/featured_slider_img3.webp";
+//
 import moviesposture from "../../assets/images/webp/robin_hood.webp";
 
 export const FanFavoriteContent = [
@@ -256,5 +261,45 @@ export const faqList = [
     title: "Q6. Arcu lorem faucibus eu integer orci pretium faucibus?",
     description:
       "Mknki consequat sagittis elementum tincidunt sed quis dictum tiam arcu tempor pulvinar volutpat massa eget praesent. ",
+  },
+];
+
+// FEATURED-TODAY DATA
+export const featuredSlider = [
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg1,
+    rating: "4",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg2,
+    rating: "4",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg3,
+    rating: "4",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg1,
+    rating: "4",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg2,
+    rating: "4",
+  },
+  {
+    title: "Sed felis nisl et ultrices",
+    description: "Arcu egestas ac tortor non",
+    image: featuredSliderImg3,
+    rating: "4",
   },
 ];

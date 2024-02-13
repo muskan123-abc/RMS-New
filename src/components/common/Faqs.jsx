@@ -27,7 +27,7 @@ const Faqs = () => {
         </span>
         <div className="container  max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto relative z-10">
           {/* FAQ Section Title */}
-          <h2 className="ff_poppins font-semibold text-[40px] text-white mb-0 text-center pb-4 sm:pb-12">
+          <h2 className="font-poppins font-semibold text-3xl text-white mb-0 text-center pb-4 sm:pb-12">
             FAQ<span className="common-text-gradient">s</span>
           </h2>
           <div className="flex  justify-center flex-wrap">
@@ -43,7 +43,7 @@ const Faqs = () => {
                     <h3
                       className={`${
                         activeIndex === index ? "common-text-gradient" : ""
-                      } ff_poppins flex items-start md:items-center transition ease-in-out duration-300 justify-between text-[15px] sm:text-base xl:text-2xl text-white font-semibold cursor-pointer `}>
+                      } font-poppins flex items-start md:items-center transition ease-in-out duration-300 justify-between text-[15px] sm:text-base xl:text-2xl text-white font-semibold cursor-pointer `}>
                       {item.title}
                     </h3>
                     {/* FAQ Item Arrow Icon */}
@@ -59,7 +59,7 @@ const Faqs = () => {
                     className={`overflow-hidden transition-height transition-all ease-in-out duration-200 ${
                       activeIndex === index ? "h-[60px]" : "h-0"
                     }`}>
-                    <p className="text-[13px] md:text-base font-normal ff_poppins text-[#6C757D] pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
+                    <p className="text-[13px] md:text-base font-normal font-poppins text-[#6C757D] pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
                       {item.description}
                     </p>
                   </div>

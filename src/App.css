@@ -84,3 +84,15 @@ body {
     transform: rotate(-5deg);
   }
 }
+
+/* 
+slick dots 
+ */
+
+.slick-dots li button::before {
+  @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-1 !p-1 !cursor-pointer !border-0 !outline-none !bg-white !rounded-base transition-all duration-300;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply !bg-gradient !w-6;
+}

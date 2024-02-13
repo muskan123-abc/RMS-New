@@ -50,10 +50,10 @@ const Hero = ({ showSidebar }) => {
               <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] font-poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-3xl xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
                 C<span className="text"></span>
               </h1>
-              <p className=" ff_poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
+              <p className=" font-poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
                 Csras lectus nunc venenatis incidunt id quis malesuada
               </p>
-              <p className=" ff_poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
+              <p className=" font-poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
                 Amet suscipit risus nulla libero porta purus id rhoncus emper
                 faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa
                 cursus tortor.

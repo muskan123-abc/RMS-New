@@ -12,10 +12,12 @@ import RatingAndReview from "../components/home/RatingAndReview";
 import Footer from "../components/common/Footer";
 import Faqs from "../components/common/Faqs";
 import Header from "../components/common/Header";
+import CommonCardSlider from "../components/common/slider/CommonCardSlider";
+import FeaturedToday from "../components/home/FeaturedToday";
 
 const Router = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen overflow-hidden">
       {/* <Sidebar /> */}
       <div>
         <Header />
@@ -27,11 +29,12 @@ const Router = () => {
         {/* <CommonBigCard /> */}
         <CommonSmallCard />
         {/* <Card /> */}
-        {/* <CommonCardSlider contentArr={myarr} />{" "} */}
+        {/* <CommonCardSlider /> */}
         <CommonSmallCardSlider cardContent={FanFavoriteContent} />
         <CommonVideoSlider />
         <CommonBigCardSlider />
         <RatingAndReview />
+        <FeaturedToday />
         <Faqs />
         <Footer />
       </div>
