@@ -4,7 +4,7 @@ import { ChennalIcon, ShareIcon } from "../Icons";
 import { ratingStars } from "../../../utils/CommonFunction";
 import CustomButton from "../fields/button/CustomButton";
 
-const CommonSmallCard = () => {
+const CommonSmallCard = ({ obj }) => {
   return (
     <div>
       {/* slider type -1  */}
@@ -15,7 +15,7 @@ const CommonSmallCard = () => {
             backgroundImage: `url(${image})`,
           }}>
           <div className=" flex  flex-col flex-grow justify-end">
-            <h5 className="font-poppins text-[16px]  font-semibold text-white opacity-90  mb-2">
+            <h5 className="font-poppins text-base  font-semibold text-white opacity-90  mb-2">
               In elit nullam sit quam
             </h5>
             <span className="flex items-center text-2xl text-white">

@@ -20,21 +20,27 @@ const Hero = () => {
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto flex-grow flex justify-center items-center h-full">
           <div className="flex flex-col-reverse md:flex-row justify-between items-center ">
             <div className="w-full sm:w-[75%] md:w-1/2 lg:w-[39%] pt-10 md:pt-0 pb-12 md:pb-0">
-              <h2 className="font-poppins font-bold text-[35px] lg:text-[40px] xl:text-[55px] text-white leading-[142%]">
+              <h2 className="font-poppins font-bold text-[35px] lg:text-3xl xl:text-[55px] text-white leading-[142%]">
                 TV <span className="common-text-gradient">Shows</span>
               </h2>
-              <p className=" font-poppins text-[16px] font-normal opacity-70 text-white pt-3 leading-[160%] mb-10">
+              <p className=" font-poppins text-base font-normal opacity-70 text-white pt-3 leading-[160%] mb-10">
                 Sit volutpat purus semper metus laoreet amet justo suscipit
                 posuere vestibulum eget erat aliquet quam donec donec
                 suspendisse.
               </p>
               <div className="hidden md:flex">
-                <CustomInput placeholder="Search" customStyles="w-full md:w-[80%]" />
+                <CustomInput
+                  placeholder="Search"
+                  customStyles="w-full md:w-[80%]"
+                />
               </div>
             </div>
             <div className=" w-full sm:w-[70%] md:w-[45%] ">
               <div className="md:hidden my-10">
-                <CustomInput placeholder="Search" customStyles="w-full md:w-[80%]" />
+                <CustomInput
+                  placeholder="Search"
+                  customStyles="w-full md:w-[80%]"
+                />
               </div>
               <div className="border-2 border-solid border-[#FFFFFF4D] rounded-lg z-50 relative overflow-hidden">
                 <img

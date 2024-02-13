@@ -1,14 +1,37 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Category from "../components/category/Category";
-import Header from "../components/common/Header";
-import CommonBigCard from "../components/common/card/CommonBigCard";
+import CommonSmallCard from "../components/common/card/CommonSmallCard";
+import CommonSmallCardSlider from "../components/common/slider/CommonSmallCardSlider";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
-import CommonSmallCard from "../components/common/card/CommonSmallCard";
-import Card from "../components/common/card/Card";
+import { FanFavoriteContent } from "../components/home/Halper";
+import CommonVideoSlider from "../components/common/slider/CommonVideoSlider";
+import CommonBigCardSlider from "../components/common/slider/CommonBigCardSlider";
 
 const Router = () => {
+  const myarr = [
+    {
+      title: "lorem",
+      content: "",
+    },
+    {
+      title: "ipsum",
+      content: "",
+    },
+    {
+      title: "doller",
+      content: "",
+    },
+    {
+      title: "sit",
+      content: "",
+    },
+    {
+      title: "ammet",
+      content: "",
+    },
+  ];
   return (
     <div className="h-screen">
       {/* <Sidebar /> */}
@@ -22,6 +45,10 @@ const Router = () => {
         {/* <CommonBigCard /> */}
         <CommonSmallCard />
         {/* <Card /> */}
+        {/* <CommonCardSlider contentArr={myarr} />{" "} */}
+        <CommonSmallCardSlider cardContent={FanFavoriteContent} />
+        <CommonVideoSlider />
+        <CommonBigCardSlider />
       </div>
     </div>
   );
