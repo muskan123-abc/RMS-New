@@ -53,8 +53,8 @@ const Router = () => {
         <CommonVideoSlider />
         <CommonBigCardSlider />
         <RatingAndReview />
-        <Footer />
         <Faqs />
+        <Footer />
       </div>
     </div>
   );

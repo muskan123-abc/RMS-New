@@ -44,6 +44,11 @@ body {
 .secondry_heading {
   @apply font-poppins font-semibold text-white text-[30px] md:text-3xl text-center;
 }
+.common-text-gradient {
+  @apply bg-[linear-gradient(135deg,#f2cd75_0%,#a97424_100%)] bg-clip-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .secondry_heading span {
   @apply bg-[linear-gradient(135deg,#f2cd75_0%,#a97424_100%)] bg-clip-text;
   -webkit-background-clip: text;
@@ -61,4 +66,21 @@ body {
   background: rgba(255, 255, 255, 0.08);
   -webkit-backdrop-filter: blur(136px);
   backdrop-filter: blur(136.5px);
+}
+.movieIcon_animation {
+  animation: movieIcon_animation 3s ease-in-out infinite alternate;
+}
+
+@keyframes movieIcon_animation {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
 }
