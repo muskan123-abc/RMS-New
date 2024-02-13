@@ -114,3 +114,17 @@ export const homeHeroRightSlider = [
     image: heroLeftImage1,
   },
 ];
+export const navDropdown = [
+  {
+    title: "NEW Release",
+    url: "/category",
+  },
+  {
+    title: "Trending",
+    url: "/category",
+  },
+  {
+    title: "Top 50",
+    url: "/category",
+  },
+];

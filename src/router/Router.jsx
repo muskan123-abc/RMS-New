@@ -13,7 +13,7 @@ const Router = () => {
     <div className="h-screen">
       {/* <Sidebar /> */}
       <div>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />

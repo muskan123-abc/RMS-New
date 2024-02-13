@@ -1,43 +1,104 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import navLogo from "../../assets/images/png/nav-logo.png";
+import { CrossIcon, DownArrow, MenuIcon, NavNotificationIcon } from "./Icons";
 import CustomButton from "./fields/button/CustomButton";
-import CustomInput from "./fields/CustomInput";
-import { DownloadIcon, SearchIcon } from "./Icons";
-
+import { navDropdown } from "../../utils/Helper";
 const Header = () => {
+  const [dropdownOne, setDropdownOne] = useState(false);
+  const [dropdownTwo, setDropdownTwo] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
   return (
-    <div className="h-[80px] bg-red-700 fixed z-10 top-0 left-0 w-full">
-      {/* Header
-      <div className="flex gap-3 flex-wrap">
-        {" "}
-        <CustomButton
-          title="DownLoad" //set button title
-          isGradient={true} // is grident is  visible // controle  btn types
-          varient="button" // set button type like  Link and  Button
-          url="" // set url when button type  is link
-          isVisible={true} // handle  button visibility
-          customStyles="" // add custom styles  \\ use custom styles with importent
-          icon={<DownloadIcon />} // add icon //
-        />
-        <CustomButton
-          title="Lorem" //set button title
-          isGradient={true} // is grident is  visible // controle  btn types
-          varient="button" // set button type like  Link and  Button
-          url="" // set url when button type  is link
-          isVisible={true} // handle  button visibility
-          customStyles="" // add custom styles  \\ use custom styles with importent
-        />
+    <div className="bg-black fixed top-0 left-0 right-0 z-20">
+      {dropdownOne || dropdownTwo ? (
+        <div
+          onClick={() => {
+            setDropdownOne(false);
+            setDropdownTwo(false);
+          }}
+          className="h-screen w-full fixed bg-black/30 z-20"
+        ></div>
+      ) : (
+        ""
+      )}
+      <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
+        <div className="flex items-center justify-between py-2.5">
+          <Link to={"/"}>
+            <img className="max-w-[103px]" src={navLogo} alt="navLogo" />
+          </Link>
+          <span className="sm:hidden" onClick={() => setMobileNav(true)}>
+            <MenuIcon />
+          </span>
+          <div
+            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-20 duration-300 ${
+              mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
+            }`}
+          >
+            <span
+              className="absolute top-3 right-3 sm:hidden"
+              onClick={() => setMobileNav(false)}
+            >
+              <CrossIcon />
+            </span>
+            <div
+              onClick={() => setDropdownTwo(!dropdownTwo)}
+              className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative"
+            >
+              {dropdownTwo ? (
+                <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
+                  {navDropdown.map((obj, index) => {
+                    return (
+                      <Link
+                        key={index}
+                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-[#282525] border-l border-transparent hover:border-white/70"
+                        to={obj.url}
+                      >
+                        {obj.title}
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : (
+                ""
+              )}
+              MOVIES <DownArrow dropdownOne={dropdownTwo} />
+            </div>
+            <div
+              className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative"
+              onClick={() => setDropdownOne(!dropdownOne)}
+            >
+              {dropdownOne ? (
+                <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
+                  {navDropdown.map((obj, index) => {
+                    return (
+                      <Link
+                        key={index}
+                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-[#282525] border-l border-transparent hover:border-white/70"
+                        to={obj.url}
+                      >
+                        {obj.title}
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : (
+                ""
+              )}
+              SHOWS <DownArrow dropdownOne={dropdownOne} />
+            </div>
+            <CustomButton
+              title="Sign In" //set button title
+              isGradient={true} // is grident is  visible // controle  btn types
+              varient="button" // set button type like  Link and  Button
+              isVisible={true} // handle  button visibility
+              customStyles="text-center flex items-center justify-center" // add custom styles  \\ use custom styles with importent
+            />
+            <Link to={"/notifications"}>
+              <NavNotificationIcon />
+            </Link>
+          </div>
+        </div>
       </div>
-      <CustomInput
-        id=""
-        type="password" // set input type like  password/email/text by default it is  text
-        placeholder="passsword*****" // set  input placeholder by  default it is  search
-        buttonIcon={<SearchIcon />} // add custom icon for  button and default have search icon
-        customStyles=" " //style input parent \\use custom styles with importent
-        customStylesInput="" //style input \\use custom styles with importent
-        customStylesButton="" // style  input button \\use custom styles with importent
-        isButtonVisible={true} // handle button visibility
-        onChange={""} // add  onchange event
-      /> */}
     </div>
   );
 };
