@@ -293,3 +293,200 @@ export const PlayBtnIcon = () => {
     </svg>
   );
 };
+// FOOTER SOCIAL ICON HERE
+export const FooterInstaIcon = () => {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_214_3245)">
+        <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
+        <path
+          d="M17.9978 15.3322C16.5289 15.3322 15.3301 16.531 15.3301 18C15.3301 19.469 16.5289 20.6678 17.9978 20.6678C19.4668 20.6678 20.6656 19.469 20.6656 18C20.6656 16.531 19.4668 15.3322 17.9978 15.3322ZM25.9991 18C25.9991 16.8953 26.0091 15.8005 25.9471 14.6978C25.885 13.4169 25.5928 12.2801 24.6562 11.3435C23.7176 10.4049 22.5829 10.1147 21.302 10.0526C20.1973 9.99059 19.1026 10.0006 17.9999 10.0006C16.8951 10.0006 15.8004 9.99059 14.6977 10.0526C13.4168 10.1147 12.2801 10.4069 11.3435 11.3435C10.4049 12.2821 10.1147 13.4169 10.0526 14.6978C9.99059 15.8025 10.0006 16.8973 10.0006 18C10.0006 19.1027 9.99059 20.1995 10.0526 21.3022C10.1147 22.5831 10.4069 23.7199 11.3435 24.6565C12.2821 25.5951 13.4168 25.8853 14.6977 25.9474C15.8024 26.0094 16.8971 25.9994 17.9999 25.9994C19.1046 25.9994 20.1993 26.0094 21.302 25.9474C22.5829 25.8853 23.7196 25.5931 24.6562 24.6565C25.5948 23.7179 25.885 22.5831 25.9471 21.3022C26.0111 20.1995 25.9991 19.1047 25.9991 18ZM17.9978 22.1048C15.7264 22.1048 13.8932 20.2715 13.8932 18C13.8932 15.7285 15.7264 13.8952 17.9978 13.8952C20.2693 13.8952 22.1025 15.7285 22.1025 18C22.1025 20.2715 20.2693 22.1048 17.9978 22.1048ZM22.2707 14.6858C21.7403 14.6858 21.312 14.2575 21.312 13.7271C21.312 13.1968 21.7403 12.7685 22.2707 12.7685C22.801 12.7685 23.2293 13.1968 23.2293 13.7271C23.2294 13.853 23.2048 13.9778 23.1566 14.0942C23.1085 14.2105 23.0379 14.3163 22.9489 14.4053C22.8598 14.4944 22.7541 14.565 22.6377 14.6131C22.5213 14.6612 22.3966 14.6859 22.2707 14.6858Z"
+          fill="white"
+        />
+        <rect
+          x="0.715595"
+          y="0.715595"
+          width="34.5688"
+          height="34.5688"
+          rx="17.2844"
+          stroke="url(#paint0_linear_214_3245)"
+          strokeWidth="1.43119"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_214_3245"
+          x="-71.5595"
+          y="-71.5595"
+          width="179.119"
+          height="179.119"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_214_3245"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_214_3245"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_214_3245"
+          x1="0"
+          y1="0"
+          x2="36"
+          y2="36"
+          gradientUnits="userSpaceOnUse">
+          <stop stopColor="#F2CD75" />
+          <stop offset="1" stopColor="#A97424" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+export const FooterFacebookIcon = () => {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_214_3247)">
+        <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
+        <path
+          d="M15.8984 25.125H18.8984V19.1175H21.6014L21.8984 16.1325H18.8984V14.625C18.8984 14.4261 18.9775 14.2353 19.1181 14.0947C19.2588 13.954 19.4495 13.875 19.6484 13.875H21.8984V10.875H19.6484C18.6539 10.875 17.7001 11.2701 16.9968 11.9733C16.2935 12.6766 15.8984 13.6304 15.8984 14.625V16.1325H14.3984L14.1014 19.1175H15.8984V25.125Z"
+          fill="white"
+        />
+        <rect
+          x="0.715595"
+          y="0.715595"
+          width="34.5688"
+          height="34.5688"
+          rx="17.2844"
+          stroke="url(#paint0_linear_214_3247)"
+          strokeWidth="1.43119"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_214_3247"
+          x="-71.5595"
+          y="-71.5595"
+          width="179.119"
+          height="179.119"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_214_3247"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_214_3247"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_214_3247"
+          x1="0"
+          y1="0"
+          x2="36"
+          y2="36"
+          gradientUnits="userSpaceOnUse">
+          <stop stopColor="#F2CD75" />
+          <stop offset="1" stopColor="#A97424" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+export const FooterLinkdinIcon = () => {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_214_3250)">
+        <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
+        <path
+          d="M14.205 12.7498C14.2048 13.1476 14.0465 13.5291 13.7651 13.8102C13.4836 14.0914 13.102 14.2492 12.7042 14.249C12.3064 14.2488 11.9249 14.0906 11.6438 13.8092C11.3626 13.5277 11.2048 13.1461 11.205 12.7483C11.2052 12.3504 11.3634 11.969 11.6448 11.6878C11.9263 11.4067 12.3079 11.2488 12.7057 11.249C13.1035 11.2492 13.485 11.4074 13.7661 11.6889C14.0473 11.9703 14.2052 12.3519 14.205 12.7498ZM14.25 15.3598H11.25V24.7498H14.25V15.3598ZM18.99 15.3598H16.005V24.7498H18.96V19.8223C18.96 17.0773 22.5375 16.8223 22.5375 19.8223V24.7498H25.5V18.8023C25.5 14.1748 20.205 14.3473 18.96 16.6198L18.99 15.3598Z"
+          fill="white"
+        />
+        <rect
+          x="0.715595"
+          y="0.715595"
+          width="34.5688"
+          height="34.5688"
+          rx="17.2844"
+          stroke="url(#paint0_linear_214_3250)"
+          strokeWidth="1.43119"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_214_3250"
+          x="-71.5595"
+          y="-71.5595"
+          width="179.119"
+          height="179.119"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_214_3250"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_214_3250"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_214_3250"
+          x1="0"
+          y1="0"
+          x2="36"
+          y2="36"
+          gradientUnits="userSpaceOnUse">
+          <stop stopColor="#F2CD75" />
+          <stop offset="1" stopColor="#A97424" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+// FAQ ARROW
+export const FaqArrowIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none">
+      <path d="M7.5 11.25L15 18.75L22.5 11.25" stroke="white" strokeWidth="2" />
+    </svg>
+  );
+};

@@ -8,6 +8,9 @@ import ProductDetails from "../components/product-details/ProductDetails";
 import { FanFavoriteContent } from "../components/home/Halper";
 import CommonVideoSlider from "../components/common/slider/CommonVideoSlider";
 import CommonBigCardSlider from "../components/common/slider/CommonBigCardSlider";
+import RatingAndReview from "../components/home/RatingAndReview";
+import Footer from "../components/common/Footer";
+import Faqs from "../components/common/Faqs";
 
 const Router = () => {
   const myarr = [
@@ -49,6 +52,9 @@ const Router = () => {
         <CommonSmallCardSlider cardContent={FanFavoriteContent} />
         <CommonVideoSlider />
         <CommonBigCardSlider />
+        <RatingAndReview />
+        <Footer />
+        <Faqs />
       </div>
     </div>
   );
