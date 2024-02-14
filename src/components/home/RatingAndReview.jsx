@@ -16,19 +16,11 @@ const RatingAndReview = () => {
 
   const [animationsTriggered, setAnimationsTriggered] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      if (!animationsTriggered && inView) {
-        console.log("Element is in view");
-        setAnimationsTriggered(true);
-      }
-    };
+    if (inView) {
+      setAnimationsTriggered(true);
+    }
+  }, [inView]);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [animationsTriggered, inView]);
   //   SCROLL TOP FUNCTION
   function scrollToTop() {
     window.scrollTo({
