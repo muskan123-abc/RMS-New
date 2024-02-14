@@ -35,26 +35,26 @@ const CommonCardSlider = ({ contentArr }) => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
           slidesToShow: 2,
           dots: true,
         },
       },
+      // {
+      //   breakpoint: 1024,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     dots: true,
+      //   },
+      // },
+      // {
+      //   breakpoint: 992,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     dots: true,
+      //   },
+      // },
       {
-        breakpoint: 600,
+        breakpoint: 780,
         settings: {
           slidesToShow: 1,
           dots: true,
@@ -65,13 +65,13 @@ const CommonCardSlider = ({ contentArr }) => {
   return (
     <>
       <div className="relative max-w-[1140px] mx-auto watch_bg_shadow z-10 after:content-[''] after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:z-0 pb-20">
-        <h2 className="secondry_heading pb-14">
+        <h2 className="secondry_heading pb-8 sm:pb-14">
           Most <span>Popular</span>
         </h2>
-        <Slider ref={watch_slider} {...settings}>
+        <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
           {contentArr.map((obj, i) => (
             <div key={i}>
-              <div className="sm:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-2 mb-2">
+              <div className="max-w-[400px] sm:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-6 sm:mx-auto xl:mx-2 mb-2">
                 <div className={`flex rounded-xl w-full`}>
                   <div>
                     <div className="overflow-hidden rounded-md">
