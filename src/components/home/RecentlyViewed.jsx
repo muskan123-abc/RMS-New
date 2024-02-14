@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { recentlyViewedSlider } from "./Halper";
+import { recentlyViewedSlider } from "./Helper";
 import Slider from "react-slick";
 import { useNavigate } from "react-router";
 import {

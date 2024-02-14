@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { CommonXmildIcon } from "../common/Icons";
 import { formatNumber, ratingStars } from "../../utils/CommonFunction";
-import { reviewList } from "./Halper";
+import { reviewList } from "./Helper";
 import image from "../../assets/images/svg/XMLID_2_.svg";
 import CustomButton from "../common/fields/button/CustomButton";
 
