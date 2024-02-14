@@ -19,7 +19,7 @@ const Hero = () => {
         />
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto flex-grow flex justify-center items-center h-full">
           <div className="flex flex-col-reverse md:flex-row justify-between items-center ">
-            <div className="w-full sm:w-[75%] md:w-1/2 lg:w-[39%] pt-10 md:pt-0 pb-12 md:pb-0">
+            <div className="w-full sm:w-[75%] md:w-1/2 lg:w-[39%] pt-10 md:pt-0 pb-3 md:pb-0">
               <h2 className="font-poppins font-bold text-[35px] lg:text-3xl xl:text-[55px] text-white leading-[142%]">
                 TV <span className="common-text-gradient">Shows</span>
               </h2>

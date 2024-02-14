@@ -47,14 +47,14 @@ const Hero = ({ showSidebar }) => {
             />
           </div>
           <div className="flex flex-col-reverse md:flex-row flex-wrap justify-between md:items-center lg:min-h-screen">
-            <div className=" md:w-6/12 min-[1440px]:w-[55%] min-[1920px]:w-6/12  mt-[50px] md:mt-0 pe-3 lg:pe-0">
-              <h1 className=" h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] xl:h-[140px] font-poppins font-bold max-[400px]:text-[29px] text-[31px] lg:text-3xl xl:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
+            <div className=" md:w-6/12 2xl:w-[55%] min-[1920px]:w-6/12  mt-[50px] md:mt-0 pe-3 lg:pe-0">
+              <h1 className="h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] min-[1350px]:h-[140px] font-poppins font-bold max-[400px]:textapp-[29px] text-[31px] lg:text-3xl xl:text-3xl min-[1440px]:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[75%] min-[1440px]:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3">
                 C<span className="text"></span>
               </h1>
               <p className=" font-poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
                 Csras lectus nunc venenatis incidunt id quis malesuada
               </p>
-              <p className=" font-poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] sm:pe-48 md:pe-0 mb-10 max-w-[420px] xl:max-w-none">
+              <p className=" font-poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] mb-10 md:max-w-[400px] min-[1350px]:max-w-[420px] xl:max-w-none">
                 Amet suscipit risus nulla libero porta purus id rhoncus emper
                 faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa
                 cursus tortor.
@@ -69,9 +69,9 @@ const Hero = ({ showSidebar }) => {
               </div>
             </div>
 
-            <div className="relative   md:w-6/12 min-[1440px]:w-[45%] min-[1920px]:w-6/12 min-h-[370px]  md:min-h-[86vh] min-[1440px]:mr-[-150px] min-[1920px]:mr-0 ">
+            <div className="relative   md:w-6/12 min-[1440px]:w-[45%] min-[1920px]:w-6/12 min-h-[370px] md:min-h-[86vh] min-[1440px]:mr-[-150px] min-[1920px]:mr-0 ">
               <div className="md:w-6/12">
-                <div className="flex md:flex-col gap-5 hero_slider md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                <div className="flex md:flex-col gap-5 hero_slider md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px] min-[1350px]:end-[250px]">
                   {homeHeroLeftSlider.map((obj, index) => {
                     return (
                       <img
@@ -86,7 +86,7 @@ const Hero = ({ showSidebar }) => {
                     );
                   })}
                 </div>
-                <div className="flex md:flex-col gap-5 hero_slider2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
+                <div className="flex md:flex-col gap-5 hero_slider2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px] min-[1350px]:end-[250px]">
                   {homeHeroLeftSlider.map((obj, index) => {
                     return (
                       <img
@@ -103,7 +103,7 @@ const Hero = ({ showSidebar }) => {
                 </div>
               </div>
               <div className="md:w-6/12 mt-[200px] md:mt-0">
-                <div className="flex md:flex-col gap-5 hero_slider3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                <div className="flex md:flex-col gap-5 hero_slider3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:right-0 min-[1350px]:end-[-40px]">
                   {homeHeroRightSlider.map((obj, index) => {
                     return (
                       <img
@@ -118,7 +118,7 @@ const Hero = ({ showSidebar }) => {
                     );
                   })}
                 </div>
-                <div className="flex md:flex-col gap-5 hero_slider4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
+                <div className="flex md:flex-col gap-5 hero_slider4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:right-0 min-[1350px]:end-[-40px]">
                   {homeHeroRightSlider.map((obj, index) => {
                     return (
                       <img
