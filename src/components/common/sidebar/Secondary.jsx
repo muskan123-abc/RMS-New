@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowDownIcon, GlobalIcon, PlusIcon, UsersIcon } from '../icons/sidebar/SideBar'
-import { MessegeList } from '../../../utils/Helper'
+import { messegeList } from '../../../utils/Helper'
 
 const Secondary = () => {
     return (
@@ -26,8 +26,8 @@ const Secondary = () => {
                         <PlusIcon />
                     </div>
                 </div>
-                <div className='overflow-y-auto h-[calc(100vh-150px)] custom__Scroll_bar'>
-                    {MessegeList.map((obj, index) => {
+                <div className='overflow-y-auto h-[calc(100vh-142px)] custom__Scroll_bar'>
+                    {messegeList.map((obj, index) => {
                         return (
                             <div key={index} className='py-2 flex items-center gap-2 px-[15px] opacity-80 hover:opacity-100 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200'>
                                 <img className='w-6 h-6' src={obj.image} alt="profile_img" />

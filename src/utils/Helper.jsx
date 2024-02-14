@@ -150,7 +150,7 @@ export const navDropdown = [
 
 
 
-export const SideTopList = [
+export const sideTopList = [
   {
     title: "Subscriptions",
     rank: "100k",
@@ -164,7 +164,7 @@ export const SideTopList = [
     rank: "1.2M",
   },
 ]
-export const SideList = [
+export const sideList = [
   {
     image: <HomeIcon />,
     title: "Home"
@@ -203,7 +203,7 @@ export const SideList = [
   },
 ]
 
-export const MessegeList = [
+export const messegeList = [
   {
     image: JaneCooper,
     title: "Cooper",
