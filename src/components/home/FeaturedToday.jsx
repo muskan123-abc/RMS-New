@@ -13,7 +13,7 @@ import {
 import CustomButton from "../common/fields/button/CustomButton";
 import { featuredSlider } from "./Halper";
 
-const FeaturedToday = () => {
+const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
   const navigate = useNavigate();
   // Ref for the Slider component
@@ -97,7 +97,8 @@ const FeaturedToday = () => {
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
           <CommonXmildIcon />
         </span>
-        <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative">
+        <div
+          className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
           <div className=" flex flex-col md:flex-row items-center pb-10 max-w-[1140px] mx-auto ">
             <div className="w-full  md:w-1/2  lg:w-[40%] min-[1440px]:w-[35%]">
               <h2 className="secondry_heading md:!text-start">

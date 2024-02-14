@@ -24,32 +24,32 @@ export const mostPopularSlider = [
   {
     image: popularSliderImg1,
     title: "Id tristique imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg2,
     title: "Pellentesque vitae egestas",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg3,
     title: "Ridiculus vivamus",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg1,
     title: "Id tristique imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg2,
     title: "Pellentesque vitae egestas",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg3,
     title: "Ridiculus vivamus",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
 ];
 // INDIAN TV SHOW SLIDER DATA
@@ -57,32 +57,32 @@ export const indianTvShowSlider = [
   {
     image: IndianShowSliderImg1,
     title: "Mauris nec dictumst",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: IndianShowSliderImg2,
     title: "Lacinia justo urna",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: IndianShowSliderImg3,
     title: "Pellentesque imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: IndianShowSliderImg1,
     title: "Mauris nec dictumst",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: IndianShowSliderImg2,
     title: "Lacinia justo urna",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: IndianShowSliderImg3,
     title: "Pellentesque imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
 ];
 // ADVENTURE SLIDER DATA
@@ -90,32 +90,32 @@ export const adventureSlider = [
   {
     image: adventureSliderImg1,
     title: "Fringilla arcu scelerisque",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: adventureSliderImg2,
     title: "Aetiam risus mgnvitae",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: adventureSliderImg3,
     title: "Malesuada faucibus",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: adventureSliderImg1,
     title: "Fringilla arcu scelerisque",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: adventureSliderImg2,
     title: "Aetiam risus mgnvitae",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: adventureSliderImg3,
     title: "Malesuada faucibus",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
 ];
 // ROMANCE SLIDER DATA
@@ -123,32 +123,32 @@ export const romanceSlider = [
   {
     image: romanceSliderImg1,
     title: "Magna etiam",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: romanceSliderImg2,
     title: "Dictum nunc",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: romanceSliderImg3,
     title: "Suspendisse ultrices ",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: romanceSliderImg1,
     title: "Magna etiam",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: romanceSliderImg2,
     title: "Dictum nunc",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: romanceSliderImg3,
     title: "Suspendisse ultrices ",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
 ];
 // COMEDIE SLIDER DATA
@@ -156,31 +156,31 @@ export const comedieSlider = [
   {
     image: comedieSliderImg1,
     title: "Suspendisse ullamcorper",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: comedieSliderImg2,
     title: "Libero enim",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: comedieSliderImg3,
     title: "Elementum ",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: comedieSliderImg1,
     title: "Suspendisse ullamcorper",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: comedieSliderImg2,
     title: "Libero enim",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: comedieSliderImg3,
     title: "Elementum ",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
 ];

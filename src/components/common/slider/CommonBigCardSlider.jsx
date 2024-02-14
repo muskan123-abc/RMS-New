@@ -10,7 +10,7 @@ import {
 } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
 
-const CommonBigCardSlider = () => {
+const CommonBigCardSlider = ({ showSidebar }) => {
   //FOR GETTING PATH
   // IMPORT FROM PROVIDER'S STATE
   const [cardData, setCardData] = useState(false);
@@ -67,7 +67,12 @@ const CommonBigCardSlider = () => {
   };
   return (
     <div>
-      <div className="relative z-50 max-w-[1140px] mx-auto">
+      <div
+        className={`relative z-10  ${
+          showSidebar
+            ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+            : "max-w-[1140px]"
+        } mx-auto`}>
         <Slider ref={mostRatedSlider_slider} {...settings} className="relative">
           {/* MOST RATED SLIDER CARDS BY MAP  */}
           {mostRatedSliderHome.map((obj, index) => {

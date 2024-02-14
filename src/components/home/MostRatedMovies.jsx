@@ -2,7 +2,7 @@ import React from "react";
 import CommonBigCardSlider from "../common/slider/CommonBigCardSlider";
 import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
 import { useLocation } from "react-router";
-const MostRatedMovies = () => {
+const MostRatedMovies = ({ showSidebar }) => {
   const location = useLocation();
 
   return (
@@ -22,7 +22,7 @@ const MostRatedMovies = () => {
       </h2>
       <div className="my-12">
         {" "}
-        <CommonBigCardSlider />
+        <CommonBigCardSlider showSidebar={showSidebar} />
       </div>
     </div>
   );
