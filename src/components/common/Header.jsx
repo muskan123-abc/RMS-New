@@ -4,7 +4,7 @@ import navLogo from "../../assets/images/png/nav-logo.png";
 import { CrossIcon, DownArrow, MenuIcon, NavNotificationIcon } from "./Icons";
 import CustomButton from "./fields/button/CustomButton";
 import { navDropdown } from "../../utils/Helper";
-const Header = ({ showSidebar,toggleSidebar }) => {
+const Header = ({ showSidebar, toggleSidebar }) => {
   const [moviesDropdown, setMoviesDropdown] = useState(false);
   const [showsDropdown, setShowsDropdown] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
@@ -30,7 +30,7 @@ const Header = ({ showSidebar,toggleSidebar }) => {
             <MenuIcon />
           </span>
           <div
-            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-20 duration-300 ${
+            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-40 duration-300 ${
               mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
             }`}
           >
