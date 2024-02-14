@@ -85,22 +85,22 @@ const Footer = () => {
             </div>
             <div className="w-full lg:w-8/12 xl:w-7/12">
               <div className="flex flex-wrap mt-2 justify-between">
-                {footerList.map((data, index) => {
+                {footerList.map((val, index) => {
                   return (
                     <div
                       key={index}
                       className=" max-[576px]:w-5/12 min-[576px]:w-3/12 min-[576px]:pe-6 sm:w-3/12 sm:pe-0 mt-8 lg:mt-0">
                       <p className="  font-medium text-sm text-white mb-0">
-                        {data.title}
+                        {val.title}
                       </p>
                       <ul>
                         <li className="pt-1">
-                          {data &&
-                            data.footerLinks.map((obj, index) => {
+                          {val &&
+                            val.footerLinks.map((obj, index) => {
                               return (
                                 <div key={index} className="mt-2">
                                   <Link
-                                    aria-label={data.footerLinks}
+                                    aria-label={val.footerLinks}
                                     to={obj.url}
                                     className=" font-normal text-sm text-[#B2B2B2] cursor-pointer hover:text-white duration-200">
                                     {obj.link}

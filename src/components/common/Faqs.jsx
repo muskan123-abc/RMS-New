@@ -33,7 +33,7 @@ const Faqs = () => {
           <div className="flex  justify-center flex-wrap">
             <div className=" md:w-9/12 lg:w-8/12">
               {/* FAQ Items */}
-              {faqList.map((item, index) => (
+              {faqList.map((obj, index) => (
                 <div
                   key={index}
                   className="faq-wrapper text-white transition ease-in-out duration-300  my-3 md:my-2 py-2 sm:py-3 lg:py-2 bg-transparent mb-0 cursor-pointer"
@@ -44,7 +44,7 @@ const Faqs = () => {
                       className={`${
                         activeIndex === index ? "common-text-gradient" : ""
                       } font-poppins flex items-start md:items-center transition ease-in-out duration-300 justify-between text-[15px] sm:text-base xl:text-2xl text-white font-semibold cursor-pointer `}>
-                      {item.title}
+                      {obj.title}
                     </h3>
                     {/* FAQ Item Arrow Icon */}
                     <span
@@ -60,7 +60,7 @@ const Faqs = () => {
                       activeIndex === index ? "h-[60px]" : "h-0"
                     }`}>
                     <p className="text-[13px] md:text-base font-normal font-poppins text-[#6C757D] pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
-                      {item.description}
+                      {obj.description}
                     </p>
                   </div>
                 </div>

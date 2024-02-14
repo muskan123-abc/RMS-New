@@ -144,25 +144,25 @@ const RatingAndReview = () => {
             </div>
             <div className="w-full lg:w-7/12 xl:w-6/12 min-[1440px]:w-[65%] 3xl:w-6/12 min-[1440px]:px-3 ">
               <div className="flex flex-wrap mt-16 -mx-3 lg:ps-6 xl:ps-0">
-                {reviewList.map((data, ind) => {
+                {reviewList.map((obj, index) => {
                   return (
                     <div
-                      key={ind}
+                      key={index}
                       className="w-full sm:w-6/12 mb-5 sm:mb-0 px-3">
                       <div className=" border border-[#404040] rounded-xl py-5 sm:py-0 sm:pt-5 sm:pb-[42px] ps-4  pe-5 h-full hover:border-[#E1B862] duration-200">
                         <h5 className=" font-poppins font-semibold text-base text-white mb-0">
-                          {data.title}
+                          {obj.title}
                         </h5>
                         <div className="flex justify-between items-center mt-[10px]">
                           <p className=" font-poppins font-normal text-sm text-[#B2B2B2] mb-0">
-                            {data.date}
+                            {obj.date}
                           </p>
                           <span className="flex gap-1">
-                            {ratingStars(data.rating)}
+                            {ratingStars(obj.rating)}
                           </span>
                         </div>
                         <p className=" font-poppins font-normal text-sm text-[#B2B2B2] mb-0 mt-6 leading-[22px]">
-                          {data.description}
+                          {obj.description}
                         </p>
                       </div>
                     </div>

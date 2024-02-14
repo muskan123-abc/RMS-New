@@ -71,7 +71,7 @@ const Hero = ({ showSidebar }) => {
             <div className="relative   md:w-6/12 min-[1440px]:w-[45%] min-[1920px]:w-6/12 min-h-[370px]  md:min-h-[86vh] min-[1440px]:mr-[-150px] min-[1920px]:mr-0 ">
               <div className="md:w-6/12">
                 <div className="flex md:flex-col gap-5 hero_slider md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
-                  {homeHeroLeftSlider.map((data, index) => {
+                  {homeHeroLeftSlider.map((obj, index) => {
                     return (
                       <img
                         key={index}
@@ -79,21 +79,21 @@ const Hero = ({ showSidebar }) => {
                         width={208}
                         height={161}
                         className=" w-full border-2 border-[#645E56] rounded-[8px]"
-                        src={data.image}
+                        src={obj.image}
                         alt="hero_img_slider"
                       />
                     );
                   })}
                 </div>
                 <div className="flex md:flex-col gap-5 hero_slider2 md:py-3 absolute md:px-0 w-[180px] lg:w-[240px] xl:w-[270px] md:end-[199px] lg:end-[260px] xl:end-[290px]">
-                  {homeHeroLeftSlider.map((data, index) => {
+                  {homeHeroLeftSlider.map((obj, index) => {
                     return (
                       <img
                         key={index}
                         width={208}
                         height={161}
                         className=" w-full border-2 border-[#645E56] rounded-[8px]"
-                        src={data.image}
+                        src={obj.image}
                         alt="hero_img_slider"
                         loading="lazy"
                       />
@@ -103,14 +103,14 @@ const Hero = ({ showSidebar }) => {
               </div>
               <div className="md:w-6/12 mt-[200px] md:mt-0">
                 <div className="flex md:flex-col gap-5 hero_slider3 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
-                  {homeHeroRightSlider.map((data, index) => {
+                  {homeHeroRightSlider.map((obj, index) => {
                     return (
                       <img
                         key={index}
                         width={208}
                         height={161}
                         className=" w-full border-2 border-[#645E56] rounded-[8px]"
-                        src={data.image}
+                        src={obj.image}
                         alt="hero_img_slider"
                         loading="lazy"
                       />
@@ -118,14 +118,14 @@ const Hero = ({ showSidebar }) => {
                   })}
                 </div>
                 <div className="flex md:flex-col gap-5 hero_slider4 md:py-3 absolute md:px-0 w-[180px]  lg:w-[240px] xl:w-[270px] md:end-0">
-                  {homeHeroRightSlider.map((data, index) => {
+                  {homeHeroRightSlider.map((obj, index) => {
                     return (
                       <img
                         key={index}
                         width={208}
                         height={161}
                         className=" w-full border-2 border-[#645E56] rounded-[8px]"
-                        src={data.image}
+                        src={obj.image}
                         loading="lazy"
                         alt="hero_img_slider"
                       />

@@ -1,6 +1,6 @@
 import React from "react";
 import { ratingStars } from "../../../utils/CommonFunction";
-import image from "../../../assets/images/romanceTvShows/webp/romance-slider-img1.webp";
+import image from "../../../assets/images/romanceTvShows/webp/img-1.webp";
 const Card = ({ myarr }) => {
   return (
     <div>
