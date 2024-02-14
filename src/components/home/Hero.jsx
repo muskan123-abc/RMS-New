@@ -27,10 +27,7 @@ const Hero = ({ showSidebar }) => {
     <>
       {/* Hero section with background image */}
       <section
-        className={`overflow-hidden min-h-screen grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 flex items-center ${
-          showSidebar ? "min-[1440px]:pl-4" : " pl-0"
-        }`}
-      >
+        className={`overflow-hidden min-h-screen grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 flex items-center `}>
         {/* Bottom blur effect */}
         <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
         {/* Movie icon at the top-left corner */}
@@ -40,8 +37,7 @@ const Hero = ({ showSidebar }) => {
         <div
           className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 px-3 ${
             showSidebar ? "ms-0" : "ms-auto"
-          }`}
-        >
+          }`}>
           <div className="md:hidden mb-10">
             <CustomInput
               placeholder="Search"

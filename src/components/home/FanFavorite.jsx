@@ -1,7 +1,7 @@
 import React from "react";
 import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
 import { FanFavoriteContent } from "./Halper";
-const FanFavorite = () => {
+const FanFavorite = ({ showSidebar }) => {
   return (
     <div className=" relative py-12 ">
       {" "}
@@ -11,7 +11,10 @@ const FanFavorite = () => {
         Fan <span>favorites</span>
       </h2>
       <div className="my-12">
-        <CommonSmallCardSlider cardContent={FanFavoriteContent} />
+        <CommonSmallCardSlider
+          showSidebar={showSidebar}
+          cardContent={FanFavoriteContent}
+        />
       </div>
     </div>
   );

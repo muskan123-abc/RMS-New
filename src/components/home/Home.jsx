@@ -13,14 +13,14 @@ const Home = ({ showSidebar }) => {
   return (
     <>
       <Hero showSidebar={showSidebar} />
-      <WatchVideos />
-      <FanFavorite />
-      <MostRatedMovies />
-      <FeaturedToday />
-      <RatingAndReview />
-      <RecentlyViewed />
-      <Faqs />
-      <Footer />
+      <WatchVideos showSidebar={showSidebar} />
+      <FanFavorite showSidebar={showSidebar} />
+      <MostRatedMovies showSidebar={showSidebar} />
+      <FeaturedToday showSidebar={showSidebar} />
+      <RatingAndReview showSidebar={showSidebar} />
+      <RecentlyViewed showSidebar={showSidebar} />
+      <Faqs showSidebar={showSidebar} />
+      <Footer showSidebar={showSidebar} />
     </>
   );
 };
