@@ -2,7 +2,7 @@ import React from "react";
 import CommonVideoSlider from "../common/slider/CommonVideoSlider";
 import { watchVideosSlider } from "./Halper";
 import image from "../../assets/images/webp/footer-bg-reel-img-2.webp";
-const WatchVideos = () => {
+const WatchVideos = ({ showSidebar }) => {
   return (
     <div
       className="relative pt-28
@@ -18,7 +18,10 @@ const WatchVideos = () => {
 
       <div className=" my-12">
         {" "}
-        <CommonVideoSlider content={watchVideosSlider} />
+        <CommonVideoSlider
+          showSidebar={showSidebar}
+          content={watchVideosSlider}
+        />
       </div>
     </div>
   );

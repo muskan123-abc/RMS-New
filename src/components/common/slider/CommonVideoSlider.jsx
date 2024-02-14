@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import { ratingStars } from "../../../utils/CommonFunction";
 import CustomButton from "../fields/button/CustomButton";
 
-const CommonVideoSlider = ({ content }) => {
+const CommonVideoSlider = ({ content, showSidebar }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(-1);
   // Ref for the Slider component
   const watch_slider = useRef(null);
@@ -65,7 +65,12 @@ const CommonVideoSlider = ({ content }) => {
   };
 
   return (
-    <div className=" relative mx-auto max-w-[1140px] ">
+    <div
+      className={` relative  ${
+        showSidebar
+          ? " ml-auto mr-0 min-[1300px]:max-w-[800px] min-[1400px]:max-w-[950px]"
+          : "mx-auto max-w-[1140px]"
+      } `}>
       <Slider
         ref={watch_slider}
         {...settings}
