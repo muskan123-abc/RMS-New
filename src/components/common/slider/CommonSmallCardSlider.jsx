@@ -10,7 +10,7 @@ import { ratingStars } from "../../../utils/CommonFunction";
 import CustomButton from "../fields/button/CustomButton";
 import Slider from "react-slick";
 
-const CommonSmallCardSlider = ({ cardContent }) => {
+const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
   const [cardData, setCardData] = useState("");
   const [heartClicked, setHeartClicked] = useState([]);
 
@@ -99,7 +99,12 @@ const CommonSmallCardSlider = ({ cardContent }) => {
     ],
   };
   return (
-    <div className="max-w-[1140px] mx-auto relative">
+    <div
+      className={` mx-auto relative ${
+        showSidebar
+          ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+          : "max-w-[1140px]"
+      }`}>
       <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
         {cardContent.map((obj, index) => {
           const isLiked = heartClicked.includes(index);

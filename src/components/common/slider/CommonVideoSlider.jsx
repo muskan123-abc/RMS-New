@@ -68,7 +68,7 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
     <div
       className={` relative  ${
         showSidebar
-          ? " ml-auto mr-0 min-[1300px]:max-w-[800px] min-[1400px]:max-w-[950px]"
+          ? " pr-20 mx-auto mr-0 min-[1300px]:max-w-[950px] min-[1400px]:max-w-[950px]"
           : "mx-auto max-w-[1140px]"
       } `}>
       <Slider
@@ -165,7 +165,11 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
         <button
           aria-label="Slider Arrow"
           onClick={handleRightArrow}
-          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:translate-x-full right-[-20px] `}>
+          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 ${
+            showSidebar
+              ? " -translate-x-full min-[1350px]:-translate-x-[130%] "
+              : "translate-x-[100%] "
+          } min-[1400px]:translate-x-full right-[-20px] `}>
           <CommonRightArrowIcon />
         </button>
       </div>
