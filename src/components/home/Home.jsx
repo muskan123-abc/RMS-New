@@ -9,10 +9,10 @@ import RecentlyViewed from "./RecentlyViewed";
 import Faqs from "../common/Faqs";
 import Footer from "../common/Footer";
 
-const Home = () => {
+const Home = ({ showSidebar }) => {
   return (
     <>
-      <Hero />
+      <Hero showSidebar={showSidebar} />
       <WatchVideos />
       <FanFavorite />
       <MostRatedMovies />
