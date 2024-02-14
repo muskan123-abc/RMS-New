@@ -4,7 +4,7 @@ import navLogo from "../../assets/images/png/nav-logo.png";
 import { CrossIcon, DownArrow, MenuIcon, NavNotificationIcon } from "./Icons";
 import CustomButton from "./fields/button/CustomButton";
 import { navDropdown } from "../../utils/Helper";
-const Header = () => {
+const Header = ({ showSidebar,toggleSidebar }) => {
   const [moviesDropdown, setMoviesDropdown] = useState(false);
   const [showsDropdown, setShowsDropdown] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
@@ -86,13 +86,20 @@ const Header = () => {
               )}
               SHOWS <DownArrow moviesDropdown={moviesDropdown} />
             </div>
-            <CustomButton
-              title="Sign In" //set button title
-              isGradient={true} // is grident is  visible // controle  btn types
-              varient="button" // set button type like  Link and  Button
-              isVisible={true} // handle  button visibility
-              customStyles="text-center flex items-center justify-center" // add custom styles  \\ use custom styles with importent
-            />
+            {showSidebar ? (
+              ""
+            ) : (
+              <div onClick={() => toggleSidebar(false)}>
+                <CustomButton
+                  title="Sign In" //set button title
+                  isGradient={true} // is grident is  visible // controle  btn types
+                  varient="button" // set button type like  Link and  Button
+                  isVisible={true} // handle  button visibility
+                  customStyles="text-center flex items-center justify-center" // add custom styles  \\ use custom styles with importent
+                />
+              </div>
+            )}
+
             <Link to={"/notifications"}>
               <NavNotificationIcon />
             </Link>
