@@ -15,7 +15,7 @@ const Router = () => {
   };
   return (
     <div className="h-screen flex relative">
-      {showSidebar ? <Sidebar setShowSidebar={setShowSidebar} /> : ""}
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="w-full overflow-y-auto overflow-x-hidden">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
