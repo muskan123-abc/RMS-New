@@ -113,6 +113,18 @@ export const homeHeroRightSlider = [
   {
     image: heroLeftImage1,
   },
+  {
+    image: heroLeftImage1,
+  },
+  {
+    image: heroLeftImage1,
+  },
+  {
+    image: heroLeftImage1,
+  },
+  {
+    image: heroLeftImage1,
+  },
 ];
 export const navDropdown = [
   {

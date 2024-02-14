@@ -1,87 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
+
 .hero_slider {
     animation-name: textSCroll;
-    animation-duration: 40s;
+    animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: translateY(-1160px);
-    animation-delay: -40s;
+    animation-delay: -100s;
 }
 
 .hero_slider2 {
     animation-name: textSCroll;
-    animation-delay: -20s;
-    animation-duration: 40s;
+    animation-delay: -50s;
+    animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: translateY(-1160px);
 }
 
 @keyframes textSCroll {
     0% {
-        transform: translateY(-1160px);
-        -webkit-transform: translateY(-1160px);
-        -moz-transform: translateY(-1160px);
-        -ms-transform: translateY(-1160px);
-        -o-transform: translateY(-1160px);
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
     }
 
     100% {
-        transform: translateY(1160px);
-    }
-}
-
-@keyframes textSCroll {
-    0% {
-        transform: translateY(-1160px);
-        -webkit-transform: translateY(-1160px);
-        -moz-transform: translateY(-1160px);
-        -ms-transform: translateY(-1160px);
-        -o-transform: translateY(-1160px);
-    }
-
-    100% {
-        transform: translateY(1160px);
+        transform: translateY(100%);
     }
 }
 
 .hero_slider3 {
     animation-name: textSCroll2;
-    animation-duration: 40s;
+    animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: translateY(-1160px);
-    animation-delay: -40s;
+    animation-delay: -100s;
 }
 
 .hero_slider4 {
     animation-name: textSCroll2;
-    animation-delay: -20s;
-    animation-duration: 40s;
+    animation-delay: -50s;
+    animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: translateY(-1160px);
 }
 
 @keyframes textSCroll2 {
     0% {
-        transform: translateY(1160px);
-        -webkit-transform: translateY(1160px);
-        -moz-transform: translateY(1160px);
-        -ms-transform: translateY(1160px);
-        -o-transform: translateY(1160px);
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
     }
 
     100% {
-        transform: translateY(-1160px);
+        transform: translateY(-100%);
     }
 }
+
+.notification_hover_animation:hover {
+    animation: notification_hover_animation 0.5s ease-in-out alternate;
+}
+
+@keyframes notification_hover_animation {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.bell_icon:hover .notification_hover_animation {
+    animation: notification_hover_animation 0.5s ease-in-out 1 alternate;
+}
+
 @media (max-width: 767.98px) {
+
     /* try */
     .hero_slider {
         animation-name: textSCroll;
@@ -160,25 +168,4 @@
             transform: translateX(-800px);
         }
     }
-}
-.notification_hover_animation:hover {
-    animation: notification_hover_animation 0.5s ease-in-out alternate;
-}
-
-@keyframes notification_hover_animation {
-    0% {
-        transform: rotate(-5deg);
-    }
-
-    50% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        transform: rotate(-5deg);
-    }
-}
-
-.bell_icon:hover .notification_hover_animation {
-    animation: notification_hover_animation 0.5s ease-in-out 1 alternate;
 }
