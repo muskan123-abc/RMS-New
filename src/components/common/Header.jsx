@@ -26,7 +26,10 @@ const Header = ({ showSidebar, toggleSidebar }) => {
           <Link to={"/"}>
             <img className="max-w-[103px]" src={navLogo} alt="navLogo" />
           </Link>
-          <span className="sm:hidden" onClick={() => setMobileNav(true)}>
+          <span
+            className="sm:hidden cursor-pointer"
+            onClick={() => setMobileNav(true)}
+          >
             <MenuIcon />
           </span>
           <div
@@ -35,7 +38,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
             }`}
           >
             <span
-              className="absolute top-3 right-3 sm:hidden"
+              className="absolute top-3 right-3 sm:hidden cursor-pointer"
               onClick={() => setMobileNav(false)}
             >
               <CrossIcon />

@@ -1,7 +1,7 @@
 import React from "react";
 import CustomButton from "../fields/button/CustomButton";
 import image from "../../../assets/images/webp/robin_hood.webp";
-const CommonBigCard = ({ title, ratingStar, description, btnText }) => {
+const MoviesRatedCard = ({ title, ratingStar, description, btnText }) => {
   return (
     <>
       <div className="px-5 sm:px-10 py-[30px] bg-[#FFFFFF0A] backdrop-blur-[130px] w-full flex relative rounded-xl md:flex-row flex-col items-center gap-x-12 max-w-[1140px] mx-auto ">
@@ -31,4 +31,4 @@ const CommonBigCard = ({ title, ratingStar, description, btnText }) => {
   );
 };
 
-export default CommonBigCard;
+export default MoviesRatedCard;

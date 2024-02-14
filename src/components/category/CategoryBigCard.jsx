@@ -1,7 +1,7 @@
 import React from "react";
-import CommonBigCard from "../common/card/CommonBigCard";
 import { ratingStars } from "../../utils/CommonFunction";
 import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
+import CommonBigCardSlider from "../common/slider/CommonBigCardSlider";
 
 const CategoryBigCard = () => {
   return (
@@ -13,7 +13,7 @@ const CategoryBigCard = () => {
           loading="lazy"
           alt="reel"
         />
-        <CommonBigCard
+        <CommonBigCardSlider
           title="There’s even more to watch."
           ratingStar={ratingStars(4)}
           description="Vitae congue aliquam malesuada nec malesuada faucibus elit netus. Donec vestibulum velit laoreet ornare fermentum et. Aliquet ut adipiscing volutpat fermentum nisl massa. Cras cras amet nisl id adipiscing vel vitae euismod nunc. Platea tincidunt vulputate etiam massa porta at ipsum maecenas. Convallis sed ac egestas non odio. Mus pellentesque."
