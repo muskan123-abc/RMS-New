@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaqArrowIcon, CommonXmildIcon } from "./Icons";
-import { faqList } from "../home/Halper";
+import { faqList } from "../home/Helper";
 import xml from "../../assets/images/svg/XMLID_2_.svg";
 
 const Faqs = () => {

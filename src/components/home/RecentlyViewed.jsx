@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { recentlyViewedSlider } from "./Halper";
+import { recentlyViewedSlider } from "./Helper";
 import Slider from "react-slick";
 import { useNavigate } from "react-router";
 import {
@@ -36,6 +36,8 @@ const RecentlyViewed = ({ showSidebar }) => {
   //SLIDER SETTING
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     nextArrow: ".left-arrow",
     prevArrow: ".right-arrow",
@@ -105,6 +107,9 @@ const RecentlyViewed = ({ showSidebar }) => {
             ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
             : "max-w-[1140px]"
         }`}>
+        <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
+          Reviews & <span className="common-text-gradient">Rating</span>
+        </h2>
         <div className="justify-center gap-10 xl:gap-0 pt-10 xl:pt-0 hidden xl:flex">
           <button
             aria-label="Slider Arrow"
@@ -121,62 +126,64 @@ const RecentlyViewed = ({ showSidebar }) => {
             <CommonRightArrowIcon />
           </button>
         </div>
-        <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
-          {recentlyViewedSlider.map((value, index) => {
-            return (
-              <div onClick={() => onNavigateHandler(value)} key={index}>
-                <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 mx-[10px] mb-2">
-                  <div
-                    className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[222px] relative px-2 `}
-                    style={{
-                      backgroundImage: `url(${value.image})`,
-                    }}>
-                    <div className=" flex flex-col flex-grow justify-end">
-                      <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
-                        {value.title}
-                      </h5>
-                      <span className="flex items-center text-2xl text-white">
-                        <ChennalIcon />+
-                      </span>
+        <div className="my-12">
+          <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
+            {recentlyViewedSlider.map((value, index) => {
+              return (
+                <div onClick={() => onNavigateHandler(value)} key={index}>
+                  <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 mx-[10px] mb-2">
+                    <div
+                      className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[439px] relative px-2 `}
+                      style={{
+                        backgroundImage: `url(${value.image})`,
+                      }}>
+                      <div className=" flex flex-col flex-grow justify-end">
+                        <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
+                          {value.title}
+                        </h5>
+                        <span className="flex items-center text-2xl text-white">
+                          <ChennalIcon />+
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col w-full gap-2 sm:gap-4 justify-between mt-4">
+                      <CustomButton
+                        title="Add a Watchlist" //set button title
+                        isGradient={true} // is grident is  visible // controle  btn types
+                        varient="button" // set button type like  Link and  Button
+                        url="" // set url when button type  is link
+                        isVisible={true} // handle  button visibility
+                        customStyles="flex justify-center !px-0" // add custom styles  \\ use custom styles with importent
+                        setButtonFull="w-full"
+                      />
+                      <CustomButton
+                        title="Share" //set button title
+                        isGradient={true} // is grident is  visible // controle  btn types
+                        varient="button" // set button type like  Link and  Button
+                        url="" // set url when button type  is link
+                        isVisible={true} // handle  button visibility
+                        customStyles=" flex justify-center" // add custom styles  \\ use custom styles with importent
+                        icon={<ShareIcon />}
+                        setButtonFull="w-full"
+                      />
                     </div>
                   </div>
-                  <div className="flex flex-col w-full gap-2 sm:gap-4 justify-between mt-4">
-                    <CustomButton
-                      title="Add a Watchlist" //set button title
-                      isGradient={true} // is grident is  visible // controle  btn types
-                      varient="button" // set button type like  Link and  Button
-                      url="" // set url when button type  is link
-                      isVisible={true} // handle  button visibility
-                      customStyles="flex justify-center !px-0" // add custom styles  \\ use custom styles with importent
-                      setButtonFull="w-full"
-                    />
-                    <CustomButton
-                      title="Share" //set button title
-                      isGradient={true} // is grident is  visible // controle  btn types
-                      varient="button" // set button type like  Link and  Button
-                      url="" // set url when button type  is link
-                      isVisible={true} // handle  button visibility
-                      customStyles=" flex justify-center" // add custom styles  \\ use custom styles with importent
-                      icon={<ShareIcon />}
-                      setButtonFull="w-full"
-                    />
-                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
-      </div>
-      <div className="text-center mt-12 mb-20">
-        {" "}
-        <CustomButton
-          title="All Viewed" //set button title
-          isGradient={true} // is grident is  visible // controle  btn types
-          varient="button" // set button type like  Link and  Button
-          url="" // set url when button type  is link
-          isVisible={true} // handle  button visibility
-          customStyles=" flex justify-center" // add custom styles  \\ use custom styles with importent
-        />
+              );
+            })}
+          </Slider>
+        </div>
+        <div className="text-center mt-12 mb-20">
+          {" "}
+          <CustomButton
+            title="All Viewed" //set button title
+            isGradient={true} // is grident is  visible // controle  btn types
+            varient="button" // set button type like  Link and  Button
+            url="" // set url when button type  is link
+            isVisible={true} // handle  button visibility
+            customStyles=" flex justify-center" // add custom styles  \\ use custom styles with importent
+          />
+        </div>
       </div>
     </div>
   );

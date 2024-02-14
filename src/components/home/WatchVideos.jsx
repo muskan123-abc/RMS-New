@@ -1,6 +1,6 @@
 import React from "react";
 import CommonVideoSlider from "../common/slider/CommonVideoSlider";
-import { watchVideosSlider } from "./Halper";
+import { watchVideosSlider } from "./Helper";
 import image from "../../assets/images/webp/footer-bg-reel-img-2.webp";
 const WatchVideos = ({ showSidebar }) => {
   return (

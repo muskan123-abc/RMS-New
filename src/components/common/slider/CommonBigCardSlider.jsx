@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import Slider from "react-slick";
 import { formatNumber, ratingStars } from "../../../utils/CommonFunction";
-import { mostRatedSliderHome } from "../../home/Halper";
+import { mostRatedSliderHome } from "../../home/Helper";
 import {
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
@@ -34,6 +34,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   // SLIDER PROPERTIES AND RESPONSIVE
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     arrows: false,
     speed: 500,

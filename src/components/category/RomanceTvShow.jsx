@@ -1,6 +1,6 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { romanceSlider } from "./Halper";
+import { romanceSlider } from "./Helper";
 
 const RomanceTvShow = () => {
   return (

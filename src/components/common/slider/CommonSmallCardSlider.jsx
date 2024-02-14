@@ -34,20 +34,20 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
 
   var settings = {
     dots: false,
+    loop: true,
     infinite: true,
     nextArrow: ".left-arrow",
     prevArrow: ".right-arrow",
     arrows: false,
     speed: 500,
     autoplay: false,
-    slidesToShow: 4,
+    slidesToShow: showSidebar ? 3 : 3,
     slidesToScroll: 1,
-
     responsive: [
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: showSidebar ? 3 : 3,
           slidesToScroll: 1,
           dots: false,
         },
@@ -55,7 +55,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: showSidebar ? 3 : 3,
 
           dots: true,
         },
@@ -63,7 +63,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: showSidebar ? 3 : 3,
           dots: true,
         },
       },
@@ -110,7 +110,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
           const isLiked = heartClicked.includes(index);
           return (
             <div className=" flex justify-center">
-              <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2  mb-2 mx-auto w-[98%] sm:max-w-[270px]">
+              <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2  mb-2 mx-auto w-[98%] ">
                 <div
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
                   style={{
@@ -138,7 +138,8 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
                         varient="button" // set button type like  Link and  Button
                         url="" // set url when button type  is link
                         isVisible={true} // handle  button visibility
-                        customStyles="" // add custom styles  \\ use custom styles with importent
+                        customStyles="flex justify-center" // add custom styles  \\ use custom styles with importent
+                        setButtonFull="w-full"
                       />
                       <CustomButton
                         title="Trailer" //set button title
@@ -146,7 +147,8 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
                         varient="button" // set button type like  Link and  Button
                         url="" // set url when button type  is link
                         isVisible={true} // handle  button visibility
-                        customStyles="" // add custom styles  \\ use custom styles with importent
+                        customStyles="flex justify-center" // add custom styles  \\ use custom styles with importent
+                        setButtonFull="w-full"
                       />
                     </div>
                   </div>

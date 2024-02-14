@@ -1,6 +1,6 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { indianTvShowSlider } from "./Halper";
+import { indianTvShowSlider } from "./Helper";
 
 const IndianTvShows = () => {
   return (
