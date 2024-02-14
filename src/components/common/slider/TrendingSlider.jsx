@@ -8,6 +8,7 @@ import {
 import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import Slider from "react-slick";
 import { TrendingSliderList } from "../../trending/Helper";
+import CustomButton from "../fields/button/CustomButton";
 const TrendingSlider = () => {
   //REF FOR TARGER SLIDER-ARROWS
   const playlist_slider = useRef(null);
@@ -55,10 +56,10 @@ const TrendingSlider = () => {
   return (
     <>
       <section>
-        <div className="max-w-[1320px] px-6 mx-auto">
+        <div className="max-w-[1320px] px-6 mx-auto my-6">
           <div className="flex justify-between pb-9 pt-6">
             <div className="flex items-center gap-[10px]">
-              <img src={trendingIcon} alt="trending" width={20} />
+              <img src={trendingIcon} alt="trending" width={28} />
               <h3 className="font-poppins font-medium text-white text-xxl">
                 Trading
               </h3>
@@ -107,23 +108,20 @@ const TrendingSlider = () => {
                           alt="top-movie"
                         />
                       </div>
-                      <h3 className="ff_poppins font-medium text-[13px] text-white opacity-90 mb-0 pt-[9px]">
+                      <h3 className="font-poppins font-medium text-sm text-white opacity-90 mb-0 pt-[9px]">
                         {obj.title}
                       </h3>
-                      <span className="flex items-center text-2xl text-white">
-                        <ChennalIcon />+
+                      <span className="flex gap-2 items-center text-2xl text-white">
+                        <ChennalIcon /> <span>+</span>
                       </span>
                     </div>
                     <div>
-                      <div className="flex gap-[13px]"></div>
                       <div className="flex gap-1 pt-4 pb-[9px]">
                         {/* {ratingStars(obj.rating)} */}
                       </div>
                       <div className="flex flex-col  w-full gap-2 sm:gap-4 justify-between mt-4">
                         <span className="flex w-full">
-                          <button className=" common_bg_gradient_color ff_inter font-semibold text-[16px] text-white border w-full py-[11px] px-1 lg:px-4 rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex justify-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
-                            Add a Watchlist
-                          </button>
+                          <button>aksdjf</button>
                         </span>
                         <span className="flex w-full">
                           <button className=" common_bg_gradient_color ff_inter font-semibold text-[16px] text-white border w-full py-[11px] px-1 lg:px-4 rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex justify-center items-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
