@@ -68,7 +68,7 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
     <div
       className={` relative  ${
         showSidebar
-          ? " pr-20 mx-auto mr-0 min-[1300px]:max-w-[950px] min-[1400px]:max-w-[950px]"
+          ? " pr-20 mx-auto mr-0 min-[1920px]:mr-auto min-[1300px]:max-w-[950px] min-[1400px]:max-w-[950px]"
           : "mx-auto max-w-[1140px]"
       } `}>
       <Slider
