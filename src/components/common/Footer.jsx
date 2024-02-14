@@ -28,7 +28,7 @@ const Footer = () => {
   }, [location]);
   return (
     <>
-      <section className="relative pt-[10px] pb-5 sm:pt-20  ">
+      <section className="relative pt-[10px] pb-5 sm:pt-20 py-[60px]">
         <div className=" bg-gradient  max-w-[200px] h-[200px] rounded-[326px] blur-[150px] -z-10 absolute start-0 bottom-0 w-full hidden sm:block"></div>
         <div className=" bg-gradient  max-w-[200px] h-[200px] rounded-[326px] blur-[150px] -z-10 absolute end-0 bottom-0 w-full"></div>
         <img

@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { CommonXmildIcon } from "../common/Icons";
 import { formatNumber, ratingStars } from "../../utils/CommonFunction";
 import { reviewList } from "./Halper";
-import { Link } from "react-router-dom";
+import image from "../../assets/images/svg/XMLID_2_.svg";
 import CustomButton from "../common/fields/button/CustomButton";
 
 const RatingAndReview = () => {
@@ -34,21 +34,15 @@ const RatingAndReview = () => {
       behavior: "smooth",
     });
   }
-  useEffect(() => {
-    if (animationsTriggered) {
-      scrollToTop();
-    }
-  }, [animationsTriggered]);
 
   return (
     <div>
-      {" "}
       <section
-        className="py-12 sm:py-[60px] lg:py-[100px] relative min-[1440px]:pl-4"
+        className="py-12 sm:pb-28 md:pb-32 lg:pb-36 relative min-[1440px]:pl-4"
         id="reviews">
-        <span className="bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-0 top-[250px] -z-10"></span>
+        <span className="bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-0 top-[0px] pointer-events-none z-10"></span>
         <span className=" absolute right-0 top-50 pe-14 hidden lg:block movieIcon_animation">
-          <CommonXmildIcon />
+          <img src={image} alt="" />
         </span>
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:mt-[52px] ">
           <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">

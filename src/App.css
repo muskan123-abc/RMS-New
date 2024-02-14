@@ -60,7 +60,9 @@ body {
   -moz-backdrop-filter: blur(136.5px) !important;
   -o-backdrop-filter: blur(136.5px) !important;
 }
-
+.common-arrow:hover {
+  background: linear-gradient(135deg, #f2cd75 0%, #a97424 100%) !important;
+}
 .custom_dark_card_bg {
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.08);

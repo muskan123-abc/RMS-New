@@ -1,8 +1,8 @@
 // Fan favorites
-import fan_favorites_card_img1 from "../../assets/images/fanFavorites/webp//fan_favorites_card_img1.webp";
-import fan_favorites_card_img2 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img2.webp";
-import fan_favorites_card_img3 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img3.webp";
-import fan_favorites_card_img4 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img4.webp";
+import fanFavoritesImg1 from "../../assets/images/fanFavorites/webp//fan_favorites_card_img1.webp";
+import fanFavoritesImg2 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img2.webp";
+import fanFavoritesImg3 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img3.webp";
+import fanFavoritesImg4 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img4.webp";
 // video Slidre
 import movieImage1 from "../../assets/images/watch_videos/guardiansofglaxy.webp";
 import movieImage2 from "../../assets/images/watch_videos/ps-1.webp";
@@ -14,45 +14,50 @@ import featuredSliderImg3 from "../../assets/images/featuredToday/featured_slide
 //
 import moviesposture from "../../assets/images/webp/robin_hood.webp";
 
+// RECENTLY VIEWED
+import recentlyViewedImg1 from "../../assets/images/recentlyViewed/img-1.webp";
+import recentlyViewedImg2 from "../../assets/images/recentlyViewed/img-2.webp";
+import recentlyViewedImg3 from "../../assets/images/recentlyViewed/img-3.webp";
+import recentlyViewedImg4 from "../../assets/images/recentlyViewed/img-4.webp";
 export const FanFavoriteContent = [
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img1,
+    image: fanFavoritesImg1,
     rating: 3,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img2,
+    image: fanFavoritesImg2,
     rating: 4,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img3,
+    image: fanFavoritesImg3,
     rating: 2,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img4,
+    image: fanFavoritesImg4,
     rating: 5,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img1,
+    image: fanFavoritesImg1,
     rating: 1,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img2,
+    image: fanFavoritesImg2,
     rating: 3,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img3,
+    image: fanFavoritesImg3,
     rating: 5,
   },
   {
     title: "In elit nullam sit quam",
-    image: fan_favorites_card_img4,
+    image: fanFavoritesImg4,
     rating: 4,
   },
 ];
@@ -301,5 +306,41 @@ export const featuredSlider = [
     description: "Arcu egestas ac tortor non",
     image: featuredSliderImg3,
     rating: "4",
+  },
+];
+
+// RECENTLY-VIEWED DATA
+export const recentlyViewedSlider = [
+  {
+    title: "Nam lacus leo blandit morbi",
+    image: recentlyViewedImg1,
+  },
+  {
+    title: "Risus at in euismod fringilla",
+    image: recentlyViewedImg2,
+  },
+  {
+    title: "Purus mollis vitae magna",
+    image: recentlyViewedImg3,
+  },
+  {
+    title: "Leo id nisi nulla adipiscing",
+    image: recentlyViewedImg4,
+  },
+  {
+    title: "Nam lacus leo blandit morbi",
+    image: recentlyViewedImg1,
+  },
+  {
+    title: "Risus at in euismod fringilla",
+    image: recentlyViewedImg2,
+  },
+  {
+    title: "Purus mollis vitae magna",
+    image: recentlyViewedImg3,
+  },
+  {
+    title: "Leo id nisi nulla adipiscing",
+    image: recentlyViewedImg4,
   },
 ];

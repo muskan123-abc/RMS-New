@@ -1,18 +1,17 @@
 import React, { useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import Slider from "react-slick";
+import { formatNumber, ratingStars } from "../../../utils/CommonFunction";
 import { mostRatedSliderHome } from "../../home/Halper";
-import CustomButton from "../fields/button/CustomButton";
 import {
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   DownloadIcon,
 } from "../Icons";
-import { formatNumber, ratingStars } from "../../../utils/CommonFunction";
+import CustomButton from "../fields/button/CustomButton";
 
 const CommonBigCardSlider = () => {
   //FOR GETTING PATH
-  const location = useLocation();
   // IMPORT FROM PROVIDER'S STATE
   const [cardData, setCardData] = useState(false);
 
@@ -69,10 +68,7 @@ const CommonBigCardSlider = () => {
   return (
     <div>
       <div className="relative z-50 max-w-[1140px] mx-auto">
-        <Slider
-          ref={mostRatedSlider_slider}
-          {...settings}
-          className="relative pt-[50px] pb-8 xl:pb-0">
+        <Slider ref={mostRatedSlider_slider} {...settings} className="relative">
           {/* MOST RATED SLIDER CARDS BY MAP  */}
           {mostRatedSliderHome.map((obj, index) => {
             const textLength = obj.description.length;

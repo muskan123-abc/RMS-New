@@ -55,13 +55,13 @@ const FeaturedToday = () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 1.01,
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 1120,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1.01,
+          slidesToShow: 1,
         },
       },
       {
@@ -92,12 +92,12 @@ const FeaturedToday = () => {
   return (
     <>
       <section
-        className=" relative pb-0 md:pt-[170px] xl:pt-[175px] md:pb-[140px]"
+        className=" relative pb-0 md:pt-[170px] xl:pt-28 md:pb-36"
         id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
           <CommonXmildIcon />
         </span>
-        <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20">
+        <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative">
           <div className=" flex flex-col md:flex-row items-center pb-10 max-w-[1140px] mx-auto ">
             <div className="w-full  md:w-1/2  lg:w-[40%] min-[1440px]:w-[35%]">
               <h2 className="secondry_heading md:!text-start">
@@ -125,14 +125,14 @@ const FeaturedToday = () => {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[45%] lg:w-[55%] xl:w-[59%] min-[1530px]:w-[65%]  md:absolute right-0 pt-8 md:pt-0  md:my-11">
+            <div className="w-full md:w-[45%] lg:w-[55%] xl:w-[60%] min-[1530px]:w-[50%]  md:absolute right-0 pt-8 md:pt-0  md:my-11">
               <Slider className="pb-8 md:pb-0" ref={slider} {...settings}>
                 {featuredSlider.map((value, index) => {
                   return (
                     <div onClick={() => onNavigateHandler(value)} key={index}>
                       <div className=" cursor-pointer rounded-xl border border-solid border-[#474643] p-2 mx-[10px] mb-2">
                         <div
-                          className={`flex bg-cover bg-no-repeat bg-center rounded-xl h-[450px] lg:h-[505px] relative p-2 `}
+                          className={`flex bg-cover bg-no-repeat bg-center rounded-xl h-[400px]  relative p-2 `}
                           style={{
                             backgroundImage: `url(${value.image})`,
                           }}>
@@ -158,7 +158,7 @@ const FeaturedToday = () => {
                             varient="button" // set button type like  Link and  Button
                             url="" // set url when button type  is link
                             isVisible={true} // handle  button visibility
-                            customStyles="flex justify-center" // add custom styles  \\ use custom styles with importent
+                            customStyles="flex justify-center !px-0" // add custom styles  \\ use custom styles with importent
                             setButtonFull="w-full md:w-8/12 xl:w-10/12"
                           />
                           <CustomButton

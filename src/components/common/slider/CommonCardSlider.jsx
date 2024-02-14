@@ -6,7 +6,7 @@ import {
   DownloadIcon,
 } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
-import image from "../../../assets/images/romanceTvShows/webp/romance-slider-img1.webp";
+import image from "../../../assets/images/romanceTvShows/webp/img-1.webp";
 import { ratingStars } from "../../../utils/CommonFunction";
 
 const CommonCardSlider = ({ contentArr }) => {
