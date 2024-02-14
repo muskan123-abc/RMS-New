@@ -112,8 +112,8 @@ const RatingAndReview = () => {
                     <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
                       <div
                         className={`${
-                          animationsTriggered ? "w-[15%]" : "w-[10px]"
-                        } h-2 rounded-full bg-gradient !bg-red-500 transition-all delay-[900] duration-[900]`}></div>
+                          animationsTriggered ? "w-[15%]" : "w-[0]"
+                        } h-2 rounded-full bg-gradient  transition-all delay-[900] duration-[900]`}></div>
                     </div>
                   </div>
                 </div>
