@@ -7,7 +7,7 @@ import {
   FooterInstaIcon,
   FooterLinkdinIcon,
 } from "./Icons";
-import { footerList } from "../home/Helper";
+import { footerList } from "./Helper";
 
 const Footer = () => {
   //FOR GETTING CURRENT DATE

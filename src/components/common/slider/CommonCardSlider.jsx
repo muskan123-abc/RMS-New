@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../Icons";
 import { ratingStars } from "../../../utils/CommonFunction";
 import heartIcon from "../../../assets/images/svg/heart.svg";
+import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../Icons";
 const CommonCardSlider = ({ contentArr }) => {
   const watch_slider = useRef(null);
 

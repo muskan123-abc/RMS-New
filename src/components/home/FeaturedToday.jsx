@@ -11,7 +11,7 @@ import {
   ShareIcon,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
-import { featuredSlider } from "./Helper";
+import { featuredSlider } from "../common/Helper";
 
 const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
