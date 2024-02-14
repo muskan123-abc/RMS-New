@@ -14,12 +14,12 @@ const Router = () => {
     setShowSidebar(!showSidebar);
   };
   return (
-    <div className="h-screen flex relative">
+    <div className={`h-screen flex relative `}>
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="w-full overflow-y-auto overflow-x-hidden">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home showSidebar={showSidebar} />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route path="/category" element={<Category />} />
         </Routes>

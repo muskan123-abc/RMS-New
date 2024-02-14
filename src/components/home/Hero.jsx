@@ -26,7 +26,10 @@ const Hero = ({ showSidebar }) => {
   return (
     <>
       {/* Hero section with background image */}
-      <section className="overflow-hidden min-h-screen grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 flex items-center">
+      <section
+        className={`overflow-hidden min-h-screen grow relative w-full bg-homepage-hero-bg bg-cover bg-no-repeat bg-center py-24 md:py-0 flex items-center ${
+          showSidebar ? "pl-7" : " pl-0"
+        }`}>
         {/* Bottom blur effect */}
         <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
         {/* Movie icon at the top-left corner */}
