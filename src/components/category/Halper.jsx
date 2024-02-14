@@ -24,27 +24,27 @@ export const mostPopularSlider = [
   {
     image: popularSliderImg1,
     title: "Id tristique imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg2,
     title: "Pellentesque vitae egestas",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg3,
     title: "Ridiculus vivamus",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg1,
     title: "Id tristique imperdiet",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg2,
     title: "Pellentesque vitae egestas",
-    rating: "4",
+    rating: "Your rating: 5/4",
   },
   {
     image: popularSliderImg3,
