@@ -6,6 +6,8 @@ import Faqs from "../common/Faqs";
 import IndianTvShows from "./IndianTvShows";
 import TvActionAdventure from "./TvActionAdventure";
 import RomanceTvShow from "./RomanceTvShow";
+import TvComedies from "./TvComedies";
+import CategoryBigCard from "./CategoryBigCard";
 const Category = () => {
   return (
     <>
@@ -13,7 +15,9 @@ const Category = () => {
       <MostPopular />
       <IndianTvShows />
       <TvActionAdventure />
-      <RomanceTvShow/>
+      <CategoryBigCard />
+      <RomanceTvShow />
+      <TvComedies />
       <Faqs />
       <Footer />
     </>
