@@ -7,7 +7,7 @@ import {
 } from "../Icons";
 import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import Slider from "react-slick";
-import { TrendingSliderList } from "../../trending/Halper";
+import { TrendingSliderList } from "../../trending/Helper";
 const TrendingSlider = () => {
   //REF FOR TARGER SLIDER-ARROWS
   const playlist_slider = useRef(null);
