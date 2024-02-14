@@ -130,7 +130,7 @@ const CommonVideoSlider = ({ content }) => {
                         url="" // set url when button type  is link
                         isVisible={true} // handle  button visibility
                         customStyles=" !px-0 flex justify-center" // add custom styles  \\ use custom styles with importent
-                        setButtonFull=" w-full"
+                        setButtonFull="w-full"
                       />
                       <CustomButton
                         title="Share" //set button title
@@ -140,7 +140,7 @@ const CommonVideoSlider = ({ content }) => {
                         isVisible={true} // handle  button visibility
                         customStyles=" flex justify-center " // add
                         icon={<ShareIcon />}
-                        setButtonFull=" w-full"
+                        setButtonFull="w-full"
                       />
                     </div>
                   </div>
