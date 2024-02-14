@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../Icons";
 import { ratingStars } from "../../../utils/CommonFunction";
-
+import heartIcon from "../../../assets/images/svg/heart.svg";
 const CommonCardSlider = ({ contentArr }) => {
   const watch_slider = useRef(null);
 
@@ -55,7 +55,10 @@ const CommonCardSlider = ({ contentArr }) => {
         <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
           {contentArr.map((obj, i) => (
             <div key={i} className="px-6 sm:px-0">
-              <div className="sm:max-w-[300px] xl:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-6sm: mx-auto xl:mx-2 mb-2">
+              <div className="sm:max-w-[300px] xl:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-6sm: mx-auto xl:mx-2 mb-2 relative">
+                <div className="absolute top-[6%] right-[6%]">
+                  <img src={heartIcon} alt="heart-icon" />
+                </div>
                 <div className={`flex rounded-xl w-full`}>
                   <div>
                     <div className="overflow-hidden rounded-md">

@@ -1,11 +1,18 @@
 import React from "react";
 import CommonBigCard from "../common/card/CommonBigCard";
 import { ratingStars } from "../../utils/CommonFunction";
+import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
 
 const CategoryBigCard = () => {
   return (
     <>
-      <div className="pb-20 sm:py-20 px-6">
+      <div className="pb-20 sm:py-20 px-6 relative">
+        <img
+          className="absolute right-0 sm:top-[-10px] lg:max-w-[130px] xl:max-w-[202px] md:max-w-[150px] max-w-[100px] hidden lg:block"
+          src={image}
+          loading="lazy"
+          alt="reel"
+        />
         <CommonBigCard
           title="There’s even more to watch."
           ratingStar={ratingStars(4)}
