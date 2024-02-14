@@ -4,7 +4,7 @@ import { MessegeList } from '../../../utils/Helper'
 
 const Secondary = () => {
     return (
-        <div className='w-[241px] bg-[#1F1A13] '>
+        <div className='w-full max-w-[241px] bg-[#1F1A13] '>
             <div className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 py-3 px-[14px] hover:border-t border-t border-transparent hover:border-white/20'>
                 <div className='flex items-center'>
                     <GlobalIcon />
