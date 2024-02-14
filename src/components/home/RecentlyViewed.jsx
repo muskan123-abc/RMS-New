@@ -10,7 +10,7 @@ import {
   ShareIcon,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
-const RecentlyViewed = () => {
+const RecentlyViewed = ({ showSidebar }) => {
   // STATES VALUE IMPORT FROM PROVIDER
   const [cardData, setCardData] = useState("");
   const [activeTab, setActiveTab] = useState("All"); // State to manage active tab index
@@ -99,7 +99,12 @@ const RecentlyViewed = () => {
   }
   return (
     <div>
-      <div className="relative pt-12 xl:pt-[50px] max-w-[1140px] mx-auto">
+      <div
+        className={`relative pt-12 xl:pt-[50px]  mx-auto  ${
+          showSidebar
+            ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+            : "max-w-[1140px]"
+        }`}>
         <div className="justify-center gap-10 xl:gap-0 pt-10 xl:pt-0 hidden xl:flex">
           <button
             aria-label="Slider Arrow"
