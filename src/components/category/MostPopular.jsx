@@ -1,6 +1,6 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { mostPopularSlider } from "./Halper";
+import { mostPopularSlider } from "./Helper";
 const MostPopular = () => {
   return (
     <div>

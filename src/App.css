@@ -9,7 +9,7 @@ body {
 .font-popins {
   font-family: "Poppins", sans-serif;
 }
-*{ transition:  all 400ms ease-in-out;}
+/* *{ transition:all 400ms ease-in-out;} */
 
 .bordr__grident_common:before {
   content: "";

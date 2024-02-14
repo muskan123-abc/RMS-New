@@ -34,6 +34,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   // SLIDER PROPERTIES AND RESPONSIVE
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     arrows: false,
     speed: 500,

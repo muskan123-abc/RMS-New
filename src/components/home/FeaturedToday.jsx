@@ -31,6 +31,8 @@ const FeaturedToday = ({ showSidebar }) => {
   //SLIDER SETTINGS
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     nextArrow: ".left-arrow",
     prevArrow: ".right-arrow",
