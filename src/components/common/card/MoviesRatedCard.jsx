@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import CustomButton from "../fields/button/CustomButton";
 import { DownloadIcon, StarGrey, YellowStar } from "../Icons";
 import image from "../../../assets/images/webp/robin_hood.webp";
-const CommonBigCard = () => {
+const MoviesRatedCard = () => {
   return (
     <>
       <div className=" px-10 py-[30px] bg-[#FFFFFF0A] backdrop-blur-[130px] w-full flex relative rounded-xl md:flex-row flex-col items-center gap-x-12 max-w-[1140px] mx-auto ">
@@ -50,4 +50,4 @@ const CommonBigCard = () => {
   );
 };
 
-export default CommonBigCard;
+export default MoviesRatedCard;

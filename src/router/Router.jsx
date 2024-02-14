@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Category from "../components/category/Category";
 import Header from "../components/common/Header";
-import CommonSmallCard from "../components/common/card/CommonSmallCard";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
 import Sidebar from "../components/common/sidebar/Sidebar";
+import MoviesRatedCard from "../components/common/card/MoviesRatedCard";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -23,8 +23,7 @@ const Router = () => {
           <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route path="/category" element={<Category />} />
         </Routes>
-        {/* <CommonBigCard /> */}
-        {/* <CommonSmallCard /> */}
+        {/* <MoviesRatedCard/> */}
         {/* <Card /> */}
         {/* <CommonCardSlider /> */}
         {/* <CommonSmallCardSlider cardContent={FanFavoriteContent} />
