@@ -4,7 +4,6 @@ import "./App.css";
 import Router from "./router/Router";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import TrendingSlider from "./components/common/slider/TrendingSlider";
 import BackToTop from "./components/common/BackToTop";
 function App() {
   return (
