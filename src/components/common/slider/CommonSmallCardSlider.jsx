@@ -102,7 +102,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
     <div
       className={` mx-auto relative ${
         showSidebar
-          ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+          ? " min-[1350px]:max-w-[780px] min-[1400px]:max-w-[880px]"
           : "max-w-[1140px]"
       }`}>
       <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
@@ -162,13 +162,13 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
         <button
           aria-label="Slider Arrow"
           onClick={handleLeftArrow}
-          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-5%]  `}>
+          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-7%]  `}>
           <CommonLeftArrowIcon />
         </button>
         <button
           aria-label="Slider Arrow"
           onClick={handleRightArrow}
-          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-5%]  `}>
+          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-7%]  `}>
           <CommonRightArrowIcon />
         </button>
       </div>

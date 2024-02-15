@@ -50,7 +50,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
 
           dots: false,
         },
@@ -58,7 +58,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
 
           dots: true,
           autoplay: true,
@@ -67,7 +67,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
 
           dots: true,
           autoplay: true,
@@ -104,7 +104,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       <div
         className={`relative pt-12 xl:pt-[50px]  mx-auto  ${
           showSidebar
-            ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+            ? " min-[1350px]:max-w-[780px] min-[1400px]:max-w-[880px]"
             : "max-w-[1140px]"
         }`}>
         <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
