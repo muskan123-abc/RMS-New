@@ -87,7 +87,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
   return (
     <>
       <div
-        className={` mx-auto relative z-10 ${
+        className={` mx-auto relative z-10 px-4 ${
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
