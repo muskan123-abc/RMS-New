@@ -174,7 +174,7 @@ export const sideList = [
   {
     image: <HomeIcon />,
     title: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     image: <LibraryIcon />,
