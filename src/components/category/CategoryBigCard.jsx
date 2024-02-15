@@ -7,12 +7,12 @@ const CategoryBigCard = () => {
   return (
     <>
       <div className="pb-20 sm:py-20 px-6 relative">
-        <img
+        {/* <img
           className="absolute right-0 sm:top-[-10px] lg:max-w-[130px] xl:max-w-[202px] md:max-w-[150px] max-w-[100px] hidden lg:block"
           src={image}
           loading="lazy"
           alt="reel"
-        />
+        /> */}
         <CommonBigCardSlider
           title="There’s even more to watch."
           ratingStar={ratingStars(4)}

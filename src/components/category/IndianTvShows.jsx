@@ -17,7 +17,7 @@ const IndianTvShows = () => {
         <span className="absolute right-[30px] bottom-0 xl:bottom-[13%] hidden lg:block movieIcon_animation">
           <img src={xml} alt="xml take shoot" />{" "}
         </span>
-        <h2 className="secondry_heading pb-8 sm:pb-14">
+        <h2 className="secondry_heading">
           Indian TV <span>Shows</span>
         </h2>
         <CommonCardSlider contentArr={indianTvShowSlider} />
