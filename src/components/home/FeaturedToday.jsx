@@ -12,7 +12,7 @@ import {
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
 import { featuredSlider } from "../common/Helper";
-
+import image from "../../assets/images/svg/XMLID_2_.svg";
 const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
   const navigate = useNavigate();
@@ -45,19 +45,19 @@ const FeaturedToday = ({ showSidebar }) => {
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: showSidebar ? 1 : 2,
         },
       },
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: showSidebar ? 1 : 2,
         },
       },
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: showSidebar ? 1 : 2,
         },
       },
       {
@@ -69,7 +69,7 @@ const FeaturedToday = ({ showSidebar }) => {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: showSidebar ? 1 : 2,
           dots: true,
           autoplay: true,
         },
@@ -97,12 +97,19 @@ const FeaturedToday = ({ showSidebar }) => {
         className=" relative pb-0 md:pt-[170px] xl:pt-28 md:pb-36"
         id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
-          <CommonXmildIcon />
+          <img src={image} alt=" alternate" />{" "}
         </span>
         <div
-          className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
-          <div className=" flex flex-col md:flex-row items-center pb-10 max-w-[1140px] mx-auto ">
-            <div className="w-full  md:w-1/2  lg:w-[40%] min-[1440px]:w-[35%]">
+          className={`container max-w-full xl:max-w-[1140px] ${
+            showSidebar ? " custom-2xl:max-w-[1000px]" : "xl:max-w-[1140px]"
+          } 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
+          <div className=" flex flex-col md:flex-row items-center pb-10 mx-auto ">
+            <div
+              className={`w-full  md:w-1/2 lg:w-[40%]  ${
+                showSidebar
+                  ? "xl:w-[50%]  min-[1440px]:w-[45%]"
+                  : "xl:w-[40%]  min-[1440px]:w-[35%]"
+              }`}>
               <h2 className="secondry_heading md:!text-start">
                 Featured
                 <span> today</span>
@@ -128,14 +135,21 @@ const FeaturedToday = ({ showSidebar }) => {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[45%] lg:w-[55%] xl:w-[60%] min-[1530px]:w-[50%]  md:absolute right-0 pt-8 md:pt-0  md:my-11">
+            <div
+              className={`w-full md:w-[45%]  md:absolute right-0 pt-8 md:pt-0  md:my-11 lg:w-[55%] min-[1530px]:w-[50%] ${
+                showSidebar ? " xl:w-[50%]" : " xl:w-[60%] "
+              }`}>
               <Slider className="pb-8 md:pb-0" ref={slider} {...settings}>
                 {featuredSlider.map((value, index) => {
                   return (
                     <div onClick={() => onNavigateHandler(value)} key={index}>
                       <div className=" cursor-pointer rounded-xl border border-solid border-[#474643] p-2 mx-[10px] mb-2">
                         <div
-                          className={`flex bg-cover bg-no-repeat bg-center rounded-xl h-[400px]  relative p-2 `}
+                          className={`flex bg-cover bg-no-repeat bg-center rounded-xl ${
+                            showSidebar
+                              ? "h-[450px] lg:h-[505px] "
+                              : "h-[400px]"
+                          }  relative p-2 `}
                           style={{
                             backgroundImage: `url(${value.image})`,
                           }}>

@@ -3,7 +3,7 @@ import { FaqArrowIcon, CommonXmildIcon } from "./Icons";
 import xml from "../../assets/images/svg/XMLID_2_.svg";
 import { faqList } from "./Helper";
 
-const Faqs = () => {
+const Faqs = ({ showSidebar }) => {
   // State to track the active accordion index
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -31,7 +31,10 @@ const Faqs = () => {
             FAQ<span className="common-text-gradient">s</span>
           </h2>
           <div className="flex  justify-center flex-wrap">
-            <div className=" md:w-9/12 lg:w-8/12">
+            <div
+              className={`md:w-9/12  ${
+                showSidebar ? " lg:w-10/12" : " lg:w-8/12"
+              }`}>
               {/* FAQ Items */}
               {faqList.map((obj, index) => (
                 <div

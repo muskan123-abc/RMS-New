@@ -12,6 +12,10 @@ module.exports = {
         poppins: "Poppins, sans-serif",
         inter: "Inter, sans-serif",
       },
+      screens: {
+        "custom-2xl": "1350px",
+        "custom-3xl": "1400px",
+      },
       colors: {
         white: "#fff",
         "light-white": "#FFFFFF0A",
