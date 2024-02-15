@@ -25,7 +25,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
           {sideList.map((obj, index) => {
             const isActive = location.pathname === obj.url;
             return (
-              <div key={index} className={`max-[375px]:ps-3 ps-4 mb-[10px] opacity-80 hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 ${isActive ? 'hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200' : ''}`}>
+              <div key={index} className={`max-[375px]:ps-3 ps-4 mb-[10px] opacity-80 hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer duration-300 ${isActive ? 'hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer duration-300' : ''}`}>
                 <Link to={obj.url} className='py-[10px] flex items-center gap-2 '
                 onClick={() => setShowSidebar(false)}
                 >

@@ -33,9 +33,8 @@ const Header = ({ showSidebar, toggleSidebar }) => {
             <MenuIcon />
           </span>
           <div
-            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-40 duration-300 ${
-              mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
-            }`}
+            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-40 duration-300 ${mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
+              }`}
           >
             <span
               className="absolute top-3 right-3 sm:hidden cursor-pointer"
@@ -92,7 +91,10 @@ const Header = ({ showSidebar, toggleSidebar }) => {
             {showSidebar ? (
               ""
             ) : (
-              <div onClick={() => toggleSidebar(false)}>
+              <div onClick={() => {
+                toggleSidebar(false);
+                setMobileNav(false)
+              }}>
                 <CustomButton
                   title="Sign In" //set button title
                   isGradient={true} // is grident is  visible // controle  btn types
@@ -109,7 +111,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
