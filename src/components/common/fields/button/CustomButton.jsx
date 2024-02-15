@@ -9,6 +9,7 @@ const CustomButton = ({
   isVisible,
   icon,
   setButtonFull,
+  className,
 }) => {
   return (
     <div className={`inline-flex items-center ${setButtonFull}`}>
@@ -24,7 +25,8 @@ relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:to
           isGradient
             ? "bg-gradient text-white hover:border border-transparent after:bg-black   "
             : "text-white opacity-90  bg-black hover:border-transparent after:bg-gradient"
-        } ${customStyles && customStyles}`}>
+        } ${customStyles && customStyles} ${className}`}
+            >
               {icon && icon} {title}
             </button>
           ) : (
@@ -37,7 +39,8 @@ relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:to
           isGradient
             ? " bg-gradient  text-white hover:border border-transparent after:bg-black   "
             : " text-white opacity-90  bg-black hover:border-transparent after:bg-gradient"
-        } ${customStyles && customStyles}`}>
+        } ${customStyles && customStyles}`}
+            >
               {title}
             </a>
           )}

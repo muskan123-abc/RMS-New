@@ -7,10 +7,6 @@ const MostRatedMovies = ({ showSidebar }) => {
 
   return (
     <div className="relative">
-      <div
-        className={` bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 ${
-          location.pathname === "/category" ? "hidden" : "hidden md:block" //ACTIVE ROUTES
-        }`}></div>
       <img
         className="absolute right-0 sm:top-[94px] top-[120px] lg:max-w-[130px] xl:max-w-[202px] md:max-w-[150px] max-w-[100px] hidden lg:block"
         src={image}

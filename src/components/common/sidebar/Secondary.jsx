@@ -17,8 +17,8 @@ const Secondary = () => {
     };
 
     return (
-        <div className='w-full max-w-[241px] bg-[#1F1A13] h-full'>
-            <div onClick={() => handleClick('communities')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 py-3 max-[375px]:px-2 px-[14px] hover:border-t border-t border-transparent hover:border-white/20'>
+        <div className='w-full max-w-[241px] bg-[#1F1A13] h-full pt-5'>
+            <div onClick={() => handleClick('communities')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 py-3 max-[375px]:px-2 px-[14px] '>
                 <div className='flex items-center'>
                     <GlobalIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2'>My communities</h2>
@@ -28,16 +28,16 @@ const Secondary = () => {
                 </div>
             </div>
             <div className={`transition-max-height overflow-hidden duration-300  ${activedropdown.communities ? "max-h-[88px] " : "max-h-0"}`}>
-                <Link hrefLang='#' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-[18px] cursor-pointer'>
+                <Link to='/announcements' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-[18px] cursor-pointer'>
                     <AnnouncementsIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Announcements</h2>
                 </Link>
-                <Link hrefLang='#' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-4 pb-[18px] cursor-pointer'>
+                <Link to='/resources' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-3  pb-[18px] cursor-pointer'>
                     <ResourcesIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Resources</h2>
                 </Link>
             </div>
-            <div onClick={() => handleClick('friends')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 py-3 max-[375px]:px-2 px-[14px] hover:border-t border-t border-transparent hover:border-white/20'>
+            <div onClick={() => handleClick('friends')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer transition-all ease-linear duration-200 py-3 max-[375px]:px-2 px-[14px] mt-1'>
                 <div className='flex items-center'>
                     <UsersIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2'>My friends</h2>
@@ -47,15 +47,15 @@ const Secondary = () => {
                 </div>
             </div>
             <div className={`transition-max-height overflow-hidden duration-300  ${activedropdown.friends ? "max-h-[120px] " : "max-h-0"}`}>
-                <Link hrefLang='#' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-[18px] cursor-pointer'>
+                <Link to='/friends' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-[18px] cursor-pointer'>
                     <FriendsIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Friends</h2>
                 </Link>
-                <Link hrefLang='#' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] pt-4 pb-[18px] cursor-pointer'>
+                <Link to='/nitro' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px] py-3 cursor-pointer'>
                     <NitroIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Nitro</h2>
                 </Link>
-                <Link hrefLang='#' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px]  pb-[18px] cursor-pointer'>
+                <Link to='/shop' className='flex items-center opacity-70 hover:opacity-100 transition-all ease-linear duration-200  ps-[15px]  pb-[18px] cursor-pointer'>
                     <ShopIcon />
                     <h2 className='ff_poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Shop</h2>
                 </Link>

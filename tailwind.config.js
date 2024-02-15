@@ -24,6 +24,7 @@ module.exports = {
       },
       colors: {
         white: "#fff",
+        "light-white": "#FFFFFF0A",
         black: "#000",
         "light-yellow": "#F2CD75",
         "dark-yellow": "#A97424",
@@ -32,6 +33,7 @@ module.exports = {
       },
       fontSize: {
         // we  can use  default fonts for 12px{xs},14px{sm},16px{base},20px{xl},24px{2xl} font size
+        "xxl": "22px",
         "3xl": "40px",
         "4xl": "55px",
       },
