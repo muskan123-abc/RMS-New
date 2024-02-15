@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import { homeHeroLeftSlider, homeHeroRightSlider } from "../../utils/Helper";
+import { CommonXmildIcon } from "../common/Icons";
 import CustomInput from "../common/fields/CustomInput";
-import { CommonXmildIcon, SearchIcon } from "../common/Icons";
 
 const Hero = ({ showSidebar }) => {
   // useEffect hook to handle side effects, runs once after the initial render
@@ -47,9 +47,9 @@ const Hero = ({ showSidebar }) => {
             />
           </div>
           <div className="flex flex-col md:flex-row flex-wrap justify-between md:items-center lg:min-h-screen">
-            <div className=" md:w-6/12 2xl:w-[55%] min-[1920px]:w-6/12 pe-3 lg:pe-0">
+            <div className=" md:w-6/12 custom-2xl:w-5/12 custom-3xl:w-[52%] 2xl:w-[55%] min-[1920px]:w-6/12 pe-3 lg:pe-0">
               <h1
-                className={`h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] custom-2xl:h-[140px] font-poppins font-bold max-[400px]:textapp-[29px] text-[31px] lg:text-3xl xl:text-3xl min-[1440px]:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[75%] min-[1440px]:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3 ${
+                className={`h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] custom-2xl:h-[100px] custom-3xl:h-[140px] font-poppins font-bold max-[400px]:textapp-[29px] text-[31px] lg:text-3xl xl:text-3xl min-[1440px]:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[75%] min-[1440px]:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3 ${
                   showSidebar && " custom-2xl:!max-w-full"
                 }`}>
                 C<span className="text"></span>
@@ -57,7 +57,7 @@ const Hero = ({ showSidebar }) => {
               <p className=" font-poppins text-sm xl:text-base font-semibold text-[#E5E2DE] pt-2 mb-0">
                 Csras lectus nunc venenatis incidunt id quis malesuada
               </p>
-              <p className=" font-poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] mb-10 md:max-w-[400px] custom-2xl:max-w-[420px] xl:max-w-none">
+              <p className=" font-poppins text-sm xl:text-base font-normal text-[#B5B5B5] pt-2 leading-[160%] mb-10">
                 Amet suscipit risus nulla libero porta purus id rhoncus emper
                 faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa
                 cursus tortor.
