@@ -93,7 +93,9 @@ const FeaturedToday = ({ showSidebar }) => {
   return (
     <>
       <section
-        className=" relative pb-0 md:pt-[170px] xl:pt-28 md:pb-36"
+        className={`${
+          showSidebar ? "xl:py-44" : "xl:pt-28  md:pb-36"
+        } " relative pb-0 md:pt-[170px] "`}
         id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
           <img src={image} alt=" alternate" />{" "}

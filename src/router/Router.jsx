@@ -10,6 +10,7 @@ import Notification from "../components/notification/Notification";
 import BackToTop from "../components/common/BackToTop";
 import Community from "../components/community/Community";
 import WatchList from "../components/watchlist/WatchList";
+import AccountDetail from "../components/myAccount/MyAccount";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -35,6 +36,7 @@ const Router = () => {
             path="/watchlist"
             element={<WatchList showSidebar={showSidebar} />}
           />
+          <Route path="/my-account" element={<AccountDetail />} />
         </Routes>
       </div>
     </div>

@@ -43,7 +43,7 @@ const Notification = ({ showSidebar }) => {
           {notificationRead ? (
               <div className="h-[85vh] flex items-center justify-center">
                 <img
-                  className="w-full h-[300px] object-contain"
+                  className="w-full max-w-[100px] sm:max-w-[150px] object-contain"
                   src={noNotificationIcon}
                   alt="no notification bell icon"
                 />
