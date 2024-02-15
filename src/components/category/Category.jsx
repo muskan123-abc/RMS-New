@@ -8,18 +8,18 @@ import TvActionAdventure from "./TvActionAdventure";
 import RomanceTvShow from "./RomanceTvShow";
 import TvComedies from "./TvComedies";
 import CategoryBigCard from "./CategoryBigCard";
-const Category = () => {
+const Category = ({ showSidebar }) => {
   return (
     <>
-      <Hero />
-      <MostPopular />
-      <IndianTvShows />
-      <TvActionAdventure />
-      <CategoryBigCard />
-      <RomanceTvShow />
-      <TvComedies />
-      <Faqs />
-      <Footer />
+      <Hero showSidebar={showSidebar} />
+      <MostPopular showSidebar={showSidebar} />
+      <IndianTvShows showSidebar={showSidebar} />
+      <TvActionAdventure showSidebar={showSidebar} />
+      <CategoryBigCard showSidebar={showSidebar} />
+      <RomanceTvShow showSidebar={showSidebar} />
+      <TvComedies showSidebar={showSidebar} />
+      <Faqs showSidebar={showSidebar} />
+      <Footer showSidebar={showSidebar} />
     </>
   );
 };

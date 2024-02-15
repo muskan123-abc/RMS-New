@@ -3,7 +3,7 @@ import CommonCardSlider from "../common/slider/CommonCardSlider";
 import { comedieSlider } from "./Helper";
 import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
 
-const TvComedies = () => {
+const TvComedies = ({ showSidebar }) => {
   return (
     <>
       <div className="relative pb-20 sm:py-20 z-10">
@@ -13,10 +13,13 @@ const TvComedies = () => {
           loading="lazy"
           alt="reel"
         />
-        <h2 className="secondry_heading">
+        <h2 className="secondry_heading pb-8 sm:pb-14">
           TV <span>Comedies</span>
         </h2>
-        <CommonCardSlider contentArr={comedieSlider} />
+        <CommonCardSlider
+          contentArr={comedieSlider}
+          showSidebar={showSidebar}
+        />
       </div>
     </>
   );

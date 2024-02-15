@@ -69,9 +69,9 @@ const CommonBigCardSlider = ({ showSidebar }) => {
 
   const pathName = useLocation().pathname;
   return (
-    <div>
+    <>
       <div
-        className={`relative z-10   ${
+        className={`relative z-10 ${
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
@@ -90,7 +90,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               : obj.description.substring(0, 150);
             return (
               <div key={index} className="px-2 xl:pb-0 ">
-                  <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10"></div>
+                <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
                 <div className="flex bg-[#FFFFFF0A] backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
                   <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute"></div>
@@ -105,21 +105,21 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       loading="lazy"
                     />
                   </div>
-                  <div className="relative  watch_bg_shadow after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
-                    <div className="flex justify-between items-center">
+                  <div className="relative after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
+                    <div className="lg:flex justify-between items-center">
                       {pathName === "/category" ? (
-                        <h4 className="font-poppins font-semibold text-2xl text-white opacity-90">
+                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
                           {obj.title2}
                         </h4>
                       ) : (
-                        <h4 className="font-poppins font-semibold md:text-2x; text-sm text-white opacity-90">
+                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
                           {obj.title}
                         </h4>
                       )}
 
                       {pathName === "/category" ? (
                         <CustomButton
-                          className="w-[170px] flex justify-center"
+                          className="lg:!w-[170px] flex justify-center my-2 lg:my-0"
                           title="Join Now" //set button title
                           isGradient={true} // is grident is  visible // controle  btn types
                           varient="button" // set button type like  Link and  Button
@@ -127,6 +127,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                         />
                       ) : (
                         <CustomButton
+                          className="my-2 sm:my-0"
                           title="DownLoad" //set button title
                           isGradient={true} // is grident is  visible // controle  btn types
                           varient="button" // set button type like  Link and  Button
@@ -141,7 +142,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                     {pathName === "/category" ? (
                       ""
                     ) : (
-                      <div className="inline-flex justify-between xs:justify-normal  overflow-x-auto whitespace-nowrap gap-5 2xs:gap-[5px] xs:gap-5 lg:gap-4 pt-3 pb-5">
+                      <div className="inline-flex justify-between xs:justify-normal  overflow-x-auto whitespace-nowrap gap-5 2xs:gap-[5px] xs:gap-5 lg:gap-4 sm:pt-3 pb-5">
                         <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
                           {formatNumber(189000)} Reviews
                         </h5>
@@ -192,18 +193,20 @@ const CommonBigCardSlider = ({ showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-7%] `}>
+            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-5.8%] `}
+          >
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-7%] `}>
+            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-5.8%] `}
+          >
             <CommonRightArrowIcon />
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

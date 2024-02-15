@@ -187,3 +187,10 @@
 .rated_movies_shadow {
     box-shadow: 0 0 10px 0 #f2cd75;
 }
+
+.bg_most_rated_bg {
+    background-image: url("./assets/images/common/png/common-card-slider-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

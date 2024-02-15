@@ -77,7 +77,7 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
       <Slider
         ref={watch_slider}
         {...settings}
-        className="relative z-10 pb-8 xl:pb-0 watch_slider   watch_bg_shadow after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70">
+        className="relative z-10 pb-8 xl:pb-0 watch_slider after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70">
         {content &&
           content.map((value, index) => {
             return (
