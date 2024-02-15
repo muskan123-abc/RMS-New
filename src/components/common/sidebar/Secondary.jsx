@@ -71,7 +71,7 @@ const Secondary = () => {
                     {messegeList.map((obj, index) => {
                         return (
                             <div key={index} className='py-2 flex items-center gap-2 max-[375px]:px-2 px-[15px] opacity-80 hover:opacity-100 hover:bg-gradient-to-r from-white/10 to-white/10   duration-300 '>
-                                <img className='w-6 h-6 ' src={obj.image} alt="profile_img" />
+                                <img className='w-[30px] h-[30px] ' src={obj.image} alt="profile_img" />
                                 <h2 className='font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white'>{obj.title}</h2>
                             </div>
                         )

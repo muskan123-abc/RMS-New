@@ -15,6 +15,7 @@ module.exports = {
       screens: {
         "custom-2xl": "1350px",
         "custom-3xl": "1400px",
+        "custom-4xl": "1440px",
       },
       keyframes: {
         wiggle: {
