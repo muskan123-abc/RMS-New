@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { AnnouncementsIcon, ArrowDownIcon, FriendsIcon, GlobalIcon, NitroIcon, PlusIcon, ResourcesIcon, ShopIcon, UsersIcon } from '../icons/sidebar/SideBar'
-import { messegeList } from '../../../utils/Helper'
+import React, { useState } from 'react';
+import { AnnouncementsIcon, ArrowDownIcon, FriendsIcon, GlobalIcon, NitroIcon, PlusIcon, ResourcesIcon, ShopIcon, UsersIcon } from '../icons/sidebar/SideBar';
+import { messegeList } from '../../../utils/Helper';
 import { Link } from 'react-router-dom';
 
 const Secondary = () => {
@@ -18,7 +18,7 @@ const Secondary = () => {
 
     return (
         <div className='w-full max-w-[241px] bg-[#1F1A13] h-full pt-5'>
-            <div onClick={() => handleClick('communities')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer  duration-300 py-3 max-[375px]:px-2 px-[14px] '>
+            <div onClick={() => handleClick('communities')} className={`opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer  duration-300 py-3 max-[375px]:px-2 px-[14px] ${activedropdown.communities ? 'bg-gradient-to-r from-white/10 to-white/10' : ''}`}>
                 <div className='flex items-center'>
                     <GlobalIcon />
                     <h2 className='font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2'>My communities</h2>
@@ -37,7 +37,7 @@ const Secondary = () => {
                     <h2 className='font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Resources</h2>
                 </Link>
             </div>
-            <div onClick={() => handleClick('friends')} className='opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer  duration-300 py-3 max-[375px]:px-2 px-[14px] mt-1'>
+            <div onClick={() => handleClick('friends')} className={`opacity-70 hover:opacity-100 flex items-center justify-between hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer  duration-300 py-3 max-[375px]:px-2 px-[14px] mt-1 ${activedropdown.friends ? 'bg-gradient-to-r from-white/10 to-white/10' : ''}`}>
                 <div className='flex items-center'>
                     <UsersIcon />
                     <h2 className='font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2'>My friends</h2>
@@ -82,4 +82,4 @@ const Secondary = () => {
     )
 }
 
-export default Secondary
+export default Secondary;
