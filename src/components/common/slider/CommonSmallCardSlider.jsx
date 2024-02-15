@@ -47,7 +47,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: showSidebar ? 3 : 3,
+          slidesToShow: showSidebar ? 2 : 3,
           slidesToScroll: 1,
           dots: false,
         },
@@ -55,7 +55,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: showSidebar ? 3 : 3,
+          slidesToShow: showSidebar ? 2 : 3,
 
           dots: true,
         },
@@ -63,7 +63,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: showSidebar ? 3 : 3,
+          slidesToShow: showSidebar ? 2 : 3,
           dots: true,
         },
       },
@@ -102,7 +102,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
     <div
       className={` mx-auto relative ${
         showSidebar
-          ? " min-[1350px]:max-w-[780px] min-[1400px]:max-w-[880px]"
+          ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
           : "max-w-[1140px]"
       }`}>
       <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>

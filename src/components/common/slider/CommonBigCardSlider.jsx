@@ -71,7 +71,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
       <div
         className={`relative z-10   ${
           showSidebar
-            ? " min-[1350px]:max-w-[780px] min-[1400px]:max-w-[880px]"
+            ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
         } mx-auto`}>
         <Slider
