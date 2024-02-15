@@ -9,6 +9,7 @@ import MoviesRatedCard from "../components/common/card/MoviesRatedCard";
 import Notification from "../components/notification/Notification";
 import BackToTop from "../components/common/BackToTop";
 import Community from "../components/community/Community";
+import AccountDetail from "../components/myAccount/MyAccount";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -30,6 +31,7 @@ const Router = () => {
           />
           <Route path="/notifications" element={<Notification />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/my-account" element={<AccountDetail />} />
         </Routes>
       </div>
     </div>
