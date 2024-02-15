@@ -99,16 +99,3 @@ slick dots
 .slick-dots li.slick-active button:before {
   @apply !bg-gradient !w-6;
 }
-
-/* side bar scroll bar */
-.custom__Scroll_bar::-webkit-scrollbar {
-  width: 5px;
-}
-
-.custom__Scroll_bar::-webkit-scrollbar-thumb {
-  background: #9e9d9d;
-  border-radius: 20px;
-}
-.custom_Scroll_none::-webkit-scrollbar {
-  display: none;
-}
