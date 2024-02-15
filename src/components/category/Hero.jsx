@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <section className="min-h-screen bg-[url('/src/assets/images/webp/homepage_hero_bg_img.webp')] bg-cover bg-no-repeat bg-center relative z-[9] flex pt-[76px] items-center">
         <div className="bottom_blur_hero w-full h-[50px] absolute bottom-0 left-0 z-50"></div>
-        <span className="absolute left-0 top-0 min-[1440px]:top-[74px] ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
+        <span className="absolute left-0 top-[74px] ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
           <CommonXmildIcon />
         </span>
         <img
