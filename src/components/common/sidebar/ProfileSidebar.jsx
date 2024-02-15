@@ -10,13 +10,13 @@ const ProfileSidebar = ({ setShowSidebar }) => {
         <div className='pt-5 pb-[10px] flex justify-center'>
           <img className='w-14 h-[57px]' src={ProfileImg} alt="profile-img" />
         </div>
-        <h2 className='ff_poppins max-[375px]:text-base text-lg leading-[156%] text-white  text-center mb-5'>Floyd Miles</h2>
+        <h2 className='font-poppins max-[375px]:text-base text-lg leading-[156%] text-white  text-center mb-5'>Floyd Miles</h2>
         {sideTopList.map((obj, index) => {
           return (
             <div key={index}>
               <div className='flex items-center justify-between max-[375px]:mx-2 mx-[10px] py-[10px] border-b border-[#59554C]'>
-                <h2 className='ff_poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80'>{obj.title}</h2>
-                <p className='ff_poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80'>{obj.rank}</p>
+                <h2 className='font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80'>{obj.title}</h2>
+                <p className='font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80'>{obj.rank}</p>
               </div>
             </div>
           )
@@ -30,7 +30,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                 onClick={() => setShowSidebar(false)}
                 >
                   <span> {obj.image}</span>
-                  <h2 className='ff_poppins leading-[137%] max-[375px]:text-sm text-base text-white'>{obj.title}</h2>
+                  <h2 className='font-poppins leading-[137%] max-[375px]:text-sm text-base text-white'>{obj.title}</h2>
                 </Link>
               </div>
             )
