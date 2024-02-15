@@ -22,7 +22,7 @@ const TrendingSlider = () => {
     playlist_slider.current.slickNext();
   };
   // SLIDER-SETTINGS
-  var settings = {
+  var trendingSlider = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -86,8 +86,8 @@ const TrendingSlider = () => {
           {/* PLAY LIST LIBRARY SLIDER  */}
           <Slider
             ref={playlist_slider}
-            {...settings}
-          // className={` slider_hight_equal ${sliderParant}`}
+            {...trendingSlider}
+            // className={` slider_hight_equal ${sliderParant}`}
           >
             {/* PLAY LIST SLIDER DATA BY MAP */}
             {TrendingSliderList.map((obj, index) => {
@@ -115,13 +115,19 @@ const TrendingSlider = () => {
                       <span className="flex gap-1.5 items-center text-2xl text-white">
                         {obj.channel} <span>+</span>
                       </span>
-                      <p className=" font-inter font-normal text-xs leading-[118%]">
+                      <p className="font-inter font-normal text-xs leading-[118%] opacity-70">
                         {obj.subtile}
                       </p>
-                      <div className="flex items-center mt-0.5 ">
-                        <p className="me-[31px] font-poppins text-xs leading-[118%]">{obj.rank}</p>
+                      <div className="flex items-center mt-0.5 opacity-70">
+                        <p className="me-[31px] font-poppins text-xs leading-[118%]">
+                          {obj.rank}
+                        </p>
                         <ol className="!list-disc">
-                          <li><p className=" font-poppins text-xs leading-[118%]">{obj.time}</p></li>
+                          <li className=" ::marker:!text-sm">
+                            <p className="font-poppins text-xs leading-[118%]">
+                              {obj.time}
+                            </p>
+                          </li>
                         </ol>
                       </div>
                     </div>
@@ -129,9 +135,22 @@ const TrendingSlider = () => {
                       <div className="flex gap-1 pb-3.5">
                         {ratingStars(obj.rating)}
                       </div>
-                      <div className="flex flex-col  w-full gap-2 sm:gap-2.5 justify-between">
-                        <CustomButton title="Add a Watchlist" isGradient={true} varient="button" isVisible={true} customStyles="justify-center" />
-                        <CustomButton title="Share" isGradient={true} varient="button" isVisible={true} customStyles="justify-center" icon={<ShareIcon />} />
+                      <div className="flex flex-col w-full gap-2 sm:gap-2.5 justify-between">
+                        <CustomButton
+                          title="Add a Watchlist"
+                          isGradient={true}
+                          varient="button"
+                          isVisible={true}
+                          customStyles="justify-center"
+                        />
+                        <CustomButton
+                          title="Share"
+                          isGradient={true}
+                          varient="button"
+                          isVisible={true}
+                          customStyles="justify-center"
+                          icon={<ShareIcon />}
+                        />
                       </div>
                     </div>
                   </div>
