@@ -3,7 +3,7 @@ import CommonCardSlider from "../common/slider/CommonCardSlider";
 import { mostPopularSlider } from "./Helper";
 import reelImage from "../../assets/images/webp/footer-bg-reel-img-2.webp";
 
-const MostPopular = () => {
+const MostPopular = ({ showSidebar }) => {
   return (
     <div className="relative py-20 z-10">
       <img
@@ -11,10 +11,13 @@ const MostPopular = () => {
         src={reelImage}
         alt="reel"
       />
-      <h2 className="secondry_heading">
+      <h2 className="secondry_heading pb-8 sm:pb-14">
         Most <span>Popular</span>
       </h2>
-      <CommonCardSlider contentArr={mostPopularSlider} />
+      <CommonCardSlider
+        contentArr={mostPopularSlider}
+        showSidebar={showSidebar}
+      />
     </div>
   );
 };

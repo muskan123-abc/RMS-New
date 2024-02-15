@@ -22,7 +22,10 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<Home showSidebar={showSidebar} />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />
-          <Route path="/category" element={<Category />} />
+          <Route
+            path="/category"
+            element={<Category showSidebar={showSidebar} />}
+          />
           <Route path="/notifications" element={<Notification />} />
         </Routes>
         {/* <MoviesRatedCard/> */}
