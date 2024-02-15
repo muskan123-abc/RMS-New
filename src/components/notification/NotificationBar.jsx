@@ -8,7 +8,7 @@ const NotificationsBar = ({ day, user, description, time, title }) => {
           {day}
         </p>
       )}
-      <div className="flex items-center px-3 sm:px-5 py-2 bg-[#FFFFFF0A] rounded-[12px] text-white mt-4 sm:mt-5 gap-4">
+      <div className="flex items-center px-3 sm:px-5 py-2 bg-light-white rounded-[12px] text-white mt-4 sm:mt-5 gap-4">
         <img className="w-[46px] h-[46px]" src={user} alt="user" />
         <div className="flex items-center justify-between w-full">
           <div>
