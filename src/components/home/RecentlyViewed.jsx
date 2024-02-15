@@ -1,15 +1,14 @@
 import React, { useRef, useState } from "react";
-import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { recentlyViewedSlider } from "../common/Helper";
-import Slider from "react-slick";
 import { useNavigate } from "react-router";
+import Slider from "react-slick";
+import image from "../../assets/images/png/right-side-position-music-reel-img.png";
+import { recentlyViewedSlider } from "../common/Helper";
 import {
   ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   ShareIcon,
 } from "../common/Icons";
-import image from "../../assets/images/png/right-side-position-music-reel-img.png";
 import CustomButton from "../common/fields/button/CustomButton";
 const RecentlyViewed = ({ showSidebar }) => {
   // STATES VALUE IMPORT FROM PROVIDER

@@ -1,18 +1,17 @@
 import React, { useRef, useState } from "react";
 
-import Slider from "react-slick";
-import { ratingStars } from "../../utils/CommonFunction";
 import { useNavigate } from "react-router-dom";
+import Slider from "react-slick";
+import image from "../../assets/images/svg/XMLID_2_.svg";
+import { ratingStars } from "../../utils/CommonFunction";
+import { featuredSlider } from "../common/Helper";
 import {
   ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
-  CommonXmildIcon,
   ShareIcon,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
-import { featuredSlider } from "../common/Helper";
-import image from "../../assets/images/svg/XMLID_2_.svg";
 const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
   const navigate = useNavigate();

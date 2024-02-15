@@ -1,7 +1,7 @@
 import React from "react";
-import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
-import { FanFavoriteContent } from "../common/Helper";
 import image from "../../assets/images/svg/XMLID_2_.svg";
+import { FanFavoriteContent } from "../common/Helper";
+import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
 const FanFavorite = ({ showSidebar }) => {
   return (
     <div className=" relative py-12 ">
@@ -15,6 +15,7 @@ const FanFavorite = ({ showSidebar }) => {
       </h2>
       <div className="my-10 md:my-12 mx-auto">
         <CommonSmallCardSlider
+          isLike={true}
           showSidebar={showSidebar}
           cardContent={FanFavoriteContent}
         />
