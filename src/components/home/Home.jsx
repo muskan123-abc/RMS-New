@@ -1,17 +1,18 @@
 import React from "react";
-import Hero from "./Hero";
-import WatchVideos from "./WatchVideos";
-import FanFavorite from "./FanFavorite";
-import MostRatedMovies from "./MostRatedMovies";
-import FeaturedToday from "./FeaturedToday";
-import RatingAndReview from "./RatingAndReview";
-import RecentlyViewed from "./RecentlyViewed";
 import Faqs from "../common/Faqs";
 import Footer from "../common/Footer";
+import FanFavorite from "./FanFavorite";
+import FeaturedToday from "./FeaturedToday";
+import Hero from "./Hero";
+import MostRatedMovies from "./MostRatedMovies";
+import RatingAndReview from "./RatingAndReview";
+import RecentlyViewed from "./RecentlyViewed";
+import WatchVideos from "./WatchVideos";
 
 const Home = ({ showSidebar }) => {
   return (
     <>
+      {" "}
       <Hero showSidebar={showSidebar} />
       <WatchVideos showSidebar={showSidebar} />
       <FanFavorite showSidebar={showSidebar} />

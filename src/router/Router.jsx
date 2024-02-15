@@ -28,7 +28,6 @@ const Router = () => {
           <Route path="/notifications" element={<Notification />} />
           <Route path="/community" element={<Community />} />
         </Routes>
-        <BackToTop />
       </div>
     </div>
   );
