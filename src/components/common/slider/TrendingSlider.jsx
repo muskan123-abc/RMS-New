@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
+import Slider from "react-slick";
+import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
+import { ratingStars } from "../../../utils/CommonFunction";
+import { TrendingSliderList } from "../../trending/Helper";
 import {
   ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   ShareIcon,
 } from "../Icons";
-import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
-import Slider from "react-slick";
-import { TrendingSliderList } from "../../trending/Helper";
 import CustomButton from "../fields/button/CustomButton";
 const TrendingSlider = () => {
   //REF FOR TARGER SLIDER-ARROWS
@@ -86,7 +87,7 @@ const TrendingSlider = () => {
           <Slider
             ref={playlist_slider}
             {...settings}
-            // className={` slider_hight_equal ${sliderParant}`}
+          // className={` slider_hight_equal ${sliderParant}`}
           >
             {/* PLAY LIST SLIDER DATA BY MAP */}
             {TrendingSliderList.map((obj, index) => {
@@ -96,7 +97,7 @@ const TrendingSlider = () => {
                   key={index}
                   className="px-[10px] flex h-full"
                 >
-                  <div className="p-[7px] border-[2px] border-solid border-[#FFFFFF40] rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group">
+                  <div className="p-2 border-[2px] bg-[#2c271f] border-solid border-[#FFFFFF40] rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
                     <div>
                       <div className="rounded-[4.4px] overflow-hidden">
                         <img
@@ -108,30 +109,29 @@ const TrendingSlider = () => {
                           alt="top-movie"
                         />
                       </div>
-                      <h3 className="font-poppins font-medium text-sm text-white opacity-90 mb-0 pt-[9px]">
+                      <h3 className="font-poppins font-medium text-sm text-white opacity-90 mb-0 pt-2.5">
                         {obj.title}
                       </h3>
-                      <span className="flex gap-2 items-center text-2xl text-white">
-                        <ChennalIcon /> <span>+</span>
+                      <span className="flex gap-1.5 items-center text-2xl text-white">
+                        {obj.channel} <span>+</span>
                       </span>
-                      <p className=" font-inter font-normal text-xs">
-                        YM Movie Trailer
+                      <p className=" font-inter font-normal text-xs leading-[118%]">
+                        {obj.subtile}
                       </p>
-                    </div>
-                    <div>
-                      <div className="flex gap-1 pt-4 pb-[9px]">
-                        {/* {ratingStars(obj.rating)} */}
+                      <div className="flex items-center mt-0.5 ">
+                        <p className="me-[31px] font-poppins text-xs leading-[118%]">{obj.rank}</p>
+                        <ol className="!list-disc">
+                          <li><p className=" font-poppins text-xs leading-[118%]">{obj.time}</p></li>
+                        </ol>
                       </div>
-                      <div className="flex flex-col  w-full gap-2 sm:gap-4 justify-between mt-4">
-                        <span className="flex w-full">
-                          <button>Add a Watchlist</button>
-                        </span>
-                        <span className="flex w-full">
-                          <button className="common_bg_gradient_color ff_inter font-semibold text-[16px] text-white border w-full py-[11px] px-1 lg:px-4 rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex justify-center items-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
-                            <ShareIcon />
-                            Share
-                          </button>
-                        </span>
+                    </div>
+                    <div className="mt-2.5">
+                      <div className="flex gap-1 pb-3.5">
+                        {ratingStars(obj.rating)}
+                      </div>
+                      <div className="flex flex-col  w-full gap-2 sm:gap-2.5 justify-between">
+                        <CustomButton title="Add a Watchlist" isGradient={true} varient="button" isVisible={true} customStyles="justify-center" />
+                        <CustomButton title="Share" isGradient={true} varient="button" isVisible={true} customStyles="justify-center" icon={<ShareIcon />} />
                       </div>
                     </div>
                   </div>

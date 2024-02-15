@@ -214,7 +214,7 @@ export const sideList = [
   {
     image: <SignOutIcon />,
     title: "Sign out",
-    url: "/sign-out",
+    url: "/",
   },
 ]
 
