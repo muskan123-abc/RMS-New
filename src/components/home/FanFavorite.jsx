@@ -1,6 +1,6 @@
 import React from "react";
 import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
-import { FanFavoriteContent } from "./Halper";
+import { FanFavoriteContent } from "../common/Helper";
 const FanFavorite = ({ showSidebar }) => {
   return (
     <div className=" relative py-12 ">

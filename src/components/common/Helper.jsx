@@ -4,8 +4,8 @@ import fanFavoritesImg2 from "../../assets/images/fanFavorites/webp/fan_favorite
 import fanFavoritesImg3 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img3.webp";
 import fanFavoritesImg4 from "../../assets/images/fanFavorites/webp/fan_favorites_card_img4.webp";
 // video Slidre
-import movieImage1 from "../../assets/images/watch_videos/guardiansofglaxy.webp";
-import movieImage2 from "../../assets/images/watch_videos/ps-1.webp";
+import movieImage1 from "../../assets/images/watchVideos/guardiansofglaxy.webp";
+import movieImage2 from "../../assets/images/watchVideos/ps-1.webp";
 //
 // FEATURED-TODAY
 import featuredSliderImg1 from "../../assets/images/featuredToday/featured_slider_img1.webp";

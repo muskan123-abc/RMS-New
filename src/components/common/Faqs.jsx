@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaqArrowIcon, CommonXmildIcon } from "./Icons";
-import { faqList } from "../home/Halper";
 import xml from "../../assets/images/svg/XMLID_2_.svg";
+import { faqList } from "./Helper";
 
 const Faqs = () => {
   // State to track the active accordion index
@@ -13,8 +13,8 @@ const Faqs = () => {
   };
   return (
     <>
-      <section
-        className=" relative pb-20 z-[10] overflow-hidden"
+      <div
+        className=" relative pb-20 sm:py-20 z-[10] overflow-hidden"
         id="faqs-list">
         <span className=" bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-[-50px] top-[40%] z-10"></span>
         {/* Right-top icon */}
@@ -68,7 +68,7 @@ const Faqs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

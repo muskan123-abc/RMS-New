@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import Slider from "react-slick";
 import { formatNumber, ratingStars } from "../../../utils/CommonFunction";
-import { mostRatedSliderHome } from "../../home/Halper";
 import {
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   DownloadIcon,
 } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
+import { mostRatedSliderHome } from "../Helper";
 
 const CommonBigCardSlider = ({ showSidebar }) => {
   //FOR GETTING PATH
@@ -34,6 +34,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   // SLIDER PROPERTIES AND RESPONSIVE
   var settings = {
     dots: false,
+    loop: true,
     infinite: true,
     arrows: false,
     speed: 500,
@@ -68,12 +69,15 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   return (
     <div>
       <div
-        className={`relative z-10  ${
+        className={`relative z-10   ${
           showSidebar
             ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
             : "max-w-[1140px]"
         } mx-auto`}>
-        <Slider ref={mostRatedSlider_slider} {...settings} className="relative">
+        <Slider
+          ref={mostRatedSlider_slider}
+          {...settings}
+          className="relative pb-8 xl:pb-0">
           {/* MOST RATED SLIDER CARDS BY MAP  */}
           {mostRatedSliderHome.map((obj, index) => {
             const textLength = obj.description.length;
@@ -81,7 +85,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               ? obj.description
               : obj.description.substring(0, 150);
             return (
-              <div key={index} className="px-2 xl:pb-0">
+              <div key={index} className="px-2 xl:pb-0 ">
                 <div className="flex bg-[#FFFFFF0A] backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
                   <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%] after:absolute after:h-0 after:w-full after:bg-transparent after:-bottom-3 after:translate-x-[57px] after:border-b-4 after:border-dashed after:border-[#443925]"></div>
                   <div className=" rounded-[0_12px_0_12px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute  after:absolute after:h-0 after:w-full after:bg-transparent after:-top-3 after:-translate-x-[57px] after:border-b-4 after:border-dashed after:border-[#443925]"></div>

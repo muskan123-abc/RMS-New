@@ -63,8 +63,8 @@ const Hero = ({ showSidebar }) => {
                 <CustomInput
                   placeholder="Search"
                   customStyles="w-full max-w-[343px]"
-                  isButtonVisible={true}
                   customStylesInput="w-full"
+                  isButtonVisible={true}
                 />
               </div>
             </div>

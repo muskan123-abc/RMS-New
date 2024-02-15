@@ -9,7 +9,7 @@ body {
 .font-popins {
   font-family: "Poppins", sans-serif;
 }
-*{ transition:  all 400ms ease-in-out;}
+/* *{ transition:all 400ms ease-in-out;} */
 
 .bordr__grident_common:before {
   content: "";
@@ -93,9 +93,22 @@ slick dots
  */
 
 .slick-dots li button::before {
-  @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-1 !p-1 !cursor-pointer !border-0 !outline-none !bg-white !rounded-base transition-all duration-300;
+  @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-[3px] !p-1 !cursor-pointer !border-0 !outline-none !bg-[#231d13] !rounded-base transition-all duration-300;
 }
 
 .slick-dots li.slick-active button:before {
   @apply !bg-gradient !w-6;
+}
+
+/* side bar scroll bar */
+.custom__Scroll_bar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom__Scroll_bar::-webkit-scrollbar-thumb {
+  background: #9e9d9d;
+  border-radius: 20px;
+}
+.custom_Scroll_none::-webkit-scrollbar {
+  display: none;
 }

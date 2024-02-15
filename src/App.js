@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "./App.css";
 import Router from "./router/Router";
 import "slick-carousel/slick/slick.css";

@@ -1,6 +1,6 @@
 import React from "react";
 import CommonVideoSlider from "../common/slider/CommonVideoSlider";
-import { watchVideosSlider } from "./Halper";
+import { watchVideosSlider } from "../common/Helper";
 import image from "../../assets/images/webp/footer-bg-reel-img-2.webp";
 const WatchVideos = ({ showSidebar }) => {
   return (
@@ -16,7 +16,7 @@ const WatchVideos = ({ showSidebar }) => {
         Watch <span>videos</span>
       </h2>
 
-      <div className=" my-12">
+      <div className=" my-12 mx-auto">
         {" "}
         <CommonVideoSlider
           showSidebar={showSidebar}

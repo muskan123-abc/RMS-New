@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { CommonXmildIcon } from "../common/Icons";
 import { formatNumber, ratingStars } from "../../utils/CommonFunction";
-import { reviewList } from "./Halper";
+import { reviewList } from "../common/Helper";
 import image from "../../assets/images/svg/XMLID_2_.svg";
 import CustomButton from "../common/fields/button/CustomButton";
 
@@ -16,16 +16,10 @@ const RatingAndReview = () => {
 
   const [animationsTriggered, setAnimationsTriggered] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      if (!animationsTriggered && inView) {
-        setAnimationsTriggered(true);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [animationsTriggered, inView]);
+    if (inView) {
+      setAnimationsTriggered(true);
+    }
+  }, [inView]);
 
   //   SCROLL TOP FUNCTION
   function scrollToTop() {
@@ -111,29 +105,20 @@ const RatingAndReview = () => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[15%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient transition-all delay-[900] duration-[900]`}></div>
+                        } h-2 rounded-full bg-gradient  transition-all delay-[900] duration-[900]`}></div>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <Link
-                onClick={() => {
-                  setShowTabs("review");
-                  scrollToTop();
-                }}
-                aria-label="See reviews"
-                to="/my-reviews"
-                className="
-                 ff_inter font-semibold  w-fit text-base text-white bg-gradient border py-[10px] px-4  mt-10 lg:mt-[59px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex items-center justify-between relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
-                See All Reviews
-              </Link> */}
+
               <CustomButton
                 title="See All Reviews" //set button title
                 isGradient={false} // is grident is  visible // controle  btn types
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
-                customStyles=" mt-[60px]" // add custom styles  \\ use custom styles with importent
+                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                setButtonFull="lg:inline-block hidden"
               />
             </div>
             <div className="w-full lg:w-7/12 xl:w-6/12 min-[1440px]:w-[65%] 3xl:w-6/12 min-[1440px]:px-3 ">
@@ -163,6 +148,16 @@ const RatingAndReview = () => {
                   );
                 })}
               </div>
+
+              <CustomButton
+                title="See All Reviews" //set button title
+                isGradient={false} // is grident is  visible // controle  btn types
+                varient="link" // set button type like  Link and  Button
+                url="/my-reviews" // set url when button type  is link
+                isVisible={true} // handle  button visibility
+                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                setButtonFull="lg:hidden "
+              />
             </div>
           </div>
         </div>

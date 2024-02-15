@@ -11,7 +11,7 @@ import {
   ShareIcon,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
-import { featuredSlider } from "./Halper";
+import { featuredSlider } from "../common/Helper";
 
 const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
@@ -31,6 +31,8 @@ const FeaturedToday = ({ showSidebar }) => {
   //SLIDER SETTINGS
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     nextArrow: ".left-arrow",
     prevArrow: ".right-arrow",

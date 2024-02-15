@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../Icons";
 import { ratingStars } from "../../../utils/CommonFunction";
-
+import heartIcon from "../../../assets/images/svg/heart.svg";
+import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../Icons";
 const CommonCardSlider = ({ contentArr }) => {
   const watch_slider = useRef(null);
 
@@ -18,6 +18,8 @@ const CommonCardSlider = ({ contentArr }) => {
 
   var settings = {
     dots: false,
+    loop: true,
+
     infinite: true,
     nextArrow: ".left-arrow",
     prevArrow: ".right-arrow",
@@ -54,8 +56,11 @@ const CommonCardSlider = ({ contentArr }) => {
       <div className="relative max-w-[1140px] mx-auto watch_bg_shadow z-10 after:content-[''] after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:z-0">
         <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
           {contentArr.map((obj, i) => (
-            <div key={i}>
-              <div className="max-w-[315px] sm:max-w-[300px] xl:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-6sm: mx-auto xl:mx-2 mb-2">
+            <div key={i} className="px-6 sm:px-0">
+              <div className="sm:max-w-[300px] xl:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-6sm: mx-auto xl:mx-2 mb-2 relative">
+                <div className="absolute top-[6%] right-[6%]">
+                  <img src={heartIcon} alt="heart-icon" />
+                </div>
                 <div className={`flex rounded-xl w-full`}>
                   <div>
                     <div className="overflow-hidden rounded-md">
@@ -87,15 +92,13 @@ const CommonCardSlider = ({ contentArr }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:-translate-x-full left-[-20px]`}
-          >
+            className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:-translate-x-full left-[-20px]`}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:translate-x-full right-[-20px] `}
-          >
+            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:translate-x-full right-[-20px] `}>
             <CommonRightArrowIcon />
           </button>
         </div>
