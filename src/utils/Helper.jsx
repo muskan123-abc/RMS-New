@@ -257,7 +257,8 @@ export const messegeList = [
   {
     image: ArleneMcCoy,
     title: "Courtney Henry",
-  }, {
+  },
+   {
     image: JaneCooper,
     title: "Dianne Russell",
   },
