@@ -15,6 +15,7 @@ const FanFavorite = ({ showSidebar }) => {
       </h2>
       <div className="my-10 md:my-12 mx-auto">
         <CommonSmallCardSlider
+          isLike={true}
           showSidebar={showSidebar}
           cardContent={FanFavoriteContent}
         />

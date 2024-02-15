@@ -4,13 +4,14 @@ import {
   ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
+  HeartIcon,
   ShareIcon,
 } from "../Icons";
 import { ratingStars } from "../../../utils/CommonFunction";
 import CustomButton from "../fields/button/CustomButton";
 import Slider from "react-slick";
 
-const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
+const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
   const [cardData, setCardData] = useState("");
   const [heartClicked, setHeartClicked] = useState([]);
 
@@ -109,7 +110,17 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar }) => {
         {cardContent.map((obj, index) => {
           const isLiked = heartClicked.includes(index);
           return (
-            <div className=" flex justify-center">
+            <div className=" flex justify-center relative">
+              {isLike && (
+                <span
+                  className={`${
+                    isLiked ? "liked" : ""
+                  } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
+                  onClick={() => likeHandler(index)}>
+                  <HeartIcon filled={isLiked} />
+                </span>
+              )}
+
               <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2  mb-2 mx-auto w-[98%] ">
                 <div
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
