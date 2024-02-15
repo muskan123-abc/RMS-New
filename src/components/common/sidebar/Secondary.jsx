@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { AnnouncementsIcon, ArrowDownIcon, FriendsIcon, GlobalIcon, NitroIcon, PlusIcon, ResourcesIcon, ShopIcon, UsersIcon } from '../icons/sidebar/SideBar';
 import { messegeList } from '../../../utils/Helper';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Secondary = () => {
+    const location = useLocation();
     const [activedropdown, setActivedropdown] = useState({
         communities: false,
         friends: false,
@@ -28,7 +29,7 @@ const Secondary = () => {
                 </div>
             </div>
             <div className={`transition-max-height overflow-hidden duration-300  ${activedropdown.communities ? "max-h-[88px] " : "max-h-0"}`}>
-                <Link to='/announcements' className='flex items-center opacity-70 hover:opacity-100  duration-300  ps-[15px] pt-[18px] cursor-pointer'>
+                <Link to='/community' className={`flex items-center ${location.pathname === '/community' ? 'opacity-100' : 'opacity-70'} hover:opacity-100  duration-300  ps-[15px] pt-[18px] cursor-pointer`}>
                     <AnnouncementsIcon />
                     <h2 className='font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3'>Announcements</h2>
                 </Link>
