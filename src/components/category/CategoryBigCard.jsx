@@ -1,24 +1,12 @@
 import React from "react";
 import { ratingStars } from "../../utils/CommonFunction";
-import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
 import CommonBigCardSlider from "../common/slider/CommonBigCardSlider";
 
-const CategoryBigCard = () => {
+const CategoryBigCard = ({ showSidebar }) => {
   return (
     <>
-      <div className="pb-20 sm:py-20 px-6 relative">
-        <img
-          className="absolute right-0 sm:top-[-10px] lg:max-w-[130px] xl:max-w-[202px] md:max-w-[150px] max-w-[100px] hidden lg:block"
-          src={image}
-          loading="lazy"
-          alt="reel"
-        />
-        <CommonBigCardSlider
-          title="There’s even more to watch."
-          ratingStar={ratingStars(4)}
-          description="Vitae congue aliquam malesuada nec malesuada faucibus elit netus. Donec vestibulum velit laoreet ornare fermentum et. Aliquet ut adipiscing volutpat fermentum nisl massa. Cras cras amet nisl id adipiscing vel vitae euismod nunc. Platea tincidunt vulputate etiam massa porta at ipsum maecenas. Convallis sed ac egestas non odio. Mus pellentesque."
-          btnText="Join Now"
-        />
+      <div className="pb-20 sm:py-20 px-2lg:px-6 relative bg_most_rated_bg">
+        <CommonBigCardSlider showSidebar={showSidebar} />
       </div>
     </>
   );

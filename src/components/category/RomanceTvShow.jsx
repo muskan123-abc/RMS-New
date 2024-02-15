@@ -3,7 +3,7 @@ import CommonCardSlider from "../common/slider/CommonCardSlider";
 import { romanceSlider } from "./Helper";
 import xml from "../../assets/images/svg/XMLID_2_.svg";
 
-const RomanceTvShow = () => {
+const RomanceTvShow = ({ showSidebar }) => {
   return (
     <>
       <div className="relative pb-20 sm:py-20 z-10">
@@ -18,7 +18,10 @@ const RomanceTvShow = () => {
         <h2 className="secondry_heading pb-8 sm:pb-14">
           <span>Romance</span> TV Shows
         </h2>
-        <CommonCardSlider contentArr={romanceSlider} />
+        <CommonCardSlider
+          contentArr={romanceSlider}
+          showSidebar={showSidebar}
+        />
       </div>
     </>
   );

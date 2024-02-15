@@ -12,8 +12,19 @@ module.exports = {
         poppins: "Poppins, sans-serif",
         inter: "Inter, sans-serif",
       },
+      screens: {
+        "custom-2xl": "1350px",
+        "custom-3xl": "1400px",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateY(-10%)" },
+          "50%": { transform: "translateY(10%)" },
+        },
+      },
       colors: {
         white: "#fff",
+        "light-white": "#FFFFFF0A",
         black: "#000",
         "light-yellow": "#F2CD75",
         "dark-yellow": "#A97424",
@@ -37,6 +48,7 @@ module.exports = {
         gradient: "linear-gradient(146.59deg, #F2CD75 -0.66%, #A97424 98.99%)",
         "homepage-hero-bg":
           "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
+        "common-bg-image": "url('/src/assets/images/webp/HeroSection_bg.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height

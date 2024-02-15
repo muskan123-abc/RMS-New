@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { CommonXmildIcon } from "../common/Icons";
+import image from "../../assets/images/svg/XMLID_2_.svg";
 import { formatNumber, ratingStars } from "../../utils/CommonFunction";
 import { reviewList } from "../common/Helper";
-import image from "../../assets/images/svg/XMLID_2_.svg";
 import CustomButton from "../common/fields/button/CustomButton";
 
-const RatingAndReview = () => {
+const RatingAndReview = ({ showSidebar }) => {
   //USR FOR RATING PROGRESSBAR
   const [ref, inView] = useInView({});
   const [showTabs, setShowTabs] = useState("myaccount");
@@ -32,7 +31,9 @@ const RatingAndReview = () => {
   return (
     <div>
       <section
-        className="py-12 sm:pb-28 md:pb-32 lg:pb-36 relative min-[1440px]:pl-4"
+        className={` py-12 min-[1440px]:pl-4 relative sm:pb-28 md:pb-32 ${
+          showSidebar ? "lg:pb-16" : "lg:pb-36  "
+        }`}
         id="reviews">
         <span className="bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-0 top-[0px] pointer-events-none z-10"></span>
         <span className=" absolute right-0 top-50 pe-14 hidden lg:block movieIcon_animation">
@@ -117,7 +118,7 @@ const RatingAndReview = () => {
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
-                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:inline-block hidden"
               />
             </div>
@@ -155,7 +156,7 @@ const RatingAndReview = () => {
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
-                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:hidden "
               />
             </div>

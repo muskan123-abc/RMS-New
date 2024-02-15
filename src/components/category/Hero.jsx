@@ -32,6 +32,7 @@ const Hero = () => {
                 <CustomInput
                   placeholder="Search"
                   customStyles="w-full md:w-[80%]"
+                  isButtonVisible={true}
                 />
               </div>
             </div>
@@ -40,6 +41,7 @@ const Hero = () => {
                 <CustomInput
                   placeholder="Search"
                   customStyles="w-full md:w-[80%]"
+                  isButtonVisible={true}
                 />
               </div>
               <div className="border-2 border-solid border-[#FFFFFF4D] rounded-lg z-50 relative overflow-hidden">

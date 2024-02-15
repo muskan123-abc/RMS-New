@@ -69,15 +69,15 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
 
   return (
     <div
-      className={` relative  ${
+      className={` relative px-4 px:md-0  ${
         showSidebar
-          ? " mx-auto mr-0 2xl:mr-auto min-[1300px]:max-w-[910px] min-[1400px]:max-w-[950px]"
+          ? " mx-auto  2xl:mr-auto custom-2xl:max-w-[790px] min-[1400px]:max-w-[870px]"
           : "mx-auto max-w-[1140px]"
       } `}>
       <Slider
         ref={watch_slider}
         {...settings}
-        className="relative z-10 pb-8 xl:pb-0 watch_slider   watch_bg_shadow after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70">
+        className="relative z-10 pb-8 xl:pb-0 watch_slider after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70">
         {content &&
           content.map((value, index) => {
             return (
@@ -169,7 +169,7 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
           aria-label="Slider Arrow"
           onClick={handleRightArrow}
           className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 ${
-            showSidebar ? " -translate-x-full " : "translate-x-[100%] "
+            showSidebar ? " translate-x-full " : "translate-x-[100%] "
           }  right-[-20px] min-[1400px]:translate-x-full`}>
           <CommonRightArrowIcon />
         </button>

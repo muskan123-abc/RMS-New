@@ -5,8 +5,7 @@ export const SearchIcon = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-    >
+      fill="none">
       <path
         d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
         fill="white"
@@ -24,8 +23,7 @@ export const DownloadIcon = () => {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M4.00033 13.3337C3.63366 13.3337 3.31966 13.203 3.05833 12.9417C2.79699 12.6803 2.66655 12.3665 2.66699 12.0003V10.0003H4.00033V12.0003H12.0003V10.0003H13.3337V12.0003C13.3337 12.367 13.203 12.681 12.9417 12.9423C12.6803 13.2037 12.3665 13.3341 12.0003 13.3337H4.00033ZM8.00033 10.667L4.66699 7.33366L5.60033 6.36699L7.33366 8.10033V2.66699H8.66699V8.10033L10.4003 6.36699L11.3337 7.33366L8.00033 10.667Z"
         fill="white"
@@ -41,8 +39,7 @@ export const StarGrey = () => {
       height="19"
       viewBox="0 0 20 19"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         opacity="0.4"
         d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
@@ -59,8 +56,7 @@ export const YellowStar = () => {
       height="19"
       viewBox="0 0 20 19"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
         fill="url(#paint0_linear_214_2888)"
@@ -72,8 +68,7 @@ export const YellowStar = () => {
           y1="0"
           x2="20"
           y2="20"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -89,8 +84,7 @@ export const CommonXmildIcon = () => {
       height="79"
       viewBox="0 0 73 79"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M7.17272 36.8999C6.71185 37.0075 6.4256 37.4682 6.53324 37.9291C6.64087 38.3899 7.10156 38.6762 7.56244 38.5685C8.02331 38.4609 8.30956 38.0002 8.20192 37.5393C8.09428 37.0785 7.63359 36.7922 7.17272 36.8999ZM7.49563 38.2825C7.19368 38.353 6.89777 38.1624 6.8291 37.8683C6.75858 37.5664 6.94923 37.2705 7.24324 37.2018C7.53725 37.1332 7.84111 37.322 7.90977 37.616C7.97844 37.91 7.79758 38.212 7.49563 38.2825Z"
         fill="url(#paint0_linear_214_3019)"
@@ -126,8 +120,7 @@ export const CommonXmildIcon = () => {
           y1="37.0947"
           x2="8.39678"
           y2="38.3737"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -137,8 +130,7 @@ export const CommonXmildIcon = () => {
           y1="41.6206"
           x2="16.1072"
           y2="42.8996"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -148,8 +140,7 @@ export const CommonXmildIcon = () => {
           y1="43.1108"
           x2="9.72649"
           y2="44.3898"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -159,8 +150,7 @@ export const CommonXmildIcon = () => {
           y1="13.085"
           x2="33.7651"
           y2="50.8772"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -170,8 +160,7 @@ export const CommonXmildIcon = () => {
           y1="36.3135"
           x2="17.0113"
           y2="43.856"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -181,8 +170,7 @@ export const CommonXmildIcon = () => {
           y1="49.5298"
           x2="39.813"
           y2="62.1689"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -192,8 +180,7 @@ export const CommonXmildIcon = () => {
           y1="42.6724"
           x2="51.2322"
           y2="86.9289"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -211,8 +198,7 @@ export const ChennalIcon = () => {
       height="45"
       viewBox="0 0 45 45"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1301_906)">
         <path
           d="M38.5687 33.253H35.1656L28.9031 15.9974H31.965L35.7525 27.223C35.8931 27.6562 36.2644 28.9105 36.8512 30.9955L37.4081 29.1262L38.0269 27.2399L41.9531 15.9824H45L38.5687 33.253ZM28.5487 33.1293C27.6021 33.3902 26.6244 33.5208 25.6425 33.5174C23.3362 33.5174 22.1925 32.218 22.1925 29.6043V18.0862H20.1994V15.9974H22.3012V13.2768L25.0687 12.148V16.0143H28.2694V18.1012H25.0875V28.9855C25.0875 29.8218 25.2262 30.3918 25.4887 30.733C25.7512 31.0743 26.2312 31.228 26.895 31.228C27.2831 31.228 27.8231 31.1512 28.5506 31.0124L28.5487 33.1293ZM14.88 23.1112C14.9119 26.4187 17.7862 27.5324 17.8181 27.5474C17.7862 27.6262 17.3531 29.1262 16.3031 30.6562C15.39 31.9874 14.4469 33.3149 12.9469 33.3468C11.4787 33.3768 11.0156 32.4805 9.3281 32.4805C7.65935 32.4805 7.13435 33.3149 5.74123 33.3768C4.31998 33.4237 3.22123 31.9237 2.29498 30.5943C0.423729 27.8737 -1.0144 22.9105 0.918729 19.5693C1.87498 17.9005 3.59248 16.8487 5.44873 16.8318C6.85498 16.8018 8.20123 17.7918 9.06748 17.7918C9.93185 17.7918 11.5556 16.6162 13.2562 16.7868C13.9687 16.8168 15.9787 17.0812 17.2612 18.9505C17.1525 19.0124 14.865 20.3437 14.88 23.1112ZM12.1275 14.9774C12.885 14.0493 13.4119 12.7649 13.2712 11.4824C12.1744 11.5293 10.845 12.2099 10.0406 13.138C9.3281 13.9574 8.70935 15.2718 8.87998 16.5243C10.1025 16.618 11.37 15.8905 12.1275 14.9774Z"
@@ -237,8 +223,7 @@ export const ShareIcon = () => {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M14.471 7.52853L9.13767 2.19519C9.04444 2.10198 8.92566 2.03851 8.79636 2.0128C8.66706 1.98709 8.53304 2.00029 8.41124 2.05074C8.28944 2.10119 8.18533 2.18661 8.11207 2.29622C8.03882 2.40583 7.9997 2.53469 7.99967 2.66652V5.02986C6.17854 5.19839 4.48583 6.04043 3.2528 7.39121C2.01978 8.74199 1.33519 10.5043 1.33301 12.3332V13.3332C1.33311 13.4716 1.37628 13.6065 1.45652 13.7192C1.53677 13.832 1.65011 13.917 1.78082 13.9624C1.91154 14.0078 2.05316 14.0115 2.18603 13.9728C2.3189 13.9341 2.43644 13.855 2.52234 13.7465C3.17547 12.9698 3.97685 12.3311 4.87964 11.8676C5.78243 11.4041 6.76854 11.1252 7.78034 11.0472C7.81367 11.0432 7.89701 11.0365 7.99967 11.0299V13.3332C7.9997 13.465 8.03882 13.5939 8.11207 13.7035C8.18533 13.8131 8.28944 13.8985 8.41124 13.949C8.53304 13.9994 8.66706 14.0126 8.79636 13.9869C8.92566 13.9612 9.04444 13.8977 9.13767 13.8045L14.471 8.47119C14.596 8.34617 14.6662 8.17663 14.6662 7.99986C14.6662 7.82308 14.596 7.65354 14.471 7.52853ZM9.33301 11.7239V10.3332C9.33301 10.1564 9.26277 9.98681 9.13775 9.86179C9.01272 9.73676 8.84315 9.66652 8.66634 9.66652C8.49634 9.66652 7.80234 9.69986 7.62501 9.72319C5.82825 9.88874 4.11795 10.5714 2.70101 11.6885C2.86184 10.2181 3.55937 8.85876 4.66004 7.87063C5.76072 6.88251 7.18719 6.33509 8.66634 6.33319C8.84315 6.33319 9.01272 6.26295 9.13775 6.13793C9.26277 6.0129 9.33301 5.84334 9.33301 5.66652V4.27586L13.057 7.99986L9.33301 11.7239Z"
         fill="white"
@@ -255,8 +240,7 @@ export const DownArrow = ({ moviesDropdown }) => {
       height="21"
       viewBox="0 0 20 21"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.7">
         <path
           d="M9.9997 13L6.46387 9.46495L7.64303 8.28662L9.9997 10.6433L12.3564 8.28662L13.5355 9.46495L9.9997 13Z"
@@ -274,8 +258,7 @@ export const NavNotificationIcon = () => {
       height="21"
       viewBox="0 0 18 21"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         className="group-hover:fill-[#B98736] duration-200"
         d="M16 15V9.8C15.5 9.9 15 10 14.5 10H14V16H4V9C4 6.2 6.2 4 9 4C9.1 2.7 9.7 1.6 10.5 0.7C10.2 0.3 9.6 0 9 0C7.9 0 7 0.9 7 2V2.3C4 3.2 2 5.9 2 9V15L0 17V18H18V17L16 15ZM7 19C7 20.1 7.9 21 9 21C10.1 21 11 20.1 11 19H7ZM18 4.5C18 6.4 16.4 8 14.5 8C12.6 8 11 6.4 11 4.5C11 2.6 12.6 1 14.5 1C16.4 1 18 2.6 18 4.5Z"
@@ -292,8 +275,7 @@ export const MenuIcon = () => {
       height="32"
       viewBox="0 0 32 32"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M5 7H27.9166M5 16.1666H27.9166M5 25.3333H27.9166"
         stroke="white"
@@ -311,8 +293,7 @@ export const CrossIcon = () => {
       height="50"
       viewBox="0 0 32 32"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M26.6667 26.6667L5.33334 5.33337M26.6667 5.33337L5.33334 26.6667"
         stroke="white"
@@ -578,6 +559,28 @@ export const FaqArrowIcon = () => {
       viewBox="0 0 30 30"
       fill="none">
       <path d="M7.5 11.25L15 18.75L22.5 11.25" stroke="white" strokeWidth="2" />
+    </svg>
+  );
+};
+
+//back to top
+export const BackToTopIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="white"
+      className="bi bi-chevron-double-up"
+      viewBox="0 0 16 16">
+      <path
+        fillRule="evenodd"
+        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+      />
+      <path
+        fillRule="evenodd"
+        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+      />
     </svg>
   );
 };
