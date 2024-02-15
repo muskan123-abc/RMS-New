@@ -134,14 +134,14 @@ const RatingAndReview = ({ showSidebar }) => {
                           {obj.title}
                         </h5>
                         <div className="flex justify-between items-center mt-[10px]">
-                          <p className=" font-poppins font-normal text-sm text-[#B2B2B2] mb-0">
+                          <p className=" font-poppins font-normal text-sm text-white opacity-70 mb-0">
                             {obj.date}
                           </p>
                           <span className="flex gap-1">
                             {ratingStars(obj.rating)}
                           </span>
                         </div>
-                        <p className=" font-poppins font-normal text-sm text-[#B2B2B2] mb-0 mt-6 leading-[22px]">
+                        <p className=" font-poppins font-normal text-sm text-white opacity-70 mb-0 mt-6 leading-[22px]">
                           {obj.description}
                         </p>
                       </div>

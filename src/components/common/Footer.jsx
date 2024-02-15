@@ -102,7 +102,7 @@ const Footer = () => {
                                   <Link
                                     aria-label={val.footerLinks}
                                     to={obj.url}
-                                    className=" font-normal text-sm text-[#B2B2B2] cursor-pointer hover:text-white duration-200">
+                                    className=" font-normal text-sm text-white opacity-70 cursor-pointer hover:text-white duration-200">
                                     {obj.link}
                                   </Link>
                                 </div>
@@ -115,7 +115,7 @@ const Footer = () => {
                 })}
               </div>
             </div>
-            <p className=" text-center w-full mt-[67px] text-[#B2B2B2]  font-normal text-base mb-0">
+            <p className=" text-center w-full mt-[67px] text-white opacity-70  font-normal text-base mb-0">
               © {year} RMS. All rights reserved.
             </p>
           </div>
