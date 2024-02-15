@@ -7,15 +7,15 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
     <>
       {/* Overlay */}
       <div
-        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${showSidebar ? "block" : "hidden"
-          }`}
-        onClick={() => setShowSidebar(false)}
-      ></div>
+        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${
+          showSidebar ? "block" : "hidden"
+        }`}
+        onClick={() => setShowSidebar(false)}></div>
       {/* Sidebar Content */}
       <div
-        className={`${showSidebar ? "w-full" : "w-0"
-          } max-w-[414px] flex overflow-hidden items-center justify-center  duration-300 custom-2xl:left-0 top-[80px] z-30 h-[calc(100vh-80px)] bg-black fixed custom-2xl:relative`}
-      >
+        className={`${
+          showSidebar ? "w-full" : "w-0"
+        } max-w-[414px] transition-all ease-linear duration-300 flex overflow-hidden items-center justify-center   custom-2xl:left-0 top-[80px] z-30 h-[calc(100vh-80px)] bg-black fixed custom-2xl:relative`}>
         {/* <button className="bg-red-800 p-4" onClick={() => setShowSidebar(false)}>
           sign out
         </button> */}
