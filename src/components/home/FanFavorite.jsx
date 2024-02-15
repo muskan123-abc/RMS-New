@@ -13,7 +13,7 @@ const FanFavorite = ({ showSidebar }) => {
       <h2 className="secondry_heading">
         Fan <span>favorites</span>
       </h2>
-      <div className="my-12 mx-auto">
+      <div className="my-10 md:my-12 mx-auto">
         <CommonSmallCardSlider
           showSidebar={showSidebar}
           cardContent={FanFavoriteContent}

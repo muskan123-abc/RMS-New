@@ -16,6 +16,12 @@ module.exports = {
         "custom-2xl": "1350px",
         "custom-3xl": "1400px",
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateY(-10%)" },
+          "50%": { transform: "translateY(10%)" },
+        },
+      },
       colors: {
         white: "#fff",
         black: "#000",
@@ -40,7 +46,7 @@ module.exports = {
         gradient: "linear-gradient(146.59deg, #F2CD75 -0.66%, #A97424 98.99%)",
         "homepage-hero-bg":
           "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
-        "common-bg-image":"url('/src/assets/images/webp/HeroSection_bg.webp')"
+        "common-bg-image": "url('/src/assets/images/webp/HeroSection_bg.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height

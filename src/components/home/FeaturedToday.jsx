@@ -100,7 +100,7 @@ const FeaturedToday = ({ showSidebar }) => {
           <img src={image} alt=" alternate" />{" "}
         </span>
         <div
-          className={`container max-w-full xl:max-w-[1140px] ${
+          className={`container px-4 px:md-0  max-w-full xl:max-w-[1140px] ${
             showSidebar ? " custom-2xl:max-w-[1000px]" : "xl:max-w-[1140px]"
           } 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
           <div className=" flex flex-col md:flex-row items-center pb-10 mx-auto ">

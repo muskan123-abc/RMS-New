@@ -20,7 +20,7 @@ const MostRatedMovies = ({ showSidebar }) => {
       <h2 className="secondry_heading">
         Most rated <span>movies</span>
       </h2>
-      <div className="my-12">
+      <div className="my-10 md:my-12">
         {" "}
         <CommonBigCardSlider showSidebar={showSidebar} />
       </div>

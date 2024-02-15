@@ -69,9 +69,9 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
 
   return (
     <div
-      className={` relative  ${
+      className={` relative px-4 px:md-0  ${
         showSidebar
-          ? " mx-auto mr -0 2xl:mr-auto custom-2xl:max-w-[790px] min-[1400px]:max-w-[870px]"
+          ? " mx-auto  2xl:mr-auto custom-2xl:max-w-[790px] min-[1400px]:max-w-[870px]"
           : "mx-auto max-w-[1140px]"
       } `}>
       <Slider

@@ -133,7 +133,7 @@ const RecentlyViewed = ({ showSidebar }) => {
             <CommonRightArrowIcon />
           </button>
         </div>
-        <div className="my-12">
+        <div className="my-10 md:my-12 px-4 px:md-0 ">
           <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
             {recentlyViewedSlider.map((value, index) => {
               return (
