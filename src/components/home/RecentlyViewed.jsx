@@ -9,6 +9,7 @@ import {
   CommonRightArrowIcon,
   ShareIcon,
 } from "../common/Icons";
+import image from "../../assets/images/png/right-side-position-music-reel-img.png";
 import CustomButton from "../common/fields/button/CustomButton";
 const RecentlyViewed = ({ showSidebar }) => {
   // STATES VALUE IMPORT FROM PROVIDER
@@ -100,7 +101,13 @@ const RecentlyViewed = ({ showSidebar }) => {
     });
   }
   return (
-    <div>
+    <div className=" relative">
+      <span className=" bg-gradient w-[200px] h-[200px] rounded-[343px] blur-[131px] absolute left-0 top-0 z-10"></span>
+      <img
+        className=" absolute start-0 top-[-70px] xl:top-[-65px] z-0 hidden xl:block pointer-events-none"
+        src={image}
+        alt="music_reel_left_side"
+      />
       <div
         className={`relative pt-12 xl:pt-[50px]  mx-auto  ${
           showSidebar
