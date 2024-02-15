@@ -11,6 +11,7 @@ const CustomInput = ({
   customStylesButton,
   isButtonVisible,
   handleInputChange,
+  value,
 }) => {
   return (
     <lable
@@ -25,8 +26,8 @@ const CustomInput = ({
         }`}
         type={type ? type : "text"}
         placeholder={placeholder ? placeholder : "Search"}
-        required
         onChange={handleInputChange && handleInputChange}
+        value={value}
       />
       {isButtonVisible && (
         <button

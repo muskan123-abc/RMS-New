@@ -12,9 +12,8 @@ const AccountDetail = ({ showSidebar }) => {
 
   const [name, setname] = useState("Floyd Miles");
   const [userName, setUserName] = useState("Designer");
-
-  const [formData, setFormData] = useState({
-    displayName: "",
+  const steticData = {
+    Name: "",
     username: "",
     address: "",
     city: "",
@@ -22,23 +21,16 @@ const AccountDetail = ({ showSidebar }) => {
     contact: "",
     phone: "",
     password: "",
-  });
+  };
+  const [formData, setFormData] = useState(steticData);
 
-  const submitHandler = (event) => {
-    event.preventDefault();
+  const submitHandler = (e) => {
+    e.preventDefault();
+
     console.log(formData, " <========= formData");
-    setname(formData.displayName);
-    setUserName(formData.username);
-    setFormData({
-      displayName: "",
-      username: "",
-      address: "",
-      city: "",
-      dob: "",
-      contact: "",
-      phone: "",
-      password: "",
-    });
+    if (formData.Name === !"" && formData.username !== "") {
+      setFormData(steticData);
+    }
   };
 
   const handleImageChange = (event) => {
@@ -96,10 +88,10 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    displayName: value,
+                    Name: value.target.value,
                   })
                 }
-                value={formData.displayName}
+                value={formData.Name}
               />
               <CustomInput
                 placeholder="Username"
@@ -107,7 +99,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    username: value,
+                    username: value.target.value,
                   })
                 }
                 value={formData.username}
@@ -118,7 +110,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    address: value,
+                    address: value.target.value,
                   })
                 }
                 value={formData.address}
@@ -129,7 +121,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    city: value,
+                    city: value.target.value,
                   })
                 }
                 value={formData.city}
@@ -141,7 +133,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    dob: value,
+                    dob: value.target.value,
                   })
                 }
                 value={formData.dob}
@@ -154,7 +146,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    contact: value,
+                    contact: value.target.value,
                   })
                 }
                 value={formData.contact}
@@ -167,7 +159,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    phone: value,
+                    phone: value.target.value,
                   })
                 }
                 value={formData.phone}
@@ -180,7 +172,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    password: value,
+                    password: value.target.value,
                   })
                 }
                 value={formData.password}
