@@ -114,6 +114,9 @@ const TrendingSlider = () => {
                       <span className="flex gap-2 items-center text-2xl text-white">
                         <ChennalIcon /> <span>+</span>
                       </span>
+                      <p className=" font-inter font-normal text-xs">
+                        YM Movie Trailer
+                      </p>
                     </div>
                     <div>
                       <div className="flex gap-1 pt-4 pb-[9px]">
@@ -121,10 +124,10 @@ const TrendingSlider = () => {
                       </div>
                       <div className="flex flex-col  w-full gap-2 sm:gap-4 justify-between mt-4">
                         <span className="flex w-full">
-                          <button>aksdjf</button>
+                          <button>Add a Watchlist</button>
                         </span>
                         <span className="flex w-full">
-                          <button className=" common_bg_gradient_color ff_inter font-semibold text-[16px] text-white border w-full py-[11px] px-1 lg:px-4 rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex justify-center items-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+                          <button className="common_bg_gradient_color ff_inter font-semibold text-[16px] text-white border w-full py-[11px] px-1 lg:px-4 rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10 flex justify-center items-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
                             <ShareIcon />
                             Share
                           </button>
