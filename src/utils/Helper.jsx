@@ -173,46 +173,55 @@ export const sideTopList = [
 export const sideList = [
   {
     image: <HomeIcon />,
-    title: "Home"
+    title: "Home",
+    url: "/home",
   },
   {
     image: <LibraryIcon />,
-    title: "Library"
+    title: "Library",
+    url: "/library",
   },
   {
     image: <WatchlistIcon />,
-    title: "My Watchlist"
+    title: "My Watchlist",
+    url: "/my-watchlist",
   },
   {
     image: <ReviewsIcon />,
-    title: "My reviews"
+    title: "My reviews",
+    url: "/my-reviews",
   },
   {
     image: <HistoryIcon />,
-    title: "History"
+    title: "History",
+    url: "/history",
   },
   {
     image: <SubscriptionIcon />,
-    title: "Subscription"
+    title: "Subscription",
+    url: "/subscription",
   },
   {
     image: <TrendingIcon />,
-    title: "Trending"
+    title: "Trending",
+    url: "/trending",
   },
   {
     image: <AccountIcon />,
-    title: "My account"
+    title: "My account",
+    url: "/my-account",
   },
   {
     image: <SignOutIcon />,
-    title: "Sign out"
+    title: "Sign out",
+    url: "/sign-out",
   },
 ]
 
 export const messegeList = [
   {
     image: JaneCooper,
-    title: "Cooper",
+    title: " Jane Cooper",
   },
   {
     image: JeromeBell,
@@ -258,7 +267,7 @@ export const messegeList = [
     image: ArleneMcCoy,
     title: "Courtney Henry",
   },
-   {
+  {
     image: JaneCooper,
     title: "Dianne Russell",
   },

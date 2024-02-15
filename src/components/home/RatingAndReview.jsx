@@ -119,7 +119,7 @@ const RatingAndReview = ({ showSidebar }) => {
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
-                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:inline-block hidden"
               />
             </div>
@@ -157,7 +157,7 @@ const RatingAndReview = ({ showSidebar }) => {
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
-                customStyles=" mt-[60px] " // add custom styles  \\ use custom styles with importent
+                customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:hidden "
               />
             </div>

@@ -7,6 +7,8 @@ import ProductDetails from "../components/product-details/ProductDetails";
 import Sidebar from "../components/common/sidebar/Sidebar";
 import MoviesRatedCard from "../components/common/card/MoviesRatedCard";
 import Notification from "../components/notification/Notification";
+import BackToTop from "../components/common/BackToTop";
+import Community from "../components/community/Community";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,17 +29,9 @@ const Router = () => {
             element={<Category showSidebar={showSidebar} />}
           />
           <Route path="/notifications" element={<Notification />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
-        {/* <MoviesRatedCard/> */}
-        {/* <Card /> */}
-        {/* <CommonCardSlider /> */}
-        {/* <CommonSmallCardSlider cardContent={FanFavoriteContent} />
-        <CommonVideoSlider />
-        <CommonBigCardSlider />
-        <RatingAndReview />
-        <FeaturedToday />
-        <Faqs />
-        <Footer /> */}
+        <BackToTop />
       </div>
     </div>
   );

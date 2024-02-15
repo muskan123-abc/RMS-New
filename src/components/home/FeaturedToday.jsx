@@ -12,7 +12,7 @@ import {
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
 import { featuredSlider } from "../common/Helper";
-
+import image from "../../assets/images/svg/XMLID_2_.svg";
 const FeaturedToday = ({ showSidebar }) => {
   //FOR REDIRECT TO PATH
   const navigate = useNavigate();
@@ -97,10 +97,10 @@ const FeaturedToday = ({ showSidebar }) => {
         className=" relative pb-0 md:pt-[170px] xl:pt-28 md:pb-36"
         id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
-          <CommonXmildIcon />
+          <img src={image} alt=" alternate" />{" "}
         </span>
         <div
-          className={`container max-w-full xl:max-w-[1140px] ${
+          className={`container px-4 px:md-0  max-w-full xl:max-w-[1140px] ${
             showSidebar ? " custom-2xl:max-w-[1000px]" : "xl:max-w-[1140px]"
           } 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
           <div className=" flex flex-col md:flex-row items-center pb-10 mx-auto ">
