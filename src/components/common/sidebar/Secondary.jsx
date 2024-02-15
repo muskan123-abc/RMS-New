@@ -11,8 +11,8 @@ const Secondary = () => {
 
     const handleClick = (type) => {
         setActivedropdown(prevState => ({
-            ...prevState,
-            [type]: !prevState[type]
+            communities: type === 'communities' ? !prevState.communities : false,
+            friends: type === 'friends' ? !prevState.friends : false,
         }));
     };
 
@@ -67,7 +67,7 @@ const Secondary = () => {
                         <PlusIcon />
                     </div>
                 </div>
-                <div className='overflow-y-auto h-[calc(100vh-140px)] custom__Scroll_bar'>
+                <div className='overflow-y-auto custom__Scroll_bar' style={{ height: activedropdown.communities ? 'calc(100vh - 315px)' : (activedropdown.friends ? 'calc(100vh - 350px)' : 'calc(100vh - 225px)') }}>
                     {messegeList.map((obj, index) => {
                         return (
                             <div key={index} className='py-2 flex items-center gap-2 px-[15px] opacity-80 hover:opacity-100 hover:bg-gradient-to-r from-white/10 to-white/10  transition-all ease-linear duration-200 '>
