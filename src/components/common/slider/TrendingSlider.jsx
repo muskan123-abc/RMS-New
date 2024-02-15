@@ -123,7 +123,7 @@ const TrendingSlider = () => {
                           {obj.rank}
                         </p>
                         <ol className="!list-disc">
-                          <li className=" ::marker:!text-sm">
+                          <li className="marker:text-xs">
                             <p className="font-poppins text-xs leading-[118%]">
                               {obj.time}
                             </p>
@@ -141,14 +141,14 @@ const TrendingSlider = () => {
                           isGradient={true}
                           varient="button"
                           isVisible={true}
-                          customStyles="justify-center"
+                          customStyles="justify-center !font-medium"
                         />
                         <CustomButton
                           title="Share"
                           isGradient={true}
                           varient="button"
                           isVisible={true}
-                          customStyles="justify-center"
+                          customStyles="justify-center !font-medium"
                           icon={<ShareIcon />}
                         />
                       </div>
