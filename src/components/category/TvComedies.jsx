@@ -13,7 +13,7 @@ const TvComedies = () => {
           loading="lazy"
           alt="reel"
         />
-        <h2 className="secondry_heading pb-8 sm:pb-14">
+        <h2 className="secondry_heading">
           TV <span>Comedies</span>
         </h2>
         <CommonCardSlider contentArr={comedieSlider} />

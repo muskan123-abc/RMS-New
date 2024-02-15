@@ -14,7 +14,7 @@ const TvActionAdventure = () => {
           alt="reel"
         />
         <span className=" bg-gradient w-[220px] h-[220px] rounded-[343px] blur-[131px] absolute left-[-50px] bottom-0 z-10"></span>
-        <h2 className="secondry_heading pb-8 sm:pb-14">
+        <h2 className="secondry_heading">
           TV action & <span>Adventure</span>
         </h2>
         <CommonCardSlider contentArr={adventureSlider} />

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import Slider from "react-slick";
 import { formatNumber, ratingStars } from "../../../utils/CommonFunction";
 import {
@@ -66,6 +66,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     setCardData(value);
   };
+
+  const pathName = useLocation().pathname;
   return (
     <div>
       <div
@@ -73,11 +75,13 @@ const CommonBigCardSlider = ({ showSidebar }) => {
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
-        } mx-auto`}>
+        } mx-auto`}
+      >
         <Slider
           ref={mostRatedSlider_slider}
           {...settings}
-          className="relative pb-8 xl:pb-0">
+          className="relative pb-8 xl:pb-0"
+        >
           {/* MOST RATED SLIDER CARDS BY MAP  */}
           {mostRatedSliderHome.map((obj, index) => {
             const textLength = obj.description.length;
@@ -86,9 +90,10 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               : obj.description.substring(0, 150);
             return (
               <div key={index} className="px-2 xl:pb-0 ">
+                  <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10"></div>
                 <div className="flex bg-[#FFFFFF0A] backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
-                  <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%] after:absolute after:h-0 after:w-full after:bg-transparent after:-bottom-3 after:translate-x-[57px] after:border-b-4 after:border-dashed after:border-[#443925]"></div>
-                  <div className=" rounded-[0_12px_0_12px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute  after:absolute after:h-0 after:w-full after:bg-transparent after:-top-3 after:-translate-x-[57px] after:border-b-4 after:border-dashed after:border-[#443925]"></div>
+                  <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
+                  <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute"></div>
                   <div className=" opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[326px] h-[326px] rounded-[326px] blur-[250px] bg-[linear-gradient(135deg,#F2CD75_0%,#A97424_100%)]"></div>
                   <div className="min-w-[270px] rounded-lg relative w-[270px] h-[381px]  overflow-hidden border-2 border-solid border-[#FFFFFF4D] rated_movies_shadow max-w-[400px]">
                     {!isLoading ? <div className="skeleton-loader"></div> : ""}
@@ -102,32 +107,52 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                   </div>
                   <div className="relative  watch_bg_shadow after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
                     <div className="flex justify-between items-center">
-                      <h4 className="font-poppins font-semibold md:text-2x; text-sm text-white opacity-90">
-                        {obj.title}
-                      </h4>
+                      {pathName === "/category" ? (
+                        <h4 className="font-poppins font-semibold text-2xl text-white opacity-90">
+                          {obj.title2}
+                        </h4>
+                      ) : (
+                        <h4 className="font-poppins font-semibold md:text-2x; text-sm text-white opacity-90">
+                          {obj.title}
+                        </h4>
+                      )}
 
-                      <CustomButton
-                        title="DownLoad" //set button title
-                        isGradient={true} // is grident is  visible // controle  btn types
-                        varient="button" // set button type like  Link and  Button
-                        url="" // set url when button type  is link
-                        isVisible={true} // handle  button visibility
-                        customStyles="" // add custom styles  \\ use custom styles with importent
-                        icon={<DownloadIcon />} // add icon //
-                      />
+                      {pathName === "/category" ? (
+                        <CustomButton
+                          className="w-[170px] flex justify-center"
+                          title="Join Now" //set button title
+                          isGradient={true} // is grident is  visible // controle  btn types
+                          varient="button" // set button type like  Link and  Button
+                          isVisible={true} // handle  button visibility
+                        />
+                      ) : (
+                        <CustomButton
+                          title="DownLoad" //set button title
+                          isGradient={true} // is grident is  visible // controle  btn types
+                          varient="button" // set button type like  Link and  Button
+                          url="" // set url when button type  is link
+                          isVisible={true} // handle  button visibility
+                          customStyles="" // add custom styles  \\ use custom styles with importent
+                          icon={<DownloadIcon />} // add icon //
+                        />
+                      )}
                     </div>
 
-                    <div className="inline-flex justify-between xs:justify-normal  overflow-x-auto whitespace-nowrap gap-5 2xs:gap-[5px] xs:gap-5 lg:gap-4 pt-3 pb-5">
-                      <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
-                        {formatNumber(189000)} Reviews
-                      </h5>
-                      <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
-                        {formatNumber(29000000)}+ Download
-                      </h5>
-                      <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
-                        {obj.rating}+ Rated out of 5
-                      </h5>
-                    </div>
+                    {pathName === "/category" ? (
+                      ""
+                    ) : (
+                      <div className="inline-flex justify-between xs:justify-normal  overflow-x-auto whitespace-nowrap gap-5 2xs:gap-[5px] xs:gap-5 lg:gap-4 pt-3 pb-5">
+                        <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
+                          {formatNumber(189000)} Reviews
+                        </h5>
+                        <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
+                          {formatNumber(29000000)}+ Download
+                        </h5>
+                        <h5 className="font-poppins font-normal text-xs sm:text-sm text-white opacity-70">
+                          {obj.rating}+ Rated out of 5
+                        </h5>
+                      </div>
+                    )}
 
                     <span className="flex gap-1">
                       {ratingStars(obj.rating)}
@@ -148,7 +173,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}>
+                          onClick={() => handleReadMoreClick(index)}
+                        >
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}
