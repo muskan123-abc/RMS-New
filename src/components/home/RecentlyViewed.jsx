@@ -43,14 +43,14 @@ const RecentlyViewed = ({ showSidebar }) => {
     prevArrow: ".right-arrow",
     arrows: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: showSidebar ? 2 : 3,
     slidesToScroll: 1,
 
     responsive: [
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: showSidebar ? 2 : 3,
 
           dots: false,
         },
@@ -58,7 +58,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: showSidebar ? 2 : 3,
 
           dots: true,
           autoplay: true,
@@ -67,7 +67,7 @@ const RecentlyViewed = ({ showSidebar }) => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
 
           dots: true,
           autoplay: true,
@@ -104,24 +104,24 @@ const RecentlyViewed = ({ showSidebar }) => {
       <div
         className={`relative pt-12 xl:pt-[50px]  mx-auto  ${
           showSidebar
-            ? " min-[1350px]:max-w-[900px] min-[1400px]:max-w-[950px]"
+            ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
         }`}>
         <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
-          Reviews & <span className="common-text-gradient">Rating</span>
+          Recently <span className="common-text-gradient">Viewed</span>
         </h2>
         <div className="justify-center gap-10 xl:gap-0 pt-10 xl:pt-0 hidden xl:flex">
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] left-[-5%]
+            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] left-[-7%]
                  `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  right-[-5%]
+            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  right-[-7%]
                  `}>
             <CommonRightArrowIcon />
           </button>

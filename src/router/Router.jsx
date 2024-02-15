@@ -6,6 +6,7 @@ import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
 import Sidebar from "../components/common/sidebar/Sidebar";
 import MoviesRatedCard from "../components/common/card/MoviesRatedCard";
+import Notification from "../components/notification/Notification";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -22,6 +23,7 @@ const Router = () => {
           <Route path="/" element={<Home showSidebar={showSidebar} />} />
           <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/notifications" element={<Notification />} />
         </Routes>
         {/* <MoviesRatedCard/> */}
         {/* <Card /> */}

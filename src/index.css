@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* side bar scroll bar */
+.custom__Scroll_bar::-webkit-scrollbar {
+    width: 4px !important;
+    display: block !important;
+}
+
+.custom__Scroll_bar::-webkit-scrollbar-thumb {
+    background: #9e9d9d !important;
+    border-radius: 20px !important;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
+
+
 
 .hero_slider {
     animation-name: textSCroll;
