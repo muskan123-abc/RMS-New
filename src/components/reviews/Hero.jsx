@@ -18,7 +18,7 @@ const Hero = ({ showSidebar }) => {
         }`}
       >
         <div className="flex justify-between sm:items-center pb-8 w-full sm:flex-row flex-col gap-4">
-          <h2 className="font-poppins font-medium text-white text-[22px] flex items-center gap-[11px]">
+          <h2 className="font-poppins font-medium text-white text-xxl flex items-center gap-[11px]">
             <ReviewAndRationgIcon /> Reviews &
             <span className="common-text-gradient">Rating</span>
           </h2>

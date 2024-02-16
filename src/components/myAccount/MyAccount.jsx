@@ -61,7 +61,7 @@ const AccountDetail = ({ showSidebar }) => {
         >
           <div className="flex items-center gap-[11px] mb-[30px]">
             <UsersIcon />
-            <span className="font-medium font-poppins text-[22px] text-white">
+            <span className="font-medium font-poppins text-xxl text-white">
               My account
             </span>
           </div>
