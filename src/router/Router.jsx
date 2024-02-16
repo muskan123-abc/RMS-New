@@ -15,6 +15,8 @@ import Hero from "../components/reviews/Hero";
 import Trending from "../components/trending/Trending";
 import Library from "../components/library/Library";
 import Subscription from "../components/subscription/Subscription";
+import VideoPlayer from "../components/product-details/VideoPlayer";
+import ItemDetails from "../components/product-details/ItemDetails";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -24,7 +26,7 @@ const Router = () => {
   };
   return (
     <div className={`h-screen flex relative `}>
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      {/* "<Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="w-full overflow-y-auto overflow-x-hidden">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
@@ -49,7 +51,9 @@ const Router = () => {
           />
           <Route path="/subscription" element={<Subscription />} />
         </Routes>
-      </div>
+        
+      </div>" */}
+      <ProductDetails />
     </div>
   );
 };
