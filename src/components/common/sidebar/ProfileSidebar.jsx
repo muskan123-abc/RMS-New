@@ -8,7 +8,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
 
   return (
     <>
-      <div className="w-full max-[375px]:max-w-[150px] max-w-[173px] h-full bg-[#373022] pb-4 overflow-y-auto custom_Scroll_none">
+      <div className="w-full max-[375px]:max-w-[150px] max-w-[173px] h-full bg-[#373022] pb-4 overflow-y-auto custom_Scroll_none relative">
         <div className="pt-5 custom-4xl:pt-[52px] pb-[10px] flex justify-center">
           <img className="w-14 h-[57px]" src={ProfileImg} alt="profile-img" />
         </div>
@@ -37,33 +37,28 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                   isActive
                     ? "border-white/25 bg-gradient-to-r from-white/10 to-white/10"
                     : ""
-                }`}
-              >
+                }`}>
                 {obj.title === "Sign out" ? (
                   <button
                     className="py-[10px] flex items-center gap-2"
-                    onClick={() => setShowSidebar(false)}
-                  >
+                    onClick={() => setShowSidebar(false)}>
                     <span>{obj.image}</span>
                     <h2
                       className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
                         isActive ? "text-[#F1C40F]" : ""
-                      }`}
-                    >
+                      }`}>
                       {obj.title}
                     </h2>
                   </button>
                 ) : (
                   <Link
                     to={obj.url}
-                    className="py-[10px] flex items-center gap-2"
-                  >
+                    className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2
                       className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
                         isActive ? "text-[#F1C40F]" : ""
-                      }`}
-                    >
+                      }`}>
                       {obj.title}
                     </h2>
                   </Link>
