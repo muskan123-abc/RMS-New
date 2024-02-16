@@ -133,7 +133,7 @@ const VideoPlayer = () => {
 
   return (
     <div className=" flex flex-col">
-      <div className="custom_dark_card_bg   p-[10px] rounded-xl group">
+      <div className="custom_dark_card_bg   p-2.5 rounded-xl group">
         <div className="relative overflow-hidden rounded-md h-full xl:h-[467px] lg:min-h-[400px] md:min-h-[100px] sm:min-h-[250px] min-h-[287px] w-full">
           {isVideoPlaying ? (
             <iframe
@@ -167,21 +167,21 @@ const VideoPlayer = () => {
           {title ? title : currentMovie.title}
         </h3>
         <div className="flex flex-nowrap sm:items-center sm:gap-7 gap-5 pt-0.5 flex-col sm:flex-row overflow-hidden">
-          <div className="flex justify-between md:justify-normal gap-9 pt-2 2sm:pt-0">
-            <div className="flex gap-3 w-[160px] 2sm:w-[155px] cursor-pointer">
+          <div className="flex justify-between md:justify-normal gap-9 pt-2 sm:pt-0">
+            <div className="flex gap-3 w-[160px] sm:w-[155px] cursor-pointer">
               <img
                 className="rounded-full object-cover w-10 h-10"
                 src={pIcon}
                 alt="suggest"
               />
-              <div className="flex items-center 2sm:items-start 2sm:flex-col justify-center">
+              <div className="flex items-center sm:items-start  sm:flex-col justify-center">
                 <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
                   TV Movies
                 </h3>
-                <p className="font-poppins font-normal text-xs text-white opacity-70 hidden 2sm:flex">
+                <p className="font-poppins font-normal text-xs text-white opacity-70 hidden sm:flex">
                   {formatNumber(929000)} Subscribers
                 </p>
-                <p className="font-poppins font-normal text-xs text-white opacity-70 2sm:hidden ps-2">
+                <p className="font-poppins font-normal text-xs text-white opacity-70 sm:hidden ps-2">
                   {formatNumber(929000)}
                 </p>
               </div>
