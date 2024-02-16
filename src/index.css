@@ -100,6 +100,7 @@
 }
 
 @media (max-width: 767.98px) {
+
   /* try */
   .hero_slider {
     animation-name: textSCroll;
@@ -189,12 +190,10 @@
 }
 
 .bottom_blur_hero {
-  background: linear-gradient(
-    180deg,
-    rgba(30, 30, 30, 0) 0%,
-    #000000 100%,
-    #000000 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(30, 30, 30, 0) 0%,
+      #000000 100%,
+      #000000 100%);
 }
 
 .account_library_slider_card {
@@ -208,6 +207,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+@media (max-width:1279.80px) {
+  .slick-dots {
+    display: block !important;
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
