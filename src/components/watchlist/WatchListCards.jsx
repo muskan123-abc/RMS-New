@@ -23,13 +23,12 @@ const WatchListCards = ({
   return (
     <>
       <div className="w-full sm:w-[48%] md:w-6/12 lg:w-4/12 border border-solid border-[#494745] text-white rounded-lg p-2 relative overflow-hidden max-h-[407px]">
-        {index && (
+        {index >= 0 && (
           <span
             className={`${
               isLiked ? "liked" : ""
             } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-            onClick={() => likeHandler(index)}
-          >
+            onClick={() => likeHandler(index)}>
             <HeartIcon filled={isLiked} />
           </span>
         )}

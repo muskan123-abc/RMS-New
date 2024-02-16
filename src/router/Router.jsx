@@ -14,6 +14,7 @@ import AccountDetail from "../components/myAccount/MyAccount";
 import Hero from "../components/reviews/Hero";
 import Trending from "../components/trending/Trending";
 import Library from "../components/library/Library";
+import Subscription from "../components/subscription/Subscription";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -43,6 +44,7 @@ const Router = () => {
           <Route path="/review" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/library" element={<Library />} />
+          <Route path="/subscription" element={<Subscription />} />
         </Routes>
       </div>
     </div>
