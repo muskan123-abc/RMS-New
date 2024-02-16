@@ -89,7 +89,7 @@ const SubscribedVideos = () => {
                   <div className="flex gap-1 pt-4 pb-[9px]">
                     {ratingStars(value.rating)}
                   </div>
-                  <div className="flex flex-col w-full gap-2 sm:gap-2.5 justify-between">
+                  <div className="flex flex-col w-full gap-2 sm:gap-2.5 justify-between mt-4">
                     <CustomButton
                       title="Add a Watchlist"
                       isGradient={true}

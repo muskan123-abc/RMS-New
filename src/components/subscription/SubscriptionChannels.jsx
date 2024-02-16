@@ -85,7 +85,7 @@ const SubscriptionChannels = () => {
             ))}
           </Slider>
         </div>
-        <div className="flex gap-5 ps-6 justify-center">
+        <div className="flex gap-5 md:ps-6 justify-center">
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
