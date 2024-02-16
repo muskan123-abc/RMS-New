@@ -10,7 +10,7 @@ const Hero = ({ showSidebar }) => {
 
   return (
     <>
-      <div className="mt-7 bg-common-bg-image bg-fixed bg-cover bg-no-repeat bg-center relative mb-32 min-[1440px]:pt-[80px] min-[1440px]:pl-4">
+      <div className="mt-7 bg-common-bg-image bg-fixed bg-cover bg-no-repeat bg-center relative mb-14 pb-10 sm:pb-0 lg:mb-32 min-[1440px]:pt-[80px] min-[1440px]:pl-4">
         {/* ACTION TAKE SHOOT IMAGE  */}
         {/* Render the common icon component for the action take shoot image */}
         <span className=" absolute left-0 top-0 ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation 3xl:ps-0 3xl:left-[-8px] 3xl:top-12">
@@ -31,7 +31,7 @@ const Hero = ({ showSidebar }) => {
           className={`container max-w-full px-0 xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto  z-20 relative ${
             showSidebar ? "ms-0" : "ms-auto"
           }`}>
-          <div className="flex flex-col lg:flex-row justify-between px-4">
+          <div className="flex flex-col lg:flex-row justify-between px-4 custom-4xl:pt-0 pt-[100px] " >
             {/* Left section of the hero */}
             <div className="w-full lg:w-2/3 min-[1440px]:w-[65%] 3xl:w-[70%]  lg:pe-3 min-[1440px]:pe-0 3xl:pe-3">
               {/* Render VideoPlayer component */}

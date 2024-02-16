@@ -191,12 +191,12 @@ const ItemDetails = ({ setVideoClick }) => {
         </div>
       </div>
       {/* TAB CONTENT */}
-      <div className="overflow-auto hidden lg:flex">
-        <div className=" gap-4 w-[500px] overflow-x-scroll flex">
+      <div className=" hidden lg:flex w-full">
+        <div className=" gap-2 w-[500px] overflow-x-scroll flex">
           {/* All Tab Content */}
           <span
             onClick={() => setActiveTab("All")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
@@ -206,7 +206,7 @@ const ItemDetails = ({ setVideoClick }) => {
           {/* Trailer Tab Content */}
           <span
             onClick={() => setActiveTab("Trailer")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
@@ -216,7 +216,7 @@ const ItemDetails = ({ setVideoClick }) => {
           {/* Comedy Tab Content */}
           <span
             onClick={() => setActiveTab("Comedy")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
@@ -226,7 +226,7 @@ const ItemDetails = ({ setVideoClick }) => {
           {/* Related Tab Content */}
           <span
             onClick={() => setActiveTab("Related")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"

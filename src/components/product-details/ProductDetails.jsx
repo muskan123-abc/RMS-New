@@ -2,6 +2,7 @@ import React from "react";
 import reel_img from "../../assets/images/png/right-side-position-music-reel-img.png";
 import Faqs from "../common/Faqs";
 import Hero from "./Hero";
+import Footer from "../common/Footer";
 
 const ProductDetails = () => {
   return (
@@ -31,6 +32,8 @@ const ProductDetails = () => {
 
       {/* Render Faqs component */}
       <Faqs />
+       {/* Render footer component */}
+      <Footer/>
     </>
   );
 };
