@@ -22,17 +22,17 @@ const Subscription = ({ showSidebar }) => {
   };
   return (
     <>
-      <div className="bg-common-bg-image bg-fixed  bg-cover relative pt-28 min-[1440px]:pt-24">
+      <div className="bg-common-bg-image bg-fixed  bg-cover relative pt-20 ">
         <div className="w-full h-[50px] absolute bottom-0 left-0"></div>
         <div
-          className={`container mx-auto pb-16 px-6 ${
+          className={`container mx-auto pb-16 px-6 pt-5 ${
             showSidebar
               ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
               : "max-w-[1140px]"
           }`}>
-          <div className="flex justify-between sm:items-center pb-8 w-full sm:flex-row flex-col gap-4">
+          <div className="flex justify-between sm:items-center pb-5 md:pb-8 w-full sm:flex-row flex-col gap-4">
             <h2 className="font-poppins font-medium text-white text-xxl flex items-center gap-3 SubscriptionIcon_size">
-              <SubscriptionIcon /> Subscriptiont
+              <SubscriptionIcon /> Subscription
             </h2>
             <CustomInput
               placeholder="Search"
