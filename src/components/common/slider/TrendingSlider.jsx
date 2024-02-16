@@ -68,15 +68,13 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
             <button
               aria-label="Slider Arrow"
               onClick={handleLeftArrow}
-              className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}
-            >
+              className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}>
               <CommonLeftArrowIcon />
             </button>
             <button
               aria-label="Slider Arrow"
               onClick={handleRightArrow}
-              className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
-            >
+              className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
               <CommonRightArrowIcon />
             </button>
           </div>
@@ -93,8 +91,7 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
               <div
                 //   onClick={() => onNavigateHandler(obj)}
                 key={index}
-                className="px-[10px] flex h-full"
-              >
+                className="px-[10px] flex h-full">
                 <div className="p-2 border-[2px] bg-[#2c271f] border-solid border-[#FFFFFF40] rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
                   <div>
                     <div className="rounded-[4.4px] overflow-hidden">
