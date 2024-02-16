@@ -50,7 +50,7 @@ const LibrarySliderCards = ({
     infinite: true,
     arrows: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
       {
@@ -61,7 +61,7 @@ const LibrarySliderCards = ({
         },
       },
       {
-        breakpoint: 1023.9,
+        breakpoint: 1020,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
