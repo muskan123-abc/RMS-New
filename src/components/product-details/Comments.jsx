@@ -6,20 +6,14 @@ import {
   LikeVideoIcon,
 } from "../common/Icons";
 import { relatedItemComments } from "./Helper";
-// import {
-//   CommentBoxIcon,
-//   DisLikeIcon,
-//   FaqArrowIcon,
-//   LikeIcon,
-// } from "../common/Icon";
 
 const Comments = () => {
+  // State variables to track comment display and like/dislike status
   const [showAll2, setShowAll2] = useState(false); // SHOW MORE COMMENT BUTTON
-  const [like, setlike] = useState([]); // ARRAY TO TRAK LIKE COMMENT
-  const [dislike, setdisLike] = useState([]); // ARRAY TO TEACK DISLIKE COMMENT
+  const [like, setlike] = useState([]); // ARRAY TO TRACK LIKE COMMENT
+  const [dislike, setdisLike] = useState([]); // ARRAY TO TRACK DISLIKE COMMENT
 
-  // ADD OR REMOVE DISLIKE FUCTION
-
+  // Function to add or remove likes
   const addLIke = (item) => {
     if (like.includes(item)) {
       const UpdateLike = like.filter((value) => value !== item);
@@ -28,7 +22,8 @@ const Comments = () => {
       setlike([...like, item]);
     }
   };
-  // ADD OR REMOVE DISLIKE FUCTION
+
+  // Function to add or remove dislikes
   const disLike = (items) => {
     if (dislike.includes(items)) {
       const UpdateDisLike = dislike.filter((value) => value !== items);
@@ -37,16 +32,17 @@ const Comments = () => {
       setdisLike([...dislike, items]);
     }
   };
-  // DETERMINE WHICH COMMENTS TO DISPLAY BASED ON SHOW ALL
 
+  // Determine which comments to display based on showAll2 state
   const visibleItem = showAll2
     ? relatedItemComments
     : relatedItemComments.slice(0, 10);
+
   return (
     <>
       {visibleItem.map((item, index) => {
-        const isliked = like.includes(index);
-        const disliked = dislike.includes(index);
+        const isliked = like.includes(index); // Check if comment is liked
+        const disliked = dislike.includes(index); // Check if comment is disliked
         return (
           <div
             key={index}
@@ -83,7 +79,7 @@ const Comments = () => {
                 <span
                   onClick={() => disLike(index)}
                   className="ms-4 ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer">
-                  <DisLikeIcon disliked={disliked} />{" "}
+                  <DisLikeIcon disliked={disliked} />
                   {disliked ? item.dislike + 1 : item.dislike}
                 </span>
                 <span className="ms-4 ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer">

@@ -17,7 +17,6 @@ const WatchVideos = ({ showSidebar }) => {
       </h2>
 
       <div className=" my-10 md:my-12 mx-auto">
-        {" "}
         <CommonVideoSlider
           showSidebar={showSidebar}
           content={watchVideosSlider}

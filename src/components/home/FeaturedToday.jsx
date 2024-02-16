@@ -98,7 +98,7 @@ const FeaturedToday = ({ showSidebar }) => {
         } " relative pb-0 md:pt-[170px] "`}
         id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
-          <img src={image} alt=" alternate" />{" "}
+          <img src={image} alt=" alternate" />
         </span>
         <div
           className={`container px-4 px:md-0  max-w-full xl:max-w-[1140px] ${

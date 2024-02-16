@@ -122,11 +122,11 @@ const SubscriptionChannels = () => {
       ))}
       <div className="p-2.5 bg-white bg-opacity-[8%] mt-[30px] rounded-md">
         <h4 className="font-poppins text-sm text-white/70  max-w-[709px] 2xl:max-w-[900px]">
-          Elit eu maecenas augue lorem{" "}
+          Elit eu maecenas augue lorem
           <span className="text-white font-semibold"> malesuada </span> amet
           mattis risus. Luctus hac at pharetra erat vivamus fusce sit nec.
-          Interdum ornare velit consectetur et purus ultricies egiquet{" "}
-          <span className="text-white font-semibold"> udipiscing </span>{" "}
+          Interdum ornare velit consectetur et purus ultricies egiquet
+          <span className="text-white font-semibold"> udipiscing </span>
           volutpat.
         </h4>
       </div>

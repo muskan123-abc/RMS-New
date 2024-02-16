@@ -12,7 +12,6 @@ import WatchVideos from "./WatchVideos";
 const Home = ({ showSidebar }) => {
   return (
     <>
-      {" "}
       <Hero showSidebar={showSidebar} />
       <WatchVideos showSidebar={showSidebar} />
       <FanFavorite showSidebar={showSidebar} />

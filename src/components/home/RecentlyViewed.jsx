@@ -180,7 +180,6 @@ const RecentlyViewed = ({ showSidebar }) => {
           </Slider>
         </div>
         <div className="text-center mt-12 mb-20">
-          {" "}
           <CustomButton
             title="All Viewed" //set button title
             isGradient={true} // is grident is  visible // controle  btn types

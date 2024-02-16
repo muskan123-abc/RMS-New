@@ -1,42 +1,26 @@
-import React, { useState } from "react";
-import pIcon from "../../assets/images/svg/p-icon.svg";
 import { Menu } from "@headlessui/react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import profile from "../../assets/images/profile/jhoe-deo-profile.webp";
-
-// import {
-//   BellIcon,
-//   CommentBoxIcon,
-//   CommentBoxProfileIcon,
-//   DisLikeIcon,
-//   DownloadIcon,
-//   LikeIcon,
-//   PlayBtnIcon,
-//   SendIcon,
-//   ShareIcon,
-//   SortIcon,
-// } from "../common/Icon";
-// import { useStateProvider } from "../common/StateContext";
-import { Link } from "react-router-dom";
-import {
-  BellIcon,
-  LikeIcon,
-  defaultPorductDiscription,
-  relatedItemComments,
-} from "./Helper";
+import pIcon from "../../assets/images/svg/p-icon.svg";
 import { formatNumber } from "../../utils/CommonFunction";
 import {
   CommentBoxIcon,
   CommentBoxProfileIcon,
   DisLikeIcon,
   DownloadIcon,
-  LikeVideoIcon,
   PlayBtnIcon,
   SendIcon,
   ShareIcon,
   SortIcon,
 } from "../common/Icons";
-import { NotificationBellIcon } from "../notification/Icons,";
+import Comments from "./Comments";
+import {
+  BellIcon,
+  LikeIcon,
+  defaultPorductDiscription,
+  relatedItemComments,
+} from "./Helper";
 
 const VideoPlayer = () => {
   // SAVE DATA IN LOCALSTORAGE
@@ -231,7 +215,7 @@ const VideoPlayer = () => {
                   py-[10px] px-2 sm:px-2.5  rounded-md  hover:bg-[#ffffff2a] hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
                   <DisLikeIcon disliked={likesAndDislikes.item1.dislikes} />
-                </span>{" "}
+                </span>
                 {likesAndDislikes.item1.dislikes}
               </span>
               <span
@@ -331,7 +315,7 @@ const VideoPlayer = () => {
             sit nec. Interdum ornare velit consectetur et purus ultricies
             egiquet &nbsp;
             <span className="font-semibold text-white !opacity-100">
-              udipiscings{" "}
+              udipiscings
             </span>
             <div className="hidden 2xs:content-evenly">
               &nbsp; volutpat.&nbsp;
@@ -364,7 +348,6 @@ const VideoPlayer = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-col">
-          {" "}
           <div className="flex items-center gap-5 mt-6 md:mt-10 mb-4 md:mb-[30px]">
             <p className="font-poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
               {commentArray[0].length} Comments
@@ -424,7 +407,7 @@ const VideoPlayer = () => {
               onChange={(e) => setGetInput(e.target.value)}
               className=" font-poppins text-sm font-normal text-white bg-transparent px-2 py-3 w-11/12 outline-none"
               type="text"
-              placeholder="Add a comment"
+              placeholder="Add a comment lorem"
               value={getInput}
             />
             <button
@@ -437,7 +420,8 @@ const VideoPlayer = () => {
 
         <div className={`mt-6 flex-col gap-2.5 hidden lg:flex `}>
           {/* .COMMENT SECTION  */}
-          <relatedItemComments />
+          {/* <relatedItemComments /> */}
+          <Comments />
         </div>
       </div>
     </div>
