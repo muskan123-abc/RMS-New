@@ -17,6 +17,7 @@ import Library from "../components/library/Library";
 import Subscription from "../components/subscription/Subscription";
 import VideoPlayer from "../components/product-details/VideoPlayer";
 import ItemDetails from "../components/product-details/ItemDetails";
+import History from "../components/history/History";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -45,6 +46,7 @@ const Router = () => {
           <Route path="/my-account" element={<AccountDetail />} />
           <Route path="/review" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
+          <Route path="/history" element={<History />} />
           <Route
             path="/library"
             element={<Library showSidebar={showSidebar} />}
