@@ -221,7 +221,7 @@ export const sideList = [
   {
     image: <HistoryIcon />,
     title: "History",
-    url: "/watchlist",
+    url: "/history",
   },
   {
     image: <SubscriptionIcon />,

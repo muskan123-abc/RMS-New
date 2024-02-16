@@ -112,8 +112,7 @@ const RecentlyViewed = ({ showSidebar }) => {
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
-        }`}
-      >
+        }`}>
         <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
           Recently <span className="common-text-gradient">Viewed</span>
         </h2>
@@ -121,17 +120,15 @@ const RecentlyViewed = ({ showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] left-[-6%]
-                 `}
-          >
+            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] custom-2xl:left-[-6%] left-[-5%]
+                 `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  right-[-6%]
-                 `}
-          >
+            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  custom-2xl:right-[-6%] right-[-5%] 
+                 `}>
             <CommonRightArrowIcon />
           </button>
         </div>
@@ -145,8 +142,7 @@ const RecentlyViewed = ({ showSidebar }) => {
                       className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[439px] relative px-2 `}
                       style={{
                         backgroundImage: `url(${value.image})`,
-                      }}
-                    >
+                      }}>
                       <div className=" flex flex-col flex-grow justify-end">
                         <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
                           {value.title}
