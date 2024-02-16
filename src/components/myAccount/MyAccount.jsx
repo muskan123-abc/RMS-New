@@ -12,9 +12,8 @@ const AccountDetail = ({ showSidebar }) => {
 
   const [name, setname] = useState("Floyd Miles");
   const [userName, setUserName] = useState("Designer");
-
-  const [formData, setFormData] = useState({
-    displayName: "",
+  const steticData = {
+    Name: "",
     username: "",
     address: "",
     city: "",
@@ -22,23 +21,16 @@ const AccountDetail = ({ showSidebar }) => {
     contact: "",
     phone: "",
     password: "",
-  });
+  };
+  const [formData, setFormData] = useState(steticData);
 
-  const submitHandler = (event) => {
-    event.preventDefault();
+  const submitHandler = (e) => {
+    e.preventDefault();
+
     console.log(formData, " <========= formData");
-    setname(formData.displayName);
-    setUserName(formData.username);
-    setFormData({
-      displayName: "",
-      username: "",
-      address: "",
-      city: "",
-      dob: "",
-      contact: "",
-      phone: "",
-      password: "",
-    });
+    if (formData.Name === !"" && formData.username !== "") {
+      setFormData(steticData);
+    }
   };
 
   const handleImageChange = (event) => {
@@ -52,11 +44,10 @@ const AccountDetail = ({ showSidebar }) => {
         <div
           className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto xl:pt-[100px] px-[26px] pt-4 ${
             showSidebar ? "ms-0" : "ms-auto"
-          }`}
-        >
+          }`}>
           <div className="flex items-center gap-[11px] mb-[30px]">
             <UsersIcon />
-            <span className="font-medium ff_poppins text-[22px] text-white">
+            <span className="font-medium font-poppins text-[22px] text-white">
               My account
             </span>
           </div>
@@ -67,10 +58,10 @@ const AccountDetail = ({ showSidebar }) => {
               className="max-w-[126px] w-full h-[126px] object-cover rounded-md"
             />
             <div>
-              <p className="ff_poppins font-medium sm:text-2xl text-xl text-white">
+              <p className="font-poppins font-medium sm:text-2xl text-xl text-white">
                 {name}
               </p>
-              <p className="ff_poppins font-normal text-sm text-white opacity-70 mb-[25px]">
+              <p className="font-poppins font-normal text-sm text-white opacity-70 mb-[25px]">
                 {userName}
               </p>
               <input
@@ -84,8 +75,7 @@ const AccountDetail = ({ showSidebar }) => {
               <label
                 htmlFor="image"
                 className="common-border-button cursor-pointer  font-semibold text-sm sm:text-base text-white opacity-90 w-full py-2.5 px-3 rounded overflow-hidden border border-solid border-[#F2CD75] bg-black hover:border-transparent after:bg-[#A97424] z-10 flex justify-center relative duration-300 ease-linear after:absolute
-               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0"
-              >
+               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
                 Change Profile image
               </label>
             </div>
@@ -98,10 +88,10 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    displayName: value,
+                    Name: value.target.value,
                   })
                 }
-                value={formData.displayName}
+                value={formData.Name}
               />
               <CustomInput
                 placeholder="Username"
@@ -109,7 +99,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    username: value,
+                    username: value.target.value,
                   })
                 }
                 value={formData.username}
@@ -120,7 +110,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    address: value,
+                    address: value.target.value,
                   })
                 }
                 value={formData.address}
@@ -131,7 +121,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    city: value,
+                    city: value.target.value,
                   })
                 }
                 value={formData.city}
@@ -143,7 +133,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    dob: value,
+                    dob: value.target.value,
                   })
                 }
                 value={formData.dob}
@@ -156,7 +146,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    contact: value,
+                    contact: value.target.value,
                   })
                 }
                 value={formData.contact}
@@ -169,7 +159,7 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    phone: value,
+                    phone: value.target.value,
                   })
                 }
                 value={formData.phone}
@@ -182,22 +172,22 @@ const AccountDetail = ({ showSidebar }) => {
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
-                    password: value,
+                    password: value.target.value,
                   })
                 }
                 value={formData.password}
               />
             </div>
-            <p className="font-medium ff_poppins text-sm sm:text-base text-white mb-[6px] mt-5">
+            <p className="font-medium font-poppins text-sm sm:text-base text-white mb-[6px] mt-5">
               Your Account
             </p>
-            <p className="font-normal ff_poppins text-xs sm:text-sm text-white mb-[6px] opacity-70">
+            <p className="font-normal font-poppins text-xs sm:text-sm text-white mb-[6px] opacity-70">
               You sign in to RMS with your Google Account
             </p>
-            <p className="font-medium ff_poppins text-sm sm:text-base text-white mb-[6px] mt-5">
+            <p className="font-medium font-poppins text-sm sm:text-base text-white mb-[6px] mt-5">
               Choose how you appear and what you see on RMS
             </p>
-            <p className="font-normal ff_poppins text-xs sm:text-sm text-white mb-[6px] opacity-70">
+            <p className="font-normal font-poppins text-xs sm:text-sm text-white mb-[6px] opacity-70">
               Signed in as Floydmiles@gmail.com
             </p>
             <div className="flex justify-end gap-6 items-center pb-[23px] mt-[30px]">

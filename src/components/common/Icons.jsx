@@ -5,7 +5,8 @@ export const SearchIcon = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none">
+      fill="none"
+    >
       <path
         d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
         fill="white"
@@ -23,7 +24,8 @@ export const DownloadIcon = () => {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M4.00033 13.3337C3.63366 13.3337 3.31966 13.203 3.05833 12.9417C2.79699 12.6803 2.66655 12.3665 2.66699 12.0003V10.0003H4.00033V12.0003H12.0003V10.0003H13.3337V12.0003C13.3337 12.367 13.203 12.681 12.9417 12.9423C12.6803 13.2037 12.3665 13.3341 12.0003 13.3337H4.00033ZM8.00033 10.667L4.66699 7.33366L5.60033 6.36699L7.33366 8.10033V2.66699H8.66699V8.10033L10.4003 6.36699L11.3337 7.33366L8.00033 10.667Z"
         fill="white"
@@ -39,7 +41,8 @@ export const StarGrey = () => {
       height="19"
       viewBox="0 0 20 19"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         opacity="0.4"
         d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
@@ -56,7 +59,8 @@ export const YellowStar = () => {
       height="19"
       viewBox="0 0 20 19"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
         fill="url(#paint0_linear_214_2888)"
@@ -68,7 +72,8 @@ export const YellowStar = () => {
           y1="0"
           x2="20"
           y2="20"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -84,7 +89,8 @@ export const CommonXmildIcon = () => {
       height="79"
       viewBox="0 0 73 79"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M7.17272 36.8999C6.71185 37.0075 6.4256 37.4682 6.53324 37.9291C6.64087 38.3899 7.10156 38.6762 7.56244 38.5685C8.02331 38.4609 8.30956 38.0002 8.20192 37.5393C8.09428 37.0785 7.63359 36.7922 7.17272 36.8999ZM7.49563 38.2825C7.19368 38.353 6.89777 38.1624 6.8291 37.8683C6.75858 37.5664 6.94923 37.2705 7.24324 37.2018C7.53725 37.1332 7.84111 37.322 7.90977 37.616C7.97844 37.91 7.79758 38.212 7.49563 38.2825Z"
         fill="url(#paint0_linear_214_3019)"
@@ -120,7 +126,8 @@ export const CommonXmildIcon = () => {
           y1="37.0947"
           x2="8.39678"
           y2="38.3737"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -130,7 +137,8 @@ export const CommonXmildIcon = () => {
           y1="41.6206"
           x2="16.1072"
           y2="42.8996"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -140,7 +148,8 @@ export const CommonXmildIcon = () => {
           y1="43.1108"
           x2="9.72649"
           y2="44.3898"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -150,7 +159,8 @@ export const CommonXmildIcon = () => {
           y1="13.085"
           x2="33.7651"
           y2="50.8772"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -160,7 +170,8 @@ export const CommonXmildIcon = () => {
           y1="36.3135"
           x2="17.0113"
           y2="43.856"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -170,7 +181,8 @@ export const CommonXmildIcon = () => {
           y1="49.5298"
           x2="39.813"
           y2="62.1689"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -180,7 +192,8 @@ export const CommonXmildIcon = () => {
           y1="42.6724"
           x2="51.2322"
           y2="86.9289"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -198,7 +211,8 @@ export const ChennalIcon = () => {
       height="45"
       viewBox="0 0 45 45"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g clipPath="url(#clip0_1301_906)">
         <path
           d="M38.5687 33.253H35.1656L28.9031 15.9974H31.965L35.7525 27.223C35.8931 27.6562 36.2644 28.9105 36.8512 30.9955L37.4081 29.1262L38.0269 27.2399L41.9531 15.9824H45L38.5687 33.253ZM28.5487 33.1293C27.6021 33.3902 26.6244 33.5208 25.6425 33.5174C23.3362 33.5174 22.1925 32.218 22.1925 29.6043V18.0862H20.1994V15.9974H22.3012V13.2768L25.0687 12.148V16.0143H28.2694V18.1012H25.0875V28.9855C25.0875 29.8218 25.2262 30.3918 25.4887 30.733C25.7512 31.0743 26.2312 31.228 26.895 31.228C27.2831 31.228 27.8231 31.1512 28.5506 31.0124L28.5487 33.1293ZM14.88 23.1112C14.9119 26.4187 17.7862 27.5324 17.8181 27.5474C17.7862 27.6262 17.3531 29.1262 16.3031 30.6562C15.39 31.9874 14.4469 33.3149 12.9469 33.3468C11.4787 33.3768 11.0156 32.4805 9.3281 32.4805C7.65935 32.4805 7.13435 33.3149 5.74123 33.3768C4.31998 33.4237 3.22123 31.9237 2.29498 30.5943C0.423729 27.8737 -1.0144 22.9105 0.918729 19.5693C1.87498 17.9005 3.59248 16.8487 5.44873 16.8318C6.85498 16.8018 8.20123 17.7918 9.06748 17.7918C9.93185 17.7918 11.5556 16.6162 13.2562 16.7868C13.9687 16.8168 15.9787 17.0812 17.2612 18.9505C17.1525 19.0124 14.865 20.3437 14.88 23.1112ZM12.1275 14.9774C12.885 14.0493 13.4119 12.7649 13.2712 11.4824C12.1744 11.5293 10.845 12.2099 10.0406 13.138C9.3281 13.9574 8.70935 15.2718 8.87998 16.5243C10.1025 16.618 11.37 15.8905 12.1275 14.9774Z"
@@ -223,7 +237,8 @@ export const ShareIcon = () => {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M14.471 7.52853L9.13767 2.19519C9.04444 2.10198 8.92566 2.03851 8.79636 2.0128C8.66706 1.98709 8.53304 2.00029 8.41124 2.05074C8.28944 2.10119 8.18533 2.18661 8.11207 2.29622C8.03882 2.40583 7.9997 2.53469 7.99967 2.66652V5.02986C6.17854 5.19839 4.48583 6.04043 3.2528 7.39121C2.01978 8.74199 1.33519 10.5043 1.33301 12.3332V13.3332C1.33311 13.4716 1.37628 13.6065 1.45652 13.7192C1.53677 13.832 1.65011 13.917 1.78082 13.9624C1.91154 14.0078 2.05316 14.0115 2.18603 13.9728C2.3189 13.9341 2.43644 13.855 2.52234 13.7465C3.17547 12.9698 3.97685 12.3311 4.87964 11.8676C5.78243 11.4041 6.76854 11.1252 7.78034 11.0472C7.81367 11.0432 7.89701 11.0365 7.99967 11.0299V13.3332C7.9997 13.465 8.03882 13.5939 8.11207 13.7035C8.18533 13.8131 8.28944 13.8985 8.41124 13.949C8.53304 13.9994 8.66706 14.0126 8.79636 13.9869C8.92566 13.9612 9.04444 13.8977 9.13767 13.8045L14.471 8.47119C14.596 8.34617 14.6662 8.17663 14.6662 7.99986C14.6662 7.82308 14.596 7.65354 14.471 7.52853ZM9.33301 11.7239V10.3332C9.33301 10.1564 9.26277 9.98681 9.13775 9.86179C9.01272 9.73676 8.84315 9.66652 8.66634 9.66652C8.49634 9.66652 7.80234 9.69986 7.62501 9.72319C5.82825 9.88874 4.11795 10.5714 2.70101 11.6885C2.86184 10.2181 3.55937 8.85876 4.66004 7.87063C5.76072 6.88251 7.18719 6.33509 8.66634 6.33319C8.84315 6.33319 9.01272 6.26295 9.13775 6.13793C9.26277 6.0129 9.33301 5.84334 9.33301 5.66652V4.27586L13.057 7.99986L9.33301 11.7239Z"
         fill="white"
@@ -240,7 +255,8 @@ export const DownArrow = ({ moviesDropdown }) => {
       height="21"
       viewBox="0 0 20 21"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g opacity="0.7">
         <path
           d="M9.9997 13L6.46387 9.46495L7.64303 8.28662L9.9997 10.6433L12.3564 8.28662L13.5355 9.46495L9.9997 13Z"
@@ -258,7 +274,8 @@ export const NavNotificationIcon = () => {
       height="21"
       viewBox="0 0 18 21"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         className="group-hover:fill-[#B98736] duration-200"
         d="M16 15V9.8C15.5 9.9 15 10 14.5 10H14V16H4V9C4 6.2 6.2 4 9 4C9.1 2.7 9.7 1.6 10.5 0.7C10.2 0.3 9.6 0 9 0C7.9 0 7 0.9 7 2V2.3C4 3.2 2 5.9 2 9V15L0 17V18H18V17L16 15ZM7 19C7 20.1 7.9 21 9 21C10.1 21 11 20.1 11 19H7ZM18 4.5C18 6.4 16.4 8 14.5 8C12.6 8 11 6.4 11 4.5C11 2.6 12.6 1 14.5 1C16.4 1 18 2.6 18 4.5Z"
@@ -275,7 +292,8 @@ export const MenuIcon = () => {
       height="32"
       viewBox="0 0 32 32"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M5 7H27.9166M5 16.1666H27.9166M5 25.3333H27.9166"
         stroke="white"
@@ -293,7 +311,8 @@ export const CrossIcon = () => {
       height="50"
       viewBox="0 0 32 32"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M26.6667 26.6667L5.33334 5.33337M26.6667 5.33337L5.33334 26.6667"
         stroke="white"
@@ -311,7 +330,8 @@ export const CommonLeftArrowIcon = () => {
       width="33"
       height="32"
       viewBox="0 0 33 32"
-      fill="none">
+      fill="none"
+    >
       <path
         d="M20.9706 7.53545C21.1189 7.68347 21.2366 7.85929 21.3169 8.05285C21.3971 8.24641 21.4385 8.4539 21.4385 8.66345C21.4385 8.873 21.3971 9.08049 21.3169 9.27405C21.2366 9.46761 21.1189 9.64343 20.9706 9.79145L14.7626 15.9994L20.9706 22.2074C21.2697 22.5066 21.4378 22.9124 21.4378 23.3354C21.4378 23.7585 21.2697 24.1643 20.9706 24.4635C20.6714 24.7626 20.2656 24.9307 19.8426 24.9307C19.4195 24.9307 19.0137 24.7626 18.7146 24.4635L11.3706 17.1194C11.2222 16.9714 11.1046 16.7956 11.0243 16.602C10.944 16.4085 10.9027 16.201 10.9027 15.9914C10.9027 15.7819 10.944 15.5744 11.0243 15.3809C11.1046 15.1873 11.2222 15.0115 11.3706 14.8634L18.7146 7.51945C19.3226 6.91145 20.3466 6.91145 20.9706 7.53545Z"
         fill="white"
@@ -329,7 +349,8 @@ export const CommonRightArrowIcon = () => {
       width="33"
       height="32"
       viewBox="0 0 33 32"
-      fill="none">
+      fill="none"
+    >
       <path
         d="M11.696 7.53545C11.5477 7.68347 11.43 7.85929 11.3497 8.05285C11.2694 8.24641 11.2281 8.4539 11.2281 8.66345C11.2281 8.873 11.2694 9.08049 11.3497 9.27405C11.43 9.46761 11.5477 9.64343 11.696 9.79145L17.904 15.9994L11.696 22.2074C11.3969 22.5066 11.2288 22.9124 11.2288 23.3354C11.2288 23.7585 11.3969 24.1643 11.696 24.4635C11.9952 24.7626 12.4009 24.9307 12.824 24.9307C13.2471 24.9307 13.6529 24.7626 13.952 24.4635L21.296 17.1194C21.4444 16.9714 21.562 16.7956 21.6423 16.602C21.7226 16.4085 21.7639 16.201 21.7639 15.9914C21.7639 15.7819 21.7226 15.5744 21.6423 15.3809C21.562 15.1873 21.4444 15.0115 21.296 14.8634L13.952 7.51945C13.344 6.91145 12.32 6.91145 11.696 7.53545Z"
         fill="white"
@@ -348,7 +369,8 @@ export const PlayBtnIcon = () => {
       x="0px"
       y="0px"
       viewBox="0 0 100 100"
-      enableBackground="new 0 0 100 100">
+      enableBackground="new 0 0 100 100"
+    >
       <path
         className="stroke-solid stroke-[5px] duration-[1s]"
         strokeDasharray="300"
@@ -373,7 +395,8 @@ export const FooterInstaIcon = () => {
       height="36"
       viewBox="0 0 36 36"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_b_214_3245)">
         <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
         <path
@@ -398,7 +421,8 @@ export const FooterInstaIcon = () => {
           width="179.119"
           height="179.119"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
           <feComposite
@@ -419,7 +443,8 @@ export const FooterInstaIcon = () => {
           y1="0"
           x2="36"
           y2="36"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -434,7 +459,8 @@ export const FooterFacebookIcon = () => {
       height="36"
       viewBox="0 0 36 36"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_b_214_3247)">
         <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
         <path
@@ -459,7 +485,8 @@ export const FooterFacebookIcon = () => {
           width="179.119"
           height="179.119"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
           <feComposite
@@ -480,7 +507,8 @@ export const FooterFacebookIcon = () => {
           y1="0"
           x2="36"
           y2="36"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -495,7 +523,8 @@ export const FooterLinkdinIcon = () => {
       height="36"
       viewBox="0 0 36 36"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_b_214_3250)">
         <rect width="36" height="36" rx="18" fill="white" fillOpacity="0.04" />
         <path
@@ -520,7 +549,8 @@ export const FooterLinkdinIcon = () => {
           width="179.119"
           height="179.119"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="35.7797" />
           <feComposite
@@ -541,7 +571,8 @@ export const FooterLinkdinIcon = () => {
           y1="0"
           x2="36"
           y2="36"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F2CD75" />
           <stop offset="1" stopColor="#A97424" />
         </linearGradient>
@@ -557,7 +588,8 @@ export const FaqArrowIcon = () => {
       width="30"
       height="30"
       viewBox="0 0 30 30"
-      fill="none">
+      fill="none"
+    >
       <path d="M7.5 11.25L15 18.75L22.5 11.25" stroke="white" strokeWidth="2" />
     </svg>
   );
@@ -572,7 +604,8 @@ export const BackToTopIcon = () => {
       height="16"
       fill="white"
       className="bi bi-chevron-double-up"
-      viewBox="0 0 16 16">
+      viewBox="0 0 16 16"
+    >
       <path
         fillRule="evenodd"
         d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
@@ -593,12 +626,54 @@ export const HeartIcon = ({ filled }) => {
       height="24"
       viewBox="0 0 24 24"
       fill={filled ? "#FF0000" : "none"}
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
         fill=""
         stroke="#FF0000"
         strokeWidth="2px"
+      />
+    </svg>
+  );
+};
+
+export const WatchlistIcon = () => {
+  return (
+    <svg
+      width="31"
+      height="32"
+      viewBox="0 0 31 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24.1245 2.5144H6.87484C4.18695 2.5144 2 4.70108 2 7.38897V24.6392C2 27.3274 4.18695 29.5143 6.87484 29.5143H24.1245C26.8127 29.5143 28.9999 27.3274 28.9999 24.6392V7.38869C28.9997 4.70108 26.8127 2.5144 24.1245 2.5144ZM27.3418 24.6389C27.3418 26.4128 25.8984 27.8562 24.1243 27.8562H6.87457C5.10069 27.8562 3.65755 26.4131 3.65755 24.6389V7.38869C3.65755 5.6151 5.10069 4.17196 6.87457 4.17196H24.1243C25.8984 4.17196 27.3418 5.61482 27.3418 7.38869V24.6389Z"
+        fill="white"
+      />
+      <path
+        d="M8.75616 6.60181C7.28484 6.60181 6.08789 7.79876 6.08789 9.2698C6.08789 10.7411 7.28484 11.9381 8.75616 11.9381C10.2275 11.9381 11.4242 10.7411 11.4242 9.2698C11.4242 7.79848 10.2275 6.60181 8.75616 6.60181ZM8.75616 10.2803C8.19886 10.2803 7.74572 9.82683 7.74572 9.2698C7.74572 8.71277 8.19913 8.25964 8.75616 8.25964C9.31319 8.25964 9.76634 8.71277 9.76634 9.2698C9.76634 9.82683 9.31319 10.2803 8.75616 10.2803Z"
+        fill="white"
+      />
+      <path
+        d="M8.75616 13.3457C7.28484 13.3457 6.08789 14.5427 6.08789 16.0137C6.08789 17.4853 7.28484 18.6823 8.75616 18.6823C10.2275 18.6823 11.4242 17.485 11.4242 16.0137C11.4242 14.5424 10.2275 13.3457 8.75616 13.3457ZM8.75616 17.0244C8.19886 17.0244 7.74572 16.571 7.74572 16.0137C7.74572 15.4567 8.19913 15.0035 8.75616 15.0035C9.31319 15.0035 9.76634 15.4567 9.76634 16.0137C9.76634 16.571 9.31319 17.0244 8.75616 17.0244Z"
+        fill="white"
+      />
+      <path
+        d="M8.75616 20.0901C7.28484 20.0901 6.08789 21.287 6.08789 22.7581C6.08789 24.2291 7.28484 25.4261 8.75616 25.4261C10.2275 25.4261 11.4242 24.2291 11.4242 22.7581C11.4242 21.287 10.2275 20.0901 8.75616 20.0901ZM8.75616 23.7683C8.19886 23.7683 7.74572 23.3151 7.74572 22.7581C7.74572 22.2011 8.19913 21.7479 8.75616 21.7479C9.31319 21.7479 9.76634 22.2011 9.76634 22.7581C9.76634 23.3151 9.31319 23.7683 8.75616 23.7683Z"
+        fill="white"
+      />
+      <path
+        d="M24.0833 8.44067H13.865C13.4072 8.44067 13.0361 8.81175 13.0361 9.26959C13.0361 9.72742 13.4072 10.0985 13.865 10.0985H24.0833C24.5412 10.0985 24.9123 9.72742 24.9123 9.26959C24.9123 8.81175 24.5412 8.44067 24.0833 8.44067Z"
+        fill="white"
+      />
+      <path
+        d="M24.0833 15.1848H13.865C13.4072 15.1848 13.0361 15.5559 13.0361 16.0137C13.0361 16.4716 13.4072 16.8426 13.865 16.8426H24.0833C24.5412 16.8426 24.9123 16.4716 24.9123 16.0137C24.9123 15.5559 24.5412 15.1848 24.0833 15.1848Z"
+        fill="white"
+      />
+      <path
+        d="M24.0833 21.9292H13.865C13.4072 21.9292 13.0361 22.3003 13.0361 22.7581C13.0361 23.2159 13.4072 23.587 13.865 23.587H24.0833C24.5412 23.587 24.9123 23.2159 24.9123 22.7581C24.9123 22.3003 24.5412 21.9292 24.0833 21.9292Z"
+        fill="white"
       />
     </svg>
   );
