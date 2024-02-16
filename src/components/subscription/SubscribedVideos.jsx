@@ -36,11 +36,10 @@ const SubscribedVideos = () => {
               <button
                 onClick={() => setShowVideoTabs(index)}
                 key={index}
-                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300 videotabs ${
-                  showVideoTabs === index
+                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300 videotabs ${showVideoTabs === index
                     ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
                     : " opacity-70"
-                }`}
+                  }`}
               >
                 {value.image} {value.title}
               </button>
@@ -72,7 +71,7 @@ const SubscribedVideos = () => {
                     {value.title}
                   </h3>
                   <span className="flex items-center text-2xl text-white">
-                    <ChennalIcon />+
+                    <ChennalIcon /> <span className="ms-1"> + </span>
                   </span>
                 </div>
                 <div>
@@ -92,22 +91,22 @@ const SubscribedVideos = () => {
                     {ratingStars(value.rating)}
                   </div>
                   <div className="flex flex-col w-full gap-2 sm:gap-2.5 justify-between">
-                        <CustomButton
-                          title="Add a Watchlist"
-                          isGradient={true}
-                          varient="button"
-                          isVisible={true}
-                          customStyles="justify-center !font-medium"
-                        />
-                        <CustomButton
-                          title="Share"
-                          isGradient={true}
-                          varient="button"
-                          isVisible={true}
-                          customStyles="justify-center !font-medium"
-                          icon={<ShareIcon />}
-                        />
-                      </div>
+                    <CustomButton
+                      title="Add a Watchlist"
+                      isGradient={true}
+                      varient="button"
+                      isVisible={true}
+                      customStyles="justify-center !font-medium"
+                    />
+                    <CustomButton
+                      title="Share"
+                      isGradient={true}
+                      varient="button"
+                      isVisible={true}
+                      customStyles="justify-center !font-medium"
+                      icon={<ShareIcon />}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

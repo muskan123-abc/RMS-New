@@ -51,7 +51,7 @@ const TrendingSlider = () => {
   };
   return (
     <>
-      <div className="max-w-[1320px] pt-28 custom-4xl:pt-24 px-6 mx-auto pb-40 my-6">
+      <div className="max-w-[1320px] pt-28 custom-4xl:pt-24 px-6 mx-auto my-6">
         <div className="flex justify-between pb-9 pt-6">
           <div className="flex items-center gap-[10px]">
             <img src={trendingIcon} alt="trending" width={28} />
@@ -107,7 +107,7 @@ const TrendingSlider = () => {
                       {obj.title}
                     </h3>
                     <span className="flex gap-1.5 items-center text-2xl text-white">
-                      {obj.channel} <span>+</span>
+                      {obj.channel} <span> + </span>
                     </span>
                     <p className="font-inter font-normal text-xs leading-[118%] opacity-70">
                       {obj.subtile}
