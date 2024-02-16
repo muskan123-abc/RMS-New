@@ -26,7 +26,7 @@ const Router = () => {
   };
   return (
     <div className={`h-screen flex relative `}>
-      {/* "<Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      "<Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="w-full overflow-y-auto overflow-x-hidden">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
@@ -50,10 +50,10 @@ const Router = () => {
             element={<Library showSidebar={showSidebar} />}
           />
           <Route path="/subscription" element={<Subscription />} />
+          <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
-        
-      </div>" */}
-      <ProductDetails />
+      </div>
+      "
     </div>
   );
 };

@@ -39,13 +39,13 @@ const Trailer = ({ setVideoClick }) => {
             className="flex gap-3 cursor-pointer bg-[#2D281F] rounded-md border border-solid border-[#FFFFFF40] p-[6px]">
             <img width="88" height="88" src={item.image} alt="suggest-cover" />
             <div>
-              <h3 className="ff_poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
+              <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
                 {item.title}
               </h3>
-              <p className="ff_poppins font-normal text-xs text-white opacity-70 mb-0.5">
+              <p className="font-poppins font-normal text-xs text-white opacity-70 mb-0.5">
                 {item.trailer}
               </p>
-              <p className="ff_poppins font-normal text-xs text-white opacity-70 mb-0">
+              <p className="font-poppins font-normal text-xs text-white opacity-70 mb-0">
                 {formatNumber(item.views)} views
                 <span className="ms-4 before:content-[''] before:w-[3px] before:h-[3px] before:rounded-md before:absolute before:top-1/2 before:start-[-5px] before:bg-white before:-translate-x-1/2 relative">
                   {item.outTime}

@@ -20,18 +20,19 @@ import p_tv_movies from "../assets/images/subscription/p-tv-movies.svg";
 import pelfizz from "../assets/images/subscription/pelfizz-studio.svg";
 import power_music from "../assets/images/subscription/power-music.svg";
 // subscribed home videos 
-// import subscribedhome1 from "../../assets/images/subscription/video1.png"
-// import subscribedhome2 from "../../assets/images/subscription/video2.png"
-// import subscribedhome3 from "../../assets/images/subscription/video3.png"
-// import subscribedhome4 from "../../assets/images/subscription/video4.png"
-// import subscribedhome5 from "../../assets/images/subscription/video5.png"
-// import subscribedhome6 from "../../assets/images/subscription/video6.png"
-// import subscribedhome7 from "../../assets/images/subscription/video7.png"
-// import subscribedhome8 from "../../assets/images/subscription/video8.png"
-// import subscribedhome9 from "../../assets/images/subscription/video9.png"
-// import subscribedhome10 from "../../assets/images/subscription/video10.png"
-// import subscribedhome11 from "../../assets/images/subscription/video11.png"
-// import subscribedhome12 from "../../assets/images/subscription/video12.png"
+import subscribedhome1 from "../assets/images/subscription/video1.png"
+import subscribedhome2 from "../assets/images/subscription/video2.png"
+import subscribedhome3 from "../assets/images/subscription/video3.png"
+import subscribedhome4 from "../assets/images/subscription/video4.png"
+import subscribedhome5 from "../assets/images/subscription/video5.png"
+import subscribedhome6 from "../assets/images/subscription/video6.png"
+import subscribedhome7 from "../assets/images/subscription/video7.png"
+import subscribedhome8 from "../assets/images/subscription/video8.png"
+import subscribedhome9 from "../assets/images/subscription/video9.png"
+import subscribedhome10 from "../assets/images/subscription/video10.png"
+import subscribedhome11 from "../assets/images/subscription/video11.png"
+import subscribedhome12 from "../assets/images/subscription/video12.png"
+import { LikeIcon, RecentlyWatchingIcon } from "../components/common/Icons";
 export const homeHeroLeftSlider = [
   {
     image: heroLeftImage1,
@@ -373,4 +374,113 @@ export const subscribedChannels = [
     title: "Godara record",
     image: godara_record,
   },
+];
+
+export const VideoTabs = [
+  {
+    title: "Home",
+    image: <HomeIcon />,
+  },
+  {
+    title: "Liked Videos",
+    image: <LikeIcon />,
+  },
+  {
+    title: "Playlist",
+    image: <HistoryIcon />,
+  },
+  {
+    title: "Recently watching",
+    image: <RecentlyWatchingIcon width="w-[18px]" />,
+  },
+];
+// SUBSCRIBED HOME VIDEO
+export const subscribedHomeVideo = [
+  {
+    image: subscribedhome1,
+    title: "Sed atvelverra lobortis.",
+    views: "5300000",
+    realsetime: "2 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome2,
+    title: "Sed atvelverra lobortis.",
+    views: "4700000",
+    realsetime: "1 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome3,
+    title: "Simply of the printing",
+    views: "3700000",
+    realsetime: "1 Week ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome4,
+    title: "Established fact that reader.",
+    views: "6100000",
+    realsetime: "3 month ago",
+    rating: "4",
+  },
+  
+  {
+    image: subscribedhome5,
+    title: "Sed atvelverra lobortis.",
+    views: "5300000",
+    realsetime: "2 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome6,
+    title: "Sed atvelverra lobortis.",
+    views: "4700000",
+    realsetime: "1 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome7,
+    title: "Simply of the printing",
+    views: "3700000",
+    realsetime: "1 Week ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome8,
+    title: "Established fact that reader.",
+    views: "6100000",
+    realsetime: "3 month ago",
+    rating: "4",
+  },
+  
+  {
+    image: subscribedhome9,
+    title: "Sed atvelverra lobortis.",
+    views: "5300000",
+    realsetime: "2 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome10,
+    title: "Sed atvelverra lobortis.",
+    views: "4700000",
+    realsetime: "1 month ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome11,
+    title: "Simply of the printing",
+    views: "3700000",
+    realsetime: "1 Week ago",
+    rating: "4",
+  },
+  {
+    image: subscribedhome12,
+    title: "Established fact that reader.",
+    views: "6100000",
+    realsetime: "3 month ago",
+    rating: "4",
+  },
+  
 ];

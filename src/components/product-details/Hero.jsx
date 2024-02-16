@@ -29,7 +29,7 @@ const Hero = ({ showSidebar }) => {
           alt="reel"
         />
         <div
-          className={`container max-w-full  xl:max-w-[1140px] 2xl:max-w-[1320px]  min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto  z-20 relative ${
+          className={`container max-w-full px-0 xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto  z-20 relative ${
             showSidebar ? "ms-0" : "ms-auto"
           }`}>
           <div className="flex flex-col lg:flex-row justify-between">

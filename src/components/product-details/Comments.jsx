@@ -61,14 +61,14 @@ const Comments = () => {
             />
             <div className="w-full">
               <div className="flex justify-between w-full">
-                <h3 className="ff_poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
+                <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
                   {item.name}
                 </h3>
-                <p className="ff_poppins font-normal text-xs text-white opacity-70 ">
+                <p className="font-poppins font-normal text-xs text-white opacity-70 ">
                   {item.date}
                 </p>
               </div>
-              <p className="ff_poppins font-normal text-xs text-white opacity-70 mb-0.5">
+              <p className="font-poppins font-normal text-xs text-white opacity-70 mb-0.5">
                 {item.comment}
               </p>
               <div className="flex icon pt-1">

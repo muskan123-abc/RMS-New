@@ -51,13 +51,13 @@ const Suggestion = ({ setVideoClick }) => {
             />
 
             <div>
-              <h3 className="ff_poppins font-medium text-sm text-white opacity-90 leading-5 mb-1">
+              <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-1">
                 {item.title}
               </h3>
-              <p className="ff_poppins font-normal text-xs text-white opacity-70 mb-1">
+              <p className="font-poppins font-normal text-xs text-white opacity-70 mb-1">
                 {item.trailer}
               </p>
-              <p className="ff_poppins font-normal text-xs text-white opacity-70 mb-0">
+              <p className="font-poppins font-normal text-xs text-white opacity-70 mb-0">
                 {formatNumber(item.views)} views
                 <span className="ms-4 before:content-[''] before:w-[3px] before:h-[3px] before:rounded-md before:absolute before:top-1/2 before:start-[-5px] before:bg-white before:-translate-x-1/2 relative">
                   {item.outTime}

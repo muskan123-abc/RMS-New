@@ -19,6 +19,7 @@ import profile from "../../assets/images/profile/jhoe-deo-profile.webp";
 // import { useStateProvider } from "../common/StateContext";
 import { Link } from "react-router-dom";
 import {
+  BellIcon,
   LikeIcon,
   defaultPorductDiscription,
   relatedItemComments,
@@ -178,7 +179,7 @@ const VideoPlayer = () => {
         </div>
       </div>
       <div className=" relative">
-        <h3 className="ff_poppins font-semibold text-white text-[20px] pt-[16px] pb-[5px] opacity-90">
+        <h3 className="font-poppins font-semibold text-white text-xl pt-[16px] pb-[5px] opacity-90">
           {title ? title : currentMovie.title}
         </h3>
         <div className="flex flex-nowrap sm:items-center sm:gap-7 gap-5 pt-0.5 flex-col sm:flex-row overflow-hidden">
@@ -190,13 +191,13 @@ const VideoPlayer = () => {
                 alt="suggest"
               />
               <div className="flex items-center 2sm:items-start 2sm:flex-col justify-center">
-                <h3 className="ff_poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
+                <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
                   TV Movies
                 </h3>
-                <p className="ff_poppins font-normal text-xs text-white opacity-70 hidden 2sm:flex">
+                <p className="font-poppins font-normal text-xs text-white opacity-70 hidden 2sm:flex">
                   {formatNumber(929000)} Subscribers
                 </p>
-                <p className="ff_poppins font-normal text-xs text-white opacity-70 2sm:hidden ps-2">
+                <p className="font-poppins font-normal text-xs text-white opacity-70 2sm:hidden ps-2">
                   {formatNumber(929000)}
                 </p>
               </div>
@@ -204,11 +205,9 @@ const VideoPlayer = () => {
             {/* SUBSCRIBE BUTTON  */}
             <Link
               href="#"
-              className="bell_icon flex gap-1 sm:gap-2 ff_inter font-semibold text-[16px] h-fit text-white common_bg_gradient_color border py-[10px] px-2 sm:px-[14px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10  relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
-              <span className="notification_hover_animation">
-                <NotificationBellIcon />
-              </span>
-              Subscribe
+              className="bell_icon flex gap-1 sm:gap-2 ff_inter font-semibold text-base h-fit text-white bg-gradient border py-[10px] px-2 sm:px-[14px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10  relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+              <span className="notification_hover_animation"></span>
+              <BellIcon /> Subscribe
             </Link>
           </div>
           {/* LIKE, DISLIKE AND DOWNLOAD,SHARE BUTTON */}
@@ -267,7 +266,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="blog"
                           to="/blog"
-                          className={` border-0 ff_poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/blog"
@@ -283,7 +282,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="fact"
                           to="/fact"
-                          className={` border-0 ff_poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/fact"
@@ -299,7 +298,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="about us"
                           to="/about-us"
-                          className={` border-0 ff_poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/about-us"
@@ -323,7 +322,7 @@ const VideoPlayer = () => {
               ? "min-h-[80px] overflow-auto !transition-all !duration-300 "
               : " min-h-[70px] !transition-all !duration-300 "
           }`}>
-          <p className="ff_poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px] mb-0.5">
+          <p className="font-poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px] mb-0.5">
             Elit eu maecenas augue lorem &nbsp;
             <span className="font-semibold text-white !opacity-100">
               malesuada
@@ -343,7 +342,7 @@ const VideoPlayer = () => {
           {defaultPorductDiscription.map((item, index) => (
             <p
               key={index}
-              className="ff_poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px]">
+              className="font-poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px]">
               <span>
                 {selectedIndexes.includes(index) ? item.description : ""}
               </span>
@@ -367,11 +366,11 @@ const VideoPlayer = () => {
         <div className="hidden lg:flex lg:flex-col">
           {" "}
           <div className="flex items-center gap-5 mt-6 md:mt-10 mb-4 md:mb-[30px]">
-            <p className="ff_poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
+            <p className="font-poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
               {commentArray[0].length} Comments
             </p>
             {/* SORT DROPDOWN  */}
-            <div className="ff_poppins font-semibold text-sm text-[#FFFFFFB2] opacity-70 mb-0 leading-[22.4px] flex gap-2.5 cursor-pointer relative">
+            <div className="font-poppins font-semibold text-sm text-[#FFFFFFB2] opacity-70 mb-0 leading-[22.4px] flex gap-2.5 cursor-pointer relative">
               <Menu>
                 <Menu.Button className="flex items-center justify-between">
                   <span className="textx-white opacity-100 me-2.5">
@@ -385,7 +384,7 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="blog"
                         to="/blog"
-                        className={` border-0 ff_poppins text-[#BDBCBA] hover:text-white ${
+                        className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
                           active && "bg-primary text-white"
                         } ${
                           loaction.pathname === "/blog"
@@ -401,7 +400,7 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="fact"
                         to="/fact"
-                        className={` border-0 ff_poppins text-[#BDBCBA] hover:text-white ${
+                        className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
                           active && "bg-primary text-white"
                         } ${
                           loaction.pathname === "/fact"
@@ -423,14 +422,14 @@ const VideoPlayer = () => {
             <CommentBoxIcon />
             <input
               onChange={(e) => setGetInput(e.target.value)}
-              className=" ff_poppins text-[14px] font-normal text-white bg-transparent px-2 py-3 w-11/12 outline-none"
+              className=" font-poppins text-sm font-normal text-white bg-transparent px-2 py-3 w-11/12 outline-none"
               type="text"
               placeholder="Add a comment"
               value={getInput}
             />
             <button
               type="submit"
-              className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center common_bg_gradient_color cursor-pointer">
+              className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center bg-gradient cursor-pointer">
               {getInput.length > 0 ? <SendIcon /> : <CommentBoxProfileIcon />}
             </button>
           </form>

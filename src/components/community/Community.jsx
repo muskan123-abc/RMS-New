@@ -82,7 +82,7 @@ const Community = ({ showSidebar }) => {
           showSidebar ? "ms-0" : "ms-auto"
         }`}>
         <div className="h-[calc(100vh-200px)] overflow-auto ">
-          <h4 className="sm:text-[20px] text-base flex items-center gap-3 text-white font-semibold mb-[30px]">
+          <h4 className="sm:text-xl text-base flex items-center gap-3 text-white font-semibold mb-[30px]">
             <CommunityIcon />
             My communities
           </h4>
@@ -195,7 +195,7 @@ const Community = ({ showSidebar }) => {
                   </span>
                   <button
                     onClick={SendHandler}
-                    className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer common_bg_gradient_color">
+                    className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer bg-gradient">
                     <SendArrow />
                   </button>
                 </div>

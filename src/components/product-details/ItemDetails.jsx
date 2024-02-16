@@ -81,14 +81,14 @@ const ItemDetails = ({ setVideoClick }) => {
   return (
     <>
       <div className="flex lg:hidden  items-center gap-5 mt-6 md:mt-10 mb-4 md:mb-[30px]">
-        <p className="ff_poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
+        <p className="font-poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
           {commentArray[0].length} Comments
         </p>
         <div className="cursor-pointer relative sort_hover">
           <Menu>
             <Menu.Button className="flex items-center justify-between">
               <SortIcon />
-              <p className="ms-2.5 ff_poppins font-semibold text-sm text-white opacity-70 leading-[160%] duration-300">
+              <p className="ms-2.5 font-poppins font-semibold text-sm text-white opacity-70 leading-[160%] duration-300">
                 Sort by
               </p>
             </Menu.Button>
@@ -98,7 +98,7 @@ const ItemDetails = ({ setVideoClick }) => {
                   <Link
                     aria-label="blog"
                     to="/blog"
-                    className={` ff_poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
+                    className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
                     } ${loaction.pathname === "/blog" ? "opacity-100" : ""}`}>
                     Blogs
@@ -110,7 +110,7 @@ const ItemDetails = ({ setVideoClick }) => {
                   <Link
                     aria-label="blog"
                     to="/blog"
-                    className={` ff_poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
+                    className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
                     } ${loaction.pathname === "/blog" ? "opacity-100" : ""}`}>
                     Facts
@@ -131,14 +131,14 @@ const ItemDetails = ({ setVideoClick }) => {
             commentHandler();
           }}
           onChange={(e) => setGetInput(e.target.value)}
-          className=" ff_poppins text-[14px] font-normal text-white bg-transparent px-2 py-3 w-11/12 outline-none"
+          className=" font-poppins text-sm font-normal text-white bg-transparent px-2 py-3 w-11/12 outline-none"
           type="text"
           placeholder="Add a comment"
           value={getInput}
         />
         <button
           type="submit"
-          className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center common_bg_gradient_color cursor-pointer">
+          className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center bg-gradient cursor-pointer">
           {getInput.length > 0 ? <SendIcon /> : <CommentBoxProfileIcon />}
         </button>
       </form>
@@ -154,9 +154,9 @@ const ItemDetails = ({ setVideoClick }) => {
         <div className=" gap-4  flex">
           <span
             onClick={() => setActiveTab("All")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold  ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
-                ? "common-bg-liner-button common_bg_gradient_color  border border-transparent"
+                ? "common-bg-liner-button bg-gradient  border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             All
@@ -165,7 +165,7 @@ const ItemDetails = ({ setVideoClick }) => {
             onClick={() => setActiveTab("Trailer")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Trailer
@@ -174,7 +174,7 @@ const ItemDetails = ({ setVideoClick }) => {
             onClick={() => setActiveTab("Comedy")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Comedy
@@ -183,7 +183,7 @@ const ItemDetails = ({ setVideoClick }) => {
             onClick={() => setActiveTab("Related")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Related
@@ -194,36 +194,36 @@ const ItemDetails = ({ setVideoClick }) => {
         <div className=" gap-4 w-[500px] overflow-x-scroll flex">
           <span
             onClick={() => setActiveTab("All")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-[14px] ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
-                ? "common-bg-liner-button common_bg_gradient_color  border border-transparent"
+                ? "common-bg-liner-button bg-gradient  border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             All
           </span>
           <span
             onClick={() => setActiveTab("Trailer")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-[14px] ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Trailer
           </span>
           <span
             onClick={() => setActiveTab("Comedy")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-[14px] ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Comedy
           </span>
           <span
             onClick={() => setActiveTab("Related")}
-            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-[14px] ff_inter text-white  rounded-md whitespace-nowrap ${
+            className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
-                ? "common-bg-liner-button common_bg_gradient_color border border-transparent"
+                ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
             }`}>
             Related

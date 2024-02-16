@@ -188,12 +188,30 @@
     box-shadow: 0 0 10px 0 #f2cd75;
 }
 
+.bg_attachment_fixed {
+    background-attachment: fixed;
+}
+
+.bottom_blur_hero {
+    background: linear-gradient(180deg,
+            rgba(30, 30, 30, 0) 0%,
+            #000000 100%,
+            #000000 100%);
+}
+
+.account_library_slider_card {
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(205.44007873535156px);
+    backdrop-filter: blur(205.44007873535156px);
+}
+
 .bg_most_rated_bg {
     background-image: url("./assets/images/common/png/common-card-slider-bg-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

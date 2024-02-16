@@ -9,7 +9,7 @@ const FanFavorite = ({ showSidebar }) => {
         <img src={image} alt=" alkternate " />
       </span>{" "}
       <div className=" bg-gradient max-w-[343px] h-[343px] rounded-[343px] blur-[250px] opacity-80 pointer-events-none absolute end-0 top-0 w-full "></div>
-      <div className="common_bg_gradient_color  max-w-[343px] h-[343px] rounded-[343px] blur-[250px] opacity-70 absolute end-0 top-0 w-full hidden md:block"></div>
+      <div className="bg-gradient  max-w-[343px] h-[343px] rounded-[343px] blur-[250px] opacity-70 absolute end-0 top-0 w-full hidden md:block"></div>
       <h2 className="secondry_heading">
         Fan <span>favorites</span>
       </h2>
