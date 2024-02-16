@@ -105,7 +105,8 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
         showSidebar
           ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
           : "max-w-[1140px]"
-      }`}>
+      }`}
+    >
       <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
         {cardContent.map((obj, index) => {
           const isLiked = heartClicked.includes(index);
@@ -116,7 +117,8 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
                   className={`${
                     isLiked ? "liked" : ""
                   } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-                  onClick={() => likeHandler(index)}>
+                  onClick={() => likeHandler(index)}
+                >
                   <HeartIcon filled={isLiked} />
                 </span>
               )}
@@ -126,7 +128,8 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
                   style={{
                     backgroundImage: `url(${obj.image})`,
-                  }}>
+                  }}
+                >
                   <div className=" flex  flex-col flex-grow justify-end">
                     <h5 className="font-poppins text-base  font-semibold text-white opacity-90  mb-2">
                       {obj.title}
@@ -173,13 +176,15 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
         <button
           aria-label="Slider Arrow"
           onClick={handleLeftArrow}
-          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-7%]  `}>
+          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-6%]  `}
+        >
           <CommonLeftArrowIcon />
         </button>
         <button
           aria-label="Slider Arrow"
           onClick={handleRightArrow}
-          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-7%]  `}>
+          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-6%]  `}
+        >
           <CommonRightArrowIcon />
         </button>
       </div>

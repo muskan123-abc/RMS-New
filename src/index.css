@@ -100,6 +100,7 @@
 }
 
 @media (max-width: 767.98px) {
+
   /* try */
   .hero_slider {
     animation-name: textSCroll;
@@ -189,12 +190,10 @@
 }
 
 .bottom_blur_hero {
-  background: linear-gradient(
-    180deg,
-    rgba(30, 30, 30, 0) 0%,
-    #000000 100%,
-    #000000 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(30, 30, 30, 0) 0%,
+      #000000 100%,
+      #000000 100%);
 }
 
 .account_library_slider_card {
@@ -210,6 +209,16 @@
   background-position: center;
 }
 
+.slick-dots {
+  display: none !important;
+}
+
+@media (max-width:1279.80px) {
+  .slick-dots {
+    display: block !important;
+  }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -222,4 +231,10 @@ input[type="number"] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
   appearance: textfield;
+}
+
+/* comments like svg */
+.like_svg_size svg {
+  width: 13px;
+  height: 12px;
 }

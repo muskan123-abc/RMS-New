@@ -90,8 +90,9 @@ const LibrarySliderCards = ({
       <div className="w-full min-[1440px]:pe-4 3xl:pe-0 min-[1440px]:pl-4">
         {/* PLAYLIST SLIDER*/}
         <div
-          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 ${sliderArrowHidden} `}>
-          <div className="flex ps-3 items-center gap-[10px]">
+          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 ${sliderArrowHidden} `}
+        >
+          <div className="flex items-center gap-[10px]">
             {icon}
             <h3 className="font-medium text-white sm:text-[22px] text-lg">
               {heading}
@@ -102,20 +103,22 @@ const LibrarySliderCards = ({
             <button
               aria-label="Slider Arrow"
               onClick={SliderLeftArrow}
-              className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
+              className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
+            >
               <CommonLeftArrowIcon />
             </button>
             <button
               aria-label="Slider Arrow"
               onClick={SliderRightArrow}
-              className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
+              className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
+            >
               <CommonRightArrowIcon />
             </button>
           </div>
         </div>
         {/* MOST RANKED HEADING AND SEARCH */}
         <div className={`${mostRankedSliderArrow}`}>
-          <div className="flex lg:hidden gap-[11px] sm:min-w-[358px] items-center mb-5 px-3 sm:px-0">
+          <div className="flex lg:hidden gap-[11px] sm:min-w-[358px] items-center mb-5 px-[10px]">
             {icon}
             <h4 className="font-medium text-white sm:text-xl text-base ">
               {heading}
@@ -140,13 +143,15 @@ const LibrarySliderCards = ({
               <button
                 aria-label="Slider Arrow"
                 onClick={SliderLeftArrow}
-                className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent  `}>
+                className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent  `}
+              >
                 <CommonLeftArrowIcon />
               </button>
               <button
                 aria-label="Slider Arrow"
                 onClick={SliderRightArrow}
-                className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}>
+                className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}
+              >
                 <CommonRightArrowIcon />
               </button>
             </div>
@@ -156,14 +161,16 @@ const LibrarySliderCards = ({
         <Slider
           ref={playlist_slider}
           {...settings}
-          className={`${sliderParent}`}>
+          className={`${sliderParent}`}
+        >
           {/* SLIDER DATA BY MAP */}
           {LibrarySliderData.map((obj, index) => {
             return (
               <div
                 onClick={() => onNavigateHandler(obj)}
                 key={index}
-                className="px-[10px] flex h-full">
+                className="px-[10px] flex h-full"
+              >
                 <div className="p-[7px] border-[2px] border-solid border-[#FFFFFF40] rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group">
                   <div>
                     <div className="rounded-[4.4px] overflow-hidden">

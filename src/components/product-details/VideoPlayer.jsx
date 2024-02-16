@@ -166,8 +166,8 @@ const VideoPlayer = () => {
         <h3 className="font-poppins font-semibold text-white text-xl pt-[16px] pb-[5px] opacity-90">
           {title ? title : currentMovie.title}
         </h3>
-        <div className="flex flex-nowrap sm:items-center sm:gap-7 gap-5 pt-0.5 flex-col sm:flex-row overflow-hidden">
-          <div className="flex justify-between md:justify-normal gap-9 pt-2 sm:pt-0">
+        <div className="flex xl:flex-row xl:items-center sm:gap-7 gap-5 pt-0.5 flex-col  overflow-hidden">
+          <div className="flex justify-between xl:justify-normal gap-9 pt-2 sm:pt-0">
             <div className="flex gap-3 w-[160px] sm:w-[155px] cursor-pointer">
               <img
                 className="rounded-full object-cover w-10 h-10"
@@ -196,7 +196,7 @@ const VideoPlayer = () => {
           </div>
           {/* LIKE, DISLIKE AND DOWNLOAD,SHARE BUTTON */}
           <div className="overflow-auto flex justify-start">
-            <div className="sm:gap-2.5 gap-2 flex justify-start min-[1200px]:items-center min-[1200px]:justify-center">
+            <div className="sm:gap-2.5 gap-2 flex justify-start min-[1200px]:items-center min-[1200px]:justify-center ">
               <span
                 onClick={() => AddLike("item1")}
                 className="common-bg-liner-button bg-[#211E1A] items-center justify-center flex gap-1
