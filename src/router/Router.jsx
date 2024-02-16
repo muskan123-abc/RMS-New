@@ -13,6 +13,7 @@ import WatchList from "../components/watchlist/WatchList";
 import AccountDetail from "../components/myAccount/MyAccount";
 import Hero from "../components/reviews/Hero";
 import Trending from "../components/trending/Trending";
+import Library from "../components/library/Library";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -41,6 +42,7 @@ const Router = () => {
           <Route path="/my-account" element={<AccountDetail />} />
           <Route path="/review" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
+          <Route path="/library" element={<Library />} />
         </Routes>
       </div>
     </div>
