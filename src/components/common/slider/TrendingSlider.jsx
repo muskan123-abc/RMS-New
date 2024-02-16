@@ -51,7 +51,7 @@ const TrendingSlider = () => {
   };
   return (
     <>
-      <div className="max-w-[1320px] pt-28 custom-4xl:pt-24 px-6 mx-auto my-6">
+      <div className="max-w-[1320px] pt-28 custom-4xl:pt-24 px-6 mx-auto pb-40 my-6">
         <div className="flex justify-between pb-9 pt-6">
           <div className="flex items-center gap-[10px]">
             <img src={trendingIcon} alt="trending" width={28} />

@@ -5,7 +5,7 @@ import Footer from "../common/Footer";
 
 const Trending = () => {
   return (
-    <div className="bg-my_account_bg bg_attachment_fixed  bg-cover ">
+    <div className="bg-common-bg-image bg_attachment_fixed  bg-cover ">
       <TrendingSlider />
       <Faqs />
       <Footer />
