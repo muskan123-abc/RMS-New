@@ -1,52 +1,41 @@
 
 import React, { useState } from "react";
-// import ItemComments from "./Comments";
-// import {
-//   CommentBoxIcon,
-//   CommentBoxProfileIcon,
-//   SendIcon,
-//   SortIcon,
-// } from "../common/Icon";
 import profile from "../../assets/images/profile/jhoe-deo-profile.webp";
-
-import { Link } from "react-router-dom";
 import { Menu } from "@headlessui/react";
-import { useLocation } from "react-router-dom";
-import Suggestion from "./Suggestion";
+import { Link, useLocation } from "react-router-dom";
 import {
   CommentBoxIcon,
   CommentBoxProfileIcon,
   SendIcon,
   SortIcon,
 } from "../common/Icons";
-import Trailer from "./Trailer";
 import Comments from "./Comments";
 import { relatedItemComments } from "./Helper";
+import Suggestion from "./Suggestion";
+import Trailer from "./Trailer";
 
 const ItemDetails = ({ setVideoClick }) => {
-  // GET THE CURRENT LOCETION
-  const loaction = useLocation();
+  // GET THE CURRENT LOCATION
+  const location = useLocation();
 
-  // FOR GET THE VALUE OF COMMENT INPUT
+  // STATE FOR COMMENT INPUT AND ARRAY
   const [getInput, setGetInput] = useState("");
   const [commentArray, setCommentArray] = useState([relatedItemComments]);
 
-  // GET THE ACTIVE AND SETACTIVE TAB  FROM PROVIDER
-  const [activeTab, setActiveTab] = useState("All"); // State to manage active tab index
-  const [showComments, setShowComments] = useState(false); // New state to control visibility
+  // STATE FOR ACTIVE TAB AND SHOW COMMENTS
+  const [activeTab, setActiveTab] = useState("All");
+  const [showComments, setShowComments] = useState(true);
 
-  // FUNTION TO ADD A COMMENT
+  // FUNCTION TO HANDLE COMMENT SUBMISSION
   const clickHandler = (e) => {
     e.preventDefault();
     setGetInput("");
 
     const currentDate = new Date();
-    // GET CURRENT YEAR MONTH AND DATE
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
     const date = currentDate.getDate();
 
-    // Array to convert month number to month name
     const monthNames = [
       "Jan",
       "Feb",
@@ -71,6 +60,7 @@ const ItemDetails = ({ setVideoClick }) => {
       image: profile,
       reply: "Reply",
     };
+    // Update commentArray with new comment
     commentArray[0].unshift(data);
     setCommentArray([...commentArray]);
   };
@@ -79,12 +69,16 @@ const ItemDetails = ({ setVideoClick }) => {
   const commentHandler = () => {
     setShowComments(true);
   };
+
   return (
     <>
+      {/* HEADER SECTION */}
       <div className="flex lg:hidden  items-center gap-5 mt-6 md:mt-10 mb-4 md:mb-[30px]">
+        {/* Number of Comments */}
         <p className="font-poppins font-semibold text-sm text-white opacity-70 mb-0 leading-[22.4px] cursor-pointer">
           {commentArray[0].length} Comments
         </p>
+        {/* Sort Button */}
         <div className="cursor-pointer relative sort_hover">
           <Menu>
             <Menu.Button className="flex items-center justify-between">
@@ -93,6 +87,7 @@ const ItemDetails = ({ setVideoClick }) => {
                 Sort by
               </p>
             </Menu.Button>
+            {/* Sort Options */}
             <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-[#414141dc] focus:outline-none flex flex-col">
               <Menu.Item className="ps-4 w-full pr-10 py-2 border-0 p-2">
                 {({ active }) => (
@@ -101,7 +96,7 @@ const ItemDetails = ({ setVideoClick }) => {
                     to="/blog"
                     className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
-                    } ${loaction.pathname === "/blog" ? "opacity-100" : ""}`}>
+                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}>
                     Blogs
                   </Link>
                 )}
@@ -113,7 +108,7 @@ const ItemDetails = ({ setVideoClick }) => {
                     to="/blog"
                     className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
-                    } ${loaction.pathname === "/blog" ? "opacity-100" : ""}`}>
+                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}>
                     Facts
                   </Link>
                 )}
@@ -150,9 +145,10 @@ const ItemDetails = ({ setVideoClick }) => {
           <Comments />
         </div>
       )}
-      {/* RELATED SUGGESTED ITME  */}
+      {/* TABS */}
       <div className="max-[370px]:min-w-[200px] min-w-[343px] overflow-x-auto lg:hidden mt-12 mb-8 ">
         <div className=" gap-4  flex">
+          {/* All Tab */}
           <span
             onClick={() => setActiveTab("All")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold  ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -162,6 +158,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             All
           </span>
+          {/* Trailer Tab */}
           <span
             onClick={() => setActiveTab("Trailer")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -171,6 +168,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             Trailer
           </span>
+          {/* Comedy Tab */}
           <span
             onClick={() => setActiveTab("Comedy")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -180,6 +178,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             Comedy
           </span>
+          {/* Related Tab */}
           <span
             onClick={() => setActiveTab("Related")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -191,8 +190,10 @@ const ItemDetails = ({ setVideoClick }) => {
           </span>
         </div>
       </div>
+      {/* TAB CONTENT */}
       <div className="overflow-auto hidden lg:flex">
         <div className=" gap-4 w-[500px] overflow-x-scroll flex">
+          {/* All Tab Content */}
           <span
             onClick={() => setActiveTab("All")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -202,6 +203,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             All
           </span>
+          {/* Trailer Tab Content */}
           <span
             onClick={() => setActiveTab("Trailer")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -211,6 +213,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             Trailer
           </span>
+          {/* Comedy Tab Content */}
           <span
             onClick={() => setActiveTab("Comedy")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -220,6 +223,7 @@ const ItemDetails = ({ setVideoClick }) => {
             }`}>
             Comedy
           </span>
+          {/* Related Tab Content */}
           <span
             onClick={() => setActiveTab("Related")}
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
@@ -231,7 +235,7 @@ const ItemDetails = ({ setVideoClick }) => {
           </span>
         </div>
       </div>
-      {/* SUGGEST ITEM, */}
+      {/* SUGGESTED ITEMS */}
       <div className="lg:mt-5 flex flex-col gap-2.5">
         {activeTab === "All" && <Suggestion setVideoClick={setVideoClick} />}
         {activeTab === "Trailer" && <Trailer setVideoClick={setVideoClick} />}

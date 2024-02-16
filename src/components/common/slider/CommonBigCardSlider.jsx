@@ -75,13 +75,11 @@ const CommonBigCardSlider = ({ showSidebar }) => {
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
-        } mx-auto`}
-      >
+        } mx-auto`}>
         <Slider
           ref={mostRatedSlider_slider}
           {...settings}
-          className="relative pb-8 xl:pb-0"
-        >
+          className="relative pb-8 xl:pb-0">
           {/* MOST RATED SLIDER CARDS BY MAP  */}
           {mostRatedSliderHome.map((obj, index) => {
             const textLength = obj.description.length;
@@ -168,14 +166,13 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                         <span>{obj.hiddendata}</span>
                       ) : (
                         obj.threedots
-                      )}{" "}
+                      )}
                       {textLength < 200 ? (
                         ""
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}
-                        >
+                          onClick={() => handleReadMoreClick(index)}>
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}
@@ -193,15 +190,13 @@ const CommonBigCardSlider = ({ showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-5.8%] `}
-          >
+            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 left-[-5.8%] `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-5.8%] `}
-          >
+            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 right-[-5.8%] `}>
             <CommonRightArrowIcon />
           </button>
         </div>

@@ -19,11 +19,11 @@ const Faqs = ({ showSidebar }) => {
         <span className=" bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-[-50px] top-[40%] z-10"></span>
         {/* Right-top icon */}
         <span className=" absolute right-0 top-0 pe-14 hidden lg:block movieIcon_animation">
-          <img src={xml} alt="xml take shoot" />{" "}
+          <img src={xml} alt="xml take shoot" />
         </span>
         {/* Left-bottom icon */}
         <span className=" absolute left-0 bottom-0 ps-10 hidden lg:block z-[2] movieIcon_animation !delay-900">
-          <img src={xml} alt="xml take shoot" />{" "}
+          <img src={xml} alt="xml take shoot" />
         </span>
         <div className="container  max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto relative z-10">
           {/* FAQ Section Title */}
