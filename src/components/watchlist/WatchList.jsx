@@ -19,6 +19,7 @@ const WatchList = () => {
             <CustomInput
               placeholder="Search"
               customStyles="md:w-[435px] sm:w-[300px] w-full"
+              customStylesInput="w-full !pr-14"
               isButtonVisible={true}
             />
           </div>
