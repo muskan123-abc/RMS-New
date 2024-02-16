@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import reel_image from "../../assets/images/svg/XMLID_2_.svg"; // Importing the reel image
+import reel_image from "../../assets/images/webp/footer-bg-reel-img-2.webp"; // Importing the reel image
 import { CommonXmildIcon } from "../common/Icons"; // Importing a common icon component
 import ItemDetails from "./ItemDetails"; // Importing ItemDetails component
 import VideoPlayer from "./VideoPlayer"; // Importing VideoPlayer component
@@ -31,7 +31,7 @@ const Hero = ({ showSidebar }) => {
           className={`container max-w-full px-0 xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto  z-20 relative ${
             showSidebar ? "ms-0" : "ms-auto"
           }`}>
-          <div className="flex flex-col lg:flex-row justify-between">
+          <div className="flex flex-col lg:flex-row justify-between px-4">
             {/* Left section of the hero */}
             <div className="w-full lg:w-2/3 min-[1440px]:w-[65%] 3xl:w-[70%]  lg:pe-3 min-[1440px]:pe-0 3xl:pe-3">
               {/* Render VideoPlayer component */}
