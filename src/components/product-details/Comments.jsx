@@ -70,7 +70,7 @@ const Comments = () => {
               <div className="flex icon pt-1">
                 <span
                   onClick={() => addLIke(index)}
-                  className={`ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer ${
+                  className={`ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer like_svg_size ${
                     isliked ? "liked" : ""
                   }`}>
                   <LikeVideoIcon isliked={isliked} />
