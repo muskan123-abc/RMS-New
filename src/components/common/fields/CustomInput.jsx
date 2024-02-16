@@ -16,7 +16,7 @@ const CustomInput = ({
   errVisible,
 }) => {
   return (
-    <>
+    <div className=" flex flex-col">
       <lable
         htmlFor={id ? id : "defaultId"}
         className={`border border-solid border-white border-opacity-50 rounded-[127px] md:flex items-center justify-between ps-3 relative inline-block py-[2px] ${
@@ -44,11 +44,11 @@ const CustomInput = ({
         )}
       </lable>
       {errVisible && value === "" && (
-        <p className=" text-red-500 text-xs font-normal block pl-6 leading-[1]">
+        <p className=" text-red-500 text-xs font-normal inline-block pl-6 leading-[1]">
           {errTitle}&nbsp;is Required
         </p>
       )}
-    </>
+    </div>
   );
 };
 

@@ -40,7 +40,10 @@ const Header = ({ showSidebar, toggleSidebar }) => {
               <CrossIcon />
             </span>
             <div
-              onClick={() => setShowsDropdown(!showsDropdown)}
+              onClick={() => {
+                setShowsDropdown(!showsDropdown);
+                setMoviesDropdown(false);
+              }}
               className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative">
               {showsDropdown ? (
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
@@ -62,7 +65,10 @@ const Header = ({ showSidebar, toggleSidebar }) => {
             </div>
             <div
               className="cursor-pointer text-base sm:text-sm font-normal text-white/70 hover:text-white flex gap-[2px] duration-300 items-center relative"
-              onClick={() => setMoviesDropdown(!moviesDropdown)}>
+              onClick={() => {
+                setMoviesDropdown(!moviesDropdown);
+                setShowsDropdown(false);
+              }}>
               {moviesDropdown ? (
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
                   {navDropdown.map((obj, index) => {
