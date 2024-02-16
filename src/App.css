@@ -87,7 +87,10 @@ body {
     transform: rotate(-5deg);
   }
 }
-
+/* SUBSCRIBE */
+.channel_button {
+  background: linear-gradient(146.59deg, #f2cd75 -0.66%, #a97424 98.99%);
+}
 /* 
 slick dots 
  */
