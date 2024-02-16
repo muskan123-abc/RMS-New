@@ -10,6 +10,7 @@ export const TrendingSliderList = [
     channel: <ChennalIcon />,
     rank: "5.3M views",
     time: "2 month ago",
+    rating:"4",
     subtile: " YM Movie Trailer"
   },
   {
@@ -18,6 +19,7 @@ export const TrendingSliderList = [
     channel: <ChennalIcon />,
     rank: "5.3M views",
     time: "2 month ago",
+    rating:"4",
     subtile: " YM Movie Trailer"
   },
   {
@@ -26,6 +28,7 @@ export const TrendingSliderList = [
     channel: <ChennalIcon />,
     rank: "5.3M views",
     time: "2 month ago",
+    rating:"4",
     subtile: " YM Movie Trailer"
   },
   {
@@ -34,6 +37,7 @@ export const TrendingSliderList = [
     channel: <ChennalIcon />,
     rank: "5.3M views",
     time: "2 month ago",
+    rating:"4",
     subtile: " YM Movie Trailer"
   },
 ];

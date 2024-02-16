@@ -9,7 +9,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
   return (
     <>
       <div className="w-full max-[375px]:max-w-[150px] max-w-[173px] h-full bg-[#373022] pb-4 overflow-y-auto custom_Scroll_none">
-        <div className="pt-5 pb-[10px] flex justify-center">
+        <div className="pt-5 custom-4xl:pt-[52px] pb-[10px] flex justify-center">
           <img className="w-14 h-[57px]" src={ProfileImg} alt="profile-img" />
         </div>
         <h2 className="font-poppins max-[375px]:text-base text-lg leading-[156%] text-white  text-center mb-5">

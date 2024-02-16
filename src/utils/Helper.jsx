@@ -13,6 +13,25 @@ import JeromeBell from '../assets/images/sidebar/JeromeBell.png';
 import SavannahNguyen from '../assets/images/sidebar/SavannahNguyen.png';
 import TheresaWebb from '../assets/images/sidebar/TheresaWebb.png';
 import { AccountIcon, HistoryIcon, HomeIcon, LibraryIcon, ReviewsIcon, SignOutIcon, SubscriptionIcon, TrendingIcon, WatchlistIcon } from "../components/common/icons/sidebar/SideBar";
+// subscription
+import godara_record from "../assets/images/subscription/godara-record.svg";
+import music from "../assets/images/subscription/music.svg";
+import p_tv_movies from "../assets/images/subscription/p-tv-movies.svg";
+import pelfizz from "../assets/images/subscription/pelfizz-studio.svg";
+import power_music from "../assets/images/subscription/power-music.svg";
+// subscribed home videos 
+// import subscribedhome1 from "../../assets/images/subscription/video1.png"
+// import subscribedhome2 from "../../assets/images/subscription/video2.png"
+// import subscribedhome3 from "../../assets/images/subscription/video3.png"
+// import subscribedhome4 from "../../assets/images/subscription/video4.png"
+// import subscribedhome5 from "../../assets/images/subscription/video5.png"
+// import subscribedhome6 from "../../assets/images/subscription/video6.png"
+// import subscribedhome7 from "../../assets/images/subscription/video7.png"
+// import subscribedhome8 from "../../assets/images/subscription/video8.png"
+// import subscribedhome9 from "../../assets/images/subscription/video9.png"
+// import subscribedhome10 from "../../assets/images/subscription/video10.png"
+// import subscribedhome11 from "../../assets/images/subscription/video11.png"
+// import subscribedhome12 from "../../assets/images/subscription/video12.png"
 export const homeHeroLeftSlider = [
   {
     image: heroLeftImage1,
@@ -292,3 +311,66 @@ export const messegeList = [
     title: "Courtney Henry",
   },
 ]
+
+export const subscribedChannels = [
+  {
+    title: "TV Movies",
+    image: p_tv_movies,
+  },
+  {
+    title: "Power music",
+    image: power_music,
+  },
+  {
+    title: "Pelfizz Studio",
+    image: pelfizz,
+  },
+  {
+    title: "Music",
+    image: music,
+  },
+  {
+    title: "Godara record",
+    image: godara_record,
+  },
+  {
+    title: "TV Movies",
+    image: p_tv_movies,
+  },
+  {
+    title: "Power music",
+    image: power_music,
+  },
+  {
+    title: "Pelfizz Studio",
+    image: pelfizz,
+  },
+  {
+    title: "Music",
+    image: music,
+  },
+  {
+    title: "Godara record",
+    image: godara_record,
+  },
+  {
+    title: "TV Movies",
+    image: p_tv_movies,
+  },
+  {
+    title: "Power music",
+    image: power_music,
+  },
+  {
+    title: "Pelfizz Studio",
+    image: pelfizz,
+  },
+  {
+    title: "Music",
+    image: music,
+  },
+  {
+    title: "Godara record",
+    image: godara_record,
+  },
+];
