@@ -12,6 +12,7 @@ const AccountDetail = ({ showSidebar }) => {
 
   const [name, setname] = useState("Floyd Miles");
   const [userName, setUserName] = useState("Designer");
+  const [isErr, setIsErr] = useState(false);
 
   const steticData = {
     Name: "",
@@ -29,8 +30,19 @@ const AccountDetail = ({ showSidebar }) => {
     e.preventDefault();
 
     console.log(formData, " <========= formData");
-    if (formData.Name === !"" && formData.username !== "") {
+    if (
+      formData.Name === !"" &&
+      formData.username !== "" &&
+      formData.address === !"" &&
+      formData.contact === !"" &&
+      formData.dob === !"" &&
+      formData.password === !"" &&
+      formData.city !== ""
+    ) {
       setFormData(steticData);
+      setIsErr(false);
+    } else {
+      setIsErr(true);
     }
   };
 
@@ -84,6 +96,8 @@ const AccountDetail = ({ showSidebar }) => {
           <form onSubmit={submitHandler}>
             <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-5 gap-4">
               <CustomInput
+                errVisible={isErr}
+                errTitle="Display Name"
                 placeholder="Display Name"
                 width="w-full"
                 handleInputChange={(value) =>
@@ -92,10 +106,11 @@ const AccountDetail = ({ showSidebar }) => {
                     Name: value.target.value,
                   })
                 }
-                on
                 value={formData.Name}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="Username"
                 placeholder="Username"
                 width="w-full"
                 handleInputChange={(value) =>
@@ -107,6 +122,8 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.username}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="Address"
                 placeholder="Address"
                 width="w-full"
                 handleInputChange={(value) =>
@@ -118,7 +135,9 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.address}
               />
               <CustomInput
-                placeholder="City"
+                errVisible={isErr}
+                errTitle="Address Name"
+                placeholder="Address"
                 width="w-full"
                 handleInputChange={(value) =>
                   setFormData({
@@ -129,6 +148,8 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.city}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="DOB"
                 placeholder="Date of Birth"
                 type={formData.dob === "" ? "text" : "date"}
                 width="w-full"
@@ -141,6 +162,8 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.dob}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="Contact"
                 placeholder="Contact"
                 inputType="number"
                 width="w-full"
@@ -154,6 +177,8 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.contact}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="Phone Number"
                 placeholder="Phone Number"
                 type="number"
                 inputType="number"
@@ -167,6 +192,8 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.phone}
               />
               <CustomInput
+                errVisible={isErr}
+                errTitle="password"
                 inputType="password"
                 placeholder="Password"
                 type="password"
