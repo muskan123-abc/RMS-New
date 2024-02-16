@@ -33,7 +33,7 @@ module.exports = {
       },
       fontSize: {
         // we  can use  default fonts for 12px{xs},14px{sm},16px{base},20px{xl},24px{2xl} font size
-        "xxl": "22px",
+        xxl: "22px",
         "3xl": "40px",
         "4xl": "55px",
       },
@@ -49,6 +49,8 @@ module.exports = {
         "homepage-hero-bg":
           "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
         "common-bg-image": "url('/src/assets/images/webp/HeroSection_bg.webp')",
+        my_account_bg:
+          "url('../src/assets/images/myaccount/HeroSection_bg.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height
