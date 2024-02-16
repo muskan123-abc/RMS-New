@@ -110,6 +110,7 @@ slick dots
   width: 31px;
   height: 31px;
 }
-.silder_width .slick-slide{
-  width: unset !important;
+.videotabs svg {
+  width: 20px;
+  height: 20px;
 }

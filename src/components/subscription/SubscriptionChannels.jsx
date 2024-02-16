@@ -20,7 +20,7 @@ const SubscriptionChannels = () => {
     infinite: true,
     arrows: false,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 1,
     focusOnSelect: true,
     responsive: [
@@ -62,11 +62,11 @@ const SubscriptionChannels = () => {
   return (
     <>
       <div className="flex md:flex-row flex-col gap-y-5 w-full">
-        <div className="overflow-x-hidden silder_width">
+        <div className="overflow-x-hidden">
           <Slider
             ref={sliderRef}
             {...settings}
-            className="flex gap-3 flex-wrap " 
+            className="flex gap-3 flex-wrap "
           >
             {subscribedChannels.map((value, index) => (
               <div
@@ -112,10 +112,10 @@ const SubscriptionChannels = () => {
         >
           <img className="w-[126px] h-auto" src={value.image} alt="p-movies" />
           <div>
-            <h3 className="text-white ff_poppins font-medium text-2xl opacity-90">
+            <h3 className="text-white font-poppins font-medium text-2xl opacity-90">
               {value.title}
             </h3>
-            <h4 className="text-white ff_poppins pb-6 opacity-70 text-sm">
+            <h4 className="text-white font-poppins pb-6 opacity-70 text-sm">
               929K Subscribers
             </h4>
             <button className="common-border-button items-center gap-2.5 ff_inter font-semibold text-[16px] text-white opacity-90 w-full py-[11px] px-4 rounded overflow-hidden border border-solid border-[#f2cd75] bg-black hover:border-transparent after:bg-[#a97424]  z-10 flex justify-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
@@ -125,16 +125,8 @@ const SubscriptionChannels = () => {
         </div>
       ))}
       <div className="p-2.5 bg-white bg-opacity-[8%] mt-[30px] rounded-md">
-        <h4 className="ff_poppins text-sm text-white font-semibold max-w-[709px] 2xl:max-w-[900px]">
-          <span className="opacity-70">
-            Elit eu maecenas augue lorem
-          </span>
-          malesuada
-          <span className="opacity-70">
-            amet mattis risus. Luctus hac at pharetra erat vivamus fusce sit
-            nec. Interdum ornare velit consectetur et purus ultricies egiquet
-          </span>
-          udipiscing <span className="opacity-70">volutpat</span>.
+        <h4 className="font-poppins text-sm text-white/70  max-w-[709px] 2xl:max-w-[900px]">
+          Elit eu maecenas augue lorem <span className="text-white font-semibold" > malesuada </span> amet mattis risus. Luctus hac at pharetra erat vivamus fusce sit nec. Interdum ornare velit consectetur et purus ultricies egiquet <span className="text-white font-semibold" > udipiscing </span> volutpat.
         </h4>
       </div>
     </>
