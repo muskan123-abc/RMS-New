@@ -12,6 +12,7 @@ const AccountDetail = ({ showSidebar }) => {
 
   const [name, setname] = useState("Floyd Miles");
   const [userName, setUserName] = useState("Designer");
+
   const steticData = {
     Name: "",
     username: "",
@@ -91,6 +92,7 @@ const AccountDetail = ({ showSidebar }) => {
                     Name: value.target.value,
                   })
                 }
+                on
                 value={formData.Name}
               />
               <CustomInput
