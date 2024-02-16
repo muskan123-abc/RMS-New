@@ -43,7 +43,10 @@ const Router = () => {
           <Route path="/my-account" element={<AccountDetail />} />
           <Route path="/review" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
-          <Route path="/library" element={<Library />} />
+          <Route
+            path="/library"
+            element={<Library showSidebar={showSidebar} />}
+          />
           <Route path="/subscription" element={<Subscription />} />
         </Routes>
       </div>
