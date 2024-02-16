@@ -91,6 +91,9 @@ body {
 .channel_button {
   background: linear-gradient(146.59deg, #f2cd75 -0.66%, #a97424 98.99%);
 }
+.bg_attachment_fixed {
+  background-attachment: fixed;
+}
 /* 
 slick dots 
  */
@@ -101,4 +104,12 @@ slick dots
 
 .slick-dots li.slick-active button:before {
   @apply !bg-gradient !w-6;
+}
+/* SUBSCRIBE */
+.SubscriptionIcon_size svg {
+  width: 31px;
+  height: 31px;
+}
+.silder_width .slick-slide{
+  width: unset !important;
 }
