@@ -1,8 +1,12 @@
 import React from "react";
-import { CommonLeftArrowIcon, CommonRightArrowIcon } from "../common/Icons";
+import TrendingSlider from "../common/slider/TrendingSlider";
 
 const Trending = () => {
-  return <div>trending</div>;
+  return (
+    <div>
+      <TrendingSlider />
+    </div>
+  );
 };
 
 export default Trending;
