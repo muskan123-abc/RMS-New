@@ -92,7 +92,6 @@ const AccountDetail = ({ showSidebar }) => {
                     Name: value.target.value,
                   })
                 }
-                on
                 value={formData.Name}
               />
               <CustomInput
