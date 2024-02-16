@@ -4,7 +4,6 @@ import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import { ratingStars } from "../../../utils/CommonFunction";
 import { TrendingSliderList } from "../../trending/Helper";
 import {
-  ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   ShareIcon,
