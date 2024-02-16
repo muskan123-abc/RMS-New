@@ -64,7 +64,7 @@ const AccountDetail = ({ showSidebar }) => {
               My account
             </span>
           </div>
-          <div className="flex gap-5 mb-[30px]">
+          <div className="flex flex-col sm:flex-row gap-5 mb-[30px]">
             <img
               src={image ? URL.createObjectURL(image) : adventureSliderImg1}
               alt="profile img"
@@ -94,12 +94,13 @@ const AccountDetail = ({ showSidebar }) => {
             </div>
           </div>
           <form onSubmit={submitHandler}>
-            <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-5 gap-4">
+            <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-5 gap-4 mt-10 sm:mt-0">
               <CustomInput
                 errVisible={isErr}
                 errTitle="Display Name"
                 placeholder="Display Name"
-                width="w-full"
+                customStylesInput="w-full"
+                customStyles="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -112,7 +113,8 @@ const AccountDetail = ({ showSidebar }) => {
                 errVisible={isErr}
                 errTitle="Username"
                 placeholder="Username"
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -125,7 +127,8 @@ const AccountDetail = ({ showSidebar }) => {
                 errVisible={isErr}
                 errTitle="Address"
                 placeholder="Address"
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -138,7 +141,8 @@ const AccountDetail = ({ showSidebar }) => {
                 errVisible={isErr}
                 errTitle="Address Name"
                 placeholder="Address"
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -152,7 +156,8 @@ const AccountDetail = ({ showSidebar }) => {
                 errTitle="DOB"
                 placeholder="Date of Birth"
                 type={formData.dob === "" ? "text" : "date"}
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -166,7 +171,8 @@ const AccountDetail = ({ showSidebar }) => {
                 errTitle="Contact"
                 placeholder="Contact"
                 inputType="number"
-                width="w-full"
+                customStylesInput="w-full"
+                customStyles="w-full"
                 type="number"
                 handleInputChange={(value) =>
                   setFormData({
@@ -182,7 +188,8 @@ const AccountDetail = ({ showSidebar }) => {
                 placeholder="Phone Number"
                 type="number"
                 inputType="number"
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -197,7 +204,8 @@ const AccountDetail = ({ showSidebar }) => {
                 inputType="password"
                 placeholder="Password"
                 type="password"
-                width="w-full"
+                customStyles="w-full"
+                customStylesInput="w-full"
                 handleInputChange={(value) =>
                   setFormData({
                     ...formData,
@@ -223,8 +231,9 @@ const AccountDetail = ({ showSidebar }) => {
               <CustomButton
                 title="Cancel" //set button title
                 isGradient={false} // is grident is  visible // controle  btn types
-                varient="button" // set button type like  Link and  Button
+                varient="link" // set button type like  Link and  Button
                 isVisible={true} // handle  button visibility
+                url="/"
                 customStyles="text-center flex items-center justify-center" // add custom styles  \\ use custom styles with importent
               />
               <CustomButton
