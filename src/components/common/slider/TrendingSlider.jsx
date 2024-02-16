@@ -56,7 +56,7 @@ const TrendingSlider = () => {
   return (
     <>
       <section>
-        <div className="max-w-[1320px] px-6 mx-auto my-6">
+        <div className="max-w-[1320px]  px-6 mx-auto my-6">
           <div className="flex justify-between pb-9 pt-6">
             <div className="flex items-center gap-[10px]">
               <img src={trendingIcon} alt="trending" width={28} />

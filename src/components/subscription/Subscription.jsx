@@ -4,6 +4,7 @@ import CustomInput from "../common/fields/CustomInput";
 import Faqs from "../common/Faqs";
 import SubscriptionChannels from './SubscriptionChannels'
 import SubscribedVideos from './SubscribedVideos'
+import Footer from "../common/Footer";
 const Subscription = ({ showSidebar }) => {
   // IMPORT STATE VALUE FROM PROVIDER
   const [showData, setShowData] = useState(); //OPEN SIDEBAR
@@ -22,7 +23,7 @@ const Subscription = ({ showSidebar }) => {
   };
   return (
     <>
-      <div className="bg-my_account_bg bg_attachment_fixed  bg-cover relative pt min-[1440px]:pt-24">
+      <div className="bg-my_account_bg bg_attachment_fixed  bg-cover relative pt-28 min-[1440px]:pt-24">
         <div className="bottom_blur_hero w-full h-[50px] absolute bottom-0 left-0"></div>
         <div
 
@@ -38,7 +39,7 @@ const Subscription = ({ showSidebar }) => {
             </h2>
             <CustomInput
               placeholder="Search"
-              customStyles="w-full max-w-[435px] py-0"
+              customStyles="w-full max-w-[435px] "
               customStylesInput="w-full "
               isButtonVisible={true}
             />
@@ -53,6 +54,7 @@ const Subscription = ({ showSidebar }) => {
         ></div>
         <div className="sm:pt-[60px] pt-5">
           <Faqs />
+          <Footer/>
         </div>
       </div>
     </>
