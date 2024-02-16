@@ -12,7 +12,7 @@ const WatchList = () => {
       <div className="bg-[url('/src/assets/images/webp/homepage_hero_bg_img.webp')] bg-no-repeat bg-center bg-cover relative pt-28 min-[1280px]:pt-[100px] z-10 pb-20">
         <div className="mx-auto container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto max-[1439px]:mx-auto">
           <div className="flex justify-between sm:items-center pb-8 w-full sm:flex-row flex-col gap-4">
-            <h2 className="font-medium text-white text-[22px] flex items-center gap-[11px]">
+            <h2 className="font-medium text-white text-xxl flex items-center gap-[11px]">
               <WatchlistIcon />
               Watchlist
             </h2>

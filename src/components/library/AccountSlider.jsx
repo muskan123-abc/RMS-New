@@ -83,7 +83,7 @@ const AccountSlider = ({
   };
 
   // const { setCardData } = useStateProvider();
-  const [cardData,setCardData]=useState()
+  const [cardData, setCardData] = useState();
   const navigate = useNavigate();
   const onNavigateHandler = (value) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
@@ -100,7 +100,7 @@ const AccountSlider = ({
         >
           <div className="flex ps-3 items-center gap-[10px]">
             {icon}
-            <h3 className="ff_poppins font-medium text-white sm:text-[22px] text-[18px]">
+            <h3 className="ff_poppins font-medium text-white sm:text-xxl text-[18px]">
               {heading}
             </h3>
           </div>

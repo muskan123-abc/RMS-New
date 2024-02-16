@@ -57,10 +57,11 @@ const AccountDetail = ({ showSidebar }) => {
         <div
           className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto xl:pt-[100px] px-[26px] pt-4 ${
             showSidebar ? "ms-0" : "ms-auto"
-          }`}>
+          }`}
+        >
           <div className="flex items-center gap-[11px] mb-[30px]">
             <UsersIcon />
-            <span className="font-medium font-poppins text-[22px] text-white">
+            <span className="font-medium font-poppins text-xxl text-white">
               My account
             </span>
           </div>
@@ -88,7 +89,8 @@ const AccountDetail = ({ showSidebar }) => {
               <label
                 htmlFor="image"
                 className="common-border-button cursor-pointer  font-semibold text-sm sm:text-base text-white opacity-90 w-full py-2.5 px-3 rounded overflow-hidden border border-solid border-[#F2CD75] bg-black hover:border-transparent after:bg-[#A97424] z-10 flex justify-center relative duration-300 ease-linear after:absolute
-               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0"
+              >
                 Change Profile image
               </label>
             </div>

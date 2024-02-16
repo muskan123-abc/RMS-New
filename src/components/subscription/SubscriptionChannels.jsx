@@ -91,14 +91,14 @@ const SubscriptionChannels = () => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow flex justify-center items-center bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent`}
+            className={`common-arrow left-arrow flex justify-center items-center bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
           >
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow left-arrow bg-transparent flex justify-center items-center rotate-180 w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent`}
+            className={`common-arrow left-arrow bg-transparent flex justify-center items-center rotate-180 w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
           >
             <CommonLeftArrowIcon />
           </button>
@@ -118,7 +118,7 @@ const SubscriptionChannels = () => {
             <h4 className="text-white font-poppins pb-6 opacity-70 text-sm">
               929K Subscribers
             </h4>
-            <button className="common-border-button items-center gap-2.5 ff_inter font-semibold text-[16px] text-white opacity-90 w-full py-[11px] px-4 rounded overflow-hidden border border-solid border-[#f2cd75] bg-black hover:border-transparent after:bg-[#a97424]  z-10 flex justify-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+            <button className="common-border-button items-center gap-2.5 ff_inter font-semibold text-[16px] text-white opacity-90 w-full py-[11px] px-4 rounded overflow-hidden border border-solid border-light-yellow bg-black hover:border-transparent after:bg-[#a97424]  z-10 flex justify-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
               <UnsubscribeBell /> Unsubscribe
             </button>
           </div>
