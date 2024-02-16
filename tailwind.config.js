@@ -13,6 +13,7 @@ module.exports = {
         inter: "Inter, sans-serif",
       },
       screens: {
+        "custom-sm": "480px",
         "custom-2xl": "1350px",
         "custom-3xl": "1400px",
         "custom-4xl": "1440px",
@@ -50,8 +51,6 @@ module.exports = {
         "homepage-hero-bg":
           "url('../src/assets/images/webp/homepage_hero_bg_img.webp')",
         "common-bg-image": "url('/src/assets/images/webp/HeroSection_bg.webp')",
-        my_account_bg:
-          "url('../src/assets/images/myaccount/HeroSection_bg.webp')",
       },
       lineHeight: {
         150: "150%", // Custom line height

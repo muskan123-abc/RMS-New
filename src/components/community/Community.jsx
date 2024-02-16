@@ -82,7 +82,7 @@ const Community = ({ showSidebar }) => {
           showSidebar ? "ms-0" : "ms-auto"
         }`}>
         <div className="h-[calc(100vh-200px)] overflow-auto ">
-          <h4 className="sm:text-[20px] text-base flex items-center gap-3 text-white font-semibold mb-[30px]">
+          <h4 className="sm:text-xl text-base flex items-center gap-3 text-white font-semibold mb-[30px]">
             <CommunityIcon />
             My communities
           </h4>
