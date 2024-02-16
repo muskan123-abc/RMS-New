@@ -70,7 +70,7 @@ const SubscribedVideos = () => {
                     {value.title}
                   </h3>
                   <span className="flex items-center text-2xl text-white">
-                    <ChennalIcon />+
+                    <ChennalIcon /> <span className="ms-1"> + </span>
                   </span>
                 </div>
                 <div>

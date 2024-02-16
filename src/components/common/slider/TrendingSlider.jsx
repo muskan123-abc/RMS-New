@@ -107,7 +107,7 @@ const TrendingSlider = () => {
                       {obj.title}
                     </h3>
                     <span className="flex gap-1.5 items-center text-2xl text-white">
-                      {obj.channel} <span>+</span>
+                      {obj.channel} <span> + </span>
                     </span>
                     <p className="font-inter font-normal text-xs leading-[118%] opacity-70">
                       {obj.subtile}

@@ -22,7 +22,7 @@ const Subscription = ({ showSidebar }) => {
   };
   return (
     <>
-      <div className="bg-my-account-bg bg-fixed  bg-cover relative pt-28 min-[1440px]:pt-24">
+      <div className="bg-common-bg-image bg-fixed  bg-cover relative pt-28 min-[1440px]:pt-24">
         <div className="w-full h-[50px] absolute bottom-0 left-0"></div>
         <div
           className={`container mx-auto pb-16 px-6 ${
