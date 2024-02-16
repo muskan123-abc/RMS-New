@@ -6,7 +6,7 @@ import Footer from "../common/Footer";
 const Trending = () => {
   return (
     <div className="bg-common-bg-image bg-fixed  bg-cover ">
-      <TrendingSlider />
+      <TrendingSlider sliderHeading="Trending" sliderIcon={true} />
       <Faqs />
       <Footer />
     </div>

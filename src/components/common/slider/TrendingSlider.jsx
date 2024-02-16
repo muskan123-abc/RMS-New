@@ -5,7 +5,7 @@ import { ratingStars } from "../../../utils/CommonFunction";
 import { TrendingSliderList } from "../../trending/Helper";
 import { CommonLeftArrowIcon, CommonRightArrowIcon, ShareIcon } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
-const TrendingSlider = () => {
+const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
   //REF FOR TARGER SLIDER-ARROWS
   const playlist_slider = useRef(null);
 
@@ -54,9 +54,13 @@ const TrendingSlider = () => {
       <div className="max-w-[1320px] pt-20 px-6 pb-16 md:pb-32  mx-auto ">
         <div className="flex justify-between pb-5 md:pb-8 pt-5">
           <div className="flex items-center gap-2.5">
-            <img src={trendingIcon} alt="trending" width={28} />
+            {sliderIcon ? (
+              <img src={trendingIcon} alt="trending" width={28} />
+            ) : (
+              ""
+            )}
             <h3 className="font-poppins font-medium text-white text-xxl">
-              Trending
+              {sliderHeading}
             </h3>
           </div>
           {/* SLIDER ARROWS  */}
