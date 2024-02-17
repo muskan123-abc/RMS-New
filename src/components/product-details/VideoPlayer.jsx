@@ -401,7 +401,7 @@ const VideoPlayer = () => {
           {/* COMMENT INPUT  */}
           <form
             onSubmit={(e) => clickHandler(e)}
-            className="border border-solid border-[#82817F] ps-5 rounded-[127px] flex items-center justify-between w-full">
+            className="border border-solid border-battleship-gray ps-5 rounded-[127px] flex items-center justify-between w-full">
             <CommentBoxIcon />
             <input
               onChange={(e) => setGetInput(e.target.value)}

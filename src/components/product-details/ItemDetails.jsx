@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import profile from "../../assets/images/profile/jhoe-deo-profile.webp";
 import { Menu } from "@headlessui/react";
@@ -96,7 +95,8 @@ const ItemDetails = ({ setVideoClick }) => {
                     to="/blog"
                     className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
-                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}>
+                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}
+                  >
                     Blogs
                   </Link>
                 )}
@@ -108,7 +108,8 @@ const ItemDetails = ({ setVideoClick }) => {
                     to="/blog"
                     className={` font-poppins font-semibold text-sm text-white opacity-70 hover:opacity-100 duration-300 border-0 font-proximanovaregular ${
                       active && "bg-primary text-white opacity-100"
-                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}>
+                    } ${location.pathname === "/blog" ? "opacity-100" : ""}`}
+                  >
                     Facts
                   </Link>
                 )}
@@ -119,8 +120,9 @@ const ItemDetails = ({ setVideoClick }) => {
       </div>
       {/* COMMENT BOX */}
       <form
-        className="border lg:hidden  border-solid border-[#82817F] ps-5 rounded-[127px] flex items-center justify-between w-full"
-        onSubmit={(e) => clickHandler(e)}>
+        className="border lg:hidden  border-solid border-battleship-gray ps-5 rounded-[127px] flex items-center justify-between w-full"
+        onSubmit={(e) => clickHandler(e)}
+      >
         <CommentBoxIcon />
         <input
           onClick={() => {
@@ -134,14 +136,16 @@ const ItemDetails = ({ setVideoClick }) => {
         />
         <button
           type="submit"
-          className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center bg-gradient cursor-pointer">
+          className="sm:w-[50px] w-[60px] h-[50px] rounded-full flex items-center justify-center bg-gradient cursor-pointer"
+        >
           {getInput.length > 0 ? <SendIcon /> : <CommentBoxProfileIcon />}
         </button>
       </form>
       {/* COMMENT SECTION */}
       {showComments && (
         <div
-          className={`lg:mt-6 flex-col gap-2.5 z-[-1] relative flex lg:hidden rounded-md transition-all duration-300 my-8 `}>
+          className={`lg:mt-6 flex-col gap-2.5 z-[-1] relative flex lg:hidden rounded-md transition-all duration-300 my-8 `}
+        >
           <Comments />
         </div>
       )}
@@ -155,7 +159,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             All
           </span>
           {/* Trailer Tab */}
@@ -165,7 +170,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Trailer
           </span>
           {/* Comedy Tab */}
@@ -175,7 +181,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Comedy
           </span>
           {/* Related Tab */}
@@ -185,7 +192,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Related
           </span>
         </div>
@@ -200,7 +208,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             All
           </span>
           {/* Trailer Tab Content */}
@@ -210,7 +219,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Trailer
           </span>
           {/* Comedy Tab Content */}
@@ -220,7 +230,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Comedy
           </span>
           {/* Related Tab Content */}
@@ -230,7 +241,8 @@ const ItemDetails = ({ setVideoClick }) => {
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
                 : "bg-[#2B261E] border border-solid border-white/40"
-            }`}>
+            }`}
+          >
             Related
           </span>
         </div>
