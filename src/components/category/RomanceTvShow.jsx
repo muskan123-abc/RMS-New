@@ -1,7 +1,7 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
-import { romanceSlider } from "./Helper";
-import xml from "../../assets/images/svg/XMLID_2_.svg";
+import { romanceTvShowsSlider } from "./Helper";
+import xml from "../../assets/images/svg/tap-recorder-icon.svg";
 
 const RomanceTvShow = ({ showSidebar }) => {
   return (
@@ -19,7 +19,7 @@ const RomanceTvShow = ({ showSidebar }) => {
           <span>Romance</span> TV Shows
         </h2>
         <CommonCardSlider
-          contentArr={romanceSlider}
+          contentArr={romanceTvShowsSlider}
           showSidebar={showSidebar}
         />
       </div>

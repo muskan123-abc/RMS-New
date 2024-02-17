@@ -32,6 +32,7 @@ module.exports = {
         "dark-yellow": "#A97424",
         gray: "#6C757D",
         "light-gray": "#BBBAB9",
+        "dark-gray": "#FFFFFF4D",
       },
       fontSize: {
         // we  can use  default fonts for 12px{xs},14px{sm},16px{base},20px{xl},24px{2xl} font size

@@ -1,7 +1,7 @@
 import React from "react";
 import Faqs from "../common/Faqs";
 import Footer from "../common/Footer";
-import xml from "../../assets/images/svg/XMLID_2_.svg";
+import xml from "../../assets/images/svg/tap-recorder-icon.svg";
 import reelImage from "../../assets/images/webp/footer-bg-reel-img-2.webp";
 import {
   LikeVideoIcon,

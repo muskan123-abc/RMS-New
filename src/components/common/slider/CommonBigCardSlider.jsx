@@ -93,7 +93,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
                   <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute"></div>
                   <div className=" opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[326px] h-[326px] rounded-[326px] blur-[250px] bg-[linear-gradient(135deg,#F2CD75_0%,#A97424_100%)]"></div>
-                  <div className="min-w-[270px] rounded-lg relative w-[270px] h-[381px]  overflow-hidden border-2 border-solid border-[#FFFFFF4D] rated_movies_shadow max-w-[400px]">
+                  <div className="min-w-[270px] rounded-lg relative w-[270px] h-[381px]  overflow-hidden border-2 border-solid border-dark-gray rated_movies_shadow max-w-[400px]">
                     {!isLoading ? <div className="skeleton-loader"></div> : ""}
                     <img
                       className={isLoading ? "w-full h-full" : "w-0 h-0"}
@@ -172,7 +172,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}>
+                          onClick={() => handleReadMoreClick(index)}
+                        >
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}

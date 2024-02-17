@@ -1,7 +1,7 @@
 import cardImg1 from "../../assets/images/watchlists/watchlist_card_img_1.png";
 import cardImg2 from "../../assets/images/watchlists/watchlist_card_img_2.png";
 import cardImg3 from "../../assets/images/watchlists/watchlist_card_img_3.png";
-export const WatchlistData = [
+export const watchListData = [
   {
     // id: 1,
     image: cardImg1,
