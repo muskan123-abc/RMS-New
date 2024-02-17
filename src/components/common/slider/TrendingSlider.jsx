@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import { ratingStars } from "../../../utils/CommonFunction";
-import { TrendingSliderList } from "../../trending/Helper";
+import { trendingSliderList } from "../../trending/Helper";
 import { CommonLeftArrowIcon, CommonRightArrowIcon, ShareIcon } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
 const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
@@ -50,7 +50,6 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
     ],
   };
   return (
-    <>
       <div className="max-w-[1320px] pt-20 px-6 pb-16 md:pb-32  mx-auto ">
         <div className="flex justify-between pb-5 md:pb-8 pt-5">
           <div className="flex items-center gap-2.5">
@@ -68,13 +67,13 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
             <button
               aria-label="Slider Arrow"
               onClick={handleLeftArrow}
-              className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}>
+              className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300  border  border-light-yellow hover:border-transparent `}>
               <CommonLeftArrowIcon />
             </button>
             <button
               aria-label="Slider Arrow"
               onClick={handleRightArrow}
-              className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
+              className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300  border  border-light-yellow hover:border-transparent`}>
               <CommonRightArrowIcon />
             </button>
           </div>
@@ -86,20 +85,20 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
           // className={` slider_hight_equal ${sliderParant}`}
         >
           {/* PLAY LIST SLIDER DATA BY MAP */}
-          {TrendingSliderList.map((obj, index) => {
+          {trendingSliderList.map((obj, index) => {
             return (
               <div
                 //   onClick={() => onNavigateHandler(obj)}
                 key={index}
-                className="px-[10px] flex h-full">
-                <div className="p-2 border-[2px] bg-graphite-gray border-solid border-white/40 rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
+                className="px-2.5 flex h-full">
+                <div className="p-2 border-2 bg-graphite-gray  border-white/40 rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
                   <div>
-                    <div className="rounded-[4.4px] overflow-hidden">
+                    <div className="rounded overflow-hidden">
                       <img
                         width={208}
                         height={161}
                         loading="lazy"
-                        className="w-full group-hover:scale-105 duration-200"
+                        className="w-full group-hover:scale-105 duration-300"
                         src={obj.image}
                         alt="top-movie"
                       />
@@ -114,7 +113,7 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
                       {obj.subtile}
                     </p>
                     <div className="flex items-center mt-0.5 opacity-70">
-                      <p className="me-[31px] font-poppins text-xs leading-[118%]">
+                      <p className="me-8 font-poppins text-xs leading-[118%]">
                         {obj.rank}
                       </p>
                       <ol className="!list-disc">
@@ -154,7 +153,6 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
           })}
         </Slider>
       </div>
-    </>
   );
 };
 
