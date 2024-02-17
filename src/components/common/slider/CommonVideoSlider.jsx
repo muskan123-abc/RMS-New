@@ -77,11 +77,11 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
       <Slider
         ref={watch_slider}
         {...settings}
-        className="relative z-10 pb-8 xl:pb-0 watch_slider after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70">
+        className="relative z-10 pb-8 xl:pb-0 watch_slider after:content-[''] after:absolute after:top-0 after:-translate-y-[20%] after:left-1/2 after:-translate-x-1/2 sm:after:w-[343px] after:w-[143px] sm:after:h-[343px] after:h-[143px] after:rounded-full after:-z-10 after:bg-[linear-gradient(135deg,_#f2cd75_0%,#a97424_100%)] after:blur-[130px]  after:opacity-70 after:pointer-events-none">
         {content &&
           content.map((value, index) => {
             return (
-              <div key={index} className="px-[10px]  ">
+              <div key={index} className="sm:px-[10px]  ">
                 <div className="custom_dark_card_bg p-[10px] rounded-xl group h-full ">
                   <div className="relative overflow-hidden rounded-md sm:h-[250px] md:h-[190px] min-[885px]:h-[220px] lg:h-[305px]">
                     {isVideoPlaying === index ? (

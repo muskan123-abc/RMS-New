@@ -96,24 +96,21 @@ const FeaturedToday = ({ showSidebar }) => {
         className={`${
           showSidebar ? "xl:py-44" : "xl:pt-28  md:pb-36"
         } " relative pb-0 md:pt-[170px] "`}
-        id="featured"
-      >
+        id="featured">
         <span className=" absolute left-0 top-0 ps-6 hidden lg:block movieIcon_animation">
           <img src={image} alt=" alternate" />
         </span>
         <div
           className={`container px-4 px:md-0  max-w-full xl:max-w-[1140px] ${
             showSidebar ? " custom-2xl:max-w-[1000px]" : "xl:max-w-[1140px]"
-          } 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}
-        >
+          } 2xl:max-w-[1320px] mx-auto  pt-10 md:pt-20 relative `}>
           <div className=" flex flex-col md:flex-row items-center pb-10 mx-auto ">
             <div
               className={`w-full  md:w-1/2 lg:w-[40%]  ${
                 showSidebar
                   ? "xl:w-[50%]  min-[1440px]:w-[45%]"
-                  : "xl:w-[40%]  min-[1440px]:w-[35%]"
-              }`}
-            >
+                  : "xl:w-[40%]  min-[1440px]:w-[38%]"
+              }`}>
               <h2 className="secondry_heading md:!text-start">
                 Featured
                 <span> today</span>
@@ -127,16 +124,14 @@ const FeaturedToday = ({ showSidebar }) => {
                 <button
                   aria-label="Slider Arrow"
                   onClick={handleLeftArrow}
-                  className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}
-                >
+                  className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}>
                   <CommonLeftArrowIcon />
                 </button>
                 <button
                   aria-label="Slider Arrow"
                   onClick={handleRightArrow}
                   className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent 
-                   `}
-                >
+                   `}>
                   <CommonRightArrowIcon />
                 </button>
               </div>
@@ -144,8 +139,7 @@ const FeaturedToday = ({ showSidebar }) => {
             <div
               className={`w-full md:w-[45%]  md:absolute right-0 pt-8 md:pt-0  md:my-11 lg:w-[55%] min-[1530px]:w-[50%] ${
                 showSidebar ? " xl:w-[50%]" : " xl:w-[60%] "
-              }`}
-            >
+              }`}>
               <Slider className="pb-8 md:pb-0" ref={slider} {...settings}>
                 {featuredSlider.map((value, index) => {
                   return (
@@ -159,8 +153,7 @@ const FeaturedToday = ({ showSidebar }) => {
                           }  relative p-2 `}
                           style={{
                             backgroundImage: `url(${value.image})`,
-                          }}
-                        >
+                          }}>
                           <div className=" flex  flex-col flex-grow justify-end">
                             <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
                               {value.title}

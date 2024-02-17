@@ -71,7 +71,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   return (
     <>
       <div
-        className={`relative z-10 ${
+        className={`relative z-10 sm:px-4 rounded-lg ${
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
@@ -89,7 +89,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
             return (
               <div key={index} className="px-2 xl:pb-0 ">
                 <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
-                <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
+                <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl sm:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
                   <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute"></div>
                   <div className=" opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[326px] h-[326px] rounded-[326px] blur-[250px] bg-[linear-gradient(135deg,#F2CD75_0%,#A97424_100%)]"></div>
@@ -104,13 +104,13 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                     />
                   </div>
                   <div className="relative after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
-                    <div className="lg:flex justify-between items-center">
+                    <div className="md:flex justify-between items-center">
                       {pathName === "/category" ? (
                         <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
                           {obj.title2}
                         </h4>
                       ) : (
-                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
+                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90 sm:mb-5 md:mb-0">
                           {obj.title}
                         </h4>
                       )}
@@ -172,8 +172,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}
-                        >
+                          onClick={() => handleReadMoreClick(index)}>
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}

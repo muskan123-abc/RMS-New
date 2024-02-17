@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import { homeHeroLeftSlider, homeHeroRightSlider } from "../../utils/Helper";
-import { CommonXmildIcon } from "../common/Icons";
+import image from "../../assets/images/svg/tap-recorder-icon.svg";
 import CustomInput from "../common/fields/CustomInput";
 
 const Hero = ({ showSidebar }) => {
@@ -31,8 +31,8 @@ const Hero = ({ showSidebar }) => {
         {/* Bottom blur effect */}
         <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
         {/* Movie icon at the top-left corner */}
-        <span className=" absolute left-0 top-0 min-[1440px]:hidden ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
-          <CommonXmildIcon />
+        <span className=" absolute left-0 top-20 ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
+          <img src={image} alt=" icon-cut" />
         </span>
         <div
           className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto pt-sm-5 mt-5 md:mt-0 md:pt-0 px-3 ${
@@ -41,7 +41,7 @@ const Hero = ({ showSidebar }) => {
           <div className="md:hidden mb-10">
             <CustomInput
               placeholder="Search"
-              customStyles="w-full sm:w-[75%] flex mx-auto"
+              customStyles="w-full sm:w-[75%] flex md:mx-auto"
               customStylesInput="w-full"
               isButtonVisible={true}
             />
