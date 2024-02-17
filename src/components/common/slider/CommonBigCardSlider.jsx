@@ -71,7 +71,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   return (
     <>
       <div
-        className={`relative z-10 ${
+        className={`relative z-10 sm:px-4 rounded-lg ${
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
@@ -104,7 +104,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                     />
                   </div>
                   <div className="relative after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
-                    <div className="lg:flex justify-between items-center">
+                    <div className="md:flex justify-between items-center">
                       {pathName === "/category" ? (
                         <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
                           {obj.title2}

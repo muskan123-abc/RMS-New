@@ -69,10 +69,9 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 840,
         settings: {
-          slidesToShow: 2,
-          slidesToShow: 1.99,
+          slidesToShow: 2.001,
           dots: true,
         },
       },

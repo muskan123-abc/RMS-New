@@ -99,11 +99,11 @@ slick dots
  */
 
 .slick-dots li button::before {
-  @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-[3px] !p-1 !cursor-pointer !border-0 !outline-none !bg-[#231d13] !rounded-base transition-all duration-300;
+  @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-[3px] !p-[3px] !cursor-pointer !border-0 !outline-none !bg-[#493c27] md:!bg-[#110e09] lg:!bg-[#231d13] !rounded-base transition-all duration-300;
 }
 
 .slick-dots li.slick-active button:before {
-  @apply !bg-gradient !w-6;
+  @apply !bg-gradient;
 }
 /* SUBSCRIBE */
 .SubscriptionIcon_size svg {
@@ -113,4 +113,14 @@ slick dots
 .videotabs svg {
   width: 20px;
   height: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
