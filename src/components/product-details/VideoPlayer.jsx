@@ -210,7 +210,7 @@ const VideoPlayer = () => {
             <div className="sm:gap-2.5 gap-2 flex justify-start min-[1200px]:items-center min-[1200px]:justify-center ">
               <span
                 onClick={() => AddLike("item1")}
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2  rounded hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
@@ -221,7 +221,7 @@ const VideoPlayer = () => {
               </span>
               <span
                 onClick={() => AddDisLIke("item1")}
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px] px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
@@ -235,7 +235,7 @@ const VideoPlayer = () => {
                   closeMobileMenu();
                   e.preventDefault(); // Prevent the default anchor behavior
                 }}
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>
@@ -244,7 +244,7 @@ const VideoPlayer = () => {
                 Share
               </span>
               <span
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>

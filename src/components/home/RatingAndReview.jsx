@@ -116,7 +116,7 @@ const RatingAndReview = ({ showSidebar }) => {
                 title="See All Reviews" //set button title
                 isGradient={true} // is grident is  visible // controle  btn types
                 varient="link" // set button type like  Link and  Button
-                url="/my-reviews" // set url when button type  is link
+                url="/my-reviewss" // set url when button type  is link
                 isVisible={true} // handle  button visibility
                 customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:inline-block hidden"
@@ -154,7 +154,7 @@ const RatingAndReview = ({ showSidebar }) => {
                 title="See All Reviews" //set button title
                 isGradient={false} // is grident is  visible // controle  btn types
                 varient="link" // set button type like  Link and  Button
-                url="/my-reviews" // set url when button type  is link
+                url="/my-reviewss" // set url when button type  is link
                 isVisible={true} // handle  button visibility
                 customStyles=" mt-10 sm:mt-12 md:mt-[60px] " // add custom styles  \\ use custom styles with importent
                 setButtonFull="lg:hidden "

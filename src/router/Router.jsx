@@ -91,7 +91,7 @@ const Router = () => {
             element={<WatchList showSidebar={showSidebar} />}
           />
           <Route path="/my-account" element={<AccountDetail />} />
-          <Route path="/my-review" element={<Hero />} />
+          <Route path="/my-reviews" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/history" element={<History />} />
           <Route

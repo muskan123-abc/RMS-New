@@ -9,7 +9,7 @@ import RatingAndReview from "./RatingAndReview";
 import RecentlyViewed from "./RecentlyViewed";
 import WatchVideos from "./WatchVideos";
 
-const Home = ({ showSidebar }) => {
+const Home = ({ showSidebar,scrollToTop }) => {
   return (
     <>
       <Hero showSidebar={showSidebar} />
