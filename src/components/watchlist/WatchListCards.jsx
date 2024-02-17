@@ -12,6 +12,7 @@ const WatchListCards = ({
   setHeartClicked,
   heartClicked,
 }) => {
+  // Function to handle like/unlike
   const likeHandler = (value) => {
     if (heartClicked.includes(value)) {
       const updatedHeartClicked = heartClicked.filter((item) => item !== value);
@@ -20,10 +21,13 @@ const WatchListCards = ({
       setHeartClicked([...heartClicked, value]);
     }
   };
+
   return (
     <>
+      {/* Watchlist Card */}
       <div className="w-full sm:w-[48%] md:w-6/12 lg:w-4/12 border border-solid border-[#494745] text-white rounded-lg p-2 relative overflow-hidden max-h-[407px]">
         {index >= 0 && (
+          // Heart icon for like/unlike
           <span
             className={`${
               isLiked ? "liked" : ""
@@ -33,25 +37,31 @@ const WatchListCards = ({
             <HeartIcon filled={isLiked} />
           </span>
         )}
+        {/* Image */}
         <img className="w-full h-full object-cover" src={image} alt="image" />
+        {/* Card Content */}
         <div className="px-2 absolute bottom-0 w-[95%] mx-auto">
+          {/* Title */}
           <p className="text-sm sm:text-base font-semibold mb-1 sm:mb-2 leading-[160%]">
             {title}
           </p>
+          {/* Rating */}
           <div className="flex justify-between mb-3 sm:mb-2 lg:mb-5 w-100">
             <p className="text-sm font-normal leading-[160%] mb-0 text-[#b3b3b3]">
               Your rating: {rating}/5
             </p>
+            {/* Rating Stars */}
             <span className="flex gap-1">
               {ratingStars(rating ? rating : 4)}
             </span>
           </div>
+          {/* Custom Button */}
           <CustomButton
-            title="Trailer" //set button title
-            varient="button" // set button type like  Link and  Button
-            url="" // set url when button type  is link
-            isVisible={true} // handle  button visibility
-            customStyles=" !px-0 flex justify-center" // add custom styles  \\ use custom styles with importent
+            title="Trailer" // Set button title
+            varient="button" // Set button type like Link and Button
+            url="" // Set URL when button type is link
+            isVisible={true} // Handle button visibility
+            customStyles=" !px-0 flex justify-center" // Add custom styles (use !important)
             setButtonFull="w-full"
             className="mb-5"
           />

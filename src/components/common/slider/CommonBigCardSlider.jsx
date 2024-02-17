@@ -90,7 +90,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               <div
                 onClick={() => onNavigateHandler(obj)}
                 key={index}
-                className="px-2 xl:pb-0 ">
+                className="px-2 xl:pb-0 "
+              >
                 <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
                 <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl sm:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
@@ -113,8 +114,11 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                           pathName === "/category"
                             ? ""
                             : "sm:mb-5 md:mb-0 mr-10"
-                        }`}>
-                        {pathName === "/category" ? obj.title2 : obj.title}
+                        }`}
+                      >
+                        {pathName === "/category"
+                          ? obj.categoryTitle
+                          : obj.homeTitle}
                       </h4>
 
                       {pathName === "/category" ? (
@@ -174,7 +178,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}>
+                          onClick={() => handleReadMoreClick(index)}
+                        >
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}

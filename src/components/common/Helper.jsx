@@ -96,24 +96,24 @@ export const watchVideosSlider = [
 export const mostRatedSliderHome = [
   {
     image: moviesposture,
-    title: "Robin Hood",
-    title2: "There’s even more to watch.",
+    homeTitle: "Robin Hood",
+    categoryTitle: "There’s even more to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque. ",
     rating: "4",
   },
   {
     image: moviesposture,
-    title: "Most Wanted",
-    title2: "There’s to watch.",
+    homeTitle: "Most Wanted",
+    categoryTitle: "There’s to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque.",
     rating: "4",
   },
   {
     image: moviesposture,
-    title: "Superman",
-    title2: "More to watch.",
+    homeTitle: "Superman",
+    categoryTitle: "More to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque.",
     rating: "4",
