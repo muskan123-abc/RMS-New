@@ -40,7 +40,7 @@ const Suggestion = ({ setVideoClick }) => {
               handleCardClick(item);
               scrollToTop();
             }}
-            className="flex gap-2.5 bg-[#2D281F] cursor-pointer rounded-md border border-solid border-[#FFFFFF40] p-[6px]">
+            className="flex gap-2.5 bg-[#2D281F] cursor-pointer rounded-md border border-solid border-white/40 p-[6px]">
             <img
               className="rounded-md"
               width="88"

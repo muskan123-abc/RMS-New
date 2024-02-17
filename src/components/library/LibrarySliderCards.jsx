@@ -171,7 +171,7 @@ const LibrarySliderCards = ({
                 key={index}
                 className="px-[10px] flex h-full"
               >
-                <div className="p-[7px] border-[2px] border-solid border-[#FFFFFF40] rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group">
+                <div className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group">
                   <div>
                     <div className="rounded-[4.4px] overflow-hidden">
                       <img

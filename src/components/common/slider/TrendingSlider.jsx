@@ -92,7 +92,7 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
                 //   onClick={() => onNavigateHandler(obj)}
                 key={index}
                 className="px-[10px] flex h-full">
-                <div className="p-2 border-[2px] bg-[#2c271f] border-solid border-[#FFFFFF40] rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
+                <div className="p-2 border-[2px] bg-graphite-gray border-solid border-white/40 rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
                   <div>
                     <div className="rounded-[4.4px] overflow-hidden">
                       <img
