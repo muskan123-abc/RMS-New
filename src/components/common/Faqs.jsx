@@ -5,11 +5,11 @@ import { faqList } from "./Helper";
 
 const Faqs = ({ showSidebar }) => {
   // State to track the active accordion index
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [isactiveIndex, IssetActiveIndex] = useState(0);
 
   // Function to toggle accordion based on index
   const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    IssetActiveIndex(isactiveIndex === index ? null : index);
   };
   return (
     <>
@@ -45,14 +45,14 @@ const Faqs = ({ showSidebar }) => {
                   <div className="flex justify-between items-center">
                     <h3
                       className={`${
-                        activeIndex === index ? "common-text-gradient" : ""
+                        isactiveIndex === index ? "common-text-gradient" : ""
                       } font-poppins flex items-start md:items-center transition ease-in-out duration-300 justify-between text-[15px] sm:text-base xl:text-2xl text-white font-semibold cursor-pointer `}>
                       {obj.title}
                     </h3>
                     {/* FAQ Item Arrow Icon */}
                     <span
                       className={` transform transition-all ease-in-out duration-300 ${
-                        activeIndex === index ? "rotate-180 transform " : " "
+                        isactiveIndex === index ? "rotate-180 transform " : " "
                       }`}>
                       <FaqArrowIcon />
                     </span>
@@ -60,7 +60,7 @@ const Faqs = ({ showSidebar }) => {
                   {/* FAQ Item Description */}
                   <div
                     className={`overflow-hidden transition-height transition-all ease-in-out duration-200 ${
-                      activeIndex === index ? "h-[60px]" : "h-0"
+                      isactiveIndex === index ? "h-[60px]" : "h-0"
                     }`}>
                     <p className="text-[13px] md:text-base font-normal font-poppins text-[#6C757D] pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
                       {obj.description}

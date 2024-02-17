@@ -1,5 +1,5 @@
 import profile from "../../assets/images/profile/jhoe-deo-profile.webp";
-import profile10 from "../../assets/images/profile/profile10.webp";
+import profile10 from "../../assets/images/profile/profile12.webp";
 import profile11 from "../../assets/images/profile/profile11.webp";
 import profile12 from "../../assets/images/profile/profile12.webp";
 import profile13 from "../../assets/images/profile/profile13.webp";
