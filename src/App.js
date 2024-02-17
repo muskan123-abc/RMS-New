@@ -5,6 +5,7 @@ import Router from "./router/Router";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BackToTop from "./components/common/BackToTop";
+import ShareView from "./components/common/ShareView";
 function App() {
   return (
     <div className=" bg-black text-white">

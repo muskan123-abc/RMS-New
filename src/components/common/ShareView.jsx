@@ -1,9 +1,8 @@
 import React from "react";
-import { CrossIcon } from "../common/Icons";
+import { CopyLink, CrossIcon } from "../common/Icons";
 import { Link } from "react-router-dom";
-import { CopyLink, ShareList } from "./Helper";
+import {ShareList } from "./Helper";
 import CustomInput from "../common/fields/CustomInput";
-
 const ShareView = () => {
   return (
     <>
@@ -14,7 +13,7 @@ const ShareView = () => {
         <div className="flex gap-[22px]">
           {ShareList.map((obj, index) => {
             return (
-              <div className="flex flex-col items-center" key={index}>
+              <div className="flex flex-col items-center " key={index}>
                 <Link to={obj.link}>{obj.icon}</Link>
                 <p className="font-poppins text-sm text-center pt-2.5 text-white/70">
                   {obj.title}
@@ -38,5 +37,4 @@ const ShareView = () => {
     </>
   );
 };
-
 export default ShareView;

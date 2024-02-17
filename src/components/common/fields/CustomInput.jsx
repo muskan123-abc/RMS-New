@@ -12,10 +12,15 @@ const CustomInput = ({
   isButtonVisible,
   handleInputChange,
   value,
+<<<<<<< HEAD
   errTitle,
   errVisible,
   parentWidth,
   isBgGradientHidden,
+=======
+  isBgGradientHidden,
+  parentWidth,
+>>>>>>> fcd29879dc89f1e48e83546b5e8a753970b859f2
 }) => {
   return (
     <div className={`${parentWidth && parentWidth} flex flex-col`}>
@@ -39,9 +44,13 @@ const CustomInput = ({
           <button
             type="submit"
             aria-label="Search"
+<<<<<<< HEAD
             className={`w-[40px] h-[40px] lg:w-[46px] lg:h-[46px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer ${
               isBgGradientHidden ? "" : "bg-gradient"
             } absolute top-1/2 right-0 -translate-y-1/2  z-0  ${
+=======
+            className={`w-[40px] h-[40px] lg:w-[46px] lg:h-[46px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer ${ isBgGradientHidden ?"":"bg-gradient"} absolute top-1/2 right-0 -translate-y-1/2  z-0  ${
+>>>>>>> fcd29879dc89f1e48e83546b5e8a753970b859f2
               customStylesButton && customStylesButton
             }`}>
             {buttonIcon ? buttonIcon : <SearchIcon />}

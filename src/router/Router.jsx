@@ -95,7 +95,6 @@ const Router = () => {
           />
           <Route path="/subscription" element={<Subscription />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>

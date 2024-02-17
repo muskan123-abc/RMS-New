@@ -19,6 +19,7 @@ import recentlyViewedImg1 from "../../assets/images/recentlyViewed/img-1.webp";
 import recentlyViewedImg2 from "../../assets/images/recentlyViewed/img-2.webp";
 import recentlyViewedImg3 from "../../assets/images/recentlyViewed/img-3.webp";
 import recentlyViewedImg4 from "../../assets/images/recentlyViewed/img-4.webp";
+import { FooterFacebookIcon, FooterInstagramIcon, FooterLinkedinIcon } from "./Icons";
 export const FanFavoriteContent = [
   {
     title: "In elit nullam sit quam",
@@ -346,3 +347,45 @@ export const recentlyViewedSlider = [
     image: recentlyViewedImg4,
   },
 ];
+// SHARE VIEW IN ITEM PAGE
+export const ShareList = [
+  {
+    link: "",
+    icon: <FooterInstagramIcon />,
+    title: "Instagram",
+  },
+  {
+    link: "",
+    icon: <FooterFacebookIcon />,
+    title: "Facebook",
+  },
+  {
+    link: "",
+    icon: <FooterLinkedinIcon />,
+    title: "Linkdin",
+  },
+  {
+    link: "",
+    icon: <FooterInstagramIcon />,
+    title: "Instagram",
+  },
+  {
+    link: "",
+    icon: <FooterFacebookIcon />,
+    title: "Facebook",
+  },
+  {
+    link: "",
+    icon: <FooterLinkedinIcon/>,
+    title: "Linkdin",
+  },
+  {
+    link: "",
+    icon: <FooterFacebookIcon />,
+    title: "Facebook",
+  },
+];
+
+
+
+

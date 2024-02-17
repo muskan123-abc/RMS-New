@@ -5,7 +5,7 @@ import Faqs from "../common/Faqs";
 import SubscriptionChannels from "./SubscriptionChannels";
 import SubscribedVideos from "./SubscribedVideos";
 import Footer from "../common/Footer";
-const Subscription = ({ showSidebar }) => {
+const Subscription = ({ showSidebar ,scrollToTop}) => {
   const [showData, setShowData] = useState(); //OPEN SIDEBAR
 
   // OVERFLOW HIDDEN WHEN SIDEBAR OPEN
@@ -42,7 +42,7 @@ const Subscription = ({ showSidebar }) => {
             />
           </div>
           <SubscriptionChannels />
-          <SubscribedVideos />
+          <SubscribedVideos scrollToTop={scrollToTop} />
         </div>
         <div
           onClick={overLayHidden}
