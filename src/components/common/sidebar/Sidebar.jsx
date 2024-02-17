@@ -7,9 +7,8 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
     <>
       {/* Overlay */}
       <div
-        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${
-          showSidebar ? "block" : "hidden"
-        }`}
+        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${showSidebar ? "block" : "hidden"
+          }`}
         onClick={() => setShowSidebar(false)}></div>
       {/* Sidebar Content */}
       <div
