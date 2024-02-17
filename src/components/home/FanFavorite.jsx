@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/images/svg/XMLID_2_.svg";
+import image from "../../assets/images/svg/tap-recorder-icon.svg";
 import { FanFavoriteContent } from "../common/Helper";
 import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
 const FanFavorite = ({ showSidebar }) => {

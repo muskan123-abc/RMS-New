@@ -13,12 +13,12 @@ const Hero = () => {
           <CommonXmildIcon />
         </span>
         <img
-          className="w-[240px] h-[381px] object-cover absolute end-0 bottom-[110px] 2xl:bottom-[5%] xl:bottom-[20%] -z-0  hidden xl:block"
+          className="w-[240px] h-[381px] object-cover absolute end-0 bottom-[110px] 2xl:bottom-[5%] xl:bottom-[20%] z-0 hidden xl:block"
           src={category_hero_reel_img}
           alt="popular_reel_position_img"
         />
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto flex-grow flex justify-center items-center h-full">
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center ">
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center">
             <div className="w-full sm:w-[75%] md:w-1/2 lg:w-[39%] pt-10 md:pt-0 pb-3 md:pb-0">
               <h2 className="font-poppins font-bold text-[35px] lg:text-3xl xl:text-[55px] text-white leading-[142%]">
                 TV <span className="common-text-gradient">Shows</span>
@@ -28,7 +28,7 @@ const Hero = () => {
                 posuere vestibulum eget erat aliquet quam donec donec
                 suspendisse.
               </p>
-              <div className="hidden md:flex">
+              <div className="hidden md:block">
                 <CustomInput
                   placeholder="Search"
                   customStyles="w-full md:w-[80%]"
@@ -36,7 +36,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className=" w-full sm:w-[70%] md:w-[45%] ">
+            <div className="w-full sm:w-[70%] md:w-[45%]">
               <div className="md:hidden my-10">
                 <CustomInput
                   placeholder="Search"
@@ -44,7 +44,7 @@ const Hero = () => {
                   isButtonVisible={true}
                 />
               </div>
-              <div className="border-2 border-solid border-[#FFFFFF4D] rounded-lg z-50 relative overflow-hidden">
+              <div className="border-2 border-solid border-dark-gray rounded-lg z-50 relative overflow-hidden">
                 <img
                   height={523}
                   width={523}

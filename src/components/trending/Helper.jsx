@@ -3,7 +3,7 @@ import trendingImage2 from "../../assets/images/trending/trending_img2.webp";
 import trendingImage3 from "../../assets/images/trending/trending_img3.webp";
 import trendingImage4 from "../../assets/images/trending/trending_img4.webp";
 import { ChennalIcon } from "../common/Icons";
-export const TrendingSliderList = [
+export const trendingSliderList = [
   {
     image: trendingImage1,
     title: "Sed atvelrra lobotis",

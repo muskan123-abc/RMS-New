@@ -1,7 +1,7 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
 import { adventureSlider } from "./Helper";
-import image from "../../assets/images/webp/footer-bg-reel-img-3.webp";
+import reelImg from "../../assets/images/webp/footer-bg-reel-img-3.webp";
 
 const TvActionAdventure = ({ showSidebar }) => {
   return (
@@ -9,7 +9,7 @@ const TvActionAdventure = ({ showSidebar }) => {
       <div className="relative pb-20 sm:py-20 z-10">
         <img
           className="absolute left-[-40px] sm:top-[30px] top-[120px] lg:max-w-[130px] xl:max-w-[202px] md:max-w-[150px] max-w-[100px] hidden lg:block"
-          src={image}
+          src={reelImg}
           loading="lazy"
           alt="reel"
         />

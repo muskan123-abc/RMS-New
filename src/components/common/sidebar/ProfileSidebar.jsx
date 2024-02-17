@@ -45,7 +45,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                     <span>{obj.image}</span>
                     <h2
                       className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
-                        isActive ? "text-[#F1C40F]" : ""
+                        isActive ? "text-yellow" : ""
                       }`}>
                       {obj.title}
                     </h2>
@@ -57,7 +57,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                     <span>{obj.image}</span>
                     <h2
                       className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
-                        isActive ? "text-[#F1C40F]" : ""
+                        isActive ? "text-yellow" : ""
                       }`}>
                       {obj.title}
                     </h2>

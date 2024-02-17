@@ -11,9 +11,9 @@ import adventureSliderImg1 from "../../assets/images/adventureSliderImages/adven
 import adventureSliderImg2 from "../../assets/images/adventureSliderImages/adventure-slider-img2.webp";
 import adventureSliderImg3 from "../../assets/images/adventureSliderImages/adventure-slider-img3.webp";
 // ROMANCE SLIDER
-import romanceSliderImg1 from "../../assets/images/romanceTvShows/webp/img-1.webp";
-import romanceSliderImg2 from "../../assets/images/romanceTvShows/webp/img-2.webp";
-import romanceSliderImg3 from "../../assets/images/romanceTvShows/webp/img-3.webp";
+import romanceTvShowsSliderImg1 from "../../assets/images/romanceTvShows/webp/img-1.webp";
+import romanceTvShowsSliderImg2 from "../../assets/images/romanceTvShows/webp/img-2.webp";
+import romanceTvShowsSliderImg3 from "../../assets/images/romanceTvShows/webp/img-3.webp";
 // COMEDIE SLIDER
 import comedieSliderImg1 from "../../assets/images/comidesSliderImages/comide-slider-img1.webp";
 import comedieSliderImg2 from "../../assets/images/comidesSliderImages/comide-slider-img2.webp";
@@ -119,34 +119,34 @@ export const adventureSlider = [
   },
 ];
 // ROMANCE SLIDER DATA
-export const romanceSlider = [
+export const romanceTvShowsSlider = [
   {
-    image: romanceSliderImg1,
+    image: romanceTvShowsSliderImg1,
     title: "Magna etiam",
     rating: "Your rating: 4/5",
   },
   {
-    image: romanceSliderImg2,
+    image: romanceTvShowsSliderImg2,
     title: "Dictum nunc",
     rating: "Your rating: 4/5",
   },
   {
-    image: romanceSliderImg3,
+    image: romanceTvShowsSliderImg3,
     title: "Suspendisse ultrices ",
     rating: "Your rating: 4/5",
   },
   {
-    image: romanceSliderImg1,
+    image: romanceTvShowsSliderImg1,
     title: "Magna etiam",
     rating: "Your rating: 4/5",
   },
   {
-    image: romanceSliderImg2,
+    image: romanceTvShowsSliderImg2,
     title: "Dictum nunc",
     rating: "Your rating: 4/5",
   },
   {
-    image: romanceSliderImg3,
+    image: romanceTvShowsSliderImg3,
     title: "Suspendisse ultrices ",
     rating: "Your rating: 4/5",
   },

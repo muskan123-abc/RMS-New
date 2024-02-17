@@ -1,7 +1,7 @@
 import React from "react";
 import Faqs from "../common/Faqs";
 import Footer from "../common/Footer";
-import xml from "../../assets/images/svg/XMLID_2_.svg";
+import xml from "../../assets/images/svg/tap-recorder-icon.svg";
 import reelImage from "../../assets/images/webp/footer-bg-reel-img-2.webp";
 import {
   LikeVideoIcon,
@@ -22,7 +22,7 @@ const Library = ({ showSidebar }) => {
         <img
           className="absolute left-4 min-[1440px]:hidden top-[117px] max-w-[70px] z-0 xl:block hidden"
           src={xml}
-          alt="hero-deco"
+          alt="tap-recorder-icon"
         />
         <img
           className="absolute right-0 top-[230px] max-w-[170px] md:block hidden"
@@ -41,14 +41,14 @@ const Library = ({ showSidebar }) => {
                 icon={<RecentlyWatchingIcon />}
                 heading={"Most ranked/Suggested videos"}
                 sliderArrowHidden={"hidden"}
-                LibrarySliderData={mostRankedLibrary}
+                librarySliderData={mostRankedLibrary}
                 sliderParent="pb-6"
               />
               {/* PLAYLIST LIBRARY SLIDER   */}
               <LibrarySliderCards
                 icon={<PlaylistIcon />}
                 heading={"Playlists"}
-                LibrarySliderData={playlistLibrary}
+                librarySliderData={playlistLibrary}
                 mostRankedSliderArrow={"hidden"}
                 sliderParent="pb-6"
               />
@@ -56,7 +56,7 @@ const Library = ({ showSidebar }) => {
               <LibrarySliderCards
                 icon={<LikeVideoIcon />}
                 heading={"Liked Videos"}
-                LibrarySliderData={likeVideoLibrary}
+                librarySliderData={likeVideoLibrary}
                 mostRankedSliderArrow={"hidden"}
                 sliderParent="pb-0"
               />

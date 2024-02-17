@@ -154,7 +154,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold  ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             All
           </span>
@@ -164,7 +164,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Trailer
           </span>
@@ -174,7 +174,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Comedy
           </span>
@@ -184,7 +184,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Related
           </span>
@@ -199,7 +199,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             All
           </span>
@@ -209,7 +209,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Trailer
           </span>
@@ -219,7 +219,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Comedy
           </span>
@@ -229,7 +229,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-[#FFFFFF40]"
+                : "bg-[#2B261E] border border-solid border-white/40"
             }`}>
             Related
           </span>

@@ -4,10 +4,6 @@ import { formatNumber, ratingStars } from "../../utils/CommonFunction";
 const RatingBars = (props) => {
   //USR FOR RATING PROGRESSBAR
   const [ref, inView] = useInView({});
-  const [showTabs, setShowTabs] = useState("myaccount");
-
-  //IMPORT STATE VALUE FROM PROVIDER
-  //   const { setShowTabs } = useStateProvider();
 
   const [animationsTriggered, setAnimationsTriggered] = useState(false);
   useEffect(() => {
@@ -19,11 +15,11 @@ const RatingBars = (props) => {
   return (
     <div className={`flex flex-col ${props.flexStructure}`}>
       <div className={props.ratingWidth}>
-        <h2 className="font-poppins font-bold text-[35px] md:text-[45px] lg:text-[50px] xl:text-[64px] text-white mb-0 pb-[6px]">
+        <h2 className="font-poppins font-bold text-[35px] md:text-[45px] lg:text-[50px] xl:text-[64px] text-white mb-0 pb-1.5">
           4.3
         </h2>
         <div className="flex gap-1">{ratingStars(4)}</div>
-        <p className=" font-poppins font-normal text-base text-[#B3B2B2] mb-0 mt-3">
+        <p className=" font-poppins font-normal text-base text-darkgray-two mb-0 mt-3">
           {formatNumber(1400)} reviews
         </p>
       </div>
@@ -31,10 +27,10 @@ const RatingBars = (props) => {
         <div
           className={`max-w-[463px] lg:max-w-[100%] ${props.ratingBarsWidth}`}>
           <div className="flex items-center mt-5 w-full justify-between">
-            <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+            <h6 className="font-poppins font-normal text-base text-darkgray-two">
               01
             </h6>
-            <div className="w-full rounded-full h-2 ms-7 bg-[#333333]">
+            <div className="w-full rounded-full h-2 ms-7 bg-dark-charcoal">
               <div
                 className={`${
                   animationsTriggered ? "w-[88%]" : "w-[0]"
@@ -42,10 +38,10 @@ const RatingBars = (props) => {
             </div>
           </div>
           <div className="flex items-center mt-2 sm:mt-2 justify-between">
-            <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+            <h6 className="font-poppins font-normal text-base text-darkgray-two">
               02
             </h6>
-            <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+            <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
               <div
                 className={`${
                   animationsTriggered ? "w-[63%]" : "w-[0]"
@@ -53,10 +49,10 @@ const RatingBars = (props) => {
             </div>
           </div>
           <div className="flex items-center mt-2 sm:mt-2 justify-between">
-            <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+            <h6 className="font-poppins font-normal text-base text-darkgray-two">
               03
             </h6>
-            <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+            <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
               <div
                 className={`${
                   animationsTriggered ? "w-[35%]" : "w-[0]"
@@ -64,10 +60,10 @@ const RatingBars = (props) => {
             </div>
           </div>
           <div className="flex items-center mt-2 sm:mt-2 justify-between">
-            <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+            <h6 className="font-poppins font-normal text-base text-darkgray-two">
               04
             </h6>
-            <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+            <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
               <div
                 className={`${
                   animationsTriggered ? "w-[78%]" : "w-[0]"
@@ -75,10 +71,10 @@ const RatingBars = (props) => {
             </div>
           </div>
           <div className="flex items-center mt-2 sm:mt-2 justify-between">
-            <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+            <h6 className="font-poppins font-normal text-base text-darkgray-two">
               05
             </h6>
-            <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+            <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
               <div
                 className={`${
                   animationsTriggered ? "w-[15%]" : "w-[0]"

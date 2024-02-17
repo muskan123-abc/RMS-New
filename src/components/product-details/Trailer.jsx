@@ -36,7 +36,7 @@ const Trailer = ({ setVideoClick }) => {
               handleCardClick(item);
               scrollToTop();
             }}
-            className="flex gap-3 cursor-pointer bg-[#2D281F] rounded-md border border-solid border-[#FFFFFF40] p-[6px]">
+            className="flex gap-3 cursor-pointer bg-[#2D281F] rounded-md border border-solid border-white/40 p-[6px]">
             <img width="88" height="88" src={item.image} alt="suggest-cover" />
             <div>
               <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">

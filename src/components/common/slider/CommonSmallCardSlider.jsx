@@ -115,17 +115,19 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
                   className={`${
                     isLiked ? "liked" : ""
                   } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-                  onClick={() => likeHandler(index)}>
+                  onClick={() => likeHandler(index)}
+                >
                   <HeartIcon filled={isLiked} />
                 </span>
               )}
 
-              <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2  mb-2 mx-auto w-[98%] ">
+              <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2  mb-2 mx-auto w-[98%] ">
                 <div
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
                   style={{
                     backgroundImage: `url(${obj.image})`,
-                  }}>
+                  }}
+                >
                   <div className=" flex  flex-col flex-grow justify-end">
                     <h5 className="font-poppins text-base  font-semibold text-white opacity-90  mb-2">
                       {obj.title}

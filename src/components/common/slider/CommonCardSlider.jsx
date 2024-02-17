@@ -94,59 +94,62 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
         }`}
       >
         <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
-          {contentArr.map((obj, i) => (
-            <div key={i} className="px-3 lg:px-2">
-              <div className="w-full group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-auto xl:mx-2 mb-2 relative">
-                <div className={`flex rounded-xl w-full`}>
-                  <div>
-                    <div className="overflow-hidden rounded-md">
-                      <img
-                        height={303}
-                        width={347}
-                        className="group-hover:scale-110 duration-300 rounded-[6px] w-full"
-                        src={obj.image}
-                        alt="img"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className=" mt-4 pb-[11px]">
-                      <h5 className="font-poppins text-sm xl:text-xl font-semibold text-white opacity-90 mb-0">
-                        {obj.title}
-                      </h5>
-                      <span className="flex items-center text-2xl text-white">
-                        <ChennalIcon />+
-                      </span>
-                      <p className="font-poppins text-base font-normal text-light-gray mt-1 mb-2">
-                        {obj.rating}
-                      </p>
-                      <span className="flex gap-1">{ratingStars(4)}</span>
-                      <div className="flex w-full gap-2 sm:gap-4 justify-between mt-4 ">
-                        <CustomButton
-                          title=" Add a Watchlist" //set button title
-                          isGradient={true} // is grident is  visible // controle  btn types
-                          varient="button" // set button type like  Link and  Button
-                          url="" // set url when button type  is link
-                          isVisible={true} // handle  button visibility
-                          customStyles=" !px-0 flex justify-center" // add custom styles  \\ use custom styles with importent
-                          setButtonFull="w-full"
+          {contentArr.map((obj, i) => {
+            return (
+              <div key={i} className="px-3 lg:px-2">
+                <div className="w-full group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 bg-light-black mx-auto xl:mx-2 mb-2 relative">
+                  <div className={`flex rounded-xl w-full`}>
+                    <div>
+                      <div className="overflow-hidden rounded-md">
+                        <img
+                          height={303}
+                          width={347}
+                          className="group-hover:scale-110 duration-300 rounded-[6px] w-full"
+                          src={obj.image}
+                          alt="img"
+                          loading="lazy"
                         />
-                        <CustomButton
-                          title="Share" //set button title
-                          isGradient={true} // is grident is  visible // controle  btn types
-                          varient="button" // set button type like  Link and  Button
-                          url="" // set url when button type  is link
-                          isVisible={true} // handle  button visibility
-                          customStyles=" flex justify-center " // add
-                          icon={<ShareIcon />}
-                          setButtonFull="w-full"
-                        />
+                      </div>
+                      <div className=" mt-4 pb-[11px]">
+                        <h5 className="font-poppins text-sm xl:text-xl font-semibold text-white opacity-90 mb-0">
+                          {obj.title}
+                        </h5>
+                        <span className="flex items-center text-2xl text-white">
+                          <ChennalIcon />+
+                        </span>
+                        <p className="font-poppins text-base font-normal text-light-gray mt-1 mb-2">
+                          {obj.rating}
+                        </p>
+                        <span className="flex gap-1">{ratingStars(4)}</span>
+                        <div className="flex w-full gap-2 sm:gap-4 justify-between mt-4 ">
+                          <CustomButton
+                            title=" Add a Watchlist" //set button title
+                            isGradient={true} // is grident is  visible // controle  btn types
+                            varient="button" // set button type like  Link and  Button
+                            url="" // set url when button type  is link
+                            isVisible={true} // handle  button visibility
+                            customStyles=" !px-0 flex justify-center" // add custom styles  \\ use custom styles with importent
+                            setButtonFull="w-full"
+                          />
+                          <CustomButton
+                            title="Share" //set button title
+                            isGradient={true} // is grident is  visible // controle  btn types
+                            varient="button" // set button type like  Link and  Button
+                            url="" // set url when button type  is link
+                            isVisible={true} // handle  button visibility
+                            customStyles=" flex justify-center " // add
+                            icon={<ShareIcon />}
+                            setButtonFull="w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          }     
+          )}
         </Slider>
         <div className="justify-center gap-10 xl:gap-0 pt-10 xl:pt-0 hidden xl:flex">
           <button

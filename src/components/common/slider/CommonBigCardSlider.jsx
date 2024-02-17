@@ -89,11 +89,11 @@ const CommonBigCardSlider = ({ showSidebar }) => {
             return (
               <div key={index} className="px-2 xl:pb-0 ">
                 <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
-                <div className="flex bg-[#FFFFFF0A] backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
+                <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl md:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
                   <div className=" rounded-[12px_0px_12px_0px] h-[14px] min-w-[280px] bg-gradient bottom-0 right-0 absolute"></div>
                   <div className=" opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[326px] h-[326px] rounded-[326px] blur-[250px] bg-[linear-gradient(135deg,#F2CD75_0%,#A97424_100%)]"></div>
-                  <div className="min-w-[270px] rounded-lg relative w-[270px] h-[381px]  overflow-hidden border-2 border-solid border-[#FFFFFF4D] rated_movies_shadow max-w-[400px]">
+                  <div className="min-w-[270px] rounded-lg relative w-[270px] h-[381px]  overflow-hidden border-2 border-solid border-dark-gray rated_movies_shadow max-w-[400px]">
                     {!isLoading ? <div className="skeleton-loader"></div> : ""}
                     <img
                       className={isLoading ? "w-full h-full" : "w-0 h-0"}
@@ -172,7 +172,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                       ) : (
                         <button
                           className="whitespace-nowrap cursor-pointer relative z-10 font-poppins font-normal lg:text-base text-sm text-[#D4A954]"
-                          onClick={() => handleReadMoreClick(index)}>
+                          onClick={() => handleReadMoreClick(index)}
+                        >
                           {selectedIndexes.includes(index)
                             ? "Read less"
                             : "...Read more"}
@@ -190,13 +191,13 @@ const CommonBigCardSlider = ({ showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:left-[-5.8%] left-[-5%] `}>
+            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:left-[-5.8%] left-[-5%] `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:right-[-5.8%] right-[-5%]`}>
+            className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:right-[-5.8%] right-[-5%]`}>
             <CommonRightArrowIcon />
           </button>
         </div>

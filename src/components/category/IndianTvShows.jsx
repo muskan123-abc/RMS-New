@@ -1,7 +1,7 @@
 import React from "react";
 import CommonCardSlider from "../common/slider/CommonCardSlider";
 import { indianTvShowSlider } from "./Helper";
-import xml from "../../assets/images/svg/XMLID_2_.svg";
+import xml from "../../assets/images/svg/tap-recorder-icon.svg";
 
 const IndianTvShows = ({ showSidebar }) => {
   return (

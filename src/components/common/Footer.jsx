@@ -4,8 +4,8 @@ import footer_position_reel_img from "../../assets/images/webp/footer-bg-reel-im
 import { Link, useLocation } from "react-router-dom";
 import {
   FooterFacebookIcon,
-  FooterInstaIcon,
-  FooterLinkdinIcon,
+  FooterInstagramIcon,
+  FooterLinkedinIcon,
 } from "./Icons";
 import { footerList } from "./Helper";
 
@@ -46,7 +46,8 @@ const Footer = () => {
                     top: 0,
                     behavior: "smooth",
                   });
-                }}>
+                }}
+              >
                 <img
                   className="w-[100px] md:w-[136px] cursor-pointer inline-block"
                   src={footer_logo}
@@ -61,15 +62,17 @@ const Footer = () => {
                   <Link
                     aria-label="Go to Instagram"
                     to={"https://www.instagram.com/"}
-                    target="_blank">
-                    <FooterInstaIcon />
+                    target="_blank"
+                  >
+                    <FooterInstagramIcon />
                   </Link>
                 </span>
                 <span className="cursor-pointer hover:-translate-y-1 duration-300">
                   <Link
                     aria-label="Go to Facebook"
                     to={"https://www.facebook.com/"}
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FooterFacebookIcon />
                   </Link>
                 </span>
@@ -77,8 +80,9 @@ const Footer = () => {
                   <Link
                     aria-label="Go to Linkedin"
                     to={"https://in.linkedin.com"}
-                    target="_blank">
-                    <FooterLinkdinIcon />
+                    target="_blank"
+                  >
+                    <FooterLinkedinIcon />
                   </Link>
                 </span>
               </div>
@@ -89,7 +93,8 @@ const Footer = () => {
                   return (
                     <div
                       key={index}
-                      className=" max-[576px]:w-5/12 min-[576px]:w-3/12 min-[576px]:pe-6 sm:w-3/12 sm:pe-0 mt-8 lg:mt-0">
+                      className=" max-[576px]:w-5/12 min-[576px]:w-3/12 min-[576px]:pe-6 sm:w-3/12 sm:pe-0 mt-8 lg:mt-0"
+                    >
                       <p className="  font-medium text-sm text-white mb-0">
                         {val.title}
                       </p>
@@ -102,7 +107,8 @@ const Footer = () => {
                                   <Link
                                     aria-label={val.footerLinks}
                                     to={obj.url}
-                                    className=" font-normal text-sm text-white opacity-70 cursor-pointer hover:text-white duration-200">
+                                    className=" font-normal text-sm text-white opacity-70 cursor-pointer hover:text-white duration-200"
+                                  >
                                     {obj.link}
                                   </Link>
                                 </div>
