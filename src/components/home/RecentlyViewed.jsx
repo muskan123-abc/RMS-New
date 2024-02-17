@@ -137,12 +137,13 @@ const RecentlyViewed = ({ showSidebar }) => {
             {recentlyViewedSlider.map((value, index) => {
               return (
                 <div onClick={() => onNavigateHandler(value)} key={index}>
-                  <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 mx-[10px] mb-2">
+                  <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 mx-[10px] mb-2">
                     <div
                       className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[439px] relative px-2 `}
                       style={{
                         backgroundImage: `url(${value.image})`,
-                      }}>
+                      }}
+                    >
                       <div className=" flex flex-col flex-grow justify-end">
                         <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
                           {value.title}

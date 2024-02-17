@@ -13,7 +13,7 @@ import {
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
 const LibrarySliderCards = ({
-  LibrarySliderData,
+  librarySliderData,
   heading,
   icon,
   sliderArrowHidden,
@@ -164,7 +164,7 @@ const LibrarySliderCards = ({
           className={`${sliderParent}`}
         >
           {/* SLIDER DATA BY MAP */}
-          {LibrarySliderData.map((obj, index) => {
+          {librarySliderData.map((obj, index) => {
             return (
               <div
                 onClick={() => onNavigateHandler(obj)}

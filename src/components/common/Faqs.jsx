@@ -69,7 +69,7 @@ const Faqs = ({ showSidebar }) => {
                         activeIndex === index ? "h-[60px]" : "h-0"
                       }`}
                     >
-                      <p className="text-[13px] md:text-base font-normal font-poppins text-[#6C757D] pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
+                      <p className="text-[13px] md:text-base font-normal font-poppins text-gray pt-1 lg:pt-3 xs:pr-5 xl:pr-20">
                         {obj.description}
                       </p>
                     </div>

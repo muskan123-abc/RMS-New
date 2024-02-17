@@ -4,7 +4,7 @@ import image from "../../../assets/images/romanceTvShows/webp/img-1.webp";
 const Card = ({ myarr }) => {
   return (
     <div>
-      <div className="sm:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-[#474643] p-2 bg-[#1A1917] mx-2 mb-2">
+      <div className="sm:max-w-[360px] group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 bg-light-black mx-2 mb-2">
         <div className={`flex rounded-xl w-full`}>
           <div>
             <div className="overflow-hidden rounded-md">

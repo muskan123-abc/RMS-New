@@ -150,7 +150,7 @@ const FeaturedToday = ({ showSidebar }) => {
                 {featuredSlider.map((value, index) => {
                   return (
                     <div onClick={() => onNavigateHandler(value)} key={index}>
-                      <div className=" cursor-pointer rounded-xl border border-solid border-[#474643] p-2 mx-[10px] mb-2">
+                      <div className=" cursor-pointer rounded-xl border border-solid border-shadow-gray p-2 mx-[10px] mb-2">
                         <div
                           className={`flex bg-cover bg-no-repeat bg-center rounded-xl ${
                             showSidebar
