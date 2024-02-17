@@ -442,7 +442,7 @@ const VideoPlayer = () => {
       </div>
       {isPopupVisible && (
         <div
-          className="fixed top-0 left-0 w-full h-full z-[999] bg-darkNight bg-opacity-20"
+          className="fixed top-0 left-0 w-full h-full z-[999] bg-black/40"
           onClick={() => setPopupVisibility(false)}></div>
       )}
       {isPopupVisible && (
