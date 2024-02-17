@@ -49,7 +49,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: showSidebar ? 2 : 3,
+          slidesToShow: showSidebar ? 2 : 2,
           dots: true,
         },
       },
@@ -63,20 +63,6 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
       },
       {
         breakpoint: 640,
-        settings: {
-          slidesToShow: 1.99,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 605,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 550,
         settings: {
           slidesToShow: 1,
           dots: true,
@@ -110,7 +96,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
                           loading="lazy"
                         />
                       </div>
-                      <div className=" mt-4 pb-[11px]">
+                      <div className="mt-4">
                         <h5 className="font-poppins text-sm xl:text-xl font-semibold text-white opacity-90 mb-0">
                           {obj.title}
                         </h5>
@@ -148,8 +134,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
                 </div>
               </div>
             );
-          }     
-          )}
+          })}
         </Slider>
         <div className="justify-center gap-10 xl:gap-0 pt-10 xl:pt-0 hidden xl:flex">
           <button
