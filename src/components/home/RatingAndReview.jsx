@@ -49,16 +49,16 @@ const RatingAndReview = ({ showSidebar }) => {
                 4.3
               </h2>
               <div className="flex gap-1">{ratingStars(4)}</div>
-              <p className=" font-poppins font-normal text-base text-[#B3B2B2] mb-0 mt-5">
+              <p className=" font-poppins font-normal text-base text-darkgray-two mb-0 mt-5">
                 {formatNumber(1400)} reviews
               </p>
               <div ref={ref} className="lg:me-5 w-full">
                 <div className=" max-w-[463px] lg:max-w-[100%] ">
                   <div className="flex items-center mt-5 w-full justify-between">
-                    <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+                    <h6 className="font-poppins font-normal text-base text-darkgray-two">
                       01
                     </h6>
-                    <div className="w-full rounded-full h-2 ms-7 bg-[#333333]">
+                    <div className="w-full rounded-full h-2 ms-7 bg-dark-charcoal">
                       <div
                         className={`${
                           animationsTriggered ? "w-[88%]" : "w-[0]"
@@ -66,10 +66,10 @@ const RatingAndReview = ({ showSidebar }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
-                    <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+                    <h6 className="font-poppins font-normal text-base text-darkgray-two">
                       02
                     </h6>
-                    <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+                    <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
                       <div
                         className={`${
                           animationsTriggered ? "w-[63%]" : "w-[0]"
@@ -77,10 +77,10 @@ const RatingAndReview = ({ showSidebar }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
-                    <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+                    <h6 className="font-poppins font-normal text-base text-darkgray-two">
                       03
                     </h6>
-                    <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+                    <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
                       <div
                         className={`${
                           animationsTriggered ? "w-[35%]" : "w-[0]"
@@ -88,10 +88,10 @@ const RatingAndReview = ({ showSidebar }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
-                    <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+                    <h6 className="font-poppins font-normal text-base text-darkgray-two">
                       04
                     </h6>
-                    <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+                    <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
                       <div
                         className={`${
                           animationsTriggered ? "w-[78%]" : "w-[0]"
@@ -99,10 +99,10 @@ const RatingAndReview = ({ showSidebar }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
-                    <h6 className="font-poppins font-normal text-base text-[#B3B2B1]">
+                    <h6 className="font-poppins font-normal text-base text-darkgray-two">
                       05
                     </h6>
-                    <div className="w-full rounded-full h-2 ms-6 bg-[#333333]">
+                    <div className="w-full rounded-full h-2 ms-6 bg-dark-charcoal">
                       <div
                         className={`${
                           animationsTriggered ? "w-[15%]" : "w-[0]"
