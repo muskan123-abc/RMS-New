@@ -25,18 +25,11 @@ const SubscribedVideos = ({ scrollToTop }) => {
               <button
                 onClick={() => setShowVideoTabs(index)}
                 key={index}
-<<<<<<< HEAD
                 className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${
                   showVideoTabs === index
                     ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
                     : " opacity-70"
                 }`}>
-=======
-                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${showVideoTabs === index
-                  ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
-                  : " opacity-70"
-                  }`}>
->>>>>>> fcd29879dc89f1e48e83546b5e8a753970b859f2
                 {value.image} {value.title}
               </button>
             );
@@ -50,7 +43,9 @@ const SubscribedVideos = ({ scrollToTop }) => {
               onClick={() => onNavigateHandler(value)}
               key={index}
               className="px-2.5 flex h-full md:w-[33.3%] w-1/2 max-[575.9px]:w-full">
-              <div onClick={() => scrollToTop()} className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group bg-graphite-gray">
+              <div
+                onClick={() => scrollToTop()}
+                className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group bg-graphite-gray">
                 <div>
                   <div className="rounded-[4.4px] overflow-hidden">
                     <img
