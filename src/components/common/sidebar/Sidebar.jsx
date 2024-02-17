@@ -2,13 +2,14 @@ import React from "react";
 import ProfileSidebar from "./ProfileSidebar";
 import Secondary from "./Secondary";
 
-const Sidebar = ({ showSidebar, setShowSidebar }) => {
+const Sidebar = ({ showSidebar, setShowSidebar, scrollToTop }) => {
   return (
     <>
       {/* Overlay */}
       <div
-        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${showSidebar ? "block" : "hidden"
-          }`}
+        className={` fixed custom-2xl:hidden inset-0 min-h-full z-20 backdrop-blur-[6px] cursor-pointer w-[100%]  ${
+          showSidebar ? "block" : "hidden"
+        }`}
         onClick={() => setShowSidebar(false)}></div>
       {/* Sidebar Content */}
       <div
@@ -18,7 +19,10 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         {/* <button className="bg-red-800 p-4" onClick={() => setShowSidebar(false)}>
           sign out
         </button> */}
-        <ProfileSidebar setShowSidebar={setShowSidebar} />
+        <ProfileSidebar
+          scrollToTop={scrollToTop}
+          setShowSidebar={setShowSidebar}
+        />
         <Secondary setShowSidebar={setShowSidebar} />
       </div>
     </>

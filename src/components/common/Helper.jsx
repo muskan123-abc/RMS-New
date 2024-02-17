@@ -19,7 +19,6 @@ import recentlyViewedImg1 from "../../assets/images/recentlyViewed/img-1.webp";
 import recentlyViewedImg2 from "../../assets/images/recentlyViewed/img-2.webp";
 import recentlyViewedImg3 from "../../assets/images/recentlyViewed/img-3.webp";
 import recentlyViewedImg4 from "../../assets/images/recentlyViewed/img-4.webp";
-import { FooterFacebookIcon, FooterInstagramIcon, FooterLinkedinIcon } from "./Icons";
 export const FanFavoriteContent = [
   {
     title: "In elit nullam sit quam",
@@ -97,24 +96,24 @@ export const watchVideosSlider = [
 export const mostRatedSliderHome = [
   {
     image: moviesposture,
-    title: "Robin Hood",
-    title2: "There’s even more to watch.",
+    homeTitle: "Robin Hood",
+    categoryTitle: "There’s even more to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque. ",
     rating: "4",
   },
   {
     image: moviesposture,
-    title: "Most Wanted",
-    title2: "There’s to watch.",
+    homeTitle: "Most Wanted",
+    categoryTitle: "There’s to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque.",
     rating: "4",
   },
   {
     image: moviesposture,
-    title: "Superman",
-    title2: "More to watch.",
+    homeTitle: "Superman",
+    categoryTitle: "More to watch.",
     description:
       " Odio elit nulla tellus elementum. Odio proin dignissim venenatis ullamcorper. Sed enim et sed lorem. Quis et potenti tortor arcu egestas ac tortor non. Aliquet sem varius in eget sodales nisl pretium diam. Lorem mauris aliquet massa aliquam ultricies imperdiet phasellus sociis urna. Faucibus quis dui etiam hendrerit amet pellentesque pellentesque.",
     rating: "4",
@@ -347,45 +346,3 @@ export const recentlyViewedSlider = [
     image: recentlyViewedImg4,
   },
 ];
-// SHARE VIEW IN ITEM PAGE
-export const ShareList = [
-  {
-    link: "",
-    icon: <FooterInstagramIcon />,
-    title: "Instagram",
-  },
-  {
-    link: "",
-    icon: <FooterFacebookIcon />,
-    title: "Facebook",
-  },
-  {
-    link: "",
-    icon: <FooterLinkedinIcon />,
-    title: "Linkdin",
-  },
-  {
-    link: "",
-    icon: <FooterInstagramIcon />,
-    title: "Instagram",
-  },
-  {
-    link: "",
-    icon: <FooterFacebookIcon />,
-    title: "Facebook",
-  },
-  {
-    link: "",
-    icon: <FooterLinkedinIcon/>,
-    title: "Linkdin",
-  },
-  {
-    link: "",
-    icon: <FooterFacebookIcon />,
-    title: "Facebook",
-  },
-];
-
-
-
-

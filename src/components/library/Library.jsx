@@ -14,21 +14,27 @@ import {
   playlistLibrary,
 } from "../library/Helper";
 import LibrarySliderCards from "./LibrarySliderCards";
+
+// Library component displays different sections of the user's library
 const Library = ({ showSidebar }) => {
   return (
     <>
+      {/* Background Image */}
       <div className="bg-common-bg-image bg_attachment_fixed bg-cover relative pt-28 lg:pt-24">
         <div className="bottom_blur_hero w-full h-[50px] absolute bottom-0 left-0"></div>
+        {/* Tap Recorder Icon */}
         <img
           className="absolute left-4 min-[1440px]:hidden top-[117px] max-w-[70px] z-0 xl:block hidden"
           src={xml}
           alt="tap-recorder-icon"
         />
+        {/* Reel Image */}
         <img
           className="absolute right-0 top-[230px] max-w-[170px] md:block hidden"
           src={reelImage}
           alt="reel"
         />
+        {/* Container for Library content */}
         <div
           className={`container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto pb-16 sm:px-4 xl:px-0 px-0 relative min-h-[50vh] ${
             showSidebar ? "ms-0" : "ms-auto"
@@ -36,7 +42,7 @@ const Library = ({ showSidebar }) => {
         >
           <div className="w-full">
             <div>
-              {/* MOST RANKED LIBRARY SLIDER   */}
+              {/* Most Ranked Library Slider */}
               <LibrarySliderCards
                 icon={<RecentlyWatchingIcon />}
                 heading={"Most ranked/Suggested videos"}
@@ -44,7 +50,7 @@ const Library = ({ showSidebar }) => {
                 librarySliderData={mostRankedLibrary}
                 sliderParent="pb-6"
               />
-              {/* PLAYLIST LIBRARY SLIDER   */}
+              {/* Playlist Library Slider */}
               <LibrarySliderCards
                 icon={<PlaylistIcon />}
                 heading={"Playlists"}
@@ -52,7 +58,7 @@ const Library = ({ showSidebar }) => {
                 mostRankedSliderArrow={"hidden"}
                 sliderParent="pb-6"
               />
-              {/* LIKED LIBRARY SLIDER   */}
+              {/* Liked Library Slider */}
               <LibrarySliderCards
                 icon={<LikeVideoIcon />}
                 heading={"Liked Videos"}
@@ -63,8 +69,10 @@ const Library = ({ showSidebar }) => {
             </div>
           </div>
         </div>
+        {/* Frequently Asked Questions Section */}
         <Faqs />
       </div>
+      {/* Footer */}
       <Footer />
     </>
   );

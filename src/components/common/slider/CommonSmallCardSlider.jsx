@@ -10,7 +10,12 @@ import {
 } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
 
-const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
+const CommonSmallCardSlider = ({
+  cardContent,
+  showSidebar,
+  isLike,
+  scrollToTop,
+}) => {
   const [heartClicked, setHeartClicked] = useState([]);
 
   const likeHandler = (value) => {
@@ -96,20 +101,21 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
       },
     ],
   };
-  const navigate = useNavigate();
 
   const onNavigateHandler = (value) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
   };
+  const navigate = useNavigate();
   return (
     <div
       className={` mx-auto relative px-4 px:md-0  ${
         showSidebar
           ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
           : "max-w-[1140px]"
-      }`}>
+      }`}
+    >
       <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
         {cardContent.map((obj, index) => {
           const isLiked = heartClicked.includes(index);
@@ -120,19 +126,25 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
                   className={`${
                     isLiked ? "liked" : ""
                   } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-                  onClick={() => likeHandler(index)}>
+                  onClick={() => likeHandler(index)}
+                >
                   <HeartIcon filled={isLiked} />
                 </span>
               )}
 
               <div
-                onClick={() => onNavigateHandler(obj)}
-                className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2  mb-2 mx-auto w-[98%] ">
+                onClick={() => {
+                  scrollToTop();
+                  onNavigateHandler(obj);
+                }}
+                className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2  mb-2 mx-auto w-[98%] "
+              >
                 <div
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
                   style={{
                     backgroundImage: `url(${obj.image})`,
-                  }}>
+                  }}
+                >
                   <div className=" flex  flex-col flex-grow justify-end">
                     <h5 className="font-poppins text-base  font-semibold text-white opacity-90  mb-2">
                       {obj.title}
@@ -179,13 +191,15 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
         <button
           aria-label="Slider Arrow"
           onClick={handleLeftArrow}
-          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:left-[-6%] left-[-5%]  `}>
+          className={`common-arrow left-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:left-[-6%] left-[-5%]  `}
+        >
           <CommonLeftArrowIcon />
         </button>
         <button
           aria-label="Slider Arrow"
           onClick={handleRightArrow}
-          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:right-[-6%] right-[-5%]  `}>
+          className={`common-arrow right-arrow  w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-1/2 custom-2xl:right-[-6%] right-[-5%]  `}
+        >
           <CommonRightArrowIcon />
         </button>
       </div>

@@ -94,9 +94,6 @@ body {
 .bg_attachment_fixed {
   background-attachment: fixed;
 }
-/* 
-slick dots 
- */
 
 .slick-dots li button::before {
   @apply !text-[0] !leading-[0] !opacity-100 !block !w-5 !h-[3px] !p-[3px] !cursor-pointer !border-0 !outline-none !bg-[#493c27] md:!bg-[#110e09] lg:!bg-[#231d13] !rounded-base transition-all duration-300;
@@ -106,7 +103,7 @@ slick dots
   @apply !bg-gradient;
 }
 /* SUBSCRIBE */
-.SubscriptionIcon_size svg {
+.subscriptionIcon_size svg {
   width: 31px;
   height: 31px;
 }

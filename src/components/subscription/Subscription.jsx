@@ -30,7 +30,7 @@ const Subscription = ({ showSidebar ,scrollToTop}) => {
               : "max-w-[1140px] 2xl:max-w-[1320px]"
             }`}>
           <div className="flex justify-between sm:items-center pb-5 md:pb-8 w-full sm:flex-row flex-col gap-4">
-            <h2 className="font-poppins font-medium text-white text-xxl flex items-center gap-3 SubscriptionIcon_size">
+            <h2 className="font-poppins font-medium text-white text-xxl flex items-center gap-3 subscriptionIcon_size">
               <SubscriptionIcon /> Subscription
             </h2>
             <CustomInput

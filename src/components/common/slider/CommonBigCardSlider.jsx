@@ -13,7 +13,6 @@ import { mostRatedSliderHome } from "../Helper";
 const CommonBigCardSlider = ({ showSidebar }) => {
   //FOR GETTING PATH
   // IMPORT FROM PROVIDER'S STATE
-  const [cardData, setCardData] = useState(false);
 
   //FOR REDIRECT TO ANY OTHER PAGE
   const navigate = useNavigate();
@@ -59,15 +58,8 @@ const CommonBigCardSlider = ({ showSidebar }) => {
       setSelectedIndexes((prev) => [...prev, index]);
     }
   };
-  const onNavigateHandler = (value) => {
-    localStorage.setItem("current-movie", JSON.stringify(value));
-    const formattedTitle = value.title.replace(/\s+/g, "-");
-    navigate(`/product-details?title=${formattedTitle}`);
-    localStorage.setItem("current-movie", JSON.stringify(value));
-    setCardData(value);
-  };
-
   const pathName = useLocation().pathname;
+
   return (
     <>
       <div
@@ -87,10 +79,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               ? obj.description
               : obj.description.substring(0, 150);
             return (
-              <div
-                onClick={() => onNavigateHandler(obj)}
-                key={index}
-                className="px-2 xl:pb-0 ">
+              <div key={index} className="px-2 xl:pb-0 ">
                 <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
                 <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl sm:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
@@ -114,7 +103,9 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                             ? ""
                             : "sm:mb-5 md:mb-0 mr-10"
                         }`}>
-                        {pathName === "/category" ? obj.title2 : obj.title}
+                        {pathName === "/category"
+                          ? obj.categoryTitle
+                          : obj.homeTitle}
                       </h4>
 
                       {pathName === "/category" ? (

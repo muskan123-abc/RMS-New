@@ -9,18 +9,18 @@ import RatingAndReview from "./RatingAndReview";
 import RecentlyViewed from "./RecentlyViewed";
 import WatchVideos from "./WatchVideos";
 
-const Home = ({ showSidebar,scrollToTop }) => {
+const Home = ({ showSidebar }) => {
   return (
     <>
       <Hero showSidebar={showSidebar} />
       <WatchVideos showSidebar={showSidebar} />
-      <FanFavorite showSidebar={showSidebar} />
+      <FanFavorite showSidebar={showSidebar} scrollToTop={scrollToTop} />
       <MostRatedMovies showSidebar={showSidebar} />
-      <FeaturedToday showSidebar={showSidebar} />
+      <FeaturedToday showSidebar={showSidebar} scrollToTop={scrollToTop} />
       <RatingAndReview showSidebar={showSidebar} />
-      <RecentlyViewed showSidebar={showSidebar} />
+      <RecentlyViewed showSidebar={showSidebar} scrollToTop={scrollToTop} />
       <Faqs showSidebar={showSidebar} />
-      <Footer showSidebar={showSidebar} scrollToTop={scrollToTop} />
+      <Footer showSidebar={showSidebar} />
     </>
   );
 };

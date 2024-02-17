@@ -1,20 +1,26 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import { ratingStars } from "../../../utils/CommonFunction";
 import { trendingSliderList } from "../../trending/Helper";
 import { CommonLeftArrowIcon, CommonRightArrowIcon, ShareIcon } from "../Icons";
 import CustomButton from "../fields/button/CustomButton";
+import { useNavigate } from "react-router";
 const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
   //REF FOR TARGER SLIDER-ARROWS
   const playlist_slider = useRef(null);
-
   //SECTION SLIDER ACTIVE ARROW FUNTION
   const handleLeftArrow = () => {
     playlist_slider.current.slickPrev();
   };
   const handleRightArrow = () => {
     playlist_slider.current.slickNext();
+  };
+  const navigate = useNavigate();
+
+  const onNavigateHandler = (value) => {
+    localStorage.setItem("current-movie", JSON.stringify(value));
+    const formattedTitle = value.title.replace(/\s+/g, "-");
+    navigate(`/product-details?title=${formattedTitle}`);
   };
   // SLIDER-SETTINGS
   var trendingSlider = {
@@ -50,10 +56,10 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
     ],
   };
   return (
-    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-4 md:px-6 pb-16 md:pb-32 mx-auto ">
+    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-4 lg:px-6 pb-16 md:pb-32 mx-auto ">
       <div className="flex justify-between pb-5 md:pb-8 pt-5">
         <div className="flex items-center gap-2.5">
-        <span>{sliderIcon}</span>
+          <span>{sliderIcon}</span>
           <h3 className="font-poppins font-medium text-white text-xxl">
             {sliderHeading}
           </h3>
@@ -63,15 +69,13 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300  border border-light-yellow hover:border-transparent `}
-          >
+            className={`common-arrow left-arrow w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300  border border-light-yellow hover:border-transparent `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300  border border-light-yellow hover:border-transparent`}
-          >
+            className={`common-arrow right-arrow w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300  border border-light-yellow hover:border-transparent`}>
             <CommonRightArrowIcon />
           </button>
         </div>
@@ -86,10 +90,9 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
         {trendingSliderList.map((obj, index) => {
           return (
             <div
-              //   onClick={() => onNavigateHandler(obj)}
+              onClick={() => onNavigateHandler(obj)}
               key={index}
-              className="px-2.5 flex h-full"
-            >
+              className="px-2.5 flex h-full">
               <div className="p-2 border-2 bg-graphite-gray  border-white/40 rounded-lg  h-full flex cursor-pointer justify-between flex-col group">
                 <div>
                   <div className="rounded overflow-hidden">

@@ -3,9 +3,9 @@ import ProfileImg from "../../../assets/images/sidebar/profile_img.png";
 import { sideList, sideTopList } from "../../../utils/Helper";
 import { Link, useLocation } from "react-router-dom";
 
-const ProfileSidebar = ({ setShowSidebar }) => {
+const ProfileSidebar = ({ setShowSidebar, scrollToTop }) => {
   const location = useLocation();
-  const handleSideBAr = () => {
+  const handleSideBar = () => {
     if (window.innerWidth < 1350) {
       setShowSidebar(false);
     }
@@ -57,7 +57,10 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                 ) : (
                   <Link
                     to={obj.url}
-                    onClick={handleSideBAr}
+                    onClick={() => {
+                      scrollToTop();
+                      handleSideBar();
+                    }}
                     className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2

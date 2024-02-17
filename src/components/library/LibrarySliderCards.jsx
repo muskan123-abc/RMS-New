@@ -12,6 +12,8 @@ import {
   YellowStar,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
+
+// LibrarySliderCards component displays slider cards for different sections of the library
 const LibrarySliderCards = ({
   librarySliderData,
   heading,
@@ -20,18 +22,20 @@ const LibrarySliderCards = ({
   mostRankedSliderArrow,
   sliderParent,
 }) => {
-  //REF FOR TARGET SLIDER-ARROWS
+  // Ref for controlling the slider
   const playlist_slider = useRef(null);
 
-  //SECTION SLIDER ACTIVE ARROW FUNCTION
+  // Function to move slider to the left
   const SliderLeftArrow = () => {
     playlist_slider.current.slickPrev();
   };
+
+  // Function to move slider to the right
   const SliderRightArrow = () => {
     playlist_slider.current.slickNext();
   };
 
-  // REVIEW RATTING STAR FUNCTION
+  // Function to render rating stars based on rating value
   const ratingStars = (rating) => {
     const stars = [];
     const roundedRating = Math.floor(rating);
@@ -44,8 +48,8 @@ const LibrarySliderCards = ({
     return stars;
   };
 
-  // SLIDER-SETTINGS
-  var settings = {
+  // Slider settings
+  const settings = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -79,19 +83,20 @@ const LibrarySliderCards = ({
 
   const [cardData, setCardData] = useState();
   const navigate = useNavigate();
+
+  // Function to handle navigation to product details page
   const onNavigateHandler = (value) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
-    setCardData(value);
   };
+
   return (
     <>
       <div className="w-full min-[1440px]:pe-4 3xl:pe-0 min-[1440px]:pl-4">
-        {/* PLAYLIST SLIDER*/}
+        {/* Slider Header */}
         <div
-          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 pt-9 ${sliderArrowHidden} `}
-        >
+          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 pt-9 ${sliderArrowHidden} `}>
           <div className="flex items-center gap-[10px]">
             {icon}
             <h3 className="font-medium text-white sm:text-[22px] text-lg">
@@ -99,24 +104,22 @@ const LibrarySliderCards = ({
             </h3>
           </div>
           <div className="flex gap-5">
-            {/* SLIDER ARROW Start here*/}
+            {/* Slider Arrows */}
             <button
               aria-label="Slider Arrow"
               onClick={SliderLeftArrow}
-              className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
-            >
+              className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
               <CommonLeftArrowIcon />
             </button>
             <button
               aria-label="Slider Arrow"
               onClick={SliderRightArrow}
-              className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}
-            >
+              className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
               <CommonRightArrowIcon />
             </button>
           </div>
         </div>
-        {/* MOST RANKED HEADING AND SEARCH */}
+        {/* Slider Search */}
         <div className={`${mostRankedSliderArrow}`}>
           <div className="flex lg:hidden gap-[11px] sm:min-w-[358px] items-center mb-5 px-[10px]">
             {icon}
@@ -140,38 +143,34 @@ const LibrarySliderCards = ({
               />
             </div>
             <div className="flex gap-5 ms-auto">
-              {/* ARROW SLIDER BUTTON*/}
+              {/* Slider Arrows */}
               <button
                 aria-label="Slider Arrow"
                 onClick={SliderLeftArrow}
-                className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent  `}
-              >
+                className={`common-arrow left-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent  `}>
                 <CommonLeftArrowIcon />
               </button>
               <button
                 aria-label="Slider Arrow"
                 onClick={SliderRightArrow}
-                className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}
-              >
+                className={`common-arrow right-arrow bg-transparent sm:w-10 sm:h-10 w-9 h-9 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent `}>
                 <CommonRightArrowIcon />
               </button>
             </div>
           </div>
         </div>
-        {/* SLIDER CODE START HERE */}
+        {/* Slider */}
         <Slider
           ref={playlist_slider}
           {...settings}
-          className={`${sliderParent}`}
-        >
-          {/* SLIDER DATA BY MAP */}
+          className={`${sliderParent}`}>
+          {/* Slider Cards */}
           {librarySliderData.map((obj, index) => {
             return (
               <div
                 onClick={() => onNavigateHandler(obj)}
                 key={index}
-                className="px-[10px] flex h-full"
-              >
+                className="px-[10px] flex h-full">
                 <div className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group">
                   <div>
                     <div className="rounded-[4.4px] overflow-hidden">
