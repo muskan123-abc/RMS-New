@@ -136,14 +136,18 @@ const RecentlyViewed = ({ showSidebar }) => {
           <Slider className="pb-8 xl:pb-0" ref={slider} {...settings}>
             {recentlyViewedSlider.map((value, index) => {
               return (
-                <div onClick={() => onNavigateHandler(value)} key={index}>
+                <div
+                  onClick={() => {
+                    onNavigateHandler(value);
+                    scrollToTop();
+                  }}
+                  key={index}>
                   <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 mx-[10px] mb-2">
                     <div
                       className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[439px] relative px-2 `}
                       style={{
                         backgroundImage: `url(${value.image})`,
-                      }}
-                    >
+                      }}>
                       <div className=" flex flex-col flex-grow justify-end">
                         <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
                           {value.title}
@@ -184,8 +188,8 @@ const RecentlyViewed = ({ showSidebar }) => {
           <CustomButton
             title="All Viewed" //set button title
             isGradient={true} // is grident is  visible // controle  btn types
-            varient="button" // set button type like  Link and  Button
-            url="" // set url when button type  is link
+            varient="link" // set button type like  Link and  Button
+            url="/library" // set url when button type  is link
             isVisible={true} // handle  button visibility
             customStyles=" flex justify-center" // add custom styles  \\ use custom styles with importent
           />
