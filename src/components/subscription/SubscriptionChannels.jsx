@@ -108,7 +108,7 @@ const SubscriptionChannels = () => {
             key={index}
             className={`flex gap-5 pt-[30px]  ${selectedSlide === index ? "block" : "hidden"
               }`}>
-            <img className="w-[126px] h-auto" src={value.image} alt="channel-image" />
+            <img className="w-[126px] h-auto" src={value.image} alt="channel-img" />
             <div>
               <h3 className="text-white font-poppins font-medium text-2xl opacity-90">
                 {value.title}
