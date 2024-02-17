@@ -9,7 +9,6 @@ import { useNavigate } from "react-router";
 const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
   //REF FOR TARGER SLIDER-ARROWS
   const playlist_slider = useRef(null);
-
   //SECTION SLIDER ACTIVE ARROW FUNTION
   const handleLeftArrow = () => {
     playlist_slider.current.slickPrev();
