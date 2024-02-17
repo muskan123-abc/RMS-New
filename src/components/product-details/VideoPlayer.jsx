@@ -145,7 +145,7 @@ const VideoPlayer = () => {
   return (
     <div className=" flex flex-col">
       <div className="custom_dark_card_bg   p-2.5 rounded-xl group">
-        <div className="relative overflow-hidden rounded-md h-full xl:h-[467px] lg:min-h-[400px] md:min-h-[100px] sm:min-h-[250px] min-h-[287px] w-full">
+        <div className="relative z-[100] overflow-hidden rounded-md h-full xl:h-[467px] lg:min-h-[400px] md:min-h-[100px] sm:min-h-[250px] min-h-[287px] w-full">
           {isVideoPlaying ? (
             <iframe
               className="h-full xl:min-h-[467px] lg:min-h-[400px] md:h-[300px] sm:min-h-[250px] min-h-[287px] w-full"
@@ -442,11 +442,11 @@ const VideoPlayer = () => {
       </div>
       {isPopupVisible && (
         <div
-          className="fixed top-0 left-0 w-full h-full z-[999] bg-darkNight bg-opacity-20"
+          className="fixed top-0 left-0 w-full h-full z-[999] bg-black/40"
           onClick={() => setPopupVisibility(false)}></div>
       )}
       {isPopupVisible && (
-        <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-2/4 -translate-y-2/4">
+        <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-2/4 -translate-y-2/4 w-full px-6">
           <ShareView setPopupVisibility={setPopupVisibility} />
         </div>
       )}
