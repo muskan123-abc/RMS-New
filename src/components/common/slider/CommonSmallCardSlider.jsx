@@ -101,13 +101,13 @@ const CommonSmallCardSlider = ({
       },
     ],
   };
-  const navigate = useNavigate();
 
   const onNavigateHandler = (value) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
   };
+  const navigate = useNavigate();
   return (
     <div
       className={` mx-auto relative px-4 px:md-0  ${

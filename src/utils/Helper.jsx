@@ -197,7 +197,7 @@ export const sideList = [
   {
     image: <ReviewsIcon />,
     title: "My reviews",
-    url: "/my-review",
+    url: "/my-reviews",
   },
   {
     image: <HistoryIcon />,

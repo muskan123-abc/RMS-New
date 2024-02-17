@@ -231,3 +231,14 @@ input[type="number"] {
   width: 13px;
   height: 12px;
 }
+.shareview_icon_hover svg{
+  transition: all 300ms linear;
+  border-radius: 100%;
+}
+.shareview_icon_hover:hover svg{
+
+  background: linear-gradient(135deg, #F2CD75 0%, #A97424 100%),
+    linear-gradient(146.59deg, #F2CD75 -0.66%, #A97424 98.99%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+
+}

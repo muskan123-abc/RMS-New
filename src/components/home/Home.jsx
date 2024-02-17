@@ -20,7 +20,7 @@ const Home = ({ showSidebar,scrollToTop }) => {
       <RatingAndReview showSidebar={showSidebar} />
       <RecentlyViewed showSidebar={showSidebar} scrollToTop={scrollToTop} />
       <Faqs showSidebar={showSidebar} />
-      <Footer showSidebar={showSidebar} scrollToTop={scrollToTop} />
+      <Footer showSidebar={showSidebar} />
     </>
   );
 };

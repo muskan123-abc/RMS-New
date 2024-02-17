@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Category from "../components/category/Category";
 import Header from "../components/common/Header";
 import Home from "../components/home/Home";
@@ -18,7 +18,6 @@ import Subscription from "../components/subscription/Subscription";
 import VideoPlayer from "../components/product-details/VideoPlayer";
 import ItemDetails from "../components/product-details/ItemDetails";
 import History from "../components/history/History";
-import NotFound from "../components/common/NotFound";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -45,23 +44,29 @@ const Router = () => {
       setScrollPosition(position);
     }
   };
+
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Assuming you are attaching the event listener to the div with the ID 'scrollParent'
+    const scrollableDiv = document.getElementById("scrollParent");
+
+    if (scrollableDiv) {
+      scrollableDiv.addEventListener("scroll", handleScroll, { passive: true });
+    }
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (scrollableDiv) {
+        scrollableDiv.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
+
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
   return (
     <div className={`h-screen flex relative `}>
       <BackToTop scrollToTop={scrollToTop} scrollPosition={scrollPosition} />
-      <Sidebar
-        showSidebar={showSidebar}
-        setShowSidebar={setShowSidebar}
-        scrollToTop={scrollToTop}
-      />
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div
         className="w-full overflow-y-auto overflow-x-hidden"
         id="scrollParent"
@@ -74,7 +79,7 @@ const Router = () => {
               <Home scrollToTop={scrollToTop} showSidebar={showSidebar} />
             }
           />
-          <Route path="product-details" element={<ProductDetails />} />
+          <Route path="product-details/:slug" element={<ProductDetails />} />
           <Route
             path="/category"
             element={<Category showSidebar={showSidebar} />}
@@ -86,15 +91,15 @@ const Router = () => {
             element={<WatchList showSidebar={showSidebar} />}
           />
           <Route path="/my-account" element={<AccountDetail />} />
-          <Route path="/my-review" element={<Hero />} />
+          <Route path="/my-reviews" element={<Hero />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/history" element={<History />} />
           <Route
             path="/library"
             element={<Library showSidebar={showSidebar} />}
           />
-          <Route path="/subscription" element={<Subscription />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/subscription" element={<Subscription scrollToTop={scrollToTop} />} />
+          <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>

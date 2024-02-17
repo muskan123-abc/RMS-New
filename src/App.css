@@ -103,7 +103,7 @@ body {
   @apply !bg-gradient;
 }
 /* SUBSCRIBE */
-.SubscriptionIcon_size svg {
+.subscriptionIcon_size svg {
   width: 31px;
   height: 31px;
 }

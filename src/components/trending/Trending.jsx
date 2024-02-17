@@ -6,8 +6,8 @@ import { TrendingIcon } from "../common/icons/sidebar/SideBar";
 
 const Trending = () => {
   return (
-    <div className="bg-common-bg-image bg-fixed  bg-cover ">
-      <TrendingSlider sliderHeading="Trending" sliderIcon={<TrendingIcon/>} />
+    <div className="bg-common-bg-image bg-fixed  bg-cover">
+      <TrendingSlider sliderHeading="Trending" sliderIcon={<TrendingIcon />} />
       <Faqs />
       <Footer />
     </div>

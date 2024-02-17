@@ -21,8 +21,19 @@ import {
   defaultPorductDiscription,
   relatedItemComments,
 } from "./Helper";
+import ShareView from "./ShareView";
+// import ShareView from "../common/ShareView";
 
 const VideoPlayer = () => {
+  const [isPopupVisible, setPopupVisibility] = useState(false);
+  const closeMobileMenu = () => {
+    // Add your logic here to close the mobile menu if needed
+    // For example, setMobileMenuVisibility(false);
+  };
+  const handleContactClick = () => {
+    // Toggle the visibility of the popup
+    setPopupVisibility(!isPopupVisible);
+  };
   // SAVE DATA IN LOCALSTORAGE
   const currentMovie = JSON.parse(localStorage.getItem("current-movie"));
   // TARGET IMAGE
@@ -199,7 +210,7 @@ const VideoPlayer = () => {
             <div className="sm:gap-2.5 gap-2 flex justify-start min-[1200px]:items-center min-[1200px]:justify-center ">
               <span
                 onClick={() => AddLike("item1")}
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2  rounded hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
@@ -210,7 +221,7 @@ const VideoPlayer = () => {
               </span>
               <span
                 onClick={() => AddDisLIke("item1")}
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px] px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
@@ -219,7 +230,12 @@ const VideoPlayer = () => {
                 {likesAndDislikes.item1.dislikes}
               </span>
               <span
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                onClick={(e) => {
+                  handleContactClick();
+                  closeMobileMenu();
+                  e.preventDefault(); // Prevent the default anchor behavior
+                }}
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>
@@ -228,7 +244,7 @@ const VideoPlayer = () => {
                 Share
               </span>
               <span
-                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1 opacity-60
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>
@@ -424,6 +440,16 @@ const VideoPlayer = () => {
           <Comments />
         </div>
       </div>
+      {isPopupVisible && (
+        <div
+          className="fixed top-0 left-0 w-full h-full z-[999] bg-darkNight bg-opacity-20"
+          onClick={() => setPopupVisibility(false)}></div>
+      )}
+      {isPopupVisible && (
+        <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-2/4 -translate-y-2/4">
+          <ShareView setPopupVisibility={setPopupVisibility} />
+        </div>
+      )}
     </div>
   );
 };
