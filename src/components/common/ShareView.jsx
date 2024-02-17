@@ -14,7 +14,7 @@ const ShareView = ({ setPopupVisibility }) => {
           {ShareList.map((obj, index) => {
             return (
               <div className="flex flex-col items-center " key={index}>
-                <Link to={obj.link}>{obj.icon}</Link>
+                <Link className="shareview_icon_hover" to={obj.link}>{obj.icon}</Link>
                 <p className="font-poppins text-sm text-center pt-2.5 text-white/70">
                   {obj.title}
                 </p>
