@@ -119,7 +119,6 @@ export const mostRatedSliderHome = [
     rating: "4",
   },
 ];
-
 //
 // REVIEWS RATING DATA
 export const reviewList = [
