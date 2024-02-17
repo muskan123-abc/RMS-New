@@ -12,6 +12,9 @@ const CustomInput = ({
   isButtonVisible,
   handleInputChange,
   value,
+  errTitle,
+  errVisible,
+  parentWidth,isBgGradientHidden,
   parentWidth,
 }) => {
   return (
@@ -36,9 +39,8 @@ const CustomInput = ({
           <button
             type="submit"
             aria-label="Search"
-            className={`w-[40px] h-[40px] lg:w-[46px] lg:h-[46px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer bg-gradient absolute top-1/2 right-0 -translate-y-1/2  z-0  ${
-              customStylesButton && customStylesButton
-            }`}>
+            className={`w-[40px] h-[40px] lg:w-[46px] lg:h-[46px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer ${ isBgGradientHidden ?"":"bg-gradient"} absolute top-1/2 right-0 -translate-y-1/2  z-0  ${customStylesButton && customStylesButton
+              }`}>
             {buttonIcon ? buttonIcon : <SearchIcon />}
           </button>
         )}
