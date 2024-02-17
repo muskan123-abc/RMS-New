@@ -28,13 +28,13 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
     prevArrow: ".right-arrow",
     arrows: false,
     speed: 500,
-    slidesToShow: showSidebar ? 2 : 3,
+    slidesToShow: showSidebar ? 2.01 : 3.01,
     slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: showSidebar ? 2 : 3,
+          slidesToShow: showSidebar ? 2.01 : 3.01,
           slidesToScroll: 1,
           dots: false,
         },
@@ -42,7 +42,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: showSidebar ? 2 : 3,
+          slidesToShow: showSidebar ? 2.01 : 3.01,
           dots: true,
         },
       },
