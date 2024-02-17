@@ -51,7 +51,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                     return (
                       <Link
                         key={index}
-                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-[#282525] border-l border-transparent hover:border-white/70"
+                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
                         {obj.title}
                       </Link>
@@ -75,7 +75,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                     return (
                       <Link
                         key={index}
-                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-[#282525] border-l border-transparent hover:border-white/70"
+                        className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
                         {obj.title}
                       </Link>

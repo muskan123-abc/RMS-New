@@ -87,7 +87,7 @@ const ItemDetails = ({ setVideoClick }) => {
               </p>
             </Menu.Button>
             {/* Sort Options */}
-            <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-[#414141dc] focus:outline-none flex flex-col">
+            <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-shadow-gray-two focus:outline-none flex flex-col">
               <Menu.Item className="ps-4 w-full pr-10 py-2 border-0 p-2">
                 {({ active }) => (
                   <Link

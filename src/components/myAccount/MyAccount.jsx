@@ -88,7 +88,7 @@ const AccountDetail = ({ showSidebar }) => {
               />
               <label
                 htmlFor="image"
-                className="common-border-button cursor-pointer  font-semibold text-sm sm:text-base text-white opacity-90 w-full py-2.5 px-3 rounded overflow-hidden border border-solid border-[#F2CD75] bg-black hover:border-transparent after:bg-[#A97424] z-10 flex justify-center relative duration-300 ease-linear after:absolute
+                className="common-border-button cursor-pointer  font-semibold text-sm sm:text-base text-white opacity-90 w-full py-2.5 px-3 rounded overflow-hidden border border-solid border-light-yellow bg-black hover:border-transparent after:bg-dark-yellow z-10 flex justify-center relative duration-300 ease-linear after:absolute
                after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0"
               >
                 Change Profile image
