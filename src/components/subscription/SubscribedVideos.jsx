@@ -1,24 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ChennalIcon, ShareIcon, StarGrey, YellowStar } from "../common/Icons";
-import { videoTabs, subscribedHomeVideo } from "./Helper";
-import { formatNumber } from "../../utils/CommonFunction";
+import { formatNumber, ratingStars } from "../../utils/CommonFunction";
+import { ChennalIcon, ShareIcon } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
+import { subscribedHomeVideo, videoTabs } from "./Helper";
 
 const SubscribedVideos = () => {
   const [showVideoTabs, setShowVideoTabs] = useState(0);
-  // REVIEW RATTING STAR FUNCTION
-  const ratingStars = (rating) => {
-    const stars = [];
-    const roundedRating = Math.floor(rating);
-    for (let i = 0; i < roundedRating; i++) {
-      stars.push(<YellowStar key={i} />);
-    }
-    for (let i = stars.length; i < 5; i++) {
-      stars.push(<StarGrey key={i} />);
-    }
-    return stars;
-  };
+
   // const { setCardData } = useStateProvider();
   const navigate = useNavigate();
   const onNavigateHandler = (value) => {
