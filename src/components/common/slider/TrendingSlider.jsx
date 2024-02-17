@@ -50,14 +50,10 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
     ],
   };
   return (
-    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-3 pb-16 md:pb-32 mx-auto ">
+    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-4 md:px-6 pb-16 md:pb-32 mx-auto ">
       <div className="flex justify-between pb-5 md:pb-8 pt-5">
         <div className="flex items-center gap-2.5">
-          {sliderIcon ? (
-            <img src={trendingIcon} alt="trending" width={28} />
-          ) : (
-            ""
-          )}
+        <span>{sliderIcon}</span>
           <h3 className="font-poppins font-medium text-white text-xxl">
             {sliderHeading}
           </h3>
