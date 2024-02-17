@@ -28,7 +28,8 @@ const WatchListCards = ({
             className={`${
               isLiked ? "liked" : ""
             } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-            onClick={() => likeHandler(index)}>
+            onClick={() => likeHandler(index)}
+          >
             <HeartIcon filled={isLiked} />
           </span>
         )}
@@ -37,7 +38,7 @@ const WatchListCards = ({
           <p className="text-sm sm:text-base font-semibold mb-2 leading-[160%]">
             {title}
           </p>
-          <div className="flex justify-between mb-5 w-100">
+          <div className="flex justify-between mb-2 lg:mb-5 w-100">
             <p className="text-sm font-normal leading-[160%] mb-0 text-[#b3b3b3]">
               Your rating: {rating}/5
             </p>
