@@ -32,6 +32,7 @@ const Hero = () => {
                 <CustomInput
                   placeholder="Search"
                   customStyles="w-full md:w-[80%]"
+                  customStylesInput="w-full !pr-14"
                   isButtonVisible={true}
                 />
               </div>

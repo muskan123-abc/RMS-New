@@ -87,7 +87,7 @@ const ItemDetails = ({ setVideoClick }) => {
               </p>
             </Menu.Button>
             {/* Sort Options */}
-            <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-[#414141dc] focus:outline-none flex flex-col">
+            <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-shadow-gray-two focus:outline-none flex flex-col">
               <Menu.Item className="ps-4 w-full pr-10 py-2 border-0 p-2">
                 {({ active }) => (
                   <Link
@@ -158,7 +158,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold  ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             All
@@ -169,7 +169,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Trailer
@@ -180,7 +180,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Comedy
@@ -191,7 +191,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] text-center cursor-pointer first_btn font-semibold ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Related
@@ -207,7 +207,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "All"
                 ? "common-bg-liner-button bg-gradient  border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             All
@@ -218,7 +218,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Trailer"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Trailer
@@ -229,7 +229,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Comedy"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Comedy
@@ -240,7 +240,7 @@ const ItemDetails = ({ setVideoClick }) => {
             className={`p-[4px_12px] 2xs:p-[8px_16px] sm:p-[8px_15px] lg:px-[14px] xl:p-[8px_18px] 2xl:px-[20px] text-center first_btn cursor-pointer font-normal text-sm ff_inter text-white  rounded-md whitespace-nowrap ${
               activeTab === "Related"
                 ? "common-bg-liner-button bg-gradient border border-transparent"
-                : "bg-[#2B261E] border border-solid border-white/40"
+                : "bg-graphite-gray-two border border-solid border-white/40"
             }`}
           >
             Related

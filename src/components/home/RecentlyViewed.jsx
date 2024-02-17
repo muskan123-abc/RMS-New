@@ -120,14 +120,14 @@ const RecentlyViewed = ({ showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] custom-2xl:left-[-6%] left-[-5%]
+            className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] custom-2xl:left-[-6%] left-[-5%]
                  `}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-[#f2cd75] hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  custom-2xl:right-[-6%] right-[-5%] 
+            className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  custom-2xl:right-[-6%] right-[-5%] 
                  `}>
             <CommonRightArrowIcon />
           </button>

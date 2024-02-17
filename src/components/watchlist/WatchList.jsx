@@ -3,7 +3,6 @@ import WatchListCards from "./WatchListCards";
 import { WatchListBigIcon } from "../common/Icons";
 import CustomInput from "../../components/common/fields/CustomInput";
 import { watchListData } from "./Helper";
-import Footer from "../common/Footer";
 const WatchList = () => {
   const [heartClicked, setHeartClicked] = useState([]);
 
@@ -44,7 +43,6 @@ const WatchList = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

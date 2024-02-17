@@ -189,7 +189,7 @@ const VideoPlayer = () => {
             {/* SUBSCRIBE BUTTON  */}
             <Link
               href="#"
-              className="bell_icon flex gap-1 sm:gap-2 ff_inter font-semibold text-base h-fit text-white bg-gradient border py-[10px] px-2 sm:px-[14px] rounded overflow-hidden  border-solid border-[#f2cd75] hover:border  border-transparent  after:bg-black  z-10  relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
+              className="bell_icon flex gap-1 sm:gap-2 ff_inter font-semibold text-base h-fit text-white bg-gradient border py-[10px] px-2 sm:px-[14px] rounded overflow-hidden  border-solid border-light-yellow hover:border  border-transparent  after:bg-black  z-10  relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
               <span className="notification_hover_animation"></span>
               <BellIcon /> Subscribe
             </Link>
@@ -199,9 +199,9 @@ const VideoPlayer = () => {
             <div className="sm:gap-2.5 gap-2 flex justify-start min-[1200px]:items-center min-[1200px]:justify-center ">
               <span
                 onClick={() => AddLike("item1")}
-                className="common-bg-liner-button bg-[#211E1A] items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
-                  py-[10px]  px-2  rounded hover:bg-[#ffffff2a] hover:card_backdrop_filter min-w-[70px] duration-300">
+                  py-[10px]  px-2  rounded hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
                   <LikeIcon isliked={likesAndDislikes.item1.likes} />
                 </span>
@@ -210,27 +210,27 @@ const VideoPlayer = () => {
               </span>
               <span
                 onClick={() => AddDisLIke("item1")}
-                className="common-bg-liner-button bg-[#211E1A] items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
-                  py-[10px] px-2 sm:px-2.5  rounded-md  hover:bg-[#ffffff2a] hover:card_backdrop_filter min-w-[70px] duration-300">
+                  py-[10px] px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter min-w-[70px] duration-300">
                 <span>
                   <DisLikeIcon disliked={likesAndDislikes.item1.dislikes} />
                 </span>
                 {likesAndDislikes.item1.dislikes}
               </span>
               <span
-                className="common-bg-liner-button bg-[#211E1A] items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
-                  py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-[#ffffff2a] hover:card_backdrop_filter duration-300">
+                  py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>
                   <ShareIcon />
                 </span>
                 Share
               </span>
               <span
-                className="common-bg-liner-button bg-[#211E1A] items-center justify-center flex gap-1
+                className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
-                  py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-[#ffffff2a] hover:card_backdrop_filter duration-300">
+                  py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
                 <span>
                   <DownloadIcon />
                 </span>
@@ -241,7 +241,7 @@ const VideoPlayer = () => {
                 // SELECT DROPDOWN
                 className=" items-center justify-center flex gap-1">
                 <Menu>
-                  <Menu.Button className="flex items-center justify-between common-bg-liner-button bg-[#211E1A]  ff_inter font-semibold text-xs text-white border-0 cursor-pointer py-[10px]  px-3  rounded-md  hover:bg-[#ffffff2a] hover:card_backdrop_filter duration-300 ">
+                  <Menu.Button className="flex items-center justify-between common-bg-liner-button bg-shadow-black  ff_inter font-semibold text-xs text-white border-0 cursor-pointer py-[10px]  px-3  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300 ">
                     ...
                   </Menu.Button>
                   <Menu.Items className="absolute right-[10px] 2xl:right-[60px] mt-2 top-[190px] min-[461px]:top-[90px] max-[480px]:right-10 max-[640px]:end-[40px] max-[640px]:!top-[155px] z-20 rounded-lg origin-top-right bg-[#353535dc] focus:outline-none flex flex-col">
@@ -250,7 +250,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="blog"
                           to="/blog"
-                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/blog"
@@ -266,7 +266,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="fact"
                           to="/fact"
-                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/fact"
@@ -282,7 +282,7 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="about us"
                           to="/about-us"
-                          className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
                             active && "bg-primary text-white"
                           } ${
                             loaction.pathname === "/about-us"
@@ -301,12 +301,12 @@ const VideoPlayer = () => {
         </div>
         {/* DISCRIPTION  */}
         <div
-          className={`bg-[#FFFFFF14] card_backdrop_filter rounded-md mt-6 p-2.5 ${
+          className={`bg-white/15 card_backdrop_filter rounded-md mt-6 p-2.5 ${
             discription
               ? "min-h-[80px] overflow-auto !transition-all !duration-300 "
               : " min-h-[70px] !transition-all !duration-300 "
           }`}>
-          <p className="font-poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px] mb-0.5">
+          <p className="font-poppins inline font-normal text-sm text-white/70 opacity-70 leading-[22.4px] mb-0.5">
             Elit eu maecenas augue lorem &nbsp;
             <span className="font-semibold text-white !opacity-100">
               malesuada
@@ -326,7 +326,7 @@ const VideoPlayer = () => {
           {defaultPorductDiscription.map((item, index) => (
             <p
               key={index}
-              className="font-poppins inline font-normal text-sm text-[#FFFFFFB2] opacity-70 leading-[22.4px]">
+              className="font-poppins inline font-normal text-sm text-white/70 opacity-70 leading-[22.4px]">
               <span>
                 {selectedIndexes.includes(index) ? item.description : ""}
               </span>
@@ -353,7 +353,7 @@ const VideoPlayer = () => {
               {commentArray[0].length} Comments
             </p>
             {/* SORT DROPDOWN  */}
-            <div className="font-poppins font-semibold text-sm text-[#FFFFFFB2] opacity-70 mb-0 leading-[22.4px] flex gap-2.5 cursor-pointer relative">
+            <div className="font-poppins font-semibold text-sm text-white/70 opacity-70 mb-0 leading-[22.4px] flex gap-2.5 cursor-pointer relative">
               <Menu>
                 <Menu.Button className="flex items-center justify-between">
                   <span className="textx-white opacity-100 me-2.5">
@@ -361,13 +361,13 @@ const VideoPlayer = () => {
                   </span>
                   Sort by
                 </Menu.Button>
-                <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-[#414141dc] focus:outline-none flex flex-col">
+                <Menu.Items className="absolute right-[-10px] mt-2 top-[15px] !z-[100] rounded-lg origin-top-right bg-shadow-gray-two focus:outline-none flex flex-col">
                   <Menu.Item className="ps-4 w-full pr-10 py-2 border-0 p-2">
                     {({ active }) => (
                       <Link
                         aria-label="blog"
                         to="/blog"
-                        className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
                           active && "bg-primary text-white"
                         } ${
                           loaction.pathname === "/blog"
@@ -383,7 +383,7 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="fact"
                         to="/fact"
-                        className={` border-0 font-poppins text-[#BDBCBA] hover:text-white ${
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
                           active && "bg-primary text-white"
                         } ${
                           loaction.pathname === "/fact"
