@@ -9,7 +9,7 @@ import RatingAndReview from "./RatingAndReview";
 import RecentlyViewed from "./RecentlyViewed";
 import WatchVideos from "./WatchVideos";
 
-const Home = ({ showSidebar }) => {
+const Home = ({ showSidebar,scrollToTop }) => {
   return (
     <>
       <Hero showSidebar={showSidebar} />
@@ -20,7 +20,7 @@ const Home = ({ showSidebar }) => {
       <RatingAndReview showSidebar={showSidebar} />
       <RecentlyViewed showSidebar={showSidebar} />
       <Faqs showSidebar={showSidebar} />
-      <Footer showSidebar={showSidebar} />
+      <Footer showSidebar={showSidebar} scrollToTop={scrollToTop} />
     </>
   );
 };

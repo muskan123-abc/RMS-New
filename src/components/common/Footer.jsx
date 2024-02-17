@@ -9,7 +9,7 @@ import {
 } from "./Icons";
 import { footerList } from "./Helper";
 
-const Footer = () => {
+const Footer = ({ scrollToTop }) => {
   //FOR GETTING CURRENT DATE
   const today = new Date();
   //FOR GETTING CURRENT YEAR
@@ -39,15 +39,7 @@ const Footer = () => {
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto z-10 relative">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-4/12 lg:w-3/12 md:pe-6 lg:pe-0">
-              <Link
-                to={"/"}
-                onClick={() => {
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
+              <Link to={"/"} onClick={() => scrollToTop()}>
                 <img
                   className="w-[100px] md:w-[136px] cursor-pointer inline-block"
                   src={footer_logo}
