@@ -74,7 +74,7 @@ const Router = () => {
               <Home scrollToTop={scrollToTop} showSidebar={showSidebar} />
             }
           />
-          <Route path="product-details/:slug" element={<ProductDetails />} />
+          <Route path="product-details" element={<ProductDetails />} />
           <Route
             path="/category"
             element={<Category showSidebar={showSidebar} />}
