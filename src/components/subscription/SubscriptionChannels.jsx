@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { CommonLeftArrowIcon, UnsubscribeBell } from "../common/Icons";
-import { subscribedChannels } from "../../utils/Helper";
+import { subscribedChannels } from "./Helper";
+import CustomButton from "../common/fields/button/CustomButton";
 
 const SubscriptionChannels = () => {
   const [selectedSlide, setSelectedSlide] = useState(0);
@@ -67,22 +68,23 @@ const SubscriptionChannels = () => {
             ref={sliderRef}
             {...settings}
             className="flex gap-3 flex-wrap ">
-            {subscribedChannels.map((value, index) => (
-              <div
-                key={index}
-                className="sm:pe-3 px-1.5 "
-                onClick={() => handleSlideClick(index)}>
+            {subscribedChannels.map((value, index) => {
+              return (
                 <div
-                  className={`flex gap-2 py-1.5 rounded-md px-2.5 border cursor-pointer border-white border-opacity-25 bg-white bg-opacity-10 items-center sm:justify-start justify-center ${
-                    selectedSlide === index ? "channel_button" : ""
-                  }`}>
-                  <img src={value.image} alt="channel" />
-                  <h3 className="font-inter text-sm text-white whitespace-nowrap">
-                    {value.title}
-                  </h3>
+                  key={index}
+                  className="sm:pe-3 px-1.5 "
+                  onClick={() => handleSlideClick(index)}>
+                  <div
+                    className={`flex gap-2 py-1.5 rounded-md px-2.5 border cursor-pointer border-white border-opacity-25 bg-white bg-opacity-10 items-center sm:justify-start justify-center ${selectedSlide === index ? "channel_button" : ""
+                      }`}>
+                    <img src={value.image} alt="channel" />
+                    <h3 className="font-inter text-sm text-white whitespace-nowrap">
+                      {value.title}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </Slider>
         </div>
         <div className="flex gap-5 md:ps-6 justify-center">
@@ -100,26 +102,25 @@ const SubscriptionChannels = () => {
           </button>
         </div>
       </div>
-      {subscribedChannels.map((value, index) => (
-        <div
-          key={index}
-          className={`flex gap-5 pt-[30px]  ${
-            selectedSlide === index ? "block" : "hidden"
-          }`}>
-          <img className="w-[126px] h-auto" src={value.image} alt="p-movies" />
-          <div>
-            <h3 className="text-white font-poppins font-medium text-2xl opacity-90">
-              {value.title}
-            </h3>
-            <h4 className="text-white font-poppins pb-6 opacity-70 text-sm">
-              929K Subscribers
-            </h4>
-            <button className="common-border-button items-center gap-2.5 ff_inter font-semibold text-base text-white opacity-90 w-full py-[11px] px-4 rounded overflow-hidden border border-solid border-light-yellow bg-black hover:border-transparent after:bg-[#a97424]  z-10 flex justify-center relative duration-300 ease-linear after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
-              <UnsubscribeBell /> Unsubscribe
-            </button>
+      {subscribedChannels.map((value, index) => {
+        return (
+          <div
+            key={index}
+            className={`flex gap-5 pt-[30px]  ${selectedSlide === index ? "block" : "hidden"
+              }`}>
+            <img className="w-[126px] h-auto" src={value.image} alt="channel-image" />
+            <div>
+              <h3 className="text-white font-poppins font-medium text-2xl opacity-90">
+                {value.title}
+              </h3>
+              <h4 className="text-white font-poppins pb-6 opacity-70 text-sm">
+                929K Subscribers
+              </h4>
+              <CustomButton isVisible={true} icon={<UnsubscribeBell />} varient="button" title="Unsubscribe" className="!px-3.5 py-[11px] !gap-2.5" />
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      })}
       <div className="p-2.5 bg-white bg-opacity-[8%] mt-[30px] rounded-md">
         <h4 className="font-poppins text-sm text-white/70  max-w-[709px] 2xl:max-w-[900px]">
           Elit eu maecenas augue lorem

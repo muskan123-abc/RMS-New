@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChennalIcon, ShareIcon, StarGrey, YellowStar } from "../common/Icons";
-import { VideoTabs, subscribedHomeVideo } from "../../utils/Helper";
+import { videoTabs, subscribedHomeVideo } from "./Helper";
 import { formatNumber } from "../../utils/CommonFunction";
 import CustomButton from "../common/fields/button/CustomButton";
 
@@ -28,19 +28,18 @@ const SubscribedVideos = () => {
     // setCardData(value);
   };
   return (
-    <div>
+    <>
       <div className="overflow-x-scroll">
         <div className="flex py-[30px] min-w-[590px] ">
-          {VideoTabs.map((value, index) => {
+          {videoTabs.map((value, index) => {
             return (
               <button
                 onClick={() => setShowVideoTabs(index)}
                 key={index}
-                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300 videotabs ${
-                  showVideoTabs === index
+                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300 videotabs ${showVideoTabs === index
                     ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
                     : " opacity-70"
-                }`}>
+                  }`}>
                 {value.image} {value.title}
               </button>
             );
@@ -112,7 +111,7 @@ const SubscribedVideos = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
