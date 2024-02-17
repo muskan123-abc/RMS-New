@@ -50,14 +50,15 @@ const CommonBigCardSlider = ({ showSidebar }) => {
     ],
   };
   // Function to handle Read More button click
-  // const handleReadMoreClick = (index) => {
-  //   if (selectedIndexes.includes(index)) {
-  //     const data = selectedIndexes.filter((obj) => obj !== index);
-  //     setSelectedIndexes(data);
-  //   } else {
-  //     setSelectedIndexes((prev) => [...prev, index]);
-  //   }
-  // };
+  const handleReadMoreClick = (index) => {
+    if (selectedIndexes.includes(index)) {
+      const data = selectedIndexes.filter((obj) => obj !== index);
+      setSelectedIndexes(data);
+    } else {
+      setSelectedIndexes((prev) => [...prev, index]);
+    }
+  };
+  const pathName = useLocation().pathname;
   // const onNavigateHandler = (value) => {
   //   localStorage.setItem("current-movie", JSON.stringify(value));
   //   const formattedTitle = value.title.replace(/\s+/g, "-");
@@ -65,7 +66,6 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   //   localStorage.setItem("current-movie", JSON.stringify(value));
   // };
 
-  const pathName = useLocation().pathname;
   return (
     <>
       <div
