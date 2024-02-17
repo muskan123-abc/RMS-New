@@ -12,6 +12,8 @@ import {
   YellowStar,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
+
+// LibrarySliderCards component displays slider cards for different sections of the library
 const LibrarySliderCards = ({
   librarySliderData,
   heading,
@@ -20,18 +22,20 @@ const LibrarySliderCards = ({
   mostRankedSliderArrow,
   sliderParent,
 }) => {
-  //REF FOR TARGET SLIDER-ARROWS
+  // Ref for controlling the slider
   const playlist_slider = useRef(null);
 
-  //SECTION SLIDER ACTIVE ARROW FUNCTION
+  // Function to move slider to the left
   const SliderLeftArrow = () => {
     playlist_slider.current.slickPrev();
   };
+
+  // Function to move slider to the right
   const SliderRightArrow = () => {
     playlist_slider.current.slickNext();
   };
 
-  // REVIEW RATTING STAR FUNCTION
+  // Function to render rating stars based on rating value
   const ratingStars = (rating) => {
     const stars = [];
     const roundedRating = Math.floor(rating);
@@ -44,8 +48,8 @@ const LibrarySliderCards = ({
     return stars;
   };
 
-  // SLIDER-SETTINGS
-  var settings = {
+  // Slider settings
+  const settings = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -79,15 +83,18 @@ const LibrarySliderCards = ({
 
   const [cardData, setCardData] = useState();
   const navigate = useNavigate();
+
+  // Function to handle navigation to product details page
   const onNavigateHandler = (value) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
   };
+
   return (
     <>
       <div className="w-full min-[1440px]:pe-4 3xl:pe-0 min-[1440px]:pl-4">
-        {/* PLAYLIST SLIDER*/}
+        {/* Slider Header */}
         <div
           className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 pt-9 ${sliderArrowHidden} `}>
           <div className="flex items-center gap-[10px]">
@@ -97,7 +104,7 @@ const LibrarySliderCards = ({
             </h3>
           </div>
           <div className="flex gap-5">
-            {/* SLIDER ARROW Start here*/}
+            {/* Slider Arrows */}
             <button
               aria-label="Slider Arrow"
               onClick={SliderLeftArrow}
@@ -112,7 +119,7 @@ const LibrarySliderCards = ({
             </button>
           </div>
         </div>
-        {/* MOST RANKED HEADING AND SEARCH */}
+        {/* Slider Search */}
         <div className={`${mostRankedSliderArrow}`}>
           <div className="flex lg:hidden gap-[11px] sm:min-w-[358px] items-center mb-5 px-[10px]">
             {icon}
@@ -136,7 +143,7 @@ const LibrarySliderCards = ({
               />
             </div>
             <div className="flex gap-5 ms-auto">
-              {/* ARROW SLIDER BUTTON*/}
+              {/* Slider Arrows */}
               <button
                 aria-label="Slider Arrow"
                 onClick={SliderLeftArrow}
@@ -152,12 +159,18 @@ const LibrarySliderCards = ({
             </div>
           </div>
         </div>
-        {/* SLIDER CODE START HERE */}
+        {/* Slider */}
         <Slider
           ref={playlist_slider}
           {...settings}
+<<<<<<< HEAD
           className={`${sliderParent}`}>
           {/* SLIDER DATA BY MAP */}
+=======
+          className={`${sliderParent}`}
+        >
+          {/* Slider Cards */}
+>>>>>>> e06e3dda2107386aed62438f4587109aa9150bfb
           {librarySliderData.map((obj, index) => {
             return (
               <div
