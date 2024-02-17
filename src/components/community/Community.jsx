@@ -80,7 +80,8 @@ const Community = ({ showSidebar }) => {
       <div
         className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto px-3 md:px-6 relative h-[calc(100vh-106px)] ${
           showSidebar ? "ms-0" : "ms-auto"
-        }`}>
+        }`}
+      >
         <div className="h-[calc(100vh-200px)] overflow-auto ">
           <h4 className="sm:text-xl text-base flex items-center gap-3 text-white font-semibold mb-[30px]">
             <CommunityIcon />
@@ -92,7 +93,8 @@ const Community = ({ showSidebar }) => {
           {senderMessages.map((obj, index) => (
             <div
               key={index}
-              className="sm:flex items-center gap-4 bg-[#FFFFFF0A] py-3 sm:py-2 px-3 sm:px-5 rounded-2xl max-w-[90%] sm:max-w-[70%] mb-5">
+              className="sm:flex items-center gap-4 bg-light-white py-3 sm:py-2 px-3 sm:px-5 rounded-2xl max-w-[90%] sm:max-w-[70%] mb-5"
+            >
               <div className="h-[46px] w-[46px] min-w-[46px] rounded mb-3 sm:mb-0">
                 <img className="object-cover" src={userImg} alt="userImg" />
               </div>
@@ -127,7 +129,8 @@ const Community = ({ showSidebar }) => {
             <div
               key={index}
               ref={index === myMessages.length - 1 ? latestValueRef : null}
-              className="sm:flex items-center gap-4 bg-[#A97424] py-3 sm:py-2 px-3 sm:px-5 rounded-2xl max-w-[90%] sm:max-w-[70%] mb-5 ms-auto">
+              className="sm:flex items-center gap-4 bg-dark-yellow py-3 sm:py-2 px-3 sm:px-5 rounded-2xl max-w-[90%] sm:max-w-[70%] mb-5 ms-auto"
+            >
               <div className="h-[46px] w-[46px] min-w-[46px] rounded mb-3 sm:mb-0">
                 <img className="object-cover" src={userImg2} alt="userImg" />
               </div>
@@ -157,7 +160,8 @@ const Community = ({ showSidebar }) => {
           ))}
           <div className="absolute bottom-[30px] w-full left-0 flex justify-between items-center px-3 md:px-6">
             <div
-              className={`border border-solid border-[#82817F] rounded-[127px] flex items-center justify-between ps-5 relative w-full`}>
+              className={`border border-solid border-battleship-gray rounded-[127px] flex items-center justify-between ps-5 relative w-full`}
+            >
               <input
                 className="font-poppins text-sm font-normal text-white bg-transparent py-2 lg:py-3 outline-none placeholder:text-white w-full pr-3"
                 type="text"
@@ -190,12 +194,14 @@ const Community = ({ showSidebar }) => {
                   </span>
                   <span
                     className="cursor-pointer"
-                    onClick={() => setChosenEmoji(!chosenEmoji)}>
+                    onClick={() => setChosenEmoji(!chosenEmoji)}
+                  >
                     <EmojiIcon />
                   </span>
                   <button
                     onClick={SendHandler}
-                    className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer bg-gradient">
+                    className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-[50%] p-2 flex justify-center items-center cursor-pointer bg-gradient"
+                  >
                     <SendArrow />
                   </button>
                 </div>
