@@ -23,7 +23,7 @@ const RatingBars = (props) => {
           {formatNumber(1400)} reviews
         </p>
       </div>
-      <div ref={ref} className="custom-2xl:me-5 w-full">
+      <div ref={ref} className="w-full">
         <div
           className={`max-w-[463px] lg:max-w-[100%] ${props.ratingBarsWidth}`}>
           <div className="flex items-center mt-5 w-full justify-between">
