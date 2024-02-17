@@ -40,11 +40,14 @@ module.exports = {
         "shadow-gray-two": "#414141dc",
         "shadow-black": "#211E1A",
         "graphite-gray": "#2c271f",
+        "[graphite-gray-two]": "#2B261E",
         "darkgray-two": "#B3B2B2",
         "dark-charcoal": "#333333",
         "dark-olived-rab": "#443925",
         "raisin-black": "#282525",
         "medium-gray": "#BDBCBA",
+        "granite-gray": "#645E56",
+        "maximum-yellow-red": "#E1B862",
       },
       fontSize: {
         // we  can use  default fonts for 12px{xs},14px{sm},16px{base},20px{xl},24px{2xl} font size

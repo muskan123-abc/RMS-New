@@ -109,7 +109,7 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
         {cardContent.map((obj, index) => {
           const isLiked = heartClicked.includes(index);
           return (
-            <div className=" flex justify-center relative">
+            <div key={index} className=" flex justify-center relative">
               {isLike && (
                 <span
                   className={`${
