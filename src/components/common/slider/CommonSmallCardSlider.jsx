@@ -1,18 +1,16 @@
 import React, { useRef, useState } from "react";
-import image from "../../../assets/images/png/dummy-file.png";
+import { useNavigate } from "react-router";
+import Slider from "react-slick";
+import { ratingStars } from "../../../utils/CommonFunction";
 import {
   ChennalIcon,
   CommonLeftArrowIcon,
   CommonRightArrowIcon,
   HeartIcon,
-  ShareIcon,
 } from "../Icons";
-import { ratingStars } from "../../../utils/CommonFunction";
 import CustomButton from "../fields/button/CustomButton";
-import Slider from "react-slick";
 
 const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
-  const [cardData, setCardData] = useState("");
   const [heartClicked, setHeartClicked] = useState([]);
 
   const likeHandler = (value) => {
@@ -98,6 +96,13 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
       },
     ],
   };
+  const navigate = useNavigate();
+
+  const onNavigateHandler = (value) => {
+    localStorage.setItem("current-movie", JSON.stringify(value));
+    const formattedTitle = value.title.replace(/\s+/g, "-");
+    navigate(`/product-details?title=${formattedTitle}`);
+  };
   return (
     <div
       className={` mx-auto relative px-4 px:md-0  ${
@@ -115,19 +120,19 @@ const CommonSmallCardSlider = ({ cardContent, showSidebar, isLike }) => {
                   className={`${
                     isLiked ? "liked" : ""
                   } absolute top-[14px] right-[14px] pt-3 pe-3 cursor-pointer z-20`}
-                  onClick={() => likeHandler(index)}
-                >
+                  onClick={() => likeHandler(index)}>
                   <HeartIcon filled={isLiked} />
                 </span>
               )}
 
-              <div className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2  mb-2 mx-auto w-[98%] ">
+              <div
+                onClick={() => onNavigateHandler(obj)}
+                className="group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2  mb-2 mx-auto w-[98%] ">
                 <div
                   className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[530px] relative p-2`}
                   style={{
                     backgroundImage: `url(${obj.image})`,
-                  }}
-                >
+                  }}>
                   <div className=" flex  flex-col flex-grow justify-end">
                     <h5 className="font-poppins text-base  font-semibold text-white opacity-90  mb-2">
                       {obj.title}
