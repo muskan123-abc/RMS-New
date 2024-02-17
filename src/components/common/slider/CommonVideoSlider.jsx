@@ -98,7 +98,7 @@ const CommonVideoSlider = ({ content, showSidebar }) => {
                         allowFullScreen="allowFullScreen"></iframe>
                     ) : (
                       <img
-                        className="group-hover:scale-110 duration-300 xl:min-h-[287px] lg:min-h-[254.7px] md:min-h-[182.9px] sm:min-h-[250px] min-h-[287px] object-cover"
+                        className="group-hover:scale-110 hover:bg-top duration-300 xl:min-h-[287px] lg:min-h-[254.7px] md:min-h-[182.9px] sm:min-h-[250px] min-h-[287px] object-cover"
                         src={value.image}
                         alt="video-thumbnail"
                         loading="lazy"

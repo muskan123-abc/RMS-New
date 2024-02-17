@@ -35,10 +35,10 @@ const WatchListCards = ({
         )}
         <img className="w-full h-full object-cover" src={image} alt="image" />
         <div className="px-2 absolute bottom-0 w-[95%] mx-auto">
-          <p className="text-sm sm:text-base font-semibold mb-2 leading-[160%]">
+          <p className="text-sm sm:text-base font-semibold mb-1 sm:mb-2 leading-[160%]">
             {title}
           </p>
-          <div className="flex justify-between mb-2 lg:mb-5 w-100">
+          <div className="flex justify-between mb-3 sm:mb-2 lg:mb-5 w-100">
             <p className="text-sm font-normal leading-[160%] mb-0 text-[#b3b3b3]">
               Your rating: {rating}/5
             </p>
