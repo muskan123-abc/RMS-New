@@ -34,8 +34,7 @@ const RatingAndReview = ({ showSidebar }) => {
         className={` py-12 min-[1440px]:pl-4 relative sm:pb-28 md:pb-32 ${
           showSidebar ? "lg:pb-16" : "lg:pb-36  "
         }`}
-        id="reviews"
-      >
+        id="reviews">
         <span className="bg-gradient w-[181px] h-[181px] rounded-[343px] blur-[131px] absolute right-0 top-[0px] pointer-events-none z-10"></span>
         <span className=" absolute right-0 top-50 pe-14 hidden lg:block movieIcon_animation">
           <img src={image} alt="" />
@@ -63,8 +62,7 @@ const RatingAndReview = ({ showSidebar }) => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[88%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient  transition-all delay-500 duration-500`}
-                      ></div>
+                        } h-2 rounded-full bg-gradient  transition-all delay-500 duration-500`}></div>
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
@@ -75,8 +73,7 @@ const RatingAndReview = ({ showSidebar }) => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[63%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient transition-all delay-[600] duration-[600]`}
-                      ></div>
+                        } h-2 rounded-full bg-gradient transition-all delay-[600] duration-[600]`}></div>
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
@@ -87,8 +84,7 @@ const RatingAndReview = ({ showSidebar }) => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[35%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient transition-all delay-700 duration-[700] `}
-                      ></div>
+                        } h-2 rounded-full bg-gradient transition-all delay-700 duration-[700] `}></div>
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
@@ -99,8 +95,7 @@ const RatingAndReview = ({ showSidebar }) => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[78%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient transition-all delay-[800] duration-[800] `}
-                      ></div>
+                        } h-2 rounded-full bg-gradient transition-all delay-[800] duration-[800] `}></div>
                     </div>
                   </div>
                   <div className="flex items-center mt-2 sm:mt-2 justify-between">
@@ -111,8 +106,7 @@ const RatingAndReview = ({ showSidebar }) => {
                       <div
                         className={`${
                           animationsTriggered ? "w-[15%]" : "w-[0]"
-                        } h-2 rounded-full bg-gradient  transition-all delay-[900] duration-[900]`}
-                      ></div>
+                        } h-2 rounded-full bg-gradient  transition-all delay-[900] duration-[900]`}></div>
                     </div>
                   </div>
                 </div>
@@ -120,7 +114,7 @@ const RatingAndReview = ({ showSidebar }) => {
 
               <CustomButton
                 title="See All Reviews" //set button title
-                isGradient={false} // is grident is  visible // controle  btn types
+                isGradient={true} // is grident is  visible // controle  btn types
                 varient="link" // set button type like  Link and  Button
                 url="/my-reviews" // set url when button type  is link
                 isVisible={true} // handle  button visibility
@@ -134,8 +128,7 @@ const RatingAndReview = ({ showSidebar }) => {
                   return (
                     <div
                       key={index}
-                      className="w-full sm:w-6/12 mb-5 sm:mb-0 px-3"
-                    >
+                      className="w-full sm:w-6/12 mb-5 sm:mb-0 px-3">
                       <div className=" border border-[#404040] rounded-xl py-5 sm:py-0 sm:pt-5 sm:pb-[42px] ps-4  pe-5 h-full hover:border-[#E1B862] duration-200">
                         <h5 className=" font-poppins font-semibold text-base text-white mb-0">
                           {obj.title}

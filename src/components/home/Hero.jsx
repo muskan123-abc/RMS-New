@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import { homeHeroLeftSlider, homeHeroRightSlider } from "../../utils/Helper";
-import image from "../../assets/images/svg/XMLID_2_.svg";
+import image from "../../assets/images/svg/tap-recorder-icon.svg";
 import CustomInput from "../common/fields/CustomInput";
 
 const Hero = ({ showSidebar }) => {
