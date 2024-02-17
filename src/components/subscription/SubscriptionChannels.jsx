@@ -119,7 +119,7 @@ const SubscriptionChannels = () => {
             <img
               className="w-[126px] h-auto"
               src={value.image}
-              alt={` ${value.title}-profile`}
+              alt="channel-img"
             />
             <div>
               <h3 className="text-white font-poppins font-medium text-2xl opacity-90">
@@ -129,7 +129,7 @@ const SubscriptionChannels = () => {
                 929K Subscribers
               </h4>
               <CustomButton
-                isVisible={trugit e}
+                isVisible={true}
                 icon={<UnsubscribeBell />}
                 varient="button"
                 title="Unsubscribe"
