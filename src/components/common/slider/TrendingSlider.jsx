@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import trendingIcon from "../../../assets/images/trending/trending_icon.webp";
 import { ratingStars } from "../../../utils/CommonFunction";
 import { trendingSliderList } from "../../trending/Helper";
 import { CommonLeftArrowIcon, CommonRightArrowIcon, ShareIcon } from "../Icons";
@@ -57,10 +56,10 @@ const TrendingSlider = ({ sliderHeading, sliderIcon }) => {
     ],
   };
   return (
-    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-4 md:px-6 pb-16 md:pb-32 mx-auto ">
+    <div className="max-w-[1140px] 2xl:max-w-[1320px] pt-20 px-4 lg:px-6 pb-16 md:pb-32 mx-auto ">
       <div className="flex justify-between pb-5 md:pb-8 pt-5">
         <div className="flex items-center gap-2.5">
-        <span>{sliderIcon}</span>
+          <span>{sliderIcon}</span>
           <h3 className="font-poppins font-medium text-white text-xxl">
             {sliderHeading}
           </h3>
