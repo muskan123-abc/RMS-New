@@ -163,14 +163,8 @@ const LibrarySliderCards = ({
         <Slider
           ref={playlist_slider}
           {...settings}
-<<<<<<< HEAD
           className={`${sliderParent}`}>
-          {/* SLIDER DATA BY MAP */}
-=======
-          className={`${sliderParent}`}
-        >
           {/* Slider Cards */}
->>>>>>> e06e3dda2107386aed62438f4587109aa9150bfb
           {librarySliderData.map((obj, index) => {
             return (
               <div

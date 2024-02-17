@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Category from "../components/category/Category";
 import Header from "../components/common/Header";
 import Home from "../components/home/Home";
@@ -44,33 +44,26 @@ const Router = () => {
       setScrollPosition(position);
     }
   };
-
   useEffect(() => {
-    // Assuming you are attaching the event listener to the div with the ID 'scrollParent'
-    const scrollableDiv = document.getElementById("scrollParent");
-
-    if (scrollableDiv) {
-      scrollableDiv.addEventListener("scroll", handleScroll, { passive: true });
-    }
-
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      if (scrollableDiv) {
-        scrollableDiv.removeEventListener("scroll", handleScroll);
-      }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
   return (
     <div className={`h-screen flex relative `}>
       <BackToTop scrollToTop={scrollToTop} scrollPosition={scrollPosition} />
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <Sidebar
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+        scrollToTop={scrollToTop}
+      />
       <div
         className="w-full overflow-y-auto overflow-x-hidden"
-        id="scrollParent"
-      >
+        id="scrollParent">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
           <Route
