@@ -18,10 +18,10 @@ const ProfileSidebar = ({ setShowSidebar }) => {
         {sideTopList.map((obj, index) => (
           <div key={index}>
             <div className="flex items-center justify-between max-[375px]:mx-2 mx-[10px] py-[10px] border-b border-[#59554C]">
-              <h2 className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80">
+              <h2 className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80 whitespace-nowrap">
                 {obj.title}
               </h2>
-              <p className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80">
+              <p className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80 whitespace-nowrap">
                 {obj.rank}
               </p>
             </div>
@@ -44,7 +44,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                     onClick={() => setShowSidebar(false)}>
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
+                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white whitespace-nowrap ${
                         isActive ? "" : ""
                       }`}>
                       {obj.title}
@@ -56,7 +56,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                     className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
+                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white whitespace-nowrap ${
                         isActive ? "" : ""
                       }`}>
                       {obj.title}
