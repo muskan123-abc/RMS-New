@@ -18,7 +18,7 @@ const CustomInput = ({
 }) => {
   return (
     <div className={`${parentWidth && parentWidth} flex flex-col`}>
-      <lable
+      <label
         htmlFor={id ? id : "defaultId"}
         className={`border border-solid border-white border-opacity-50 rounded-[127px] md:flex items-center justify-between ps-3 relative inline-block py-[2px] ${customStyles && customStyles
           }`}>
@@ -40,7 +40,7 @@ const CustomInput = ({
             {buttonIcon ? buttonIcon : <SearchIcon />}
           </button>
         )}
-      </lable>
+      </label>
       {errVisible && value === "" && (
         <p className=" text-red-500 text-xs font-normal inline-block pl-6 leading-[1] pt-1">
           {errTitle}&nbsp;is Required
