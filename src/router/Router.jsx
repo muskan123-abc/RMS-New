@@ -64,8 +64,7 @@ const Router = () => {
       />
       <div
         className="w-full overflow-y-auto overflow-x-hidden"
-        id="scrollParent"
-      >
+        id="scrollParent">
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
           <Route
