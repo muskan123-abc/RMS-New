@@ -202,13 +202,6 @@
   backdrop-filter: blur(205.44007873535156px);
 }
 
-.bg_most_rated_bg {
-  background-image: url("./assets/images/common/png/common-card-slider-bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .slick-dots {
   display: none !important;
 }

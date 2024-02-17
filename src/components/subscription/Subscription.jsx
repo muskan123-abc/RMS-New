@@ -25,7 +25,7 @@ const Subscription = ({ showSidebar }) => {
       <div className="bg-common-bg-image bg-fixed  bg-cover relative pt-20 ">
         <div className="w-full h-[50px] absolute bottom-0 left-0"></div>
         <div
-          className={`container mx-auto pb-16 px-3 pt-5 ${showSidebar
+          className={`container mx-auto pb-16 px-4 md:px-6 pt-5 ${showSidebar
               ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
               : "max-w-[1140px] 2xl:max-w-[1320px]"
             }`}>

@@ -5,9 +5,7 @@ import Header from "../components/common/Header";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product-details/ProductDetails";
 import Sidebar from "../components/common/sidebar/Sidebar";
-import MoviesRatedCard from "../components/common/card/MoviesRatedCard";
 import Notification from "../components/notification/Notification";
-import BackToTop from "../components/common/BackToTop";
 import Community from "../components/community/Community";
 import WatchList from "../components/watchlist/WatchList";
 import AccountDetail from "../components/myAccount/MyAccount";
@@ -15,8 +13,6 @@ import Hero from "../components/reviews/Hero";
 import Trending from "../components/trending/Trending";
 import Library from "../components/library/Library";
 import Subscription from "../components/subscription/Subscription";
-import VideoPlayer from "../components/product-details/VideoPlayer";
-import ItemDetails from "../components/product-details/ItemDetails";
 import History from "../components/history/History";
 
 const Router = () => {
@@ -52,7 +48,6 @@ const Router = () => {
             element={<Library showSidebar={showSidebar} />}
           />
           <Route path="/subscription" element={<Subscription />} />
-          <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>

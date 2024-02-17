@@ -15,7 +15,7 @@ const Hero = () => {
         <img
           className="w-[240px] h-[381px] object-cover absolute end-0 bottom-[110px] 2xl:bottom-[5%] xl:bottom-[20%] z-0 hidden xl:block"
           src={category_hero_reel_img}
-          alt="popular_reel_position_img"
+          alt="category_hero_reel_img"
         />
         <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto flex-grow flex justify-center items-center h-full">
           <div className="flex flex-col-reverse md:flex-row justify-between items-center">
@@ -51,7 +51,7 @@ const Hero = () => {
                   width={523}
                   className="w-full h-full hover:scale-110 duration-300 z-20"
                   src={category_hero_img}
-                  alt="hero-img"
+                  alt="category_hero_img"
                   loading="lazy"
                 />
               </div>

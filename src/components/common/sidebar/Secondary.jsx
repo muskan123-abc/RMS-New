@@ -13,7 +13,7 @@ import {
 import { messegeList } from "../../../utils/Helper";
 import { Link, useLocation } from "react-router-dom";
 
-const Secondary = () => {
+const Secondary = ({ setShowSidebar }) => {
   const location = useLocation();
   const [activedropdown, setActivedropdown] = useState({
     communities: false,
@@ -38,7 +38,7 @@ const Secondary = () => {
         }`}>
         <div className="flex items-center">
           <GlobalIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2 whitespace-nowrap">
             My communities
           </h2>
         </div>
@@ -60,7 +60,7 @@ const Secondary = () => {
             location.pathname === "/community" ? "opacity-100" : "opacity-70"
           } hover:opacity-100  duration-300  ps-[15px] pt-[18px] cursor-pointer`}>
           <AnnouncementsIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3 whitespace-nowrap">
             Announcements
           </h2>
         </Link>
@@ -69,7 +69,7 @@ const Secondary = () => {
           to="/"
           className="flex items-center opacity-70 hover:opacity-100  duration-300  ps-[15px] pt-3  pb-[18px] cursor-pointer">
           <ResourcesIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3 whitespace-nowrap">
             Resources
           </h2>
         </Link>
@@ -83,7 +83,7 @@ const Secondary = () => {
         }`}>
         <div className="flex items-center">
           <UsersIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white ms-2 whitespace-nowrap">
             My friends
           </h2>
         </div>
@@ -103,7 +103,7 @@ const Secondary = () => {
           to="/"
           className="flex items-center opacity-70 hover:opacity-100  duration-300  ps-[15px] pt-[18px] cursor-pointer">
           <FriendsIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3 whitespace-nowrap">
             Friends
           </h2>
         </Link>
@@ -112,7 +112,7 @@ const Secondary = () => {
           to="/"
           className="flex items-center opacity-70 hover:opacity-100  duration-300  ps-[15px] py-3 cursor-pointer">
           <NitroIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3 whitespace-nowrap">
             Nitro
           </h2>
         </Link>
@@ -121,14 +121,14 @@ const Secondary = () => {
           to="/"
           className="flex items-center opacity-70 hover:opacity-100  duration-300  ps-[15px]  pb-[18px] cursor-pointer">
           <ShopIcon />
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-3 whitespace-nowrap">
             Shop
           </h2>
         </Link>
       </div>
       <div className="border-t border-t-white/20">
         <div className="opacity-70 flex items-center justify-between py-5 max-[375px]:px-2 px-[15px]">
-          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-2 uppercase ">
+          <h2 className="font-poppins max-[375px]:text-xs text-sm  leading-[118.75%] text-white ms-2 uppercase whitespace-nowrap ">
             Direct Message
           </h2>
           <div className="hover:rotate-90 duration-300 ease-linear transition-all cursor-pointer">
@@ -154,7 +154,7 @@ const Secondary = () => {
                   src={obj.image}
                   alt="profile_img"
                 />
-                <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white">
+                <h2 className="font-poppins max-[375px]:text-xs text-sm leading-[118.75%] text-white whitespace-nowrap">
                   {obj.title}
                 </h2>
               </div>
