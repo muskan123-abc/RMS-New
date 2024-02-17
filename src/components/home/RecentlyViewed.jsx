@@ -10,7 +10,7 @@ import {
   ShareIcon,
 } from "../common/Icons";
 import CustomButton from "../common/fields/button/CustomButton";
-const RecentlyViewed = ({ showSidebar }) => {
+const RecentlyViewed = ({ showSidebar, scrollToTop }) => {
   // STATES VALUE IMPORT FROM PROVIDER
   const [activeTab, setActiveTab] = useState("All"); // State to manage active tab index
 
@@ -90,13 +90,6 @@ const RecentlyViewed = ({ showSidebar }) => {
     navigate(`/product-details?title=${formattedTitle}`);
   };
 
-  //SCROOL TOP FUNCTION
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
   return (
     <div className=" relative">
       <span className=" bg-gradient w-[200px] h-[200px] rounded-[343px] blur-[131px] absolute left-0 top-0 z-10"></span>
@@ -110,7 +103,8 @@ const RecentlyViewed = ({ showSidebar }) => {
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
-        }`}>
+        }`}
+      >
         <h2 className=" text-center font-poppins font-semibold text-[30px] md:text-3xl text-white mb-0 leading-[142%]">
           Recently <span className="common-text-gradient">Viewed</span>
         </h2>
@@ -119,14 +113,16 @@ const RecentlyViewed = ({ showSidebar }) => {
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
             className={`common-arrow left-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%] custom-2xl:left-[-6%] left-[-5%]
-                 `}>
+                 `}
+          >
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
             className={`common-arrow right-arrow bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:translate-y-1/2 xl:absolute top-[47%]  custom-2xl:right-[-6%] right-[-5%] 
-                 `}>
+                 `}
+          >
             <CommonRightArrowIcon />
           </button>
         </div>
@@ -139,13 +135,15 @@ const RecentlyViewed = ({ showSidebar }) => {
                     onNavigateHandler(value);
                     scrollToTop();
                   }}
-                  key={index}>
+                  key={index}
+                >
                   <div className=" rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 mx-[10px] mb-2">
                     <div
                       className={`flex bg-cover bg-no-repeat rounded-xl bg-center h-[439px] relative px-2 `}
                       style={{
                         backgroundImage: `url(${value.image})`,
-                      }}>
+                      }}
+                    >
                       <div className=" flex flex-col flex-grow justify-end">
                         <h5 className=" font-poppins text-base  font-semibold text-white opacity-90  mb-0">
                           {value.title}
