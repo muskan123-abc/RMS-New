@@ -90,7 +90,7 @@ const LibrarySliderCards = ({
       <div className="w-full min-[1440px]:pe-4 3xl:pe-0 min-[1440px]:pl-4">
         {/* PLAYLIST SLIDER*/}
         <div
-          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 ${sliderArrowHidden} `}
+          className={`flex justify-between pb-4 sm:pb-[30px] px-[10px] xl:px-0 pt-9 ${sliderArrowHidden} `}
         >
           <div className="flex items-center gap-[10px]">
             {icon}
@@ -135,6 +135,7 @@ const LibrarySliderCards = ({
               <CustomInput
                 placeholder="Search"
                 customStyles="w-full"
+                customStylesInput="w-full !pr-14"
                 isButtonVisible={true}
               />
             </div>
