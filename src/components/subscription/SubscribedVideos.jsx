@@ -14,7 +14,7 @@ const SubscribedVideos = () => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
-    // setCardData(value);
+    //
   };
   return (
     <>
@@ -25,10 +25,11 @@ const SubscribedVideos = () => {
               <button
                 onClick={() => setShowVideoTabs(index)}
                 key={index}
-                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${showVideoTabs === index
+                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${
+                  showVideoTabs === index
                     ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
                     : " opacity-70"
-                  }`}>
+                }`}>
                 {value.image} {value.title}
               </button>
             );

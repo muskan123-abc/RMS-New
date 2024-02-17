@@ -12,7 +12,6 @@ import {
 import CustomButton from "../common/fields/button/CustomButton";
 const RecentlyViewed = ({ showSidebar }) => {
   // STATES VALUE IMPORT FROM PROVIDER
-  const [cardData, setCardData] = useState("");
   const [activeTab, setActiveTab] = useState("All"); // State to manage active tab index
 
   // FOR REDIRECT TO ANY PAGE
@@ -89,7 +88,6 @@ const RecentlyViewed = ({ showSidebar }) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
-    setCardData(value);
   };
 
   //SCROOL TOP FUNCTION

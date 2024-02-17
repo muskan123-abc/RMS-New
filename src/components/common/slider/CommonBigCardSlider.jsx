@@ -64,7 +64,6 @@ const CommonBigCardSlider = ({ showSidebar }) => {
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
     localStorage.setItem("current-movie", JSON.stringify(value));
-    setCardData(value);
   };
 
   const pathName = useLocation().pathname;

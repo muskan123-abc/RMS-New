@@ -18,7 +18,6 @@ const FeaturedToday = ({ showSidebar }) => {
   // Ref for the Slider component
   const slider = useRef(null);
   //IMPORT SERCARDDATA FROM PROVIDER
-  const [cardData, setCardData] = useState("");
   // Function to handle left arrow click
   const handleLeftArrow = () => {
     slider.current.slickPrev();
@@ -88,7 +87,6 @@ const FeaturedToday = ({ showSidebar }) => {
     localStorage.setItem("current-movie", JSON.stringify(value));
     const formattedTitle = value.title.replace(/\s+/g, "-");
     navigate(`/product-details?title=${formattedTitle}`);
-    setCardData(value);
   };
   return (
     <>
