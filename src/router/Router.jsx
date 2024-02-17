@@ -98,7 +98,7 @@ const Router = () => {
             path="/library"
             element={<Library showSidebar={showSidebar} />}
           />
-          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/subscription" element={<Subscription scrollToTop={scrollToTop} />} />
           <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
