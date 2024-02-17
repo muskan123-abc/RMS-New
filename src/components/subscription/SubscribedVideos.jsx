@@ -25,18 +25,11 @@ const SubscribedVideos = ({ scrollToTop }) => {
               <button
                 onClick={() => setShowVideoTabs(index)}
                 key={index}
-<<<<<<< HEAD
                 className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${
                   showVideoTabs === index
                     ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
                     : " opacity-70"
                 }`}>
-=======
-                className={`text-white font-poppins flex gap-2 items-center py-2.5 px-4 relative duration-300  ${showVideoTabs === index
-                  ? " after:absolute after:left-0 after:top-0 after:w-[2px] after:h-full after:bg-white after:bg-opacity-25 bg-gradient-to-r from-white/10 to-white/0"
-                  : " opacity-70"
-                  }`}>
->>>>>>> fcd29879dc89f1e48e83546b5e8a753970b859f2
                 {value.image} {value.title}
               </button>
             );
