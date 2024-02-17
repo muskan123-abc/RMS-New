@@ -71,7 +71,7 @@ const CommonBigCardSlider = ({ showSidebar }) => {
   return (
     <>
       <div
-        className={`relative z-10 sm:px-4 rounded-lg ${
+        className={`relative z-10 px-4 sm:px-6 rounded-lg ${
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
@@ -87,7 +87,10 @@ const CommonBigCardSlider = ({ showSidebar }) => {
               ? obj.description
               : obj.description.substring(0, 150);
             return (
-              <div key={index} className="px-2 xl:pb-0 ">
+              <div
+                onClick={() => onNavigateHandler(obj)}
+                key={index}
+                className="px-2 xl:pb-0 ">
                 <div className="bg-gradient  w-[326px] h-[326px] rounded-[326px] blur-[250px] absolute left-[-50px] bottom-[-50px] z-10 hidden lg:block"></div>
                 <div className="flex bg-light-white backdrop-blur-[136px] lg:gap-[50px] gap-6 items-center sm:ps-10 ps-3 lg:pe-[40px] sm:pe-8 pe-3 py-[30px] relative rounded-xl sm:flex-row flex-col">
                   <div className=" rounded-[0px_12px_0px_12px] h-[14px] min-w-[280px] bg-gradient top-0 left-1/2 absolute -translate-x-[62%]"></div>
@@ -104,16 +107,15 @@ const CommonBigCardSlider = ({ showSidebar }) => {
                     />
                   </div>
                   <div className="relative after:content-[''] after:absolute after:top-0 sm:after:left-1/3 sm:after:-translate-x-1/2 sm:sm:after:w-[391px] sm:after:w-[143px] sm:sm:after:h-[150px] sm:after:h-[143px] sm:after:rounded-full sm:after:z-0">
-                    <div className="md:flex justify-between items-center">
-                      {pathName === "/category" ? (
-                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90">
-                          {obj.title2}
-                        </h4>
-                      ) : (
-                        <h4 className="font-poppins font-semibold md:text-2xl text-sm text-white opacity-90 sm:mb-5 md:mb-0">
-                          {obj.title}
-                        </h4>
-                      )}
+                    <div className="flex flex-wrap justify-between items-center">
+                      <h4
+                        className={`font-poppins font-semibold md:text-2xl text-sm text-white opacity-90 sm:mb-5 md:mb-0 mr-10 ${
+                          pathName === "/category"
+                            ? ""
+                            : "sm:mb-5 md:mb-0 mr-10"
+                        }`}>
+                        {pathName === "/category" ? obj.title2 : obj.title}
+                      </h4>
 
                       {pathName === "/category" ? (
                         <CustomButton

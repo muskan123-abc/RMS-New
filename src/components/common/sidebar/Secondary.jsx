@@ -13,7 +13,7 @@ import {
 import { messegeList } from "../../../utils/Helper";
 import { Link, useLocation } from "react-router-dom";
 
-const Secondary = () => {
+const Secondary = ({ setShowSidebar }) => {
   const location = useLocation();
   const [activedropdown, setActivedropdown] = useState({
     communities: false,

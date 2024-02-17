@@ -12,7 +12,6 @@ const AccountDetail = ({ showSidebar }) => {
 
   const [name, setname] = useState("Floyd Miles");
   const [userName, setUserName] = useState("Designer");
-  const [isErr, setIsErr] = useState(false);
 
   const steticData = {
     Name: "",
@@ -40,9 +39,8 @@ const AccountDetail = ({ showSidebar }) => {
       formData.city !== ""
     ) {
       setFormData(steticData);
-      setIsErr(false);
     } else {
-      setIsErr(true);
+      console.log("fill all filds");
     }
   };
 
@@ -57,8 +55,7 @@ const AccountDetail = ({ showSidebar }) => {
         <div
           className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto xl:pt-[100px] px-[26px] pt-4 ${
             showSidebar ? "ms-0" : "ms-auto"
-          }`}
-        >
+          }`}>
           <div className="flex items-center gap-[11px] mb-[30px]">
             <UsersIcon />
             <span className="font-medium font-poppins text-xxl text-white">
@@ -89,8 +86,7 @@ const AccountDetail = ({ showSidebar }) => {
               <label
                 htmlFor="image"
                 className="common-border-button cursor-pointer  font-semibold text-sm sm:text-base text-white opacity-90 w-full py-2.5 px-3 rounded overflow-hidden border border-solid border-light-yellow bg-black hover:border-transparent after:bg-dark-yellow z-10 flex justify-center relative duration-300 ease-linear after:absolute
-               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0"
-              >
+               after:w-full after:h-0 after:top-0 after:left-0 after:z-[-1] after:duration-300 after:ease-linear hover:after:h-full hover:after:bottom-0">
                 Change Profile image
               </label>
             </div>
@@ -98,8 +94,6 @@ const AccountDetail = ({ showSidebar }) => {
           <form onSubmit={submitHandler}>
             <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-5 gap-4 mt-10 sm:mt-0">
               <CustomInput
-                errVisible={isErr}
-                errTitle="Display Name"
                 placeholder="Display Name"
                 customStylesInput="w-full"
                 customStyles="w-full"
@@ -112,8 +106,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.Name}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="Username"
                 placeholder="Username"
                 customStyles="w-full"
                 customStylesInput="w-full"
@@ -126,8 +118,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.username}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="Address"
                 placeholder="Address"
                 customStyles="w-full"
                 customStylesInput="w-full"
@@ -140,9 +130,7 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.address}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="Address Name"
-                placeholder="Address"
+                placeholder="City"
                 customStyles="w-full"
                 customStylesInput="w-full"
                 handleInputChange={(value) =>
@@ -154,8 +142,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.city}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="DOB"
                 placeholder="Date of Birth"
                 type={formData.dob === "" ? "text" : "date"}
                 customStyles="w-full"
@@ -169,8 +155,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.dob}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="Contact"
                 placeholder="Contact"
                 inputType="number"
                 customStylesInput="w-full"
@@ -185,8 +169,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.contact}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="Phone Number"
                 placeholder="Phone Number"
                 type="number"
                 inputType="number"
@@ -201,8 +183,6 @@ const AccountDetail = ({ showSidebar }) => {
                 value={formData.phone}
               />
               <CustomInput
-                errVisible={isErr}
-                errTitle="password"
                 inputType="password"
                 placeholder="Password"
                 type="password"

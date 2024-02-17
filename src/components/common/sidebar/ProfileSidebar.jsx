@@ -5,7 +5,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const ProfileSidebar = ({ setShowSidebar }) => {
   const location = useLocation();
-
+  const handleSideBAr = () => {
+    if (window.innerWidth < 1350) {
+      setShowSidebar(false);
+    }
+  };
   return (
     <>
       <div className="w-full max-[375px]:max-w-[150px] max-w-[173px] h-full bg-[#373022] pb-4 overflow-y-auto custom_Scroll_none relative">
@@ -53,6 +57,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                 ) : (
                   <Link
                     to={obj.url}
+                    onClick={handleSideBAr}
                     className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2

@@ -20,7 +20,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
           sign out
         </button> */}
         <ProfileSidebar setShowSidebar={setShowSidebar} />
-        <Secondary />
+        <Secondary setShowSidebar={setShowSidebar} />
       </div>
     </>
   );

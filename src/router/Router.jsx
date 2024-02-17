@@ -52,7 +52,6 @@ const Router = () => {
             element={<Library showSidebar={showSidebar} />}
           />
           <Route path="/subscription" element={<Subscription />} />
-          <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>
