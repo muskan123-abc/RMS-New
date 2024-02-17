@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../assets/images/svg/tap-recorder-icon.svg";
 import { FanFavoriteContent } from "../common/Helper";
 import CommonSmallCardSlider from "../common/slider/CommonSmallCardSlider";
-const FanFavorite = ({ showSidebar }) => {
+const FanFavorite = ({ showSidebar, scrollToTop }) => {
   return (
     <div className=" relative py-12 ">
       <span className=" absolute left-0 bottom-0 ps-6 hidden lg:block movieIcon_animation">
@@ -15,6 +15,7 @@ const FanFavorite = ({ showSidebar }) => {
       </h2>
       <div className="my-10 md:my-12 mx-auto">
         <CommonSmallCardSlider
+          scrollToTop={scrollToTop}
           isLike={true}
           showSidebar={showSidebar}
           cardContent={FanFavoriteContent}
