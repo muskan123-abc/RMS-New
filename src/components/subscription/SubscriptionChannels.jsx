@@ -91,13 +91,13 @@ const SubscriptionChannels = () => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow flex justify-center items-center bg-transparent w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
+            className={`common-arrow left-arrow flex justify-center items-center bg-transparent w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow left-arrow bg-transparent flex justify-center items-center rotate-180 w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
+            className={`common-arrow left-arrow bg-transparent flex justify-center items-center rotate-180 w-9 h-9 sm:w-10 sm:h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent`}>
             <CommonLeftArrowIcon />
           </button>
         </div>
