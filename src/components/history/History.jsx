@@ -8,7 +8,7 @@ const History = () => {
   return (
     <>
       <div className="bg-common-bg-image bg-fixed bg-cover ">
-        <TrendingSlider sliderHeading="History" sliderIcon={<HistoryIcon />} />
+        <TrendingSlider sliderHeading="History" scale="scale-[1.3]" sliderIcon={<HistoryIcon />} />
         <Faqs />
         <Footer />
       </div>

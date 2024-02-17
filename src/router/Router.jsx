@@ -66,7 +66,11 @@ const Router = () => {
   return (
     <div className={`h-screen flex relative `}>
       <BackToTop scrollToTop={scrollToTop} scrollPosition={scrollPosition} />
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <Sidebar
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+        scrollToTop={scrollToTop}
+      />
       <div
         className="w-full overflow-y-auto overflow-x-hidden"
         id="scrollParent"
@@ -98,7 +102,10 @@ const Router = () => {
             path="/library"
             element={<Library showSidebar={showSidebar} />}
           />
-          <Route path="/subscription" element={<Subscription scrollToTop={scrollToTop} />} />
+          <Route
+            path="/subscription"
+            element={<Subscription scrollToTop={scrollToTop} />}
+          />
           <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
