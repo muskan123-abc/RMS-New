@@ -118,7 +118,7 @@ const SubscriptionChannels = () => {
                 929K Subscribers
               </h4>
               <CustomButton
-                isVisible={trugit e}
+                isVisible={true}
                 icon={<UnsubscribeBell />}
                 varient="button"
                 title="Unsubscribe"
