@@ -146,7 +146,7 @@ const FeaturedToday = ({ showSidebar }) => {
                     <div onClick={() => onNavigateHandler(value)} key={index}>
                       <div className=" cursor-pointer rounded-xl border border-solid border-shadow-gray p-2 mx-[10px] mb-2">
                         <div
-                          className={`flex bg-cover bg-no-repeat bg-center rounded-xl ${
+                          className={`flex bg-cover bg-no-repeat  bg-top rounded-xl ${
                             showSidebar
                               ? "h-[450px] lg:h-[505px] "
                               : "h-[400px]"
@@ -165,7 +165,8 @@ const FeaturedToday = ({ showSidebar }) => {
                               {value.description}
                             </p>
                             <span className="flex gap-1">
-                              {ratingStars(value.rating)}
+                              {ratingStars(value.rating)}@here take pull from
+                              dev
                             </span>
                           </div>
                         </div>

@@ -75,15 +75,16 @@ const SubscriptionChannels = () => {
                   className="sm:pe-3 px-1.5 "
                   onClick={() => handleSlideClick(index)}>
                   <div
-                    className={`flex gap-2 py-1.5 rounded-md px-2.5 border cursor-pointer border-white border-opacity-25 bg-white bg-opacity-10 items-center sm:justify-start justify-center ${selectedSlide === index ? "channel_button" : ""
-                      }`}>
+                    className={`flex gap-2 py-1.5 rounded-md px-2.5 border cursor-pointer border-white border-opacity-25 bg-white bg-opacity-10 items-center sm:justify-start justify-center ${
+                      selectedSlide === index ? "channel_button" : ""
+                    }`}>
                     <img src={value.image} alt="channel" />
                     <h3 className="font-inter text-sm text-white whitespace-nowrap">
                       {value.title}
                     </h3>
                   </div>
                 </div>
-              )
+              );
             })}
           </Slider>
         </div>
@@ -116,10 +117,16 @@ const SubscriptionChannels = () => {
               <h4 className="text-white font-poppins pb-6 opacity-70 text-sm">
                 929K Subscribers
               </h4>
-              <CustomButton isVisible={true} icon={<UnsubscribeBell />} varient="button" title="Unsubscribe" className="!px-3.5 py-[11px] !gap-2.5" />
+              <CustomButton
+                isVisible={true}
+                icon={<UnsubscribeBell />}
+                varient="button"
+                title="Unsubscribe"
+                className="!px-3.5 py-[11px] !gap-2.5"
+              />
             </div>
           </div>
-        )
+        );
       })}
       <div className="p-2.5 bg-white bg-opacity-[8%] mt-[30px] rounded-md">
         <h4 className="font-poppins text-sm text-white/70  max-w-[709px] 2xl:max-w-[900px]">
