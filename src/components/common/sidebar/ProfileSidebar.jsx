@@ -5,7 +5,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const ProfileSidebar = ({ setShowSidebar }) => {
   const location = useLocation();
-
+  const handleSideBAr = () => {
+    if (window.innerWidth < 1350) {
+      setShowSidebar(false);
+    }
+  };
   return (
     <>
       <div className="w-full max-[375px]:max-w-[150px] max-w-[173px] h-full bg-[#373022] pb-4 overflow-y-auto custom_Scroll_none relative">
@@ -18,10 +22,10 @@ const ProfileSidebar = ({ setShowSidebar }) => {
         {sideTopList.map((obj, index) => (
           <div key={index}>
             <div className="flex items-center justify-between max-[375px]:mx-2 mx-[10px] py-[10px] border-b border-[#59554C]">
-              <h2 className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80">
+              <h2 className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80 whitespace-nowrap">
                 {obj.title}
               </h2>
-              <p className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80">
+              <p className="font-poppins leading-[118.75%] max-[375px]:text-xs text-sm text-white/80 whitespace-nowrap">
                 {obj.rank}
               </p>
             </div>
@@ -44,7 +48,7 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                     onClick={() => setShowSidebar(false)}>
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
+                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white whitespace-nowrap ${
                         isActive ? "" : ""
                       }`}>
                       {obj.title}
@@ -53,10 +57,11 @@ const ProfileSidebar = ({ setShowSidebar }) => {
                 ) : (
                   <Link
                     to={obj.url}
+                    onClick={handleSideBAr}
                     className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white ${
+                      className={`font-poppins leading-[137%] max-[375px]:text-sm text-base text-white whitespace-nowrap ${
                         isActive ? "" : ""
                       }`}>
                       {obj.title}

@@ -9,6 +9,7 @@ import {
   CommonRightArrowIcon,
   ShareIcon,
 } from "../Icons";
+import { useNavigate } from "react-router";
 const CommonCardSlider = ({ contentArr, showSidebar }) => {
   const watch_slider = useRef(null);
   // Function to handle clicking the left arrow
@@ -70,6 +71,13 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
       },
     ],
   };
+  const navigate = useNavigate();
+
+  const onNavigateHandler = (value) => {
+    localStorage.setItem("current-movie", JSON.stringify(value));
+    const formattedTitle = value.title.replace(/\s+/g, "-");
+    navigate(`/product-details?title=${formattedTitle}`);
+  };
   return (
     <>
       <div
@@ -81,7 +89,10 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
         <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
           {contentArr.map((obj, i) => {
             return (
-              <div key={i} className="px-3 lg:px-2">
+              <div
+                onClick={() => onNavigateHandler(obj)}
+                key={i}
+                className=" px-1 sm:px-2 lg:px-2">
                 <div className="w-full group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 bg-light-black mx-auto xl:mx-2 mb-2 relative">
                   <div className={`flex rounded-xl w-full`}>
                     <div>

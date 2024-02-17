@@ -7,7 +7,7 @@ import Footer from "../common/Footer";
 const ProductDetails = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative z-0">
         {/* REEL POSITION IMAGE */}
         {/* Display the reel image */}
         <img
