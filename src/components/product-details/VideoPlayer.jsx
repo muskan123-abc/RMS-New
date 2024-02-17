@@ -21,7 +21,8 @@ import {
   defaultPorductDiscription,
   relatedItemComments,
 } from "./Helper";
-import ShareView from "../common/ShareView";
+import ShareView from "./ShareView";
+// import ShareView from "../common/ShareView";
 
 const VideoPlayer = () => {
   const [isPopupVisible, setPopupVisibility] = useState(false);
@@ -228,11 +229,12 @@ const VideoPlayer = () => {
                 </span>
                 {likesAndDislikes.item1.dislikes}
               </span>
-              <span onClick={(e) => {
-                handleContactClick();
-                closeMobileMenu();
-                e.preventDefault(); // Prevent the default anchor behavior
-              }}
+              <span
+                onClick={(e) => {
+                  handleContactClick();
+                  closeMobileMenu();
+                  e.preventDefault(); // Prevent the default anchor behavior
+                }}
                 className="common-bg-liner-button bg-shadow-black items-center justify-center flex gap-1
                   ff_inter font-semibold text-xs text-white border-0 cursor-pointer
                   py-[10px]  px-2 sm:px-2.5  rounded-md  hover:bg-white/20 hover:card_backdrop_filter duration-300">
@@ -264,11 +266,13 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="blog"
                           to="/blog"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
-                            } ${loaction.pathname === "/blog"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
+                            active && "bg-primary text-white"
+                          } ${
+                            loaction.pathname === "/blog"
                               ? "bg-primary text-white"
                               : ""
-                            }`}>
+                          }`}>
                           Blogs
                         </Link>
                       )}
@@ -278,11 +282,13 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="fact"
                           to="/fact"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
-                            } ${loaction.pathname === "/fact"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
+                            active && "bg-primary text-white"
+                          } ${
+                            loaction.pathname === "/fact"
                               ? "bg-primary text-white"
                               : ""
-                            }`}>
+                          }`}>
                           Facts
                         </Link>
                       )}
@@ -292,11 +298,13 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="about us"
                           to="/about-us"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
-                            } ${loaction.pathname === "/about-us"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
+                            active && "bg-primary text-white"
+                          } ${
+                            loaction.pathname === "/about-us"
                               ? "bg-primary text-white"
                               : ""
-                            }`}>
+                          }`}>
                           About us
                         </Link>
                       )}
@@ -309,10 +317,11 @@ const VideoPlayer = () => {
         </div>
         {/* DISCRIPTION  */}
         <div
-          className={`bg-white/15 card_backdrop_filter rounded-md mt-6 p-2.5 ${discription
-            ? "min-h-[80px] overflow-auto !transition-all !duration-300 "
-            : " min-h-[70px] !transition-all !duration-300 "
-            }`}>
+          className={`bg-white/15 card_backdrop_filter rounded-md mt-6 p-2.5 ${
+            discription
+              ? "min-h-[80px] overflow-auto !transition-all !duration-300 "
+              : " min-h-[70px] !transition-all !duration-300 "
+          }`}>
           <p className="font-poppins inline font-normal text-sm text-white/70 opacity-70 leading-[22.4px] mb-0.5">
             Elit eu maecenas augue lorem &nbsp;
             <span className="font-semibold text-white !opacity-100">
@@ -374,11 +383,13 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="blog"
                         to="/blog"
-                        className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
-                          } ${loaction.pathname === "/blog"
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
+                          active && "bg-primary text-white"
+                        } ${
+                          loaction.pathname === "/blog"
                             ? "bg-primary text-white"
                             : ""
-                          }`}>
+                        }`}>
                         Blogs
                       </Link>
                     )}
@@ -388,11 +399,13 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="fact"
                         to="/fact"
-                        className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
-                          } ${loaction.pathname === "/fact"
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
+                          active && "bg-primary text-white"
+                        } ${
+                          loaction.pathname === "/fact"
                             ? "bg-primary text-white"
                             : ""
-                          }`}>
+                        }`}>
                         Facts
                       </Link>
                     )}
@@ -427,7 +440,11 @@ const VideoPlayer = () => {
           <Comments />
         </div>
       </div>
-      {isPopupVisible && <div className="fixed top-0 left-0 w-full h-full z-[999] bg-darkNight bg-opacity-20" onClick={() => setPopupVisibility(false)}></div>}
+      {isPopupVisible && (
+        <div
+          className="fixed top-0 left-0 w-full h-full z-[999] bg-darkNight bg-opacity-20"
+          onClick={() => setPopupVisibility(false)}></div>
+      )}
       {isPopupVisible && (
         <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-2/4 -translate-y-2/4">
           <ShareView setPopupVisibility={setPopupVisibility} />
