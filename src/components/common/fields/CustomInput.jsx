@@ -44,7 +44,7 @@ const CustomInput = ({
         )}
       </lable>
       {errVisible && value === "" && (
-        <p className=" text-red-500 text-xs font-normal inline-block pl-6 leading-[1]">
+        <p className=" text-red-500 text-xs font-normal inline-block pl-6 leading-[1] pt-1">
           {errTitle}&nbsp;is Required
         </p>
       )}
