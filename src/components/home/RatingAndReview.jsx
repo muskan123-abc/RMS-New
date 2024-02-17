@@ -129,7 +129,7 @@ const RatingAndReview = ({ showSidebar }) => {
                     <div
                       key={index}
                       className="w-full sm:w-6/12 mb-5 sm:mb-0 px-3">
-                      <div className=" border border-[#404040] rounded-xl py-5 sm:py-0 sm:pt-5 sm:pb-[42px] ps-4  pe-5 h-full hover:border-[#E1B862] duration-200">
+                      <div className=" border border-shadow-gray-two rounded-xl py-5 sm:py-0 sm:pt-5 sm:pb-[42px] ps-4  pe-5 h-full hover:border-maximum-yellow-red duration-200">
                         <h5 className=" font-poppins font-semibold text-base text-white mb-0">
                           {obj.title}
                         </h5>
