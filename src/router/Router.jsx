@@ -18,6 +18,7 @@ import Subscription from "../components/subscription/Subscription";
 import VideoPlayer from "../components/product-details/VideoPlayer";
 import ItemDetails from "../components/product-details/ItemDetails";
 import History from "../components/history/History";
+import NotFound from "../components/common/NotFound";
 
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -63,7 +64,8 @@ const Router = () => {
       />
       <div
         className="w-full overflow-y-auto overflow-x-hidden"
-        id="scrollParent">
+        id="scrollParent"
+      >
         <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
           <Route
@@ -92,6 +94,7 @@ const Router = () => {
             element={<Library showSidebar={showSidebar} />}
           />
           <Route path="/subscription" element={<Subscription />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="/product-details" element={<ProductDetails />} />
         </Routes>
       </div>
