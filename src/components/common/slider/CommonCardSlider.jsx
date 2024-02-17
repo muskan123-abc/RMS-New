@@ -54,7 +54,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 860,
         settings: {
           slidesToShow: 2,
           slidesToShow: 1.99,
@@ -77,8 +77,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
           showSidebar
             ? " custom-2xl:max-w-[790px] custom-3xl:max-w-[870px]"
             : "max-w-[1140px]"
-        }`}
-      >
+        }`}>
         <Slider ref={watch_slider} {...settings} className="pb-8 xl:pb-0">
           {contentArr.map((obj, i) => {
             return (
@@ -114,7 +113,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
                             varient="button" // set button type like  Link and  Button
                             url="" // set url when button type  is link
                             isVisible={true} // handle  button visibility
-                            customStyles=" !px-0 flex justify-center" // add custom styles  \\ use custom styles with importent
+                            customStyles=" !px-0 flex justify-center  !text-sm lg:!text-base" // add custom styles  \\ use custom styles with importent
                             setButtonFull="w-full"
                           />
                           <CustomButton
@@ -123,7 +122,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
                             varient="button" // set button type like  Link and  Button
                             url="" // set url when button type  is link
                             isVisible={true} // handle  button visibility
-                            customStyles=" flex justify-center " // add
+                            customStyles=" flex justify-center !text-sm lg:!text-base" // add
                             icon={<ShareIcon />}
                             setButtonFull="w-full"
                           />
@@ -140,15 +139,13 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
           <button
             aria-label="Slider Arrow"
             onClick={handleLeftArrow}
-            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:-translate-x-full left-[-2%]`}
-          >
+            className={`common-arrow left-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:-translate-x-full left-[-2%]`}>
             <CommonLeftArrowIcon />
           </button>
           <button
             aria-label="Slider Arrow"
             onClick={handleRightArrow}
-            className={`common-arrow right-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:translate-x-full right-[-2%] `}
-          >
+            className={`common-arrow right-arrow w-10 h-10 rounded-[50%] duration-300 ease-in-out border border-solid border-light-yellow hover:border-transparent xl:-translate-y-1/2 xl:absolute top-1/2 lg:translate-x-full right-[-2%] `}>
             <CommonRightArrowIcon />
           </button>
         </div>
