@@ -49,7 +49,8 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
                   {navDropdown.map((obj, index) => {
                     return (
-                      <Link
+                      <Link 
+                      onClick={() => setMobileNav(false)}
                         key={index}
                         className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
@@ -74,6 +75,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                   {navDropdown.map((obj, index) => {
                     return (
                       <Link
+                      onClick={() => setMobileNav(false)}
                         key={index}
                         className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
