@@ -23,7 +23,7 @@ const Header = ({ showSidebar, toggleSidebar }) => {
       <div className="container max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
         <div className="flex items-center justify-between py-2.5">
           <Link to={"/"}>
-            <img className="max-w-[103px]" src={navLogo} alt="navLogo" />
+            <img className="w-[103px] h-[60px]" src={navLogo} alt="navLogo" />
           </Link>
           <span
             className="sm:hidden cursor-pointer"

@@ -66,7 +66,7 @@ const AccountDetail = ({ showSidebar }) => {
             <img
               src={image ? URL.createObjectURL(image) : adventureSliderImg1}
               alt="profile img"
-              className="max-w-[126px] w-full h-[126px] object-cover rounded-md"
+              className="w-[126px] h-[126px] object-cover rounded-md"
             />
             <div>
               <p className="font-poppins font-medium sm:text-2xl text-xl text-white">

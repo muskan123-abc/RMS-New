@@ -42,8 +42,8 @@ const Suggestion = ({ setVideoClick }) => {
             }}
             className="flex gap-2.5 bg-graphite-gray-two cursor-pointer rounded-md border border-solid border-white/40 p-[6px]">
             <img
-              className="rounded-md"
-              width="88"
+              className="rounded-md w-[88px] h-[88px]"
+              width="88" 
               height="88"
               loading="lazy"
               src={item.image}

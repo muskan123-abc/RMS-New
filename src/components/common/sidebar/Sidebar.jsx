@@ -16,9 +16,6 @@ const Sidebar = ({ showSidebar, setShowSidebar, scrollToTop }) => {
         className={`${
           showSidebar ? "w-full" : "w-0"
         } max-w-[414px] transition-all  duration-200 flex overflow-hidden items-center justify-center   custom-2xl:left-0 top-[80px] z-30 h-[calc(100vh-80px)] bg-black fixed custom-2xl:relative`}>
-        {/* <button className="bg-red-800 p-4" onClick={() => setShowSidebar(false)}>
-          sign out
-        </button> */}
         <ProfileSidebar
           scrollToTop={scrollToTop}
           setShowSidebar={setShowSidebar}

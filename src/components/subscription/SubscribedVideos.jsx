@@ -42,17 +42,17 @@ const SubscribedVideos = ({ scrollToTop }) => {
             <div
               onClick={() => onNavigateHandler(value)}
               key={index}
-              className="px-2.5 flex h-full md:w-[33.3%] w-1/2 max-[575.9px]:w-full">
+              className="px-2.5 flex h-full w-full sm:w-6/12 md:w-4/12 ">
               <div
                 onClick={() => scrollToTop()}
                 className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group bg-graphite-gray w-full">
                 <div>
                   <div className="rounded-[4.4px] overflow-hidden">
                     <img
+                      loading="lazy"
                       width={208}
                       height={161}
-                      loading="lazy"
-                      className="w-full group-hover:scale-105 duration-200"
+                      className="w-full custom-xxs:h-[160px] custom-xs:h-[220px] custom-sm:h-[280px] sm:h-[180px] md:h-[140px] lg:h-[200px] object-cover xl:h-[205px] group-hover:scale-105 duration-200"
                       src={value.image}
                       alt="top-movie"
                     />

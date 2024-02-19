@@ -13,6 +13,8 @@ module.exports = {
         inter: "Inter, sans-serif",
       },
       screens: {
+        "custom-xxs": "320px",
+        "custom-xs": "375px",
         "custom-sm": "480px",
         "custom-2xl": "1350px",
         "custom-3xl": "1400px",

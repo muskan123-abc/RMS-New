@@ -46,16 +46,16 @@ const Comments = () => {
         return (
           <div
             key={index}
-            className="flex gap-2 items-start bg-[#FFFFFF0D] card_backdrop_filter rounded-md py-2.5 ps-2.5 pe-[14px]">
-            <img
-              className="rounded-md"
-              width="40"
-              height="40"
-              loading="lazy"
-              src={item.image}
-              alt="profile-pic"
-            />
-            <div className="w-full">
+            className="flex items-start bg-[#FFFFFF0D] card_backdrop_filter rounded-md py-2.5 ps-2.5 pe-[14px]">
+            <span className="w-12 h-12">
+              <img
+                className="rounded-md !w-10 !h-10 "
+                loading="lazy"
+                src={item.image}
+                alt="profile-pic"
+              />
+            </span>
+            <div className="w-full ps-1">
               <div className="flex justify-between w-full">
                 <h3 className="font-poppins font-medium text-sm text-white opacity-90 leading-5 mb-0.5">
                   {item.name}
@@ -70,9 +70,8 @@ const Comments = () => {
               <div className="flex icon pt-1">
                 <span
                   onClick={() => addLIke(index)}
-                  className={`ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer like_svg_size ${
-                    isliked ? "liked" : ""
-                  }`}>
+                  className={`ff_inter font-normal text-xs text-white opacity-70 mb-0 flex gap-0.5 cursor-pointer like_svg_size ${isliked ? "liked" : ""
+                    }`}>
                   <LikeVideoIcon isliked={isliked} />
                   {isliked ? item.like + 1 : item.like}
                 </span>

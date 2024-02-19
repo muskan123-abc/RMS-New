@@ -81,7 +81,7 @@ const SubscriptionChannels = () => {
                       selectedSlide === index ? "channel_button" : ""
                     }`}
                   >
-                    <img src={value.image} alt="channel" />
+                    <img className="w-7 h-7" src={value.image} alt="channel" />
                     <h3 className="font-inter text-sm text-white whitespace-nowrap">
                       {value.title}
                     </h3>
@@ -117,7 +117,7 @@ const SubscriptionChannels = () => {
             }`}
           >
             <img
-              className="w-[126px] h-auto"
+              className="w-[126px] h-[126px]"
               src={value.image}
               alt="channel-img"
             />
