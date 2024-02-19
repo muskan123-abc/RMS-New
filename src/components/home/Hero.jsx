@@ -31,7 +31,7 @@ const Hero = ({ showSidebar }) => {
         {/* Bottom blur effect */}
         <div className="bottom_blur_hero h-12 md:h-[80px] absolute bottom-0 xl:bottom-[-30px] left-0 w-full z-10 hidden md:block"></div>
         {/* Movie icon at the top-left corner */}
-        <span className=" absolute left-0 top-20 ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
+        <span className=" absolute z-0 left-0 top-20 ps-5 md:pt-5 pt-10 hidden lg:block movieIcon_animation">
           <img src={image} alt=" icon-cut" />
         </span>
         <div
@@ -49,7 +49,7 @@ const Hero = ({ showSidebar }) => {
           <div className="flex flex-col md:flex-row flex-wrap justify-between md:items-center lg:min-h-screen">
             <div className=" md:w-6/12 custom-2xl:w-5/12 custom-3xl:w-[52%] 2xl:w-[55%] min-[1920px]:w-6/12 pe-3 lg:pe-0">
               <h1
-                className={`h-[75px] sm:h-[45px] md:h-[70px] lg:h-[100px] custom-2xl:h-[100px] custom-3xl:h-[140px] font-poppins font-bold max-[400px]:textapp-[29px] text-[31px] lg:text-3xl xl:text-3xl min-[1440px]:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[75%] min-[1440px]:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3 ${
+                className={`h-[75px] relative z-10 sm:h-[45px] md:h-[70px] lg:h-[100px] custom-2xl:h-[100px] custom-3xl:h-[140px] font-poppins font-bold max-[400px]:textapp-[29px] text-[31px] lg:text-3xl xl:text-3xl min-[1440px]:text-[55px] text-[#F9F5ED] leading-[142%] max-[375px]:max-w-[100%] min-[375px]:max-w-[85%] min-[425px]:max-w-[75%] sm:max-w-[90%] lg:max-w-[75%] min-[1440px]:max-w-[95%] 2xl:max-w-[85%] md:mb-6 mb-3 ${
                   showSidebar && " custom-2xl:!max-w-full"
                 }`}>
                 C<span className="text"></span>
