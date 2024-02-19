@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Category from "../components/category/Category";
 import Header from "../components/common/Header";
@@ -19,6 +19,7 @@ import VideoPlayer from "../components/product-details/VideoPlayer";
 import ItemDetails from "../components/product-details/ItemDetails";
 import History from "../components/history/History";
 const Router = () => {
+  const scrollableRef = useRef();
   const [showSidebar, setShowSidebar] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   function scrollToTop() {
@@ -56,17 +57,22 @@ const Router = () => {
   };
   return (
     <div className={`h-screen flex relative `}>
-      <BackToTop scrollToTop={scrollToTop} scrollPosition={scrollPosition} />
+      <BackToTop scrollToTop={scrollToTop} scrollPosition={scrollPosition} scrollableRef={scrollableRef} />
       <Sidebar
         showSidebar={showSidebar}
         setShowSidebar={setShowSidebar}
         scrollToTop={scrollToTop}
       />
       <div
+        ref={scrollableRef}
         className="w-full overflow-y-auto overflow-x-hidden"
         id="scrollParent"
       >
-        <Header scrollToTop={scrollToTop} toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
+        <Header
+          scrollToTop={scrollToTop}
+          toggleSidebar={toggleSidebar}
+          showSidebar={showSidebar}
+        />
         <Routes>
           <Route
             path="/"
