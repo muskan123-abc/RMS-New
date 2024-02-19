@@ -49,7 +49,7 @@ const Footer = () => {
                 }}
               >
                 <img
-                  className="w-[100px] md:w-[136px] cursor-pointer inline-block"
+                  className="w-[100px] md:w-[136px] md:h-[74px] h-[54px] cursor-pointer inline-block"
                   src={footer_logo}
                   alt="footer_logo"
                 />
