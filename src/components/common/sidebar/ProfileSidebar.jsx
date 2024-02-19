@@ -37,20 +37,18 @@ const ProfileSidebar = ({ setShowSidebar, scrollToTop }) => {
             return (
               <div
                 key={index}
-                className={`custom-xxs:ps-3 custom-xs:ps-4 mb-[10px] opacity-80 hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer duration-300 ${
-                  isActive
-                    ? "border-white/25 bg-gradient-to-r from-white/10 to-white/10"
-                    : ""
-                }`}>
+                className={`custom-xxs:ps-3 custom-xs:ps-4 mb-[10px] opacity-80 hover:opacity-100 hover:border-l-2 border-l-2 border-transparent hover:border-white/25 hover:bg-gradient-to-r from-white/10 to-white/10 cursor-pointer duration-300 ${isActive
+                  ? "border-white/25 bg-gradient-to-r from-white/10 to-white/10"
+                  : ""
+                  }`}>
                 {obj.title === "Sign out" ? (
                   <button
                     className="py-[10px] flex items-center gap-2"
-                    onClick={() => setShowSidebar(false)}>
+                    onClick={() => { setShowSidebar(false); scrollToTop(); }}>
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] custom-xxs:text-sm custom-xs:text-base text-white whitespace-nowrap ${
-                        isActive ? "" : ""
-                      }`}>
+                      className={`font-poppins leading-[137%] custom-xxs:text-sm custom-xs:text-base text-white whitespace-nowrap ${isActive ? "" : ""
+                        }`}>
                       {obj.title}
                     </h2>
                   </button>
@@ -64,9 +62,8 @@ const ProfileSidebar = ({ setShowSidebar, scrollToTop }) => {
                     className="py-[10px] flex items-center gap-2">
                     <span>{obj.image}</span>
                     <h2
-                      className={`font-poppins leading-[137%] custom-xxs:text-sm custom-xs:text-base text-white whitespace-nowrap ${
-                        isActive ? "" : ""
-                      }`}>
+                      className={`font-poppins leading-[137%] custom-xxs:text-sm custom-xs:text-base text-white whitespace-nowrap ${isActive ? "" : ""
+                        }`}>
                       {obj.title}
                     </h2>
                   </Link>
