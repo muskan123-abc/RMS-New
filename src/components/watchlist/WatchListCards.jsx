@@ -25,7 +25,7 @@ const WatchListCards = ({
   return (
     <>
       {/* Watchlist Card */}
-      <div className="w-full sm:w-[48%] md:w-6/12 lg:w-4/12 border border-solid border-[#494745] text-white rounded-lg p-2 relative overflow-hidden max-h-[407px]">
+      <div className="w-full sm:w-[48%] md:w-6/12 lg:w-4/12 border border-solid border-[#494745] text-white rounded-lg p-2 relative overflow-hidden h-[407px] md:h-[370px] lg:h-[407px] ">
         {index >= 0 && (
           // Heart icon for like/unlike
           <span

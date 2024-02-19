@@ -45,7 +45,7 @@ const SubscribedVideos = ({ scrollToTop }) => {
               className="px-2.5 flex h-full md:w-[33.3%] w-1/2 max-[575.9px]:w-full">
               <div
                 onClick={() => scrollToTop()}
-                className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group bg-graphite-gray">
+                className="p-[7px] border-[2px] border-solid border-white/40 rounded-lg account_library_slider_card h-full flex cursor-pointer justify-between flex-col group bg-graphite-gray w-full">
                 <div>
                   <div className="rounded-[4.4px] overflow-hidden">
                     <img
