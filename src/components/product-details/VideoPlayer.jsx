@@ -266,13 +266,11 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="blog"
                           to="/blog"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
-                            active && "bg-primary text-white"
-                          } ${
-                            loaction.pathname === "/blog"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
+                            } ${loaction.pathname === "/blog"
                               ? "bg-primary text-white"
                               : ""
-                          }`}>
+                            }`}>
                           Blogs
                         </Link>
                       )}
@@ -282,13 +280,11 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="fact"
                           to="/fact"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
-                            active && "bg-primary text-white"
-                          } ${
-                            loaction.pathname === "/fact"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
+                            } ${loaction.pathname === "/fact"
                               ? "bg-primary text-white"
                               : ""
-                          }`}>
+                            }`}>
                           Facts
                         </Link>
                       )}
@@ -298,13 +294,11 @@ const VideoPlayer = () => {
                         <Link
                           aria-label="about us"
                           to="/about-us"
-                          className={` border-0 font-poppins text-medium-gray hover:text-white ${
-                            active && "bg-primary text-white"
-                          } ${
-                            loaction.pathname === "/about-us"
+                          className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
+                            } ${loaction.pathname === "/about-us"
                               ? "bg-primary text-white"
                               : ""
-                          }`}>
+                            }`}>
                           About us
                         </Link>
                       )}
@@ -317,11 +311,10 @@ const VideoPlayer = () => {
         </div>
         {/* DISCRIPTION  */}
         <div
-          className={`bg-white/15 card_backdrop_filter rounded-md mt-6 p-2.5 ${
-            discription
+          className={`bg-white/15 card_backdrop_filter rounded-md mt-6 p-2.5 ${discription
               ? "min-h-[80px] overflow-auto !transition-all !duration-300 "
               : " min-h-[70px] !transition-all !duration-300 "
-          }`}>
+            }`}>
           <p className="font-poppins inline font-normal text-sm text-white/70 opacity-70 leading-[22.4px] mb-0.5">
             Elit eu maecenas augue lorem &nbsp;
             <span className="font-semibold text-white !opacity-100">
@@ -383,13 +376,11 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="blog"
                         to="/blog"
-                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
-                          active && "bg-primary text-white"
-                        } ${
-                          loaction.pathname === "/blog"
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
+                          } ${loaction.pathname === "/blog"
                             ? "bg-primary text-white"
                             : ""
-                        }`}>
+                          }`}>
                         Blogs
                       </Link>
                     )}
@@ -399,13 +390,11 @@ const VideoPlayer = () => {
                       <Link
                         aria-label="fact"
                         to="/fact"
-                        className={` border-0 font-poppins text-medium-gray hover:text-white ${
-                          active && "bg-primary text-white"
-                        } ${
-                          loaction.pathname === "/fact"
+                        className={` border-0 font-poppins text-medium-gray hover:text-white ${active && "bg-primary text-white"
+                          } ${loaction.pathname === "/fact"
                             ? "bg-primary text-white"
                             : ""
-                        }`}>
+                          }`}>
                         Facts
                       </Link>
                     )}
@@ -446,7 +435,7 @@ const VideoPlayer = () => {
           onClick={() => setPopupVisibility(false)}></div>
       )}
       {isPopupVisible && (
-        <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-2/4 -translate-y-2/4 w-full px-6">
+        <div className=" z-[1000] fixed left-2/4 -translate-x-2/4 top-[52%] sm:top-2/4 -translate-y-2/4 w-full px-6">
           <ShareView setPopupVisibility={setPopupVisibility} />
         </div>
       )}
