@@ -82,7 +82,7 @@ const Hero = ({ showSidebar }) => {
                         loading="lazy"
                         width={208}
                         height={161}
-                        className=" w-full border-2 border-granite-gray rounded-[8px]"
+                        className=" w-full border-2 border-granite-gray rounded-[8px] h-[180px] lg:h-[240px] xl:h-[270px]"
                         src={obj.image}
                         alt="hero_img_slider"
                       />
@@ -96,7 +96,7 @@ const Hero = ({ showSidebar }) => {
                         key={index}
                         width={208}
                         height={161}
-                        className=" w-full border-2 border-granite-gray rounded-[8px]"
+                        className=" w-full border-2 border-granite-gray rounded-[8px] h-[180px] lg:h-[240px] xl:h-[270px]"
                         src={obj.image}
                         alt="hero_img_slider"
                         loading="lazy"
@@ -113,7 +113,7 @@ const Hero = ({ showSidebar }) => {
                         key={index}
                         width={208}
                         height={161}
-                        className=" w-full border-2 border-granite-gray rounded-[8px]"
+                        className=" w-full border-2 border-granite-gray rounded-[8px] h-[180px] lg:h-[240px] xl:h-[270px]"
                         src={obj.image}
                         alt="hero_img_slider"
                         loading="lazy"
@@ -128,7 +128,7 @@ const Hero = ({ showSidebar }) => {
                         key={index}
                         width={208}
                         height={161}
-                        className=" w-full border-2 border-granite-gray rounded-[8px]"
+                        className=" w-full border-2 border-granite-gray rounded-[8px] h-[180px] lg:h-[240px] xl:h-[270px]"
                         src={obj.image}
                         loading="lazy"
                         alt="hero_img_slider"

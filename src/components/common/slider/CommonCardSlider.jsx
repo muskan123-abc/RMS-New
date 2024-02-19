@@ -95,7 +95,7 @@ const CommonCardSlider = ({ contentArr, showSidebar }) => {
                 className=" px-1 sm:px-2 lg:px-2">
                 <div className="w-full group rounded-xl cursor-pointer card_backdrop_filter border border-solid border-shadow-gray p-2 bg-light-black mx-auto xl:mx-2 mb-2 relative">
                   <div className={`flex rounded-xl w-full`}>
-                    <div>
+                    <div className="w-full">
                       <div className="overflow-hidden rounded-md">
                         <img
                           height={303}

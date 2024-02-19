@@ -45,11 +45,11 @@ const Hero = () => {
                   isButtonVisible={true}
                 />
               </div>
-              <div className="border-2 border-solid border-dark-gray rounded-lg z-50 relative overflow-hidden">
+              <div className="border-2 border-solid border-dark-gray rounded-lg z-50 relative overflow-hidden xl:w-[490px] xl:h-[490px] lg:w-[435px] lg:h-[435px] md:w-[320px] md:h-[320px] sm:w-[410px] sm:h-[410px] custom-sm:w-[428px] custom-sm:h-[428px] custom-xs:w-[323px] custom-xs:h-[323px] custom-xxs:w-[268px] custom-xxs:h-[268px] mx-auto">
                 <img
                   height={523}
                   width={523}
-                  className="w-full h-full hover:scale-110 duration-300 z-20"
+                  className="w-full h-full hover:scale-110 duration-300 z-20 "
                   src={category_hero_img}
                   alt="category_hero_img"
                   loading="lazy"
