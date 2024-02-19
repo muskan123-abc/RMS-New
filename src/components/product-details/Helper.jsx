@@ -579,37 +579,37 @@ export const CopyLink = () => {
 // SHARE VIEW IN ITEM PAGE
 export const ShareList = [
   {
-    link: "",
+    link: "https://www.instagram.com/",
     icon: <FooterInstagramIcon />,
     title: "Instagram",
   },
   {
-    link: "",
+    link: "https://www.facebook.com/",
     icon: <FooterFacebookIcon />,
     title: "Facebook",
   },
   {
-    link: "",
+    link: "https://www.linkedin.com/",
     icon: <FooterLinkedinIcon />,
     title: "Linkdin",
   },
   {
-    link: "",
+    link: "https://www.instagram.com/",
     icon: <FooterInstagramIcon />,
     title: "Instagram",
   },
   {
-    link: "",
+    link: "https://www.facebook.com/",
     icon: <FooterFacebookIcon />,
     title: "Facebook",
   },
   {
-    link: "",
+    link: "https://www.linkedin.com/",
     icon: <FooterLinkedinIcon />,
     title: "Linkdin",
   },
   {
-    link: "",
+    link: "https://www.facebook.com/",
     icon: <FooterFacebookIcon />,
     title: "Facebook",
   },
