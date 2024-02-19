@@ -10,7 +10,7 @@ import Footer from "../common/Footer";
 
 const Hero = ({ showSidebar }) => {
   return (
-    <div className="bg-common-bg-image bg_attachment_fixed  bg-cover bg-no-repeat relative pt-4 min-[1440px]:pt-[100px] ">
+    <div className="bg-common-bg-image bg_attachment_fixed  bg-cover bg-no-repeat relative pt-[100px] ">
       <div className="bottom_blur_hero w-full h-[50px] absolute bottom-0 left-0"></div>
       <div
         className={`container xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto max-[1439px]:mx-auto px-6 ${

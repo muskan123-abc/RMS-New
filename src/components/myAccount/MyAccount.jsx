@@ -53,7 +53,7 @@ const AccountDetail = ({ showSidebar }) => {
     <>
       <div className="bg-common-bg-image bg-cover relative min-h-screen">
         <div
-          className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto xl:pt-[100px] px-[26px] pt-4 ${
+          className={`container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto me-auto ms-0 max-[1439px]:mx-auto pt-[100px] px-[26px]  ${
             showSidebar ? "ms-0" : "ms-auto"
           }`}>
           <div className="flex items-center gap-[11px] mb-[30px]">

@@ -10,7 +10,7 @@ const WatchList = () => {
   return (
     <>
       {/* Background */}
-      <div className="bg-[url('/src/assets/images/webp/homepage_hero_bg_img.webp')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 md:pt-20 pb-12 xl:py-0">
+      <div className="bg-[url('/src/assets/images/webp/homepage_hero_bg_img.webp')] bg-no-repeat bg-center bg-cover relative z-10">
         <div className="mx-auto container md:max-w-full xl:max-w-[1140px] 2xl:max-w-[1320px] min-[2200px]:mx-auto max-[1439px]:mx-auto min-h-screen flex flex-col py-[100px]">
           <div className="flex justify-between sm:items-center pb-8 w-full sm:flex-row flex-col gap-4">
             {/* Title and Search Input */}
