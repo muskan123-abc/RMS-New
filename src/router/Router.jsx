@@ -66,7 +66,7 @@ const Router = () => {
         className="w-full overflow-y-auto overflow-x-hidden"
         id="scrollParent"
       >
-        <Header toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
+        <Header scrollToTop={scrollToTop} toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
         <Routes>
           <Route
             path="/"

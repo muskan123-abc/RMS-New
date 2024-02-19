@@ -4,7 +4,7 @@ import navLogo from "../../assets/images/png/nav-logo.png";
 import { CrossIcon, DownArrow, MenuIcon, NavNotificationIcon } from "./Icons";
 import CustomButton from "./fields/button/CustomButton";
 import { navDropdown } from "../../utils/Helper";
-const Header = ({ showSidebar, toggleSidebar }) => {
+const Header = ({ showSidebar, toggleSidebar, scrollToTop }) => {
   const [moviesDropdown, setMoviesDropdown] = useState(false);
   const [showsDropdown, setShowsDropdown] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
@@ -31,9 +31,8 @@ const Header = ({ showSidebar, toggleSidebar }) => {
             <MenuIcon />
           </span>
           <div
-            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-40 duration-300 ${
-              mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
-            }`}>
+            className={`flex justify-center flex-col sm:flex-row items-center gap-6 absolute sm:relative bg-black sm:bg-none h-screen sm:h-auto w-full sm:w-auto left-0 z-40 duration-300 ${mobileNav ? "top-0" : "top-[-100vh] sm:top-0"
+              }`}>
             <span
               className="absolute top-3 right-3 sm:hidden cursor-pointer"
               onClick={() => setMobileNav(false)}>
@@ -49,8 +48,11 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                 <div className="py-1 bg-[rgba(255,_255,_255,_0.100)] backdrop-blur-[136.5px] shadow-[0px_5.86667px_17.6px_0px_rgba(0,_0,_0,_0.10)] rounded-md w-[150px] absolute z-30 top-7 right-0 flex flex-col gap-2">
                   {navDropdown.map((obj, index) => {
                     return (
-                      <Link 
-                      onClick={() => setMobileNav(false)}
+                      <Link
+                        onClick={() => {
+                          setMobileNav(false)
+                          scrollToTop()
+                        }}
                         key={index}
                         className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
@@ -75,7 +77,10 @@ const Header = ({ showSidebar, toggleSidebar }) => {
                   {navDropdown.map((obj, index) => {
                     return (
                       <Link
-                      onClick={() => setMobileNav(false)}
+                        onClick={() => {
+                          setMobileNav(false)
+                          scrollToTop()
+                        }}
                         key={index}
                         className="font-normal text-sm text-white w-full block p-3 duration-300 hover:bg-raisin-black border-l border-transparent hover:border-white/70"
                         to={obj.url}>
