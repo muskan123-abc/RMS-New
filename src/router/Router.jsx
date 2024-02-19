@@ -18,15 +18,12 @@ import Subscription from "../components/subscription/Subscription";
 import VideoPlayer from "../components/product-details/VideoPlayer";
 import ItemDetails from "../components/product-details/ItemDetails";
 import History from "../components/history/History";
-
 const Router = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-
   function scrollToTop() {
     // Assuming you are scrolling a div with the ID 'scrollParent'
     const scrollableDiv = document.getElementById("scrollParent");
-
     if (scrollableDiv) {
       scrollableDiv.scrollTo({
         top: 0,
@@ -34,32 +31,26 @@ const Router = () => {
       });
     }
   }
-
   const handleScroll = () => {
     // Assuming you are tracking the scroll position of the div with the ID 'scrollParent'
     const scrollableDiv = document.getElementById("scrollParent");
-
     if (scrollableDiv) {
       const position = scrollableDiv.scrollTop;
       setScrollPosition(position);
     }
   };
-
   useEffect(() => {
     // Assuming you are attaching the event listener to the div with the ID 'scrollParent'
     const scrollableDiv = document.getElementById("scrollParent");
-
     if (scrollableDiv) {
       scrollableDiv.addEventListener("scroll", handleScroll, { passive: true });
     }
-
     return () => {
       if (scrollableDiv) {
         scrollableDiv.removeEventListener("scroll", handleScroll);
       }
     };
   }, []);
-
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
@@ -112,5 +103,4 @@ const Router = () => {
     </div>
   );
 };
-
 export default Router;
